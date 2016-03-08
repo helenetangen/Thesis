@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+
+\section{Methodology}\label{chapter:methodology}%Todo change into chapter
+
+
+\section{Evolutionary Algorithm}
+
+
+\subsection{Adult Selection}
+Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms was implemented in this thesis: (a) full generational replacement, (b) generational mixing, and (c) overproduction. Each method was tested in order to decide which adult selection method is more suitable to solve the wind farm layout optimization problem. Method (a), full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. Method (b), generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. Since individuals with better fitness is able to live a longer life, method (b) is a more realistic adult selection mechanism than full generational replacement.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.15]{images/"Generational Mixing"}
+\caption{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.}
+\label{figure:generational mixing}
+\end{center}
+\end{figure}
+
+
+\noindent Overproduction, adult selection method (c), is illustrated in figure \ref{figure:overproduction}. The newly generated child population consist of twice as many individuals than in the adult pool. Therefore, the child population have to compete against each other for the spots in the adult pool and only those with better fitness is able to survive.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.15]{images/Overproduction}
+\caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefor only the fittest individuals from the large child population grow up into adults.}
+\label{figure:overproduction}
+\end{center}
+\end{figure}
+
+
+\end{document}

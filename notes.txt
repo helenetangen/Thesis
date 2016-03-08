@@ -1,0 +1,19 @@
+
+Overview:
+
+Methodology:
+- System overview
+- Wind Farm Evaluator
+- Scenarios
+- The Evoloutionary Algorithm
+
+
+The Evolutionary Algorithm
+- Overview
+- Genetic Encoding
+- Fitness
+- Adult Selection
+- Parent Selection
+- Genetic Translation
+- Reproduction, elitism
+- Population Distributed Genetic Algorithms
