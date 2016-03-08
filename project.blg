@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: project.aux
+The style file: apalike.bst
+Database file #1: chapters/biblography.bib
+Warning--empty journal in Razali
+You've used 31 entries,
+            1935 wiz_defined-function locations,
+            658 strings with 8858 characters,
+and the built_in function-call counts, 11508 in all, are:
+= -- 1106
+> -- 515
+< -- 20
++ -- 180
+- -- 172
+* -- 924
+:= -- 2063
+add.period$ -- 95
+call.type$ -- 31
+change.case$ -- 232
+chr.to.int$ -- 31
+cite$ -- 32
+duplicate$ -- 451
+empty$ -- 766
+format.name$ -- 218
+if$ -- 2218
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 35
+newline$ -- 157
+num.names$ -- 93
+pop$ -- 239
+preamble$ -- 1
+purify$ -- 240
+quote$ -- 0
+skip$ -- 340
+stack$ -- 0
+substring$ -- 644
+swap$ -- 52
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 174
+warning$ -- 1
+while$ -- 86
+width$ -- 0
+write$ -- 387
+(There was 1 warning)

@@ -1,0 +1,41 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\graphicspath{{images/}}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage[square, authoryear, comma, sort&compress,numbers]{natbib}
+\usepackage{todonotes}
+ \usepackage{hyperref}
+ \usepackage{url}
+\usepackage{rotating}
+\setcounter{secnumdepth}{4}
+\bibliographystyle{apalike}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+
+\begin{document}
+
+
+\input{chapters/titlepage}
+\clearpage
+\newpage
+\input{chapters/preface}
+\tableofcontents
+\input{chapters/introduction}
+\input{chapters/background}
+\input{chapters/relatedwork}
+\input{chapters/method}
+\input{chapters/tools}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{chapters/biblography}
+
+
+\end{document}
