@@ -1,6 +1,9 @@
 \documentclass{article}
 \usepackage{blindtext}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{color}
 
 
 \begin{document}
@@ -13,28 +16,79 @@
 
 
 \subsection{Adult Selection}
-Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms was implemented in this thesis: (a) full generational replacement, (b) generational mixing, and (c) overproduction. Each method was tested in order to decide which adult selection method is more suitable to solve the wind farm layout optimization problem. Method (a), full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. Method (b), generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. Since individuals with better fitness is able to live a longer life, method (b) is a more realistic adult selection mechanism than full generational replacement.
+Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms were implemented in this thesis: (a) full generational replacement, (b) generational mixing, and (c) overproduction. Each method was tested in order to decide which adult selection method was more suitable for solving the wind farm layout optimization problem. Method (a), full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. Method (b), generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. Since individuals with better fitness is able to live a longer life, method (b) is a more realistic adult selection mechanism than full generational replacement. \\
 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.15]{images/"Generational Mixing"}
+\includegraphics[scale=0.15]{images/"adult selection"/"Generational Mixing"}
 \caption{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.}
 \label{figure:generational mixing}
 \end{center}
 \end{figure}
 
 
-\noindent Overproduction, adult selection method (c), is illustrated in figure \ref{figure:overproduction}. The newly generated child population consist of twice as many individuals than in the adult pool. Therefore, the child population have to compete against each other for the spots in the adult pool and only those with better fitness is able to survive.
+\noindent Overproduction, adult selection method (c), is illustrated in figure \ref{figure:overproduction}. The newly generated child population consist of twice as many individuals than in the adult pool. Therefore, the child population have to compete against each other for the spots in the adult pool and only those with better fitness are able to survive. \\
 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.15]{images/Overproduction}
-\caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefor only the fittest individuals from the large child population grow up into adults.}
+\includegraphics[scale=0.15]{images/"adult selection"/Overproduction}
+\caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.}
 \label{figure:overproduction}
 \end{center}
 \end{figure}
+
+
+\noindent \textcolor{red}{Include results from adult selection tests and explain which was selected for this thesis and why}
+
+
+\subsection{Parent Selection}
+\textcolor{red}{Implement and test different parent selection mechanism and explain which is selected for this thesis and why.}
+
+
+\subsection{Reproduction}
+After the parent selection process is finished, a new child population is made from those individuals. One distinguishes between asexual and sexual reproduction. In genetic algorithms sexual reproduction is performed using crossover methods, meaning that the genotypes of two parent individuals are recombined to form two child individuals. Asexual reproduction usually is performed by copying parent individuals into the child pool. Different reproduction- and genetic operations that was implemented and tested in this thesis is described below.
+
+
+\subsubsection{Crossover and Elitism}
+Three crossover methods was implemented and tested in this thesis. The methods used are (a) single point crossover, (b) two point crossover and (c) uniform crossover. Figure \ref{figure:crossover methods} displays the different methods. Method (a), single point crossover is shown in figure \ref{figure:single point crossover}. A random position between two genes is drawn as the crossover point. In the figure the point between genes 4 and 5 is picked as the crossover point. Therefore the first child gets its first four genes from parent 1 and its next four genes from parent two, and child two gets the opposite genes. Method (b), two point crossover, is displayed in figure \ref{figure:two point crossover} and works in the same way as single point crossover except that there are two crossover points instead of one. Last, uniform crossover (c) works by tossing a coin for each gene of the individuals, thereby there is a 50 percent probability that each gene of the child will be drawn from each parent. This is shown in figure \ref{figure:uniform crossover}. \\
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Single point crossover"}
+        \caption{Single point crossover.}
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Two point crossover"}
+        \caption{Two point crossover.}
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Uniform crossover"}
+        \caption{Uniform crossover.}
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Crossover methods.}\label{figure:crossover methods}
+\end{figure}
+
+
+\noindent The crossover probability decides the percentage of children that are generated with sexual reproduction; crossover methods. Individuals generated with asexual reproduction are simply parent genotypes copied into the child pool. However, they might end up slightly different than their parents because of mutation which will be discussed in the next section. \\
+
+
+\noindent Elitism is the process of letting the best individual of the parent population survive, meaning that the best parent individual is simply copied into the child pool. Elitism usually lead to better results for genetic algorithms and is also implemented in this thesis. \\
+
+
+\noindent \textcolor{red}{Discuss findings and disisions about crossover method, rate, and elitism.}
+
+
+\subsubsection{Mutation}
+
 
 
 \end{document}

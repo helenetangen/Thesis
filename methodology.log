@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 MAR 2016 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  9 MAR 2016 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -80,34 +80,63 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen105
+\captionmargin@=\dimen106
+\captionwidth=\dimen107
+\caption@tempdima=\dimen108
+\caption@indent=\dimen109
+\caption@parindent=\dimen110
+\caption@hangindent=\dimen111
+)
+\c@ContinuedFloat=\count106
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count107
+\c@subtable=\count108
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
+)
 (./methodology.aux)
 \openout1 = `methodology.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen105
+\scratchcounter=\count109
+\scratchdimen=\dimen112
 \scratchbox=\box26
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count110
+\nofMParguments=\count111
 \everyMPshowfont=\toks15
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen106
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen113
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks16
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -157,19 +186,34 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<images/"Generational Mixing".png, id=1, 918.43124pt x 810.02625pt>
-File: images/"Generational Mixing".png Graphic file (type png)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
-<use images/"Generational Mixing".png>
-Package pdftex.def Info: images/"Generational Mixing".png used on input line 21
-.
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+<images/"adult selection"/"Generational Mixing".png, id=1, 918.43124pt x 810.02
+625pt>
+File: images/"adult selection"/"Generational Mixing".png Graphic file (type png
+)
+ <use images/"adult selection"/"Generational Mixing".png>
+Package pdftex.def Info: images/"adult selection"/"Generational Mixing".png use
+d on input line 24.
 (pdftex.def)             Requested size: 137.75874pt x 121.49869pt.
 
-<images/Overproduction.png, id=3, 918.43124pt x 689.57625pt>
-File: images/Overproduction.png Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
-<use images/Overproduction.png>
-Package pdftex.def Info: images/Overproduction.png used on input line 33.
+ []
+
+
+<images/"adult selection"/Overproduction.png, id=3, 918.43124pt x 689.57625pt>
+File: images/"adult selection"/Overproduction.png Graphic file (type png)
+
+<use images/"adult selection"/Overproduction.png>
+Package pdftex.def Info: images/"adult selection"/Overproduction.png used on in
+put line 36.
 (pdftex.def)             Requested size: 137.75874pt x 103.43196pt.
 
 
@@ -178,23 +222,64 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/Generational Mixing.png>] [2 <./images/Overproduction.png>]
-(./methodology.aux) ) 
+s/adult selection/Generational Mixing.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+<images/crossover/"Single point crossover".png, id=12, 489.83pt x 508.90125pt>
+File: images/crossover/"Single point crossover".png Graphic file (type png)
+
+<use images/crossover/"Single point crossover".png>
+Package pdftex.def Info: images/crossover/"Single point crossover".png used on 
+input line 61.
+(pdftex.def)             Requested size: 103.50105pt x 107.52469pt.
+
+<images/crossover/"Two point crossover".png, id=13, 488.82625pt x 509.905pt>
+File: images/crossover/"Two point crossover".png Graphic file (type png)
+
+<use images/crossover/"Two point crossover".png>
+Package pdftex.def Info: images/crossover/"Two point crossover".png used on inp
+ut line 67.
+(pdftex.def)             Requested size: 103.50105pt x 107.9624pt.
+
+<images/crossover/"Uniform crossover".png, id=14, 487.8225pt x 508.90125pt>
+File: images/crossover/"Uniform crossover".png Graphic file (type png)
+
+<use images/crossover/"Uniform crossover".png>
+Package pdftex.def Info: images/crossover/"Uniform crossover".png used on input
+ line 73.
+(pdftex.def)             Requested size: 103.50105pt x 107.9673pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[2 <./images/adult selection/Overproduction.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+[3 <./images/crossover/Single point crossover.png> <./images/crossover/Two poin
+t crossover.png> <./images/crossover/Uniform crossover.png>] (./methodology.aux
+) ) 
 Here is how much of TeX's memory you used:
- 1656 strings out of 493117
- 24512 string characters out of 6135434
- 83768 words of memory out of 5000000
- 5127 multiletter control sequences out of 15000+600000
- 4850 words of font info for 18 fonts, out of 8000000 for 9000
+ 2825 strings out of 493117
+ 46149 string characters out of 6135434
+ 107229 words of memory out of 5000000
+ 6278 multiletter control sequences out of 15000+600000
+ 5457 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,1205b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb>
-Output written on methodology.pdf (2 pages, 92502 bytes).
+ 38i,8n,38p,1213b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on methodology.pdf (3 pages, 197236 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
