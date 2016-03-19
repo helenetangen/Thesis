@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  9 MAR 2016 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  19 MAR 2016 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -189,97 +189,28 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-
-<images/"adult selection"/"Generational Mixing".png, id=1, 918.43124pt x 810.02
-625pt>
-File: images/"adult selection"/"Generational Mixing".png Graphic file (type png
-)
- <use images/"adult selection"/"Generational Mixing".png>
-Package pdftex.def Info: images/"adult selection"/"Generational Mixing".png use
-d on input line 24.
-(pdftex.def)             Requested size: 137.75874pt x 121.49869pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-
-<images/"adult selection"/Overproduction.png, id=3, 918.43124pt x 689.57625pt>
-File: images/"adult selection"/Overproduction.png Graphic file (type png)
-
-<use images/"adult selection"/Overproduction.png>
-Package pdftex.def Info: images/"adult selection"/Overproduction.png used on in
-put line 36.
-(pdftex.def)             Requested size: 137.75874pt x 103.43196pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/adult selection/Generational Mixing.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./methodology.aux)
 
- []
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-<images/crossover/"Single point crossover".png, id=12, 489.83pt x 508.90125pt>
-File: images/crossover/"Single point crossover".png Graphic file (type png)
-
-<use images/crossover/"Single point crossover".png>
-Package pdftex.def Info: images/crossover/"Single point crossover".png used on 
-input line 61.
-(pdftex.def)             Requested size: 103.50105pt x 107.52469pt.
-
-<images/crossover/"Two point crossover".png, id=13, 488.82625pt x 509.905pt>
-File: images/crossover/"Two point crossover".png Graphic file (type png)
-
-<use images/crossover/"Two point crossover".png>
-Package pdftex.def Info: images/crossover/"Two point crossover".png used on inp
-ut line 67.
-(pdftex.def)             Requested size: 103.50105pt x 107.9624pt.
-
-<images/crossover/"Uniform crossover".png, id=14, 487.8225pt x 508.90125pt>
-File: images/crossover/"Uniform crossover".png Graphic file (type png)
-
-<use images/crossover/"Uniform crossover".png>
-Package pdftex.def Info: images/crossover/"Uniform crossover".png used on input
- line 73.
-(pdftex.def)             Requested size: 103.50105pt x 107.9673pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-[2 <./images/adult selection/Overproduction.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-
- []
-
-[3 <./images/crossover/Single point crossover.png> <./images/crossover/Two poin
-t crossover.png> <./images/crossover/Uniform crossover.png>] (./methodology.aux
-) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 2825 strings out of 493117
- 46149 string characters out of 6135434
- 107229 words of memory out of 5000000
- 6278 multiletter control sequences out of 15000+600000
- 5457 words of font info for 20 fonts, out of 8000000 for 9000
+ 2786 strings out of 493117
+ 44860 string characters out of 6135434
+ 104262 words of memory out of 5000000
+ 6249 multiletter control sequences out of 15000+600000
+ 4850 words of font info for 18 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,38p,1213b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on methodology.pdf (3 pages, 197236 bytes).
+ 38i,5n,38p,1185b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on methodology.pdf (1 page, 32988 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 16 PDF objects out of 1000 (max. 8388607)
+ 10 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
