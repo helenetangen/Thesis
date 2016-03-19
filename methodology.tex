@@ -18,6 +18,18 @@ In this chapter, the simulator used to investigate the research questions is des
 \section{System Architecture}\label{section:systemt architecture}
 
 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{images/"Class Diagram"}
+\caption{Class Diagram.}
+\label{figure:class diagram}
+\end{center}
+\end{figure}
+
+
+The program is implemented in Java and the interactions between the different classes of the program are shown in figure \ref{figure:class diagram}. The GeneticAlgorithm class is extended by the three population distributed genetic algorithm classes: IslandModel, CellularModel and PoolModel. In addition, the GeneticAlgorithm class is also implemented as instances in all three population distributed algorithms \textcolor{red}{fix this in figure}. The main loop of the program is contained in the GeneticAlgorithm class. It uses instances of the classes WindScenario, WindFarmLayoutEvaluator, Population, AdultSelection, ParentSelection, Crossover and Mutation. AdultSelection, ParentSeleciton and Crossover are interfaces that needs to be implemented if new methods are to be added to the program. Mutation is a class containing four different mutation methods. 
+
+
 \section{Genetic Algorithm}\label{section: genetic algorithm}
 
 
