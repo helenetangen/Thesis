@@ -10,9 +10,7 @@
 
 
 \section{Methodology}\label{chapter:methodology}%Todo change into chapter
-
-
-In this chapter, the simulator used to investigate the research questions is described. An overview of the system is presented in section \ref{section:systemt architecture}. Section \ref{section: genetic algorithm} includes implementation details, and design decisions made when implementing the genetic algorithm which is the foundation for all the population distributed genetic algorithms. Sections \ref{section: island model}-\ref{section: pool model} contains implementation details of the population distributed genetic algorithms. The wind scenarios used to evaluate the different population distributed genetic algorithm are described in section \ref{section: scenarios}, and the choice of implementing the genetic algorithm from scratch is defended in section \ref{section: motivation}.
+In this chapter, the simulator used to investigate the research questions is described. An overview of the system is presented in section \ref{section:systemt architecture}. Section \ref{section:genetic algorithm} includes implementation details, and design decisions made when implementing the genetic algorithm which is the foundation for all the population distributed genetic algorithms. Sections \ref{section:island model}-\ref{section:pool model} contains implementation details of the population distributed genetic algorithms. The wind scenarios used to evaluate the different population distributed genetic algorithm are described in section \ref{section:scenarios}, and the choice of implementing the genetic algorithm from scratch is defended in section \ref{section:motivation}.
 
 
 \section{System Architecture}\label{section:systemt architecture}
@@ -27,40 +25,89 @@ In this chapter, the simulator used to investigate the research questions is des
 \end{figure}
 
 
-The program is implemented in Java and the interactions between the different classes of the program are shown in figure \ref{figure:class diagram}. The GeneticAlgorithm class is extended by the three population distributed genetic algorithm classes: IslandModel, CellularModel and PoolModel. In addition, the GeneticAlgorithm class is also implemented as instances in all three population distributed algorithms \textcolor{red}{fix this in figure}. The main loop of the program is contained in the GeneticAlgorithm class. It uses instances of the classes WindScenario, WindFarmLayoutEvaluator, Population, AdultSelection, ParentSelection, Crossover and Mutation. AdultSelection, ParentSeleciton and Crossover are interfaces that needs to be implemented if new methods are to be added to the program. Mutation is a class containing four different mutation methods. 
+The program is implemented in Java and the interactions between the different classes of the program are shown in figure \ref{figure:class diagram}. The GeneticAlgorithm class is extended by the three population distributed genetic algorithm classes: IslandModel, CellularModel and PoolModel. In addition, the GeneticAlgorithm class is also implemented as instances in all three population distributed algorithms. The main loop of the program is contained in the GeneticAlgorithm class. It uses instances of the classes WindScenario, WindFarmLayoutEvaluator, Population, AdultSelection, ParentSelection, Crossover and Mutation. AdultSelection, ParentSeleciton and Crossover are interfaces that needs to be implemented if new methods are to be added to the program. Mutation is a class containing four different mutation methods. 
 
 
-\section{Genetic Algorithm}\label{section: genetic algorithm}
+\section{Genetic Algorithm}\label{section:genetic algorithm}
+As mentioned in \textcolor{red}{reference chapter background}, the genetic algorithm consists of five steps: Adult selection, parent selection, recombination and fitness evaluation as shown in figure \ref{figure:genetic algorithm steps}. The implementation details of each step is described below.
 
 
-\subsection{Adult Selection}\label{subsection: adult selection}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{images/"genetic algorithm steps"}
+\caption{Genetic algorithm.}
+\label{figure:genetic algorithm steps}
+\end{center}
+\end{figure}
 
 
-\subsection{Parent Selection}\label{subsection: parent selection}
+\subsection{Adult Selection}\label{subsection:adult selection}
+Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms were implemented in this thesis: Full generational replacement,  generational mixing, and overproduction. Each method was tested in order to decide which adult selection method was more suitable for solving the wind farm layout optimization problem. \\
+
+\noindent Full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. \\
+
+\noindent The second method, generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. \\
 
 
-\subsection{Genetic Operations}\label{subsection: genetic operations}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"adult selection"/"Generational Mixing"}
+\caption{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.}
+\label{figure:generational mixing}
+\end{center}
+\end{figure}
 
 
-\subsection{Wind-, Wake- and Power Model}\label{subsection: wind-, wake- and power model}
+\noindent Overproduction, the third adult selection mechanism, is illustrated in figure \ref{figure:overproduction}. The newly generated child population consist of twice as many individuals than in the adult pool. Therefore, the child population have to compete against each other for the spots in the adult pool and only those with better fitness are able to survive. \\
 
 
-\subsection{Fitness Function}\label{subsection: fitness function}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"adult selection"/Overproduction}
+\caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.}
+\label{figure:overproduction}
+\end{center}
+\end{figure}
 
 
-\section{Island Model}\label{section: island model}
+
+\subsection{Parent Selection}\label{subsection:parent selection}
+Parent selection is the selection of which adults become parents for the next child generation. When choosing parent selection method there are a few concerns that needs to be addressed. First, it is important that parents with good genes, i.e. higher fitness, gets their genes transferred to the next generation. However, it is also important to keep diversity in the population so that one does not end wit a sub-optimal solution; a local maxima. Two parent selection methods are implemented for the genetic algorithm: Tournament selection and roulette wheel selection. \\
+
+\noindent In tournament selection, a given number of individuals are drawn randomly from the population. The number of individuals drawn is decided by the variable ''tournament size''. These individuals compete in a tournament for one spot in the parent pool. The individual with ''best'', i.e. lowest fitness is selected as a parent. These tournaments continue until the adult pool is full. Figure \ref{figure:tournament selection} shows how tournament selection works. As can be seen in the figure, three individuals are drawn randomly from the adult pool, meaning that the tournament size in this example is 3. The ''best'' individual, the individual with fitness 4 is the tournament winner and is allowed to enter the adult pool. \\
 
 
-\section{Cellular Model}\label{section: cellular model}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Tournament Selection"}
+\caption{Tournament selection.}
+\label{figure:tournament selection}
+\end{center}
+\end{figure}
 
 
-\section{Pool Model}\label{section: pool model}
+\subsection{Genetic Operations}\label{subsection:genetic operations}
 
 
-\section{Scenarios}\label{section: scenarios}
+\subsection{Wind-, Wake- and Power Model}\label{subsection:wind-, wake- and power model}
 
 
-\section{Motivation}\label{section: motivation}
+\subsection{Fitness Function}\label{subsection:fitness function}
+
+
+\section{Island Model}\label{section:island model}
+
+
+\section{Cellular Model}\label{section:cellular model}
+
+
+\section{Pool Model}\label{section:pool model}
+
+
+\section{Scenarios}\label{section:scenarios}
+
+
+\section{Motivation}\label{section:motivation}
 
 
 %\section{Evolutionary Algorithm}
