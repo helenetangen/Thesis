@@ -86,7 +86,28 @@ Parent selection is the selection of which adults become parents for the next ch
 \end{figure}
 
 
+\noindent Different values of ''tournament size'' needs to be tested in order to find how settings that allow the algorithm to explore different solutions, but that also prioritize the best solutions. In chapter \textcolor{red}{reference results chapter}, results obtained for different tournament sizes are compared to find which is best for the wind farm layout optimization problem. \\
+
+
+\noindent Roulette wheel selection assigns a probability of being chosen as parent to each individuals which is proportional to its fitness compared to all other solutions. Therefore, individuals with better fitness will be more likely to selected for the parent pool. Figure \ref{figure:roulette wheel selection} shows how roulette wheel selection works. The roulette wheel on the left shows the probability of each of the four individuals been selected. Since individual$_4$ has the best fitness, it has a larger probability of being selected than the others. \\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.5]{images/"roulette wheel selection"}
+\caption{Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.}
+\label{figure:roulette wheel selection}
+\end{center}
+\end{figure}
+
+
 \subsection{Genetic Operations}\label{subsection:genetic operations}
+
+
+\subsubsection{Crossover and Elitism}
+
+
+\subsubsection{Mutation}
 
 
 \subsection{Wind-, Wake- and Power Model}\label{subsection:wind-, wake- and power model}
