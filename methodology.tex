@@ -100,20 +100,119 @@ Parent selection is the selection of which adults become parents for the next ch
 
 
 \subsection{Genetic Operations}\label{subsection:genetic operations}
-This subsection gives an overview over the genetic operations used to produce the next child generation. Four crossover methods, elitism and four mutation methods are implemented and will be presented below. 
+This subsection gives an overview over the genetic operations used to produce the next child generation. Three crossover methods, elitism and four mutation methods are implemented and will be presented. 
 
 
 \subsubsection{Crossover and Elitism}
-Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombination of the genes of tho parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover.
+Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombining genes of two parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover. These are all presented in figure \ref{figure:crossover methods}. As shown in figure \ref{figure:single point crossover}, single point crossover is a method where a random position, called the crossover point, is generated. All genes from the first parent prior to the crossover point are copied to the first child, and all genes after the crossover point are copied to the second child, and all genes from the second parent prior to the crossover point is copied to the second child, and all genes after the crossover point is copied to the first child. Two point crossover is similar to single point crossover, except that it uses to crossover points instead of one. This is shown in figure \ref{figure:two point crossover}. In uniform crossover, there is a fifty percent probability that each gene will be drawn from each parent as shown in figure \ref{figure:uniform crossover}. This crossover method results in child individuals that might not inherit the gene patterns from their parents the same way as in the other two methods. Since the relative positions between wind turbines are very important when solving the wind farm layout optimization problem, uniform crossover might not be the best choice. \textcolor{red}{Is this true? If it is, talk about this in the results part, remove it from here.}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Single point crossover"}
+        \caption{Single point crossover.}
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Two point crossover"}
+        \caption{Two point crossover.}
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Uniform crossover"}
+        \caption{Uniform crossover.}
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Crossover methods.}\label{figure:crossover methods}
+\end{figure}
 
 
 \subsubsection{Mutation}
+Although crossover is a powerful genetic operator, which able child individuals to inherit genes from the best parent individuals, it is not enough on its own. Without any way to mutate genes, one can end up with a population where every individual has the same gene value in the same position, this means that no recombination will be able to change the value of that gene. Mutation is the operation used by the genetic algorithm to make sure that the population do not get sterile. In nature, genes can be mutated in numerous ways. In this thesis, four mutation methods are implemented to mimic the mutations methods that can happen in genes, these are called: Flip mutation, 
 
 
 \subsection{Wind-, Wake- and Power Model}\label{subsection:wind-, wake- and power model}
+The evaluation class uses the same wake-, wind- and power model as \cite{Kusiak}. The wake model used is the classical Jensen model \citep{Jensen}, which is used in almost every study of the wind farm layout optimization problem, as can be seen in table \ref{table:overview}. \\
+
+\noindent Wind distribution is modeled using the Weibull distribution, a continuous probability distribution shown to model wind distribution quite well \citep{Justus}. The probability density function is shown in equation \ref{equation:Weibull}
+
+
+\begin{equation}
+f(x; c, k)  = 
+\begin{cases}
+\frac{k}{c} \left( \frac{x}{c} \right)^{k-1} e^{- \left( \frac{x}{c} \right)^k } & \text{if} \hspace{1mm} x \geq 0 \\
+0                                                                                                                      & \text{if} \hspace{1mm}     x < 0
+\end{cases}
+\label{equation:Weibull}
+\end{equation}
+
+
+\noindent where $k$ is called the shape parameter and $c$ is the scale parameter, and $k, c > 0$. In most of the wind scenarios provided by GECCO 2015, $k \approx 2$, this is shown empirically to be a good value for wind speed distribution \citep{Justus}. On the other hand, the shape parameter vary for each wind direction. Figure \ref{figure:weibull distribution} shows the Weibull distribution plotted for $k = 2$ and for different values of $c$. \\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{images/"Weibull"}
+\caption{The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.}
+\label{figure:weibull distribution}
+\end{center}
+\end{figure}
+
+\noindent The wind scenarios used in this thesis are therefore a specification of the shape- and scale parameters for every wind direction, where wind direction is partitioned into 24 different directions. Twenty wind scenarios are provided by GECCO 2015, ten which simply specify wind distribution parameters, and ten that specify wind distribution parameters and locations of obstacles. \\
+
+\noindent The power curve used is also the same as used in \cite{Kusiak}, it is a linear function, shown in equation \ref{equation:Power Curv (API)},
+
+\begin{equation}
+ f(v) = 
+  \begin{cases} 
+   0                                  & \text{if }     v < v_{cut-in} \\
+   \lambda v + \eta           & \text{if }     v_{cut-in} \leq v \leq v_{rated} \\
+   P_{rated}                        & \text{if }     v_{cut-out} > v > v_{rated}. \\
+  \end{cases}
+  \label{equation:Power Curv (API)}
+\end{equation}
+
+\noindent Here $\lambda$ is the slope parameter, $v$ the wind speed, $\eta$ the intercept parameter, $P_{rated}$ is the fixed power output, and $v_{cut-in}$ is the cut-in speed; the minimum speed for which the turbine produces power, and $v_{cut-out}$ is the cut-out speed; the maximum wind speed for which the turbine is kept on. 
 
 
 \subsection{Fitness Function}\label{subsection:fitness function}
+The main task of the evaluation classes is to calculate the fitness of each individual based on the fitness function.  The fitness function to be optimized is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
+
+\begin{small}
+\begin{equation}
+fitness =  \frac{ \left( c_t \cdot n + c_s \cdot \floor*{\frac{n}{m}} \right) \left( \frac{2}{3} + \frac{1}{3} \cdot e^{-0.00174n^2} \right) + c_{OM} \cdot n}{\left( \frac{1 - (1 + r)^{-y}}{r} \right) } \cdot \frac{1}{8760 \cdot P} + \frac{0.1}{n}
+\label{Objective function} 
+\end{equation}
+\end{small}
+
+
+\noindent Description and numerical values of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize. It is dependent on turbines count, position, wind scenario and so on, and is off course therefore not provided in table \ref{Parameters} either.\\
+
+
+\begin{table}[h!]
+\begin{center}
+\caption{Description and value of each parameter used in the objective function provided by GECCO 2015.}
+\label{Parameters}
+\begin{tabular}{l|l|l}
+\textbf{Parameter} & \textbf{Description} & \textbf{Value} \\ 
+\hline 
+$c_t$ & Turbine cost (usd) & 750 000 \\ 
+$c_s$ & Substation cost (usd) & 8 000 000 \\ 
+$m$ & Turbines per substation & 30 \\ 
+$r$ & Interest rate & 0.03 \\ 
+$y$ & Farm lifetime (years) & 20 \\ 
+$c_{OM}$ & Yearly operating costs per turbine & 20 000 \\ 
+$n$ & Number of turbines &  \\ 
+$m$ & Farm energy output &  \\  
+\end{tabular} 
+\end{center}
+\end{table}
+
+
+\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator represents the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \\
 
 
 \section{Island Model}\label{section:island model}
@@ -131,83 +230,4 @@ Crossover is the recombination method utilized by the genetic algorithm to perfo
 \section{Motivation}\label{section:motivation}
 
 
-%\section{Evolutionary Algorithm}
-%
-%
-%\subsection{Adult Selection}
-%Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms were implemented in this thesis: (a) full generational replacement, (b) generational mixing, and (c) overproduction. Each method was tested in order to decide which adult selection method was more suitable for solving the wind farm layout optimization problem. Method (a), full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. Method (b), generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. Since individuals with better fitness is able to live a longer life, method (b) is a more realistic adult selection mechanism than full generational replacement. \\
-%
-%
-%\begin{figure}[h!]
-%\begin{center}
-%\includegraphics[scale=0.15]{images/"adult selection"/"Generational Mixing"}
-%\caption{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.}
-%\label{figure:generational mixing}
-%\end{center}
-%\end{figure}
-%
-%
-%\noindent Overproduction, adult selection method (c), is illustrated in figure \ref{figure:overproduction}. The newly generated child population consist of twice as many individuals than in the adult pool. Therefore, the child population have to compete against each other for the spots in the adult pool and only those with better fitness are able to survive. \\
-%
-%
-%\begin{figure}[h!]
-%\begin{center}
-%\includegraphics[scale=0.15]{images/"adult selection"/Overproduction}
-%\caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.}
-%\label{figure:overproduction}
-%\end{center}
-%\end{figure}
-%
-%
-%\noindent \textcolor{red}{Include results from adult selection tests and explain which was selected for this thesis and why}
-%
-%
-%\subsection{Parent Selection}
-%\textcolor{red}{Implement and test different parent selection mechanism and explain which is selected for this thesis and why.}
-%
-%
-%\subsection{Reproduction}
-%After the parent selection process is finished, a new child population is made from those individuals. One distinguishes between asexual and sexual reproduction. In genetic algorithms sexual reproduction is performed using crossover methods, meaning that the genotypes of two parent individuals are recombined to form two child individuals. Asexual reproduction usually is performed by copying parent individuals into the child pool. Different reproduction- and genetic operations that was implemented and tested in this thesis is described below.
-%
-%
-%\subsubsection{Crossover and Elitism}
-%Three crossover methods was implemented and tested in this thesis. The methods used are (a) single point crossover, (b) two point crossover and (c) uniform crossover. Figure \ref{figure:crossover methods} displays the different methods. Method (a), single point crossover is shown in figure \ref{figure:single point crossover}. A random position between two genes is drawn as the crossover point. In the figure the point between genes 4 and 5 is picked as the crossover point. Therefore the first child gets its first four genes from parent 1 and its next four genes from parent two, and child two gets the opposite genes. Method (b), two point crossover, is displayed in figure \ref{figure:two point crossover} and works in the same way as single point crossover except that there are two crossover points instead of one. Last, uniform crossover (c) works by tossing a coin for each gene of the individuals, thereby there is a 50 percent probability that each gene of the child will be drawn from each parent. This is shown in figure \ref{figure:uniform crossover}. \\
-%
-%
-%\begin{figure}
-%    \centering
-%    \begin{subfigure}[b]{0.3\textwidth}
-%        \includegraphics[width=\textwidth]{images/crossover/"Single point crossover"}
-%        \caption{Single point crossover.}
-%        \label{figure:single point crossover}
-%    \end{subfigure}
-%    ~ 
-%    \begin{subfigure}[b]{0.3\textwidth}
-%        \includegraphics[width=\textwidth]{images/crossover/"Two point crossover"}
-%        \caption{Two point crossover.}
-%        \label{figure:two point crossover}
-%    \end{subfigure}
-%    ~
-%    \begin{subfigure}[b]{0.3\textwidth}
-%        \includegraphics[width=\textwidth]{images/crossover/"Uniform crossover"}
-%        \caption{Uniform crossover.}
-%        \label{figure:uniform crossover}
-%    \end{subfigure}
-%    \caption{Crossover methods.}\label{figure:crossover methods}
-%\end{figure}
-%
-%
-%\noindent The crossover probability decides the percentage of children that are generated with sexual reproduction; crossover methods. Individuals generated with asexual reproduction are simply parent genotypes copied into the child pool. However, they might end up slightly different than their parents because of mutation which will be discussed in the next section. \\
-%
-%
-%\noindent Elitism is the process of letting the best individual of the parent population survive, meaning that the best parent individual is simply copied into the child pool. Elitism usually lead to better results for genetic algorithms and is also implemented in this thesis. \\
-%
-%
-%\noindent \textcolor{red}{Discuss findings and disisions about crossover method, rate, and elitism.}
-%
-%
-%\subsubsection{Mutation}
-%
-%
-%
 \end{document}

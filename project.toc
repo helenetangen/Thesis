@@ -13,14 +13,19 @@
 \contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{23}{section.3.1}
 \contentsline {section}{\numberline {3.2}Wind Farm Layout Optimization Different Approaches}{36}{section.3.2}
 \contentsline {section}{\numberline {3.3}Discussion Related Work}{39}{section.3.3}
-\contentsline {chapter}{\numberline {4}Method}{43}{chapter.4}
-\contentsline {section}{\numberline {4.1}Implementation Details}{43}{section.4.1}
-\contentsline {section}{\numberline {4.2}Wind Farm Parameters}{43}{section.4.2}
-\contentsline {chapter}{\numberline {5}Technical Description}{44}{chapter.5}
-\contentsline {section}{\numberline {5.1}Application User Interface (API)}{44}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Genetic Algorithm}{45}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Fitness function}{46}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Wake-, Wind- and Power Model}{47}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Test Simulation}{48}{section.5.2}
-\contentsline {section}{\numberline {5.3}Future Work}{49}{section.5.3}
-\contentsline {chapter}{Bibliography}{50}{figure.caption.28}
+\contentsline {chapter}{\numberline {4}Methodology}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}System Architecture}{43}{section.4.1}
+\contentsline {section}{\numberline {4.2}Genetic Algorithm}{44}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Adult Selection}{44}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Parent Selection}{46}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Genetic Operations}{48}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Crossover and Elitism}{48}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Mutation}{49}{subsubsection.4.2.3.2}
+\contentsline {subsection}{\numberline {4.2.4}Wind-, Wake- and Power Model}{50}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Fitness Function}{51}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Island Model}{52}{section.4.3}
+\contentsline {section}{\numberline {4.4}Cellular Model}{52}{section.4.4}
+\contentsline {section}{\numberline {4.5}Pool Model}{52}{section.4.5}
+\contentsline {section}{\numberline {4.6}Scenarios}{52}{section.4.6}
+\contentsline {section}{\numberline {4.7}Motivation}{52}{section.4.7}
+\contentsline {chapter}{Bibliography}{52}{section.4.7}

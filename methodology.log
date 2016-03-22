@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  21 MAR 2016 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  22 MAR 2016 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -301,24 +301,334 @@ File: images/"roulette wheel selection".png Graphic file (type png)
 Package pdftex.def Info: images/"roulette wheel selection".png used on input li
 ne 95.
 (pdftex.def)             Requested size: 313.6711pt x 126.47218pt.
- [5 <./images/roulette wheel selection.png>] [6] (./methodology.aux) ) 
+ [5 <./images/roulette wheel selection.png>]
+<images/crossover/"Single point crossover".png, id=35, 489.83pt x 508.90125pt>
+File: images/crossover/"Single point crossover".png Graphic file (type png)
+
+<use images/crossover/"Single point crossover".png>
+Package pdftex.def Info: images/crossover/"Single point crossover".png used on 
+input line 113.
+(pdftex.def)             Requested size: 103.50105pt x 107.52469pt.
+
+<images/crossover/"Two point crossover".png, id=36, 488.82625pt x 509.905pt>
+File: images/crossover/"Two point crossover".png Graphic file (type png)
+
+<use images/crossover/"Two point crossover".png>
+Package pdftex.def Info: images/crossover/"Two point crossover".png used on inp
+ut line 119.
+(pdftex.def)             Requested size: 103.50105pt x 107.9624pt.
+
+<images/crossover/"Uniform crossover".png, id=37, 487.8225pt x 508.90125pt>
+File: images/crossover/"Uniform crossover".png Graphic file (type png)
+
+<use images/crossover/"Uniform crossover".png>
+Package pdftex.def Info: images/crossover/"Uniform crossover".png used on input
+ line 125.
+(pdftex.def)             Requested size: 103.50105pt x 107.9673pt.
+
+
+LaTeX Warning: Citation `Kusiak' on page 6 undefined on input line 138.
+
+! Undefined control sequence.
+l.138 ...used is the classical Jensen model \citep
+                                                  {Jensen}, which is used in...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `table:overview' on page 6 undefined on input line 138
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+! Undefined control sequence.
+l.140 ...model wind distribution quite well \citep
+                                                  {Justus}. The probability ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `equation:Weibull' on page 6 undefined on input line 1
+40.
+
+! Argument of \frac has an extra }.
+<inserted text> 
+                \par 
+l.146 \frac
+           {k}{c} \left( \frac{x}{c} \right)^{k-1} e^{- \left( \frac{x}{c} \...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \frac was complete.
+<to be read again> 
+                   \par 
+l.146 \frac
+           {k}{c} \left( \frac{x}{c} \right)^{k-1} e^{- \left( \frac{x}{c} \...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.146 \frac
+           {k}{c} \left( \frac{x}{c} \right)^{k-1} e^{- \left( \frac{x}{c} \...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.146 \frac
+           {k}{c} \left( \frac{x}{c} \right)^{k-1} e^{- \left( \frac{x}{c} \...
+I'm guessing that you meant to end an alignment here.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.146 \frac
+           {k}{c} \left( \frac{x}{c} \right)^{k-1} e^{- \left( \frac{x}{c} \...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.146 ...-1} e^{- \left( \frac{x}{c} \right)^k } &
+                                                   \text{if} \hspace{1mm} x ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.146 ...{- \left( \frac{x}{c} \right)^k } & \text
+                                                  {if} \hspace{1mm} x \geq 0 \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.147 ...                                        &
+                                                   \text{if} \hspace{1mm}   ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.147 ...                                  & \text
+                                                  {if} \hspace{1mm}     x < 0
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[6 <./images/crossover/Single point crossover.png> <./images/crossover/Two poin
+t crossover.png> <./images/crossover/Uniform crossover.png>]
+! Undefined control sequence.
+l.153 ... value for wind speed distribution \citep
+                                                  {Justus}. On the other han...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `figure:weibull distribution' on page 7 undefined on i
+nput line 153.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+<images/"Weibull".png, id=45, 578.16pt x 433.62pt>
+File: images/"Weibull".png Graphic file (type png)
+ <use images/"Weibull".png>
+Package pdftex.def Info: images/"Weibull".png used on input line 158.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+LaTeX Warning: Citation `Kusiak' on page 7 undefined on input line 166.
+
+
+LaTeX Warning: Reference `equation:Power Curv (API)' on page 7 undefined on inp
+ut line 166.
+
+! Misplaced alignment tab character &.
+l.171    0                                  &
+                                              \text{if }     v < v_{cut-in} \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.171 ...                                  & \text
+                                                  {if }     v < v_{cut-in} \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.172    \lambda v + \eta           &
+                                      \text{if }     v_{cut-in} \leq v \leq ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.172    \lambda v + \eta           & \text
+                                           {if }     v_{cut-in} \leq v \leq ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.173    P_{rated}                        &
+                                            \text{if }     v_{cut-out} > v >...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.173    P_{rated}                        & \text
+                                                 {if }     v_{cut-out} > v >...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (10.62471pt too wide) detected at line 176
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 ) = [] []\
+OML/cmm/m/it/10 v < v[][] ^^Uv \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^Q[]v[] \OMS
+/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 v[][]
+ P[][]v[] > v > v[]:[] []
+ []
+
+
+LaTeX Warning: Reference `Objective function' on page 7 undefined on input line
+ 182.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+[7 <./images/Weibull.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 185.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 185.
+
+! Undefined control sequence.
+<argument> ...ft ( c_t \cdot n + c_s \cdot \floor 
+                                                  *{\frac {n}{m}} \right ) \...
+l.186 ...eft( \frac{1 - (1 + r)^{-y}}{r} \right) }
+                                                   \cdot \frac{1}{8760 \cdot...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `Objective function' on page 8 undefined on input line
+ 192.
+
+
+LaTeX Warning: Reference `Parameters' on page 8 undefined on input line 192.
+
+
+LaTeX Warning: Reference `Parameters' on page 8 undefined on input line 192.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+[8] [9] (./methodology.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2833 strings out of 493117
- 46324 string characters out of 6135434
- 107308 words of memory out of 5000000
- 6286 multiletter control sequences out of 15000+600000
- 5158 words of font info for 19 fonts, out of 8000000 for 9000
+ 2893 strings out of 493117
+ 47733 string characters out of 6135434
+ 108367 words of memory out of 5000000
+ 6335 multiletter control sequences out of 15000+600000
+ 6981 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,38p,1185b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on methodology.pdf (6 pages, 418452 bytes).
+ 38i,10n,38p,1714b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on methodology.pdf (9 pages, 759721 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

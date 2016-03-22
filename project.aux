@@ -247,49 +247,70 @@
 \newlabel{RF1}{42}
 \@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces A simplified overview over the publications from section \ref  {section:relatedworkga}. In the column ''Wind Model'' the term ''Simple scenarios'' refer to the three wind scenarios developed by \cite  {Mosetti}. The cost model and objective function columns are defined as ''Simple'' if it only takes into account the number of turbines. In the ''GA'' column, ''SGA'' stands for simple genetic algorithm, and ''PDGA'' stands for population distributed genetic algorithm.\relax }}{42}{table.caption.22}}
 \newlabel{table:overview}{{3.3}{42}{A simplified overview over the publications from section \ref {section:relatedworkga}. In the column ''Wind Model'' the term ''Simple scenarios'' refer to the three wind scenarios developed by \cite {Mosetti}. The cost model and objective function columns are defined as ''Simple'' if it only takes into account the number of turbines. In the ''GA'' column, ''SGA'' stands for simple genetic algorithm, and ''PDGA'' stands for population distributed genetic algorithm.\relax }{table.caption.22}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Method}{43}{chapter.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Methodology}{43}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{section:method}{{4}{43}{Method}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Implementation Details}{43}{section.4.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Wind Farm Parameters}{43}{section.4.2}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Technical Description}{44}{chapter.5}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:technical}{{5}{44}{Technical Description}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Application User Interface (API)}{44}{section.5.1}}
-\newlabel{section:api}{{5.1}{44}{Application User Interface (API)}{section.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Class diagram of the most important variables and methods from the API provided by GECCO 2015.\relax }}{45}{figure.caption.23}}
-\newlabel{Class Diagram}{{5.1}{45}{Class diagram of the most important variables and methods from the API provided by GECCO 2015.\relax }{figure.caption.23}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Genetic Algorithm}{45}{subsection.5.1.1}}
+\newlabel{section:method}{{4}{43}{Methodology}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}System Architecture}{43}{section.4.1}}
+\newlabel{section:systemt architecture}{{4.1}{43}{System Architecture}{section.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Class Diagram.\relax }}{44}{figure.caption.23}}
+\newlabel{figure:class diagram}{{4.1}{44}{Class Diagram.\relax }{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Genetic Algorithm}{44}{section.4.2}}
+\newlabel{section:genetic algorithm}{{4.2}{44}{Genetic Algorithm}{section.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Adult Selection}{44}{subsection.4.2.1}}
+\newlabel{subsection:adult selection}{{4.2.1}{44}{Adult Selection}{subsection.4.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Genetic algorithm.\relax }}{45}{figure.caption.24}}
+\newlabel{figure:genetic algorithm steps}{{4.2}{45}{Genetic algorithm.\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.\relax }}{46}{figure.caption.25}}
+\newlabel{figure:generational mixing}{{4.3}{46}{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.\relax }{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.\relax }}{46}{figure.caption.26}}
+\newlabel{figure:overproduction}{{4.4}{46}{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.\relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Parent Selection}{46}{subsection.4.2.2}}
+\newlabel{subsection:parent selection}{{4.2.2}{46}{Parent Selection}{subsection.4.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Tournament selection.\relax }}{47}{figure.caption.27}}
+\newlabel{figure:tournament selection}{{4.5}{47}{Tournament selection.\relax }{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.\relax }}{48}{figure.caption.28}}
+\newlabel{figure:roulette wheel selection}{{4.6}{48}{Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.\relax }{figure.caption.28}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Genetic Operations}{48}{subsection.4.2.3}}
+\newlabel{subsection:genetic operations}{{4.2.3}{48}{Genetic Operations}{subsection.4.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.1}Crossover and Elitism}{48}{subsubsection.4.2.3.1}}
 \citation{Kusiak}
 \citation{Jensen}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Binary representation of a wind farm. Red cells contains obstacles and are therefore not included in the binary representation. White cells represents empty positions, grey cells contains turbines.\relax }}{46}{figure.caption.24}}
-\newlabel{Binary Representation (API)}{{5.2}{46}{Binary representation of a wind farm. Red cells contains obstacles and are therefore not included in the binary representation. White cells represents empty positions, grey cells contains turbines.\relax }{figure.caption.24}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Fitness function}{46}{subsection.5.1.2}}
-\newlabel{subsection:fitnessfunction}{{5.1.2}{46}{Fitness function}{subsection.5.1.2}{}}
-\newlabel{Objective function}{{5.1}{46}{Fitness function}{equation.5.1.1}{}}
+\newlabel{figure:single point crossover}{{4.7a}{49}{Single point crossover.\relax }{figure.caption.29}{}}
+\newlabel{sub@figure:single point crossover}{{a}{49}{Single point crossover.\relax }{figure.caption.29}{}}
+\newlabel{figure:two point crossover}{{4.7b}{49}{Two point crossover.\relax }{figure.caption.29}{}}
+\newlabel{sub@figure:two point crossover}{{b}{49}{Two point crossover.\relax }{figure.caption.29}{}}
+\newlabel{figure:uniform crossover}{{4.7c}{49}{Uniform crossover.\relax }{figure.caption.29}{}}
+\newlabel{sub@figure:uniform crossover}{{c}{49}{Uniform crossover.\relax }{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Crossover methods.\relax }}{49}{figure.caption.29}}
+\newlabel{figure:crossover methods}{{4.7}{49}{Crossover methods.\relax }{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.2}Mutation}{49}{subsubsection.4.2.3.2}}
 \citation{Justus}
 \citation{Justus}
-\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }}{47}{table.caption.25}}
-\newlabel{Parameters}{{5.1}{47}{Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }{table.caption.25}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Wake-, Wind- and Power Model}{47}{subsection.5.1.3}}
-\newlabel{subsection:wakewindpower}{{5.1.3}{47}{Wake-, Wind- and Power Model}{subsection.5.1.3}{}}
-\newlabel{equation:Weibull}{{5.2}{47}{Wake-, Wind- and Power Model}{equation.5.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Wind-, Wake- and Power Model}{50}{subsection.4.2.4}}
+\newlabel{subsection:wind-, wake- and power model}{{4.2.4}{50}{Wind-, Wake- and Power Model}{subsection.4.2.4}{}}
+\newlabel{equation:Weibull}{{4.1}{50}{Wind-, Wake- and Power Model}{equation.4.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }}{50}{figure.caption.30}}
+\newlabel{figure:weibull distribution}{{4.8}{50}{The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }{figure.caption.30}{}}
 \citation{Kusiak}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }}{48}{figure.caption.26}}
-\newlabel{figure:weibull distribution}{{5.3}{48}{The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }{figure.caption.26}{}}
-\newlabel{equation:Power Curv (API)}{{5.3}{48}{Wake-, Wind- and Power Model}{equation.5.1.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Test Simulation}{48}{section.5.2}}
-\newlabel{section:testsimulation}{{5.2}{48}{Test Simulation}{section.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Minimum-, maximum-, and average fitness for two scenarios provided by GECCO; (a) Fitness for scenario 1, without obstacles, (b) Fitness for scenario 1 with obstacles. Each simulation was run for 50 generations, ten times, and the result is averaged over these ten runs.\relax }}{49}{figure.caption.27}}
-\newlabel{Test Plots}{{5.4}{49}{Minimum-, maximum-, and average fitness for two scenarios provided by GECCO; (a) Fitness for scenario 1, without obstacles, (b) Fitness for scenario 1 with obstacles. Each simulation was run for 50 generations, ten times, and the result is averaged over these ten runs.\relax }{figure.caption.27}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Future Work}{49}{section.5.3}}
-\newlabel{section:futurework}{{5.3}{49}{Future Work}{section.5.3}{}}
+\newlabel{equation:Power Curv (API)}{{4.2}{51}{Wind-, Wake- and Power Model}{equation.4.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Fitness Function}{51}{subsection.4.2.5}}
+\newlabel{subsection:fitness function}{{4.2.5}{51}{Fitness Function}{subsection.4.2.5}{}}
+\newlabel{Objective function}{{4.3}{51}{Fitness Function}{equation.4.2.3}{}}
 \bibdata{chapters/biblography}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Simplified version of class diagram from figure \ref  {Class Diagram} extended with different distributed genetic algorithms (green).\relax }}{50}{figure.caption.28}}
-\newlabel{Class Diagram DGA}{{5.5}{50}{Simplified version of class diagram from figure \ref {Class Diagram} extended with different distributed genetic algorithms (green).\relax }{figure.caption.28}{}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{50}{figure.caption.28}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }}{52}{table.caption.31}}
+\newlabel{Parameters}{{4.1}{52}{Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }{table.caption.31}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Island Model}{52}{section.4.3}}
+\newlabel{section:island model}{{4.3}{52}{Island Model}{section.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Cellular Model}{52}{section.4.4}}
+\newlabel{section:cellular model}{{4.4}{52}{Cellular Model}{section.4.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Pool Model}{52}{section.4.5}}
+\newlabel{section:pool model}{{4.5}{52}{Pool Model}{section.4.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Scenarios}{52}{section.4.6}}
+\newlabel{section:scenarios}{{4.6}{52}{Scenarios}{section.4.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Motivation}{52}{section.4.7}}
+\newlabel{section:motivation}{{4.7}{52}{Motivation}{section.4.7}{}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{52}{section.4.7}}
 \bibcite{Albring}{{1}{1967}{{Albring}}{{}}}
 \bibcite{Bilbao}{{2}{2009}{{Bilbao and Alba}}{{}}}
 \bibcite{Chen}{{3}{2013}{{Chen et~al.}}{{}}}
