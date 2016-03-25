@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {4.4}Cellular Model}{53}{section.4.4}
 \contentsline {section}{\numberline {4.5}Pool Model}{53}{section.4.5}
 \contentsline {section}{\numberline {4.6}Scenarios}{53}{section.4.6}
-\contentsline {section}{\numberline {4.7}Motivation}{53}{section.4.7}
-\contentsline {chapter}{\numberline {5}Results}{54}{chapter.5}
-\contentsline {section}{\numberline {5.1}Parameter settings}{54}{section.5.1}
-\contentsline {chapter}{Bibliography}{54}{section.5.1}
+\contentsline {section}{\numberline {4.7}Motivation behind Implementing the Genetic Algorithm from Scratch}{53}{section.4.7}
+\contentsline {chapter}{\numberline {5}Results}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Parameter settings}{55}{section.5.1}
+\contentsline {chapter}{Bibliography}{55}{section.5.1}

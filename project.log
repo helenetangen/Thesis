@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  25 MAR 2016 16:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  25 MAR 2016 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1008,7 +1008,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-<images/"Wake Effect".png, id=251, 502.87875pt x 387.4475pt>
+<images/"Wake Effect".png, id=252, 502.87875pt x 387.4475pt>
 File: images/"Wake Effect".png Graphic file (type png)
 
 <use images/"Wake Effect".png>
@@ -1029,7 +1029,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
  []
 
 [11 <./images/Wake Effect.png>]
-<images/"GA".png, id=291, 577.15625pt x 387.4475pt>
+<images/"GA".png, id=292, 577.15625pt x 387.4475pt>
 File: images/"GA".png Graphic file (type png)
  <use images/"GA".png>
 Package pdftex.def Info: images/"GA".png used on input line 48.
@@ -1040,7 +1040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
  []
 
 [12 <./images/GA.png>]
-<images/"Genotype and Phenotype".png, id=301, 658.46pt x 418.56375pt>
+<images/"Genotype and Phenotype".png, id=302, 658.46pt x 418.56375pt>
 File: images/"Genotype and Phenotype".png Graphic file (type png)
 
 <use images/"Genotype and Phenotype".png>
@@ -1053,7 +1053,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
  []
 
 [13 <./images/Genotype and Phenotype.png>]
-<images/"parent selection"/"tournament selection".png, id=312, 1020.81375pt x 4
+<images/"parent selection"/"tournament selection".png, id=313, 1020.81375pt x 4
 58.71375pt>
 File: images/"parent selection"/"tournament selection".png Graphic file (type p
 ng)
@@ -1067,7 +1067,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
  []
 
 [14 <./images/parent selection/tournament selection.png>]
-<images/crossover/"Uniform Crossover".png, id=326, 487.8225pt x 508.90125pt>
+<images/crossover/"Uniform Crossover".png, id=327, 487.8225pt x 508.90125pt>
 File: images/crossover/"Uniform Crossover".png Graphic file (type png)
 
 <use images/crossover/"Uniform Crossover".png>
@@ -1079,7 +1079,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
-<images/"Mutation".png, id=328, 487.8225pt x 257.96375pt>
+<images/"Mutation".png, id=329, 487.8225pt x 257.96375pt>
 File: images/"Mutation".png Graphic file (type png)
 
 <use images/"Mutation".png>
@@ -1107,7 +1107,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
 [16]
 <images/"population distributed genetic algorithms"/"master-slave model".png, i
-d=344, 366.36874pt x 367.3725pt>
+d=345, 366.36874pt x 367.3725pt>
 File: images/"population distributed genetic algorithms"/"master-slave model".p
 ng Graphic file (type png)
 
@@ -1122,7 +1122,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
  []
 
 
-<images/"population distributed genetic algorithms"/"island model".png, id=350,
+<images/"population distributed genetic algorithms"/"island model".png, id=351,
  484.81125pt x 407.5225pt>
 File: images/"population distributed genetic algorithms"/"island model".png Gra
 phic file (type png)
@@ -1148,7 +1148,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
 
 <images/"population distributed genetic algorithms"/"cellular model".png, id=37
-6, 455.7025pt x 395.4775pt>
+7, 455.7025pt x 395.4775pt>
 File: images/"population distributed genetic algorithms"/"cellular model".png G
 raphic file (type png)
 
@@ -1168,7 +1168,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
 
 <images/"population distributed genetic algorithms"/"island-master-slave hybrid
-".png, id=389, 525.965pt x 603.25375pt>
+".png, id=390, 525.965pt x 603.25375pt>
 File: images/"population distributed genetic algorithms"/"island-master-slave h
 ybrid".png Graphic file (type png)
 
@@ -1179,7 +1179,7 @@ land-master-slave hybrid".png used on input line 184.
 (pdftex.def)             Requested size: 116.99673pt x 113.80937pt.
 
 <images/"population distributed genetic algorithms"/"island-cellular hybrid mod
-el".png, id=390, 484.81125pt x 418.56375pt>
+el".png, id=391, 484.81125pt x 418.56375pt>
 File: images/"population distributed genetic algorithms"/"island-cellular hybri
 d model".png Graphic file (type png)
 
@@ -1190,7 +1190,7 @@ land-cellular hybrid model".png used on input line 188.
 (pdftex.def)             Requested size: 117.00066pt x 113.80566pt.
 
 <images/"population distributed genetic algorithms"/"island-island hybrid model
-".png, id=391, 484.81125pt x 408.52625pt>
+".png, id=392, 484.81125pt x 408.52625pt>
 File: images/"population distributed genetic algorithms"/"island-island hybrid 
 model".png Graphic file (type png)
 
@@ -1213,7 +1213,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
 rid.png> <./images/population distributed genetic algorithms/island-cellular hy
 brid model.png> <./images/population distributed genetic algorithms/island-isla
 nd hybrid model.png>]
-<images/"population distributed genetic algorithms"/"pool model".png, id=407, 8
+<images/"population distributed genetic algorithms"/"pool model".png, id=408, 8
 48.16875pt x 387.4475pt>
 File: images/"population distributed genetic algorithms"/"pool model".png Graph
 ic file (type png)
@@ -1263,7 +1263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<images/"Wind Farm Representation".png, id=444, 1330.9725pt x 933.4875pt>
+<images/"Wind Farm Representation".png, id=445, 1330.9725pt x 933.4875pt>
 File: images/"Wind Farm Representation".png Graphic file (type png)
 
 <use images/"Wind Farm Representation".png>
@@ -1302,7 +1302,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-<images/"Clustering Design (Zhao)".png, id=501, 929.4725pt x 650.43pt>
+<images/"Clustering Design (Zhao)".png, id=502, 929.4725pt x 650.43pt>
 File: images/"Clustering Design (Zhao)".png Graphic file (type png)
 
 <use images/"Clustering Design (Zhao)".png>
@@ -1319,7 +1319,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
-<images/"Ring Topology".png, id=519, 628.3475pt x 328.22626pt>
+<images/"Ring Topology".png, id=520, 628.3475pt x 328.22626pt>
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
@@ -1336,7 +1336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
  []
 
 [29 <./images/Ring Topology.png>]
-<images/"Individual Representation (Mora)".png, id=537, 417.56pt x 216.81pt>
+<images/"Individual Representation (Mora)".png, id=538, 417.56pt x 216.81pt>
 File: images/"Individual Representation (Mora)".png Graphic file (type png)
 
 <use images/"Individual Representation (Mora)".png>
@@ -1374,7 +1374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
  []
 
 [31]
-<images/"Civil Cost Greedy Algorithm (Gonzales)".png, id=572, 1059.96pt x 893.3
+<images/"Civil Cost Greedy Algorithm (Gonzales)".png, id=573, 1059.96pt x 893.3
 375pt>
 File: images/"Civil Cost Greedy Algorithm (Gonzales)".png Graphic file (type pn
 g)
@@ -1402,7 +1402,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-<images/"Representation (Chen)".png, id=616, 1050.92625pt x 977.6525pt>
+<images/"Representation (Chen)".png, id=617, 1050.92625pt x 977.6525pt>
 File: images/"Representation (Chen)".png Graphic file (type png)
 
 <use images/"Representation (Chen)".png>
@@ -1494,7 +1494,7 @@ Overfull \hbox (0.85799pt too wide) in paragraph at lines 6--7
 leciton and Crossover
  []
 
-<images/"Class Diagram".png, id=844, 1153.30875pt x 1011.78pt>
+<images/"Class Diagram".png, id=845, 1153.30875pt x 1011.78pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1506,7 +1506,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [43
 
-] <images/"genetic algorithm steps".png, id=851, 849.1725pt x 570.13pt>
+] <images/"genetic algorithm steps".png, id=852, 849.1725pt x 570.13pt>
 File: images/"genetic algorithm steps".png Graphic file (type png)
 
 <use images/"genetic algorithm steps".png>
@@ -1518,7 +1518,7 @@ e 24.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [44 <./images/Class Diagram.png>]
-<images/"representation program".png, id=860, 767.86874pt x 243.91125pt>
+<images/"representation program".png, id=861, 767.86874pt x 243.91125pt>
 File: images/"representation program".png Graphic file (type png)
 
 <use images/"representation program".png>
@@ -1545,7 +1545,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
  []
 
 
-<images/"adult selection"/"generational mixing".png, id=868, 889.3225pt x 780.9
+<images/"adult selection"/"generational mixing".png, id=869, 889.3225pt x 780.9
 175pt>
 File: images/"adult selection"/"generational mixing".png Graphic file (type png
 )
@@ -1563,7 +1563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
  []
 
 
-<images/"adult selection"/overproduction.png, id=870, 1171.37625pt x 579.16376p
+<images/"adult selection"/overproduction.png, id=871, 1171.37625pt x 579.16376p
 t>
 File: images/"adult selection"/overproduction.png Graphic file (type png)
  <use images/"adult selection"/overproduction.png>
@@ -1604,7 +1604,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
  []
 
 
-<images/"parent selection"/"roulette wheel selection".png, id=886, 627.34375pt 
+<images/"parent selection"/"roulette wheel selection".png, id=887, 627.34375pt 
 x 252.945pt>
 File: images/"parent selection"/"roulette wheel selection".png Graphic file (ty
 pe png)
@@ -1617,7 +1617,7 @@ ng used on input line 97.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [48] [49 <./images/parent selection/roulette wheel selection.png>]
-<images/crossover/"Single point crossover".png, id=905, 489.83pt x 508.90125pt>
+<images/crossover/"Single point crossover".png, id=906, 489.83pt x 508.90125pt>
 File: images/crossover/"Single point crossover".png Graphic file (type png)
 <use images/crossover/"Single point crossover".png>
 Package pdftex.def Info: images/crossover/"Single point crossover".png used on 
@@ -1628,7 +1628,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 []\OT1/cmr/m/n/10.95 (a) |Sin-gle point
  []
 
-<images/crossover/"Two point crossover".png, id=906, 488.82625pt x 509.905pt>
+<images/crossover/"Two point crossover".png, id=907, 488.82625pt x 509.905pt>
 File: images/crossover/"Two point crossover".png Graphic file (type png)
 
 <use images/crossover/"Two point crossover".png>
@@ -1636,7 +1636,7 @@ Package pdftex.def Info: images/crossover/"Two point crossover".png used on inp
 ut line 121.
 (pdftex.def)             Requested size: 117.00119pt x 122.04514pt.
 
-<images/crossover/"Uniform crossover".png, id=907, 487.8225pt x 508.90125pt>
+<images/crossover/"Uniform crossover".png, id=908, 487.8225pt x 508.90125pt>
 File: images/crossover/"Uniform crossover".png Graphic file (type png)
 
 <use images/crossover/"Uniform crossover".png>
@@ -1654,7 +1654,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<images/"Weibull".png, id=928, 578.16pt x 433.62pt>
+<images/"Weibull".png, id=929, 578.16pt x 433.62pt>
 File: images/"Weibull".png Graphic file (type png)
  <use images/"Weibull".png>
 Package pdftex.def Info: images/"Weibull".png used on input line 160.
@@ -1682,33 +1682,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
-[52]) (./chapters/results.tex [53]
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+[53]) (./chapters/results.tex [54]
 Chapter 5.
-) (./project.bbl [54
+) (./project.bbl [55
 
-] [55
+] [56
 
-] [56]) [57]
+] [57]) [58]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./project.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: 1085C35394910CF88BC6B9B111896681;2199.
+(rerunfilecheck)             Checksum: CDF877C233229EBC328992AF738BE72F;2254.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 18912 strings out of 493117
- 352802 string characters out of 6135434
- 427624 words of memory out of 5000000
+ 18913 strings out of 493117
+ 352809 string characters out of 6135434
+ 427687 words of memory out of 5000000
  21835 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1728,10 +1730,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (58 pages, 1454531 bytes).
+Output written on project.pdf (59 pages, 1456444 bytes).
 PDF statistics:
- 1067 PDF objects out of 1200 (max. 8388607)
- 890 compressed objects within 9 object streams
- 164 named destinations out of 1000 (max. 500000)
+ 1073 PDF objects out of 1200 (max. 8388607)
+ 895 compressed objects within 9 object streams
+ 165 named destinations out of 1000 (max. 500000)
  419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
