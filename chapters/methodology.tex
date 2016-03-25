@@ -1,15 +1,4 @@
-\documentclass{article}
-\usepackage{blindtext}
-\usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{color}
-
-
-\begin{document}
-
-
-\section{Methodology}\label{chapter:methodology}%Todo change into chapter
+\chapter{Methodology}\label{chapter:methodology}%Todo change into chapter
 In this chapter, the simulator used to investigate the research questions is described. An overview of the system is presented in section \ref{section:systemt architecture}. Section \ref{section:genetic algorithm} includes implementation details, and design decisions made when implementing the genetic algorithm which is the foundation for all the population distributed genetic algorithms. Sections \ref{section:island model}-\ref{section:pool model} contains implementation details of the population distributed genetic algorithms. The wind scenarios used to evaluate the different population distributed genetic algorithm are described in section \ref{section:scenarios}, and the choice of implementing the genetic algorithm from scratch is defended in section \ref{section:motivation}.
 
 
@@ -39,6 +28,19 @@ As mentioned in \textcolor{red}{reference chapter background}, the genetic algor
 \end{figure}
 
 
+\subsection{Representation}
+As most of the studies from chapter \ref{chapter:relatedwork}, the individuals implemented in the genetic algorithm for this thesis uses a binary representation. However, each position in the binary array can be directly mapped into an integer position which is kept in an array called ''grid''. The purpose behind this design decision is that not all positions in the terrain, when dividing the terrain into a squared grid, are possible turbine positions because the existence of obstacles. By implementing individuals this way, the genetic operations can be performed on individuals without having to check for illegal positions since this is already taken care as soon as the scenario is read from file. Also, this design decision makes sure that no space is wasted in the representation. Figure \ref{figure:representation} shows how the binary representation and ''grid''-array are mapped into a wind farm. \textcolor{red}{Explain the figure when it is made.}. Wind parameters and obstacles positions are read into the program from the scenarios provided by GECCO 2016, these will be described later in this chapter.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.5]{images/"representation program"}
+\caption{Individual representation. The grey squares represent legal turbine positions in the terrain, while as the red represent illegal positions. Since there are only nine legal positions in this example, an individual is represented as a binary string of length 9. The grid array is shared between all the individuals and holds the (x, y)-coordinates for each legal position.}
+\label{figure:representation}
+\end{center}
+\end{figure}
+
+
 \subsection{Adult Selection}\label{subsection:adult selection}
 Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms were implemented in this thesis: Full generational replacement,  generational mixing, and overproduction. Each method was tested in order to decide which adult selection method was more suitable for solving the wind farm layout optimization problem. \\
 
@@ -49,7 +51,7 @@ Adult selection is the process of selecting which individuals that are allowed t
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.2]{images/"adult selection"/"Generational Mixing"}
+\includegraphics[scale=0.2]{images/"adult selection"/"generational mixing"}
 \caption{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.}
 \label{figure:generational mixing}
 \end{center}
@@ -61,7 +63,7 @@ Adult selection is the process of selecting which individuals that are allowed t
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.2]{images/"adult selection"/Overproduction}
+\includegraphics[scale=0.2]{images/"adult selection"/overproduction}
 \caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.}
 \label{figure:overproduction}
 \end{center}
@@ -77,7 +79,7 @@ Parent selection is the selection of which adults become parents for the next ch
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.2]{images/"Tournament Selection"}
+\includegraphics[scale=0.2]{images/"parent selection"/"tournament selection"}
 \caption{Tournament selection.}
 \label{figure:tournament selection}
 \end{center}
@@ -92,7 +94,7 @@ Parent selection is the selection of which adults become parents for the next ch
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.5]{images/"roulette wheel selection"}
+\includegraphics[scale=0.5]{images/"parent selection"/"roulette wheel selection"}
 \caption{Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.}
 \label{figure:roulette wheel selection}
 \end{center}
@@ -179,7 +181,40 @@ f(x; c, k)  =
 
 
 \subsection{Fitness Function}\label{subsection:fitness function}
+The main task of the evaluation classes is to calculate the fitness of each individual based on the fitness function.  The fitness function to be optimized is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
 
+\begin{small}
+\begin{equation}
+fitness =  \frac{ \left( c_t \cdot n + c_s \cdot \floor*{\frac{n}{m}} \right) \left( \frac{2}{3} + \frac{1}{3} \cdot e^{-0.00174n^2} \right) + c_{OM} \cdot n}{\left( \frac{1 - (1 + r)^{-y}}{r} \right) } \cdot \frac{1}{8760 \cdot P} + \frac{0.1}{n}
+\label{Objective function} 
+\end{equation}
+\end{small}
+
+
+\noindent Description and numerical values of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize. It is dependent on turbines count, position, wind scenario and so on, and is off course therefore not provided in table \ref{Parameters} either.\\
+
+
+\begin{table}[h!]
+\begin{center}
+\caption{Description and value of each parameter used in the objective function provided by GECCO 2015.}
+\label{Parameters}
+\begin{tabular}{l|l|l}
+\textbf{Parameter} & \textbf{Description} & \textbf{Value} \\ 
+\hline 
+$c_t$ & Turbine cost (usd) & 750 000 \\ 
+$c_s$ & Substation cost (usd) & 8 000 000 \\ 
+$m$ & Turbines per substation & 30 \\ 
+$r$ & Interest rate & 0.03 \\ 
+$y$ & Farm lifetime (years) & 20 \\ 
+$c_{OM}$ & Yearly operating costs per turbine & 20 000 \\ 
+$n$ & Number of turbines &  \\ 
+$m$ & Farm energy output &  \\  
+\end{tabular} 
+\end{center}
+\end{table}
+
+
+\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator represents the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \\
 
 
 \section{Island Model}\label{section:island model}
@@ -195,6 +230,3 @@ f(x; c, k)  =
 
 
 \section{Motivation}\label{section:motivation}
-
-
-\end{document}

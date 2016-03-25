@@ -74,8 +74,8 @@ Selection is the process of selecting which individuals from a given population 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.2]{images/"Tournament selection"}
-\caption{Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual  in the group, the one with fitness 9, is selected for reproduction \citep{Razali}.}
+\includegraphics[scale=0.2]{images/"parent selection"/"tournament selection"}
+\caption{Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual  in the group, the one with fitness 4, is selected for reproduction \citep{Razali}.}
 \label{Tournament selection}
 \end{center}
 \end{figure}
@@ -126,7 +126,7 @@ As mentioned, the master-slave model is not a population distributed genetic alg
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.3]{images/"Master-Slave Model"}
+\includegraphics[scale=0.3]{images/"population distributed genetic algorithms"/"master-slave model"}
 \caption{Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \citep{Gong}.}
 \label{Master-Slave Model}
 \end{center}
@@ -142,7 +142,7 @@ In the Island model, the population is divided into sub populations that are dis
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.3]{images/"Island Model"}
+\includegraphics[scale=0.3]{images/"population distributed genetic algorithms"/"island model"}
 \caption{An island model using a ring topology with four demes (Islands) of size five. \citep{Gong}}
 \label{Island model}
 \end{center}
@@ -161,7 +161,7 @@ Figure \ref{Cellular model} displays the cellular model from \cite{Gong}. In the
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.3]{images/"Cellular Model"}
+\includegraphics[scale=0.3]{images/"population distributed genetic algorithms"/"cellular model"}
 \caption{Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell \citep{Gong}.}
 \label{Cellular model}
 \end{center}
@@ -181,15 +181,15 @@ Hybrid models are population distributed genetic algorithms that combine differe
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth, height=4cm]{images/"Island-Master-Slave Hybrid"}
+        \includegraphics[width=\textwidth, height=4cm]{images/"population distributed genetic algorithms"/"island-master-slave hybrid"}
         \caption{}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth, height=4cm]{images/"Island-Cellular Hybrid Model"}
+        \includegraphics[width=\textwidth, height=4cm]{images/"population distributed genetic algorithms"/"island-cellular hybrid model"}
         \caption{}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth, height=4cm]{images/"Island-Island Hybrid Model"}
+        \includegraphics[width=\textwidth, height=4cm]{images/"population distributed genetic algorithms"/"island-island hybrid model"}
         \caption{}
     \end{subfigure}
     \caption{Different hybrid models; (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-Island hybrid model \citep{Gong}.}
@@ -206,7 +206,7 @@ Another population distributed model is called the pool model. In this model the
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.3]{images/"Pool Model"}
+\includegraphics[scale=0.3]{images/"population distributed genetic algorithms"/"pool model"}
 \caption{The pool model. Each processor has its own positions in the pool which it returns individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, as indicated by the arrows, but can only write them back to its own positions, given that their fitness is higher than the fitness of the individual currently occupying the position \citep{Gong}.}
 \label{Pool Model}
 \end{center}

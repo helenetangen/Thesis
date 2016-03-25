@@ -16,14 +16,17 @@
 \BOOKMARK [0][-]{chapter.4}{Methodology}{}% 16
 \BOOKMARK [1][-]{section.4.1}{System Architecture}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.2}{Genetic Algorithm}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.2.1}{Adult Selection}{section.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.2.2}{Parent Selection}{section.4.2}% 20
-\BOOKMARK [2][-]{subsection.4.2.3}{Genetic Operations}{section.4.2}% 21
-\BOOKMARK [2][-]{subsection.4.2.4}{Wind-, Wake- and Power Model}{section.4.2}% 22
-\BOOKMARK [2][-]{subsection.4.2.5}{Fitness Function}{section.4.2}% 23
-\BOOKMARK [1][-]{section.4.3}{Island Model}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{Cellular Model}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.5}{Pool Model}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.6}{Scenarios}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.7}{Motivation}{chapter.4}% 28
-\BOOKMARK [0][-]{section.4.7}{Bibliography}{}% 29
+\BOOKMARK [2][-]{subsection.4.2.1}{Representation}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.2}{Adult Selection}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.3}{Parent Selection}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.4}{Genetic Operations}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.5}{Wind-, Wake- and Power Model}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.6}{Fitness Function}{section.4.2}% 24
+\BOOKMARK [1][-]{section.4.3}{Island Model}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.4}{Cellular Model}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.5}{Pool Model}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.6}{Scenarios}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.7}{Motivation}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 30
+\BOOKMARK [1][-]{section.5.1}{Parameter settings}{chapter.5}% 31
+\BOOKMARK [0][-]{section.5.1}{Bibliography}{}% 32

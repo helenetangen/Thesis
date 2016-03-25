@@ -67,8 +67,8 @@
 \newlabel{Representation}{{2.3}{13}{Genotypes and phenotypes for four individuals where the phenotype is the decimal value of the genotype (binary number).\relax }{figure.caption.5}{}}
 \citation{Razali}
 \citation{Razali}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual in the group, the one with fitness 9, is selected for reproduction \citep  {Razali}.\relax }}{14}{figure.caption.6}}
-\newlabel{Tournament selection}{{2.4}{14}{Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual in the group, the one with fitness 9, is selected for reproduction \citep {Razali}.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual in the group, the one with fitness 4, is selected for reproduction \citep  {Razali}.\relax }}{14}{figure.caption.6}}
+\newlabel{Tournament selection}{{2.4}{14}{Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual in the group, the one with fitness 4, is selected for reproduction \citep {Razali}.\relax }{figure.caption.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Uniform crossover. A child genotype is created by a combination of the genotypes of both parents. Each gene is drawn from one of the parents with equal probability.\relax }}{15}{figure.caption.7}}
 \newlabel{Uniform Crossover}{{2.5}{15}{Uniform crossover. A child genotype is created by a combination of the genotypes of both parents. Each gene is drawn from one of the parents with equal probability.\relax }{figure.caption.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Mutation of a single bit. The bit in position 6 at the upper bit string has the value 1 before the mutation, while after mutation the value is flipped to 0.\relax }}{15}{figure.caption.8}}
@@ -250,67 +250,74 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Methodology}{43}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{section:method}{{4}{43}{Methodology}{chapter.4}{}}
+\newlabel{chapter:methodology}{{4}{43}{Methodology}{chapter.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}System Architecture}{43}{section.4.1}}
 \newlabel{section:systemt architecture}{{4.1}{43}{System Architecture}{section.4.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Class Diagram.\relax }}{44}{figure.caption.23}}
 \newlabel{figure:class diagram}{{4.1}{44}{Class Diagram.\relax }{figure.caption.23}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Genetic Algorithm}{44}{section.4.2}}
 \newlabel{section:genetic algorithm}{{4.2}{44}{Genetic Algorithm}{section.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Adult Selection}{44}{subsection.4.2.1}}
-\newlabel{subsection:adult selection}{{4.2.1}{44}{Adult Selection}{subsection.4.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Representation}{44}{subsection.4.2.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Genetic algorithm.\relax }}{45}{figure.caption.24}}
 \newlabel{figure:genetic algorithm steps}{{4.2}{45}{Genetic algorithm.\relax }{figure.caption.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.\relax }}{46}{figure.caption.25}}
-\newlabel{figure:generational mixing}{{4.3}{46}{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.\relax }{figure.caption.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.\relax }}{46}{figure.caption.26}}
-\newlabel{figure:overproduction}{{4.4}{46}{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.\relax }{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Parent Selection}{46}{subsection.4.2.2}}
-\newlabel{subsection:parent selection}{{4.2.2}{46}{Parent Selection}{subsection.4.2.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Tournament selection.\relax }}{47}{figure.caption.27}}
-\newlabel{figure:tournament selection}{{4.5}{47}{Tournament selection.\relax }{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.\relax }}{48}{figure.caption.28}}
-\newlabel{figure:roulette wheel selection}{{4.6}{48}{Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.\relax }{figure.caption.28}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Genetic Operations}{48}{subsection.4.2.3}}
-\newlabel{subsection:genetic operations}{{4.2.3}{48}{Genetic Operations}{subsection.4.2.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.1}Crossover and Elitism}{48}{subsubsection.4.2.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Adult Selection}{45}{subsection.4.2.2}}
+\newlabel{subsection:adult selection}{{4.2.2}{45}{Adult Selection}{subsection.4.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Individual representation. The grey squares represent legal turbine positions in the terrain, while as the red represent illegal positions. Since there are only nine legal positions in this example, an individual is represented as a binary string of length 9. The grid array is shared between all the individuals and holds the (x, y)-coordinates for each legal position.\relax }}{46}{figure.caption.25}}
+\newlabel{figure:representation}{{4.3}{46}{Individual representation. The grey squares represent legal turbine positions in the terrain, while as the red represent illegal positions. Since there are only nine legal positions in this example, an individual is represented as a binary string of length 9. The grid array is shared between all the individuals and holds the (x, y)-coordinates for each legal position.\relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Parent Selection}{46}{subsection.4.2.3}}
+\newlabel{subsection:parent selection}{{4.2.3}{46}{Parent Selection}{subsection.4.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.\relax }}{47}{figure.caption.26}}
+\newlabel{figure:generational mixing}{{4.4}{47}{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.\relax }{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.\relax }}{47}{figure.caption.27}}
+\newlabel{figure:overproduction}{{4.5}{47}{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.\relax }{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Tournament selection.\relax }}{48}{figure.caption.28}}
+\newlabel{figure:tournament selection}{{4.6}{48}{Tournament selection.\relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.\relax }}{49}{figure.caption.29}}
+\newlabel{figure:roulette wheel selection}{{4.7}{49}{Roulette wheel selection. The roulette wheel is shown to the left, the four individuals to the right. Individual$_4$ has a four times better fitness than individual$_2$ and therefore has a four times larger probability of being selected.\relax }{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Genetic Operations}{49}{subsection.4.2.4}}
+\newlabel{subsection:genetic operations}{{4.2.4}{49}{Genetic Operations}{subsection.4.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4.1}Crossover and Elitism}{49}{subsubsection.4.2.4.1}}
 \citation{Kusiak}
 \citation{Jensen}
-\newlabel{figure:single point crossover}{{4.7a}{49}{Single point crossover.\relax }{figure.caption.29}{}}
-\newlabel{sub@figure:single point crossover}{{a}{49}{Single point crossover.\relax }{figure.caption.29}{}}
-\newlabel{figure:two point crossover}{{4.7b}{49}{Two point crossover.\relax }{figure.caption.29}{}}
-\newlabel{sub@figure:two point crossover}{{b}{49}{Two point crossover.\relax }{figure.caption.29}{}}
-\newlabel{figure:uniform crossover}{{4.7c}{49}{Uniform crossover.\relax }{figure.caption.29}{}}
-\newlabel{sub@figure:uniform crossover}{{c}{49}{Uniform crossover.\relax }{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Crossover methods.\relax }}{49}{figure.caption.29}}
-\newlabel{figure:crossover methods}{{4.7}{49}{Crossover methods.\relax }{figure.caption.29}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3.2}Mutation}{49}{subsubsection.4.2.3.2}}
+\newlabel{figure:single point crossover}{{4.8a}{50}{Single point crossover.\relax }{figure.caption.30}{}}
+\newlabel{sub@figure:single point crossover}{{a}{50}{Single point crossover.\relax }{figure.caption.30}{}}
+\newlabel{figure:two point crossover}{{4.8b}{50}{Two point crossover.\relax }{figure.caption.30}{}}
+\newlabel{sub@figure:two point crossover}{{b}{50}{Two point crossover.\relax }{figure.caption.30}{}}
+\newlabel{figure:uniform crossover}{{4.8c}{50}{Uniform crossover.\relax }{figure.caption.30}{}}
+\newlabel{sub@figure:uniform crossover}{{c}{50}{Uniform crossover.\relax }{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Crossover methods.\relax }}{50}{figure.caption.30}}
+\newlabel{figure:crossover methods}{{4.8}{50}{Crossover methods.\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4.2}Mutation}{50}{subsubsection.4.2.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Wind-, Wake- and Power Model}{50}{subsection.4.2.5}}
+\newlabel{subsection:wind-, wake- and power model}{{4.2.5}{50}{Wind-, Wake- and Power Model}{subsection.4.2.5}{}}
 \citation{Justus}
 \citation{Justus}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Wind-, Wake- and Power Model}{50}{subsection.4.2.4}}
-\newlabel{subsection:wind-, wake- and power model}{{4.2.4}{50}{Wind-, Wake- and Power Model}{subsection.4.2.4}{}}
-\newlabel{equation:Weibull}{{4.1}{50}{Wind-, Wake- and Power Model}{equation.4.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }}{50}{figure.caption.30}}
-\newlabel{figure:weibull distribution}{{4.8}{50}{The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }{figure.caption.30}{}}
+\newlabel{equation:Weibull}{{4.1}{51}{Wind-, Wake- and Power Model}{equation.4.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }}{51}{figure.caption.31}}
+\newlabel{figure:weibull distribution}{{4.9}{51}{The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }{figure.caption.31}{}}
 \citation{Kusiak}
-\newlabel{equation:Power Curv (API)}{{4.2}{51}{Wind-, Wake- and Power Model}{equation.4.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Fitness Function}{51}{subsection.4.2.5}}
-\newlabel{subsection:fitness function}{{4.2.5}{51}{Fitness Function}{subsection.4.2.5}{}}
-\newlabel{Objective function}{{4.3}{51}{Fitness Function}{equation.4.2.3}{}}
+\newlabel{equation:Power Curv (API)}{{4.2}{52}{Wind-, Wake- and Power Model}{equation.4.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.6}Fitness Function}{52}{subsection.4.2.6}}
+\newlabel{subsection:fitness function}{{4.2.6}{52}{Fitness Function}{subsection.4.2.6}{}}
+\newlabel{Objective function}{{4.3}{52}{Fitness Function}{equation.4.2.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }}{53}{table.caption.32}}
+\newlabel{Parameters}{{4.1}{53}{Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }{table.caption.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Island Model}{53}{section.4.3}}
+\newlabel{section:island model}{{4.3}{53}{Island Model}{section.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Cellular Model}{53}{section.4.4}}
+\newlabel{section:cellular model}{{4.4}{53}{Cellular Model}{section.4.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Pool Model}{53}{section.4.5}}
+\newlabel{section:pool model}{{4.5}{53}{Pool Model}{section.4.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Scenarios}{53}{section.4.6}}
+\newlabel{section:scenarios}{{4.6}{53}{Scenarios}{section.4.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Motivation}{53}{section.4.7}}
+\newlabel{section:motivation}{{4.7}{53}{Motivation}{section.4.7}{}}
 \bibdata{chapters/biblography}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }}{52}{table.caption.31}}
-\newlabel{Parameters}{{4.1}{52}{Description and value of each parameter used in the objective function provided by GECCO 2015.\relax }{table.caption.31}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Island Model}{52}{section.4.3}}
-\newlabel{section:island model}{{4.3}{52}{Island Model}{section.4.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Cellular Model}{52}{section.4.4}}
-\newlabel{section:cellular model}{{4.4}{52}{Cellular Model}{section.4.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Pool Model}{52}{section.4.5}}
-\newlabel{section:pool model}{{4.5}{52}{Pool Model}{section.4.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Scenarios}{52}{section.4.6}}
-\newlabel{section:scenarios}{{4.6}{52}{Scenarios}{section.4.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Motivation}{52}{section.4.7}}
-\newlabel{section:motivation}{{4.7}{52}{Motivation}{section.4.7}{}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{52}{section.4.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Results}{54}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Parameter settings}{54}{section.5.1}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{54}{section.5.1}}
 \bibcite{Albring}{{1}{1967}{{Albring}}{{}}}
 \bibcite{Bilbao}{{2}{2009}{{Bilbao and Alba}}{{}}}
 \bibcite{Chen}{{3}{2013}{{Chen et~al.}}{{}}}
