@@ -1,5 +1,5 @@
 \chapter{Methodology}\label{chapter:methodology}%Todo change into chapter
-In this chapter, the simulator used to investigate the research questions is described. An overview of the system is presented in section \ref{section:systemt architecture}. Section \ref{section:genetic algorithm} includes implementation details, and design decisions made when implementing the genetic algorithm which is the foundation for all the population distributed genetic algorithms. Sections \ref{section:island model}-\ref{section:pool model} contains implementation details of the population distributed genetic algorithms. The wind scenarios used to evaluate the different population distributed genetic algorithm are described in section \ref{section:scenarios}, and the choice of implementing the genetic algorithm from scratch is defended in section \ref{section:motivation}.
+In this chapter, the simulator used to investigate the research questions is described. An overview of the system is presented in section \ref{section:systemt architecture}. Section \ref{section:genetic algorithm} includes implementation details, and design decisions made when implementing the genetic algorithm which is the foundation for all the population distributed genetic algorithms. Sections \ref{section:population distributed gas} contain implementation details of the population distributed genetic algorithms. The wind scenarios used to evaluate the different population distributed genetic algorithm are described in section \ref{section:scenarios}, and the choice of implementing the genetic algorithm from scratch is defended in section \ref{section:motivation}.
 
 
 \section{System Architecture}\label{section:systemt architecture}
@@ -8,7 +8,7 @@ The program is implemented in Java and the interactions between the different cl
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.3]{images/"Class Diagram"}
+\includegraphics[scale=0.35]{images/"Class Diagram"}
 \caption{Class Diagram.}
 \label{figure:class diagram}
 \end{center}
@@ -16,7 +16,7 @@ The program is implemented in Java and the interactions between the different cl
 
 
 \section{Genetic Algorithm}\label{section:genetic algorithm}
-As mentioned in \textcolor{red}{reference chapter background}, the genetic algorithm consists of five steps: Adult selection, parent selection, recombination and fitness evaluation as shown in figure \ref{figure:genetic algorithm steps}. The implementation details of each step is described below.
+As mentioned in chapter \ref{chapter:background}, the genetic algorithm consists of four steps: Adult selection, parent selection, recombination such as crossover and mutation and fitness evaluation as shown in figure \ref{figure:genetic algorithm steps}. The implementation details of each step is described below. In addition, the wind-, wake-, and power model used in evaluating the genetic algorithm is described since these are crucial to understanding the fitness function. 
 
 
 \begin{figure}[h!]
@@ -29,7 +29,7 @@ As mentioned in \textcolor{red}{reference chapter background}, the genetic algor
 
 
 \subsection{Representation}
-As most of the studies from chapter \ref{chapter:relatedwork}, the individuals implemented in the genetic algorithm for this thesis uses a binary representation. However, each position in the binary array can be directly mapped into an integer position which is kept in an array called ''grid''. The purpose behind this design decision is that not all positions in the terrain, when dividing the terrain into a squared grid, are possible turbine positions because the existence of obstacles. By implementing individuals this way, the genetic operations can be performed on individuals without having to check for illegal positions since this is already taken care as soon as the scenario is read from file. Also, this design decision makes sure that no space is wasted in the representation. Figure \ref{figure:representation} shows how the binary representation and ''grid''-array are mapped into a wind farm. \textcolor{red}{Explain the figure when it is made.}. Wind parameters and obstacles positions are read into the program from the scenarios provided by GECCO 2016, these will be described later in this chapter.
+As most of the studies from chapter \ref{chapter:relatedwork}, the individuals implemented in the genetic algorithm for this thesis uses a binary representation. However, each position in the binary array can be directly mapped into an integer position which is kept in an array called ''grid''. The purpose behind this design decision is that not all positions in the terrain, when dividing the terrain into a squared grid, are possible turbine positions because the existence of obstacles. By implementing individuals this way, the genetic operations can be performed on individuals without having to check for illegal positions since this is already taken care as soon as the scenario is read from file. Also, this design decision makes sure that no space is wasted in the representation. Figure \ref{figure:representation} shows how the binary representation and ''grid''-array are mapped into a wind farm. In the square to the left the red cells represents illegal positions in the terrain, while the grey cells represents legal positions. To the right the individual and grid array can be seen. The individual has length 9 since there are only 9 legal squares in the terrain to the left. The grid array contains the (x, y)-coordinates for each square. Wind parameters and obstacles positions are read into the program from the scenarios provided by GECCO 2016, these will be described later in this chapter.
 
 
 \begin{figure}[h!]
@@ -86,7 +86,7 @@ Parent selection is the selection of which adults become parents for the next ch
 \end{figure}
 
 
-\noindent Different values of ''tournament size'' needs to be tested in order to find how settings that allow the algorithm to explore different solutions, but that also prioritize the best solutions. In chapter \textcolor{red}{reference results chapter}, results obtained for different tournament sizes are compared to find which is best for the wind farm layout optimization problem. \\
+\noindent Different values of ''tournament size'' needs to be tested in order to find how settings that allow the algorithm to explore different solutions, but that also prioritize the best solutions. In chapter \ref{chapter:results}, results obtained for different tournament sizes are compared to find which is best for the wind farm layout optimization problem. \\
 
 
 \noindent Roulette wheel selection assigns a probability of being chosen as parent to each individuals which is proportional to its fitness compared to all other solutions. Therefore, individuals with better fitness will be more likely to selected for the parent pool. Figure \ref{figure:roulette wheel selection} shows how roulette wheel selection works. The roulette wheel on the left shows the probability of each of the four individuals been selected. Since individual$_4$ has the best fitness, it has a larger probability of being selected than the others. \\
@@ -106,14 +106,14 @@ This subsection gives an overview over the genetic operations used to produce th
 
 
 \subsubsection{Crossover and Elitism}
-Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombining genes of two parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover. These are all presented in figure \ref{figure:crossover methods}. As shown in figure \ref{figure:single point crossover}, single point crossover is a method where a random position, called the crossover point, is generated. All genes from the first parent prior to the crossover point are copied to the first child, and all genes after the crossover point are copied to the second child, and all genes from the second parent prior to the crossover point is copied to the second child, and all genes after the crossover point is copied to the first child. Two point crossover is similar to single point crossover, except that it uses to crossover points instead of one. This is shown in figure \ref{figure:two point crossover}. In uniform crossover, there is a fifty percent probability that each gene will be drawn from each parent as shown in figure \ref{figure:uniform crossover}. This crossover method results in child individuals that might not inherit the gene patterns from their parents the same way as in the other two methods. Since the relative positions between wind turbines are very important when solving the wind farm layout optimization problem, uniform crossover might not be the best choice. \textcolor{red}{Is this true? If it is, talk about this in the results part, remove it from here.}
+Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombining genes of two parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover. These are all presented in figure \ref{figure:crossover methods}. As shown in figure \ref{figure:single point crossover}, single point crossover is a method where a random position, called the crossover point, is generated. All genes from the first parent prior to the crossover point are copied to the first child, and all genes after the crossover point are copied to the second child, and all genes from the second parent prior to the crossover point is copied to the second child, and all genes after the crossover point is copied to the first child. Two point crossover is similar to single point crossover, except that it uses to crossover points instead of one. This is shown in figure \ref{figure:two point crossover}. In uniform crossover, there is a fifty percent probability that each gene will be drawn from each parent as shown in figure \ref{figure:uniform crossover}. This crossover method results in child individuals that might not inherit the gene patterns from their parents the same way as in the other two methods. Since the relative positions between wind turbines are very important when solving the wind farm layout optimization problem, uniform crossover might not be the best choice. \textcolor{red}{Is this true? If it is, talk about this in the results part, remove it from here.} \textcolor{red}{Write elitism.}
 
 
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{images/crossover/"Single point crossover"}
-        \caption{Single point crossover.}
+        \caption{One point crossover.}
         \label{figure:single point crossover}
     \end{subfigure}
     ~ 
@@ -133,7 +133,7 @@ Crossover is the recombination method utilized by the genetic algorithm to perfo
 
 
 \subsubsection{Mutation}
-Although crossover is a powerful genetic operator, which able child individuals to inherit genes from the best parent individuals, it is not enough on its own. Without any way to mutate genes, one can end up with a population where every individual has the same gene value in the same position, this means that no recombination will be able to change the value of that gene. Mutation is the operation used by the genetic algorithm to make sure that the population do not get sterile. In nature, genes can be mutated in numerous ways. In this thesis, four mutation methods are implemented to mimic the mutations methods that can happen in genes, these are called: Flip mutation, 
+Although crossover is a powerful genetic operator, which able child individuals to inherit genes from the best parent individuals, it is not enough on its own. Without any way to mutate genes, one can end up with a population where every individual has the same gene value in the same position, this means that no recombination will be able to change the value of that gene. Mutation is the operation used by the genetic algorithm to make sure that the population do not get sterile. In nature, genes can be mutated in numerous ways. In this thesis, four mutation methods are implemented to mimic the mutations methods that can happen in genes, these are called: Flip mutation, \textcolor{red}{Write mutation.}
 
 
 \subsection{Wind-, Wake- and Power Model}\label{subsection:wind-, wake- and power model}
@@ -217,19 +217,24 @@ $m$ & Farm energy output &  \\
 \noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator represents the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \\
 
 
-\section{Island Model}\label{section:island model}
-
-
-\section{Cellular Model}\label{section:cellular model}
-
-
-\section{Pool Model}\label{section:pool model}
+\section{Population Distributed Genetic Algorithms}\label{section:population distributed gas}
+Since all the population distributed genetic algorithms implemented are described in chapter \ref{chapter:background} they will not be described in detail here. However, each design decision will be described. As mentioned in chapter \ref{chapter:background}, for the Island model, one have to make the decision if migration is synchronous or asynchronous, meaning that all migration is performed at the same generation. For the Island model implemented in this thesis, that is the case. As the Island model, the Cellular model will also perform updating at the same time, i.e. at the same generation. The pool model on the other hand is asynchronous by nature. Each processor performs its own assignment without even knowing about the presence of the other processors. The second design decision made is whether each model is homogeneous or heterogeneous, where homogeneous means that each deme, cell or processor uses the same parameter settings and methods. In this thesis, each model will be homogeneous. This decision is based solidly on the fact that there will be too many combinations of different settings if each deme, cell or processor used different settings that it would be impossible to do proper testing for all of them. 
 
 
 \section{Scenarios}\label{section:scenarios}
+GECCO 2016 has provided the contestants with 20 different wind scenarios for which the genetic algorithm can be tested on. Each wind scenario contain shape and scale parameters, k and c respectively, for each wind directions where wind direction is partitioned into slots that cover an 15 degree angle each, so that there are 24 different wind directions. Unavailable areas are described in the scenario by the parameters \textit{x$_{min}$, x$_{max}$, y$_{min}$} and \textit{y$_{max}$} as shown in figure \ref{figure:obstacles}. In the figure, two obstacles are described giving their (x, y)-boundaries. The red lines gives the boundaries of obstacle one and the blue lines gives the boundaries of obstacle two. The yellow area in the middle of the lines shows the illegal areas. Each wind scenario also contain values for the constants ''width'', ''height'', ''number of turbines'' and ''wake free energy''. The scenarios are read from file at the beginning of each run of the genetic algorithm. 
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{images/obstacles}
+\caption{Obstacles are described in the scenarios with its (x, y)-boundaries.}
+\label{figure:obstacles}
+\end{center}
+\end{figure}
 
 
 \section{Motivation behind Implementing the Genetic Algorithm from Scratch}\label{section:motivation}
 Even though GECCO	 2016 has provided each contestant with an API which could be used directly, or improved upon and used in the competition, the decision to implement the genetic algorithm from scratch was made. Even though this decision lead to more work for the author, several arguments supported the decision. First of all, even though the provided API was implemented in Java, it was not very object oriented nor was it modular, something that made it very difficult to add new features to the code without having to do major changes. In addition, the provided genetic algorithm was extremely simple with no room for making any decisions about which method to use for any of the steps in figure \ref{figure:genetic algorithm steps}. Other problems such as hard-coded variables and too long methods made it very difficult to make changes and to add new features. \\
 
-The new genetic algorithm is implemented so that new selection methods can be added by simply implementing the AdultSelection- or ParentSelection interface, and new crossover methods can be added by extending the Crossover-class. This makes the program much more flexible, if one which to try something new. No variables are hard-coded in the new program, but taken as parameters to the GeneticAlgorithm constructor, leaving no room for making errors. The major improvement, and most important motivation behind the decisions of implementing the genetic algorithm from scratch is that it gives the author total control over every aspect of the code, and it was very important with modular code when the population distributed genetic algorithms were implemented.
+\noindent The new genetic algorithm is implemented so that new selection methods can be added by simply implementing the AdultSelection- or ParentSelection interface, and new crossover methods can be added by extending the Crossover-class. This makes the program much more flexible, if one which to try something new. No variables are hard-coded in the new program, but taken as parameters to the GeneticAlgorithm constructor, leaving no room for making errors. The major improvement, and most important motivation behind the decisions of implementing the genetic algorithm from scratch is that it gives the author total control over every aspect of the code, and it was very important with modular code when the population distributed genetic algorithms were implemented.

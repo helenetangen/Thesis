@@ -116,7 +116,7 @@ In biology, mutation is defined as permanent alteration in the DNA sequence that
 \noindent Even though mutation is important, the probability of mutation needs to be kept low. If the mutation rate is very high, the genotype of a new individual will almost be a random bit string. Remember that a new individual is made by recombination of two individuals with high fitness in the previous population, if mutation changes the new individual heavily, it will not inherit the good features of its parents and the whole point of evolutionary search will be gone.\\
 
 
-\subsection{Distributed Genetic Algorithms (DGAs)}\label{subsection:dga}
+\subsection{Population Distributed Genetic Algorithms}\label{subsection:dga}
 On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population does not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently, probably find better, more sophisticated solutions. The goal of this thesis is to investigate and compare the performance of population distributed genetic algorithms with that of simple genetic algorithms. It will be distinguished between population distributed genetic algorithms and genetic algorithms where processing is distributed among different processors, meaning that parallelism is utilized in the implementation. This section introduces seven distributed models. Each model will be implemented with parallelism in order to improve the running time of the algorithm, however the first model introduced, the master-slave model, is not population distributed. It is a simple genetic algorithm, implemented using parallelism in order to run fast, and it will be implemented so that the performance of a simple genetic algorithm (non-population distributed) can be compared to a population distributed algorithm. This section introduces seven different distributed algorithms presented by \cite{Gong}. These will all be implemented and tested in this thesis.\\
 
 
@@ -152,7 +152,7 @@ In the Island model, the population is divided into sub populations that are dis
 \noindent According to \cite{Huang}, six parameters must be specified when using the Island model. First of all, one need to decide on the number of demes (Islands). Second, the deme size needs to be specified; the number of individuals on each island. In figure \ref{Island model} the deme size is five, and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows represents legal migration routes. Since the topology forms a circle it is called a ring topology. The forth and fifth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy for emigrant selection, and how to replace existing individuals with new migrants needs to be specified. \\
 
 
-\noindent The parameters listed above must be given careful thought when implementing the Island model, but as Gong explains, they are not the only ones. If the Island model is implemented in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation. Asynchronous migration on the other hand, can be performed whenever one of the parallel processes are ready. Additionally, it has to be decided if the Island model is homogeneous or heterogeneous. By a homogeneous Island model, Gong et al. means an Island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous Island model can implement different settings for different sub populations. In this thesis, a synchronous, homogeneous model will be used.
+\noindent The parameters listed above must be given careful thought when implementing the Island model, but as Gong explains, they are not the only ones. If the Island model is implemented in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation. Asynchronous migration on the other hand, can be performed whenever one of the parallel processes are ready. Additionally, it has to be decided if the Island model is homogeneous or heterogeneous. By a homogeneous Island model, Gong et al. means an Island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous Island model can implement different settings for different sub populations.
 
 
 \paragraph*{The Cellular Model}
@@ -171,33 +171,7 @@ Figure \ref{Cellular model} displays the cellular model from \cite{Gong}. In the
 \noindent The takeover time is defined as the time it takes for one individual to propagate to the whole population. The neighborhood topology largely affects the takeover time. In figure \ref{Cellular model} the neighborhood topology is defined as only the individuals to the left, right, over and under the given individual. Since the topology includes a small number of individuals, the takeover time will be long, meaning that exploration is prioritized. If the topology consists of a larger number of cells the takeover time will, off course, be much shorter.\\
 
 
-\noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the island model, updating of the cells can be both synchronous and asynchronous. As the Island model, the cellular model will also be synchronous and homogeneous.
-
-
-\paragraph*{Hybrid Models}
-Hybrid models are population distributed genetic algorithms that combine different population distributed genetic algorithm models. Gong et al. presented the three different hybrid models presented in figure \ref{Hybrid Models}.\\
-
-
-\begin{figure}[h!]
-    \centering
-    \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth, height=4cm]{images/"population distributed genetic algorithms"/"island-master-slave hybrid"}
-        \caption{}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth, height=4cm]{images/"population distributed genetic algorithms"/"island-cellular hybrid model"}
-        \caption{}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth, height=4cm]{images/"population distributed genetic algorithms"/"island-island hybrid model"}
-        \caption{}
-    \end{subfigure}
-    \caption{Different hybrid models; (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-Island hybrid model \citep{Gong}.}
-    \label{Hybrid Models}
-\end{figure}
-
-
-\noindent The first hybrid model combines the Island model with the master-slave model. By combining these two models, each deme will be processed faster because it is distributed between different processors. The second model combines the island model and the cellular model. By combining these two models the diversity within a given deme can be kept longer than when the simple island model is used, and make sure premature convergence will not occur in the demes. The last model has a similar function as the second one, but instead of using the cellular model in each deme, it uses the island model inside the demes. \\
+\noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the island model, updating of the cells can be both synchronous and asynchronous.
 
 
 \paragraph*{Pool Model}
