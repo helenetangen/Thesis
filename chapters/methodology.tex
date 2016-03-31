@@ -21,7 +21,7 @@ As mentioned in chapter \ref{chapter:background}, the genetic algorithm consists
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.3]{images/"genetic algorithm steps"}
+\includegraphics[scale=0.3]{images/"genetic algorithm"}
 \caption{Genetic algorithm.}
 \label{figure:genetic algorithm steps}
 \end{center}
@@ -113,27 +113,50 @@ Crossover is the recombination method utilized by the genetic algorithm to perfo
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{images/crossover/"Single point crossover"}
-        \caption{One point crossover.}
+        \caption{}
         \label{figure:single point crossover}
     \end{subfigure}
     ~ 
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{images/crossover/"Two point crossover"}
-        \caption{Two point crossover.}
+        \caption{}
         \label{figure:two point crossover}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.3\textwidth}
         \includegraphics[width=\textwidth]{images/crossover/"Uniform crossover"}
-        \caption{Uniform crossover.}
+        \caption{}
         \label{figure:uniform crossover}
     \end{subfigure}
-    \caption{Crossover methods.}\label{figure:crossover methods}
+    \caption{Crossover methods: (a) Single point crossover, (b) two point crossover, and (c) uniform crossover.}\label{figure:crossover methods}
 \end{figure}
 
 
 \subsubsection{Mutation}
 Although crossover is a powerful genetic operator, which able child individuals to inherit genes from the best parent individuals, it is not enough on its own. Without any way to mutate genes, one can end up with a population where every individual has the same gene value in the same position, this means that no recombination will be able to change the value of that gene. Mutation is the operation used by the genetic algorithm to make sure that the population do not get sterile. In nature, genes can be mutated in numerous ways. In this thesis, four mutation methods are implemented to mimic the mutations methods that can happen in genes, these are called: Flip mutation, \textcolor{red}{Write mutation.}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Single point crossover"}
+        \caption{}
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~ 
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Two point crossover"}
+        \caption{}
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{images/crossover/"Uniform crossover"}
+        \caption{}
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Mutation methods: (a) Single point crossover, (b) two point crossover, and (c) uniform crossover.}\label{figure:crossover methods}
+\end{figure}
 
 
 \subsection{Wind-, Wake- and Power Model}\label{subsection:wind-, wake- and power model}

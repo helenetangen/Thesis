@@ -23,14 +23,14 @@
 \contentsline {subsubsection}{\numberline {4.2.4.1}Crossover and Elitism}{48}{subsubsection.4.2.4.1}
 \contentsline {subsubsection}{\numberline {4.2.4.2}Mutation}{49}{subsubsection.4.2.4.2}
 \contentsline {subsection}{\numberline {4.2.5}Wind-, Wake- and Power Model}{50}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Fitness Function}{51}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Population Distributed Genetic Algorithms}{52}{section.4.3}
+\contentsline {subsection}{\numberline {4.2.6}Fitness Function}{52}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Population Distributed Genetic Algorithms}{53}{section.4.3}
 \contentsline {section}{\numberline {4.4}Scenarios}{53}{section.4.4}
-\contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{53}{section.4.5}
-\contentsline {chapter}{\numberline {5}Results}{55}{chapter.5}
-\contentsline {section}{\numberline {5.1}Parameter settings}{55}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{55}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Parent Selection}{56}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{56}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{56}{subsection.5.1.4}
-\contentsline {chapter}{Bibliography}{56}{figure.caption.36}
+\contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{54}{section.4.5}
+\contentsline {chapter}{\numberline {5}Results}{56}{chapter.5}
+\contentsline {section}{\numberline {5.1}Parameter settings}{56}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{56}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Parent Selection}{57}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{57}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{57}{subsection.5.1.4}
+\contentsline {chapter}{Bibliography}{57}{figure.caption.37}
