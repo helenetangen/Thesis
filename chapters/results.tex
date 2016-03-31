@@ -1,5 +1,167 @@
 \chapter{Results}\label{chapter:results}
+\textcolor{red}{Explain why it is tested on the real problem, not on one max.}
 
 
 \section{Parameter settings}
-\textcolor{red}{Explain why it is tested on the real problem, not on one max.}
+
+
+\subsection{Adult Selection}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"adult selection"/"full generational replacement"}
+        \caption{}
+        \hfill
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"adult selection"/"generational mixing"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"adult selection"/"overproduction"}
+        \caption{}
+        \hfill
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Adult selection methods: (a) Full generational replacement, (b) generational mixing and (c) overproduction.}
+    \label{figure:crossover methods}
+\end{figure}
+
+
+\subsection{Parent Selection}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"parent selection"/"roulette wheel"}
+        \caption{}
+        \hfill
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 5"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+       \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 10"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+       \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 15"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+       \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 20"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 25"}
+        \caption{}
+        \hfill
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Parent selection methods: (a) Roulette wheel, (b) Tournament selection, tournament size 5 (c) tournament selection, tournament size 10, (d) tournament selection, tournament size 15, (e) tournament selection, tournaments size 20, and (f) tournament selection, tournament size 25.}
+    \label{figure:crossover methods}
+\end{figure}
+
+
+\subsection{Crossover Methods}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover method"/"single point crossover"}
+        \caption{}
+        \hfill
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover method"/"two point crossover"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover method"/"uniform crossover"}
+        \caption{}
+        \hfill
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Crossover methods: (a) Single point crossover, (b) two point crossover and (c) uniform crossover.}
+    \label{figure:crossover methods}
+\end{figure}
+
+
+\subsection{Crossover Rate}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 0,0"}
+        \caption{}
+        \hfill
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 0,2"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+       \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 0,4"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+       \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 0,6"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+       \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 0,8"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 1,0"}
+        \caption{}
+        \hfill
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Crossover rates: (a) Crossover rate 0.0, (b) crossover rate 0.2, (c) crossover rate 0.4, (d) crossover rate 0.6, (e) crossover rate 0.8, and (f) crossover rate 1.0.}
+    \label{figure:crossover methods}
+\end{figure}

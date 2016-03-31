@@ -29,4 +29,8 @@
 \contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{53}{section.4.5}
 \contentsline {chapter}{\numberline {5}Results}{55}{chapter.5}
 \contentsline {section}{\numberline {5.1}Parameter settings}{55}{section.5.1}
-\contentsline {chapter}{Bibliography}{55}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{55}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Parent Selection}{56}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{56}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{56}{subsection.5.1.4}
+\contentsline {chapter}{Bibliography}{56}{figure.caption.36}
