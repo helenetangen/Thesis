@@ -1,8 +1,34 @@
-\chapter{Results}\label{chapter:results}
-\textcolor{red}{Explain why it is tested on the real problem, not on one max.}
+\chapter{Results and Discussion}\label{chapter:results}
+This chapter includes presentation and analysis of the results obtained in this thesis. Section \ref{section:parameter settings} presents results from testing different parameter settings for the genetic algorithm, and briefly discusses each results. Section \ref{section:results} presents the main results obtained when running the different population distributed genetic algorithms. Section \ref{section:discussion} contains a discussion and comparison of the results obtained in section \ref{section:results}.
 
 
-\section{Parameter settings}
+\section{Parameter settings}\label{section:parameter settings}
+Parameter settings are crucial for obtaining good results with the genetic algorithm. In order to find the right settings, simulations were run to find the best adult selection method, parent selection method, crossover method, crossover rate and mutation rate for the given problem. Even though it would take much shorter time and less effort to test these settings on a toy problem such as One Max, the decision was made to test them on the real problem. The reason behind this decision is that different settings might work better on different problems and the nature of the wind farm layout optimization problem is unique because of the importance of the wind turbine positions relative to each other. It is important to note that even though effort was made to find good settings for the genetic algorithm,  it is impossible to obtain the optimal ones. Just imagine trying the test every single value for the continuous parameter crossover rate against every possible value of each of the other settings, just that would be impossible! Therefore, the values that are tested for each parameter setting is largely tested against values that are based on the authors previous experience with genetic algorithm and values close to those.\\
+
+\begin{table}
+\centering
+\caption{Values kept fixed while one by one was changed in order to find the best settings for the wind farm layout optimization problem.}
+\label{table:fixed settings}
+\begin{tabular}{l|l}
+\textbf{Parameter} & \textbf{Value} \\ 
+\hline 
+Wind scenario & 00.xml \\ 
+Evaluator & KusiakLayoutEvaluator \\ 
+Population size & 100 \\  
+Generations & 100 \\ 
+Elitism & true \\  
+Flip mutation rate & 0.01 \\ 
+Inversion mutation rate & 0.0 \\ 
+Reversing mutation rate & 0.0 \\ 
+Parent selection & Tournament selection \\ 
+Tournament size & 5 \\ 
+Epsilon & 0.0 \\  
+Crossover method & Uniform crossover \\ 
+Crossover rate & 0.9 \\ 
+\end{tabular} 
+\end{table}
+
+\noindent For each simulation one of the settings were tested while the others were kept fixed as shown in table \ref{table:fixed settings}. As can be seen in this table, other settings such as wind scenario, population size, number of generations, whether elitism should be used and mutation rate for interchange mutation and inversion mutation could also be tested, but since evaluation of each farm takes a lot of time, even on an 8 core computer running in parallel, simulations are not run to set these values. These settings are set using the authors previous experience and educated guessing. Testing different parameters on a single wind scenario might lead to values that are tailored for the given scenario and that are not as well suited for some of the others. However, there is no time to test each value for every single wind scenario, and this should not make that much of a difference. Population size is a value that influence the performance of the genetic algorithm largely. Greater population size often leads to better performance since more solutions increase the probability of finding the global optimal solution. The population size was set to 100 for two reasons. First of all, a population size of 100 is large enough so that many different solutions are explored. Second when the population size is kept at 100, the adult selection method ''Overproduction'' will produce twice as many children, so that 200 individuals has to be evaluated for each generation something that will double the evaluation time, the step that already is the bottleneck of the algorithm. The number of generations was kept at 100 for each run, evaluating each population for 100 generations takes time and it the main reason why the algorithm were not run for more generations, however, as can be seen on the graphs in the sections below the fitness looks like it is starting to flat out after a 100 generations indicating that a 100 generations are sufficient for the purpose of setting the parameter values. Elitism was set to true for every run without testing, meaning that the best individual of each generation will survive. This decision is based on the authors previous experience with genetic algorithm where experiments has shown that elitism leads to better results because the best individual is not lost due to coincidences. Different mutation methods were implemented for the genetic algorithm, but only the flip mutation rate was tested to find the best value. Usually, flip mutation is the only mutation method used with genetic algorithms and it is therefore also used as the main for of mutation in this thesis. Inversion mutation and interchange mutation are implemented, but they will only happen seldom to introduce more randomness to the algorithm. In the main simulations, they will be assigned extremely low probabilities so that their occurrence is so rare that they will introduce too much randomness, but hopefully make occasional ''jumps'' to different solutions spaces so that the algorithm do not get completely stuck in a local optimal solution. 
 
 
 \subsection{Adult Selection}
@@ -44,45 +70,45 @@
         \includegraphics[width=\textwidth]{images/plots/"parent selection"/"roulette wheel"}
         \caption{}
         \hfill
-        \label{figure:single point crossover}
+        \label{figure:roulette wheel}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 5"}
         \caption{}
         \hfill
-        \label{figure:two point crossover}
+        \label{figure:tournament size 5}
     \end{subfigure}
     ~
        \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 10"}
         \caption{}
         \hfill
-        \label{figure:two point crossover}
+        \label{figure:tournament size 10}
     \end{subfigure}
     ~
        \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 15"}
         \caption{}
         \hfill
-        \label{figure:two point crossover}
+        \label{figure:tournament size 15}
     \end{subfigure}
     ~
        \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 20"}
         \caption{}
         \hfill
-        \label{figure:two point crossover}
+        \label{figure:tournament size 20}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"parent selection"/"tournament size 25"}
         \caption{}
         \hfill
-        \label{figure:uniform crossover}
+        \label{figure:tournament size 25}
     \end{subfigure}
     \caption{Parent selection methods: (a) Roulette wheel, (b) Tournament selection, tournament size 5 (c) tournament selection, tournament size 10, (d) tournament selection, tournament size 15, (e) tournament selection, tournaments size 20, and (f) tournament selection, tournament size 25.}
-    \label{figure:crossover methods}
+    \label{figure:parent selection}
 \end{figure}
 
 
@@ -165,3 +191,53 @@
     \caption{Crossover rates: (a) Crossover rate 0.0, (b) crossover rate 0.2, (c) crossover rate 0.4, (d) crossover rate 0.6, (e) crossover rate 0.8, and (f) crossover rate 1.0.}
     \label{figure:crossover methods}
 \end{figure}
+
+
+\subsection{Mutation Rate}
+
+
+\begin{figure}[h!]
+    \centering
+      \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,0001"}
+        \caption{}
+        \hfill
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~
+      \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,0005"}
+        \caption{}
+        \hfill
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,001"}
+        \caption{}
+        \hfill
+        \label{figure:single point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,005"}
+        \caption{}
+        \hfill
+        \label{figure:two point crossover}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.31\textwidth}
+        \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,01"}
+        \caption{}
+        \hfill
+        \label{figure:uniform crossover}
+    \end{subfigure}
+    \caption{Mutation rates: (a) Mutation rate 0.0001, (b) mutation rate 0.0005 and (c) mutation rate 0.001, (d) mutation rate 0.005 and (e) mutation rate 0.01s.}
+    \label{figure:crossover methods}
+\end{figure}
+
+
+\section{Results}\label{section:results}
+\textcolor{red}{In results: Write why population size kept 100: Overproduction lead to 200 and not point to get best solution, but to compare solutions.}
+
+\section{Discussion}\label{section:discussion}

@@ -44,9 +44,7 @@ As most of the studies from chapter \ref{chapter:relatedwork}, the individuals i
 \subsection{Adult Selection}\label{subsection:adult selection}
 Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms were implemented in this thesis: Full generational replacement,  generational mixing, and overproduction. Each method was tested in order to decide which adult selection method was more suitable for solving the wind farm layout optimization problem. \\
 
-\noindent Full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. \\
-
-\noindent The second method, generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. \\
+\noindent Full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. The second method, generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. \\
 
 
 \begin{figure}[h!]
@@ -106,7 +104,7 @@ This subsection gives an overview over the genetic operations used to produce th
 
 
 \subsubsection{Crossover and Elitism}
-Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombining genes of two parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover. These are all presented in figure \ref{figure:crossover methods}. As shown in figure \ref{figure:single point crossover}, single point crossover is a method where a random position, called the crossover point, is generated. All genes from the first parent prior to the crossover point are copied to the first child, and all genes after the crossover point are copied to the second child, and all genes from the second parent prior to the crossover point is copied to the second child, and all genes after the crossover point is copied to the first child. Two point crossover is similar to single point crossover, except that it uses to crossover points instead of one. This is shown in figure \ref{figure:two point crossover}. In uniform crossover, there is a fifty percent probability that each gene will be drawn from each parent as shown in figure \ref{figure:uniform crossover}. This crossover method results in child individuals that might not inherit the gene patterns from their parents the same way as in the other two methods. Since the relative positions between wind turbines are very important when solving the wind farm layout optimization problem, uniform crossover might not be the best choice. \textcolor{red}{Is this true? If it is, talk about this in the results part, remove it from here.} \textcolor{red}{Write elitism.}
+Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombining genes of two parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover. These are all presented in figure \ref{figure:crossover methods}. As shown in figure \ref{figure:single point crossover}, single point crossover is a method where a random position, called the crossover point, is generated. All genes from the first parent prior to the crossover point are copied to the first child, and all genes after the crossover point are copied to the second child, and all genes from the second parent prior to the crossover point is copied to the second child, and all genes after the crossover point is copied to the first child. Two point crossover is similar to single point crossover, except that it uses to crossover points instead of one. This is shown in figure \ref{figure:two point crossover}. In uniform crossover, there is a fifty percent probability that each gene will be drawn from each parent as shown in figure \ref{figure:uniform crossover}. This crossover method results in child individuals that might not inherit the gene patterns from their parents the same way as in the other two methods.
 
 
 \begin{figure}[h!]
@@ -133,27 +131,27 @@ Crossover is the recombination method utilized by the genetic algorithm to perfo
 
 
 \subsubsection{Mutation}
-Although crossover is a powerful genetic operator, which able child individuals to inherit genes from the best parent individuals, it is not enough on its own. Without any way to mutate genes, one can end up with a population where every individual has the same gene value in the same position, this means that no recombination will be able to change the value of that gene. Mutation is the operation used by the genetic algorithm to make sure that the population do not get sterile. In nature, genes can be mutated in numerous ways. In this thesis, four mutation methods are implemented to mimic the mutations methods that can happen in genes, these are called: Flip mutation, \textcolor{red}{Write mutation.}
+Although crossover is a powerful genetic operator that able child individuals to inherit genes from the best parent individuals, it is not enough on its own. Without any way to mutate genes, one can end up with a population where every individual has the same gene value in the same position, this means that no recombination will be able to change the value of that gene. Mutation is the operation used by the genetic algorithm to make sure that the population do not get sterile. In nature, genes can be mutated in numerous ways. In this thesis, four mutation methods are implemented to mimic the mutations methods that can happen in genes, these are called: Flip mutation, interchanging mutation, and inversion mutation. Flip mutation, shown in figure \ref{figure:flip mutation}, is the most common mutation method used in genetic algorithms. As it's name imply, flip mutation works by flipping the value of single bits in the genotype. Usually, mutation rates are low since one do not want mutation to make to many changes to the good genes inherited from parent individuals, but simply introduce some diversity. Therefore, only a couple of bits are mutated in each genotype each generation. Interchange mutation and inversion mutation are rarely used in genetic algorithms, however they are included in this thesis to introduce even more diversity in the population and hopefully help the genetic search in finding even better solutions. They both introduce more change than flip mutation, and will be assigned rates even lower than the mutation rate for flip mutation. Figure \ref{figure:interchange mutation} and \ref{figure:inversion mutation} shows interchange- and inversion mutation respectively. Interchange mutation works by by picking two random genes and interchange their values, while inversion mutation works by picking two random positions and invert each gene between those positions. 
 
 
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth]{images/crossover/"Single point crossover"}
+        \includegraphics[width=\textwidth]{images/mutation/"flip mutation"}
         \caption{}
-        \label{figure:single point crossover}
+        \label{figure:flip mutation}
     \end{subfigure}
     ~ 
     \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth]{images/crossover/"Two point crossover"}
+        \includegraphics[width=\textwidth]{images/mutation/"interchanging mutation"}
         \caption{}
-        \label{figure:two point crossover}
+        \label{figure:interchange mutation}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.3\textwidth}
-        \includegraphics[width=\textwidth]{images/crossover/"Uniform crossover"}
+        \includegraphics[width=\textwidth]{images/mutation/"inversion mutation"}
         \caption{}
-        \label{figure:uniform crossover}
+        \label{figure:inversion mutation}
     \end{subfigure}
     \caption{Mutation methods: (a) Single point crossover, (b) two point crossover, and (c) uniform crossover.}\label{figure:crossover methods}
 \end{figure}
