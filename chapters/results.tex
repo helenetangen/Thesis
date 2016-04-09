@@ -32,6 +32,7 @@ Crossover rate & 0.9 \\
 
 
 \subsection{Adult Selection}
+Figure \ref{figure:adult selection methods} shows the results of running the genetic algorithm with the different adult selection methods. Figure \ref{figure:full generational replacement}, \ref{figure:generational mixing}, and \ref{figure:overproduction} shows the results for full generational replacement, generational mixing and overproduction respectively. As can be seen in the figures, full generational replacement ends up with an average best fitness of \textcolor{red}{average of best fitness}, generational mixing with an average best fitness of \textcolor{red}{average of best fitness}, and overproduction with an average best fitness of \textcolor{red}{average of best fitness}. These results are as expected. Note that generational mixing could never do worse than full generational replacement. If the results of reproduction leads to a population of individuals with strictly better fitness, generational mixing will replace the entire previous generation with the new one, as full generational replacement. However, if the new generation produces individuals with worse fitness than some of the individuals in the previous generation these old individuals will be kept instead, making sure that the new population has equal or better fitness than the previous one. Overproduction does not provide the same ''newer worst'' \textcolor{red}{Check word!} guarantee, however, as shown in figure \ref{figure:overproduction} it still outperforms generational mixing. Even though overproduction wipes out the entire previous population, it generates twice as many children at the reproduction step so its probability of getting it right is doubled. 
 
 
 \begin{figure}[h!]
@@ -40,24 +41,24 @@ Crossover rate & 0.9 \\
         \includegraphics[width=\textwidth]{images/plots/"adult selection"/"full generational replacement"}
         \caption{}
         \hfill
-        \label{figure:single point crossover}
+        \label{figure:full generational replacement}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"adult selection"/"generational mixing"}
         \caption{}
         \hfill
-        \label{figure:two point crossover}
+        \label{figure:generational mixing}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"adult selection"/"overproduction"}
         \caption{}
         \hfill
-        \label{figure:uniform crossover}
+        \label{figure:overproduction}
     \end{subfigure}
-    \caption{Adult selection methods: (a) Full generational replacement, (b) generational mixing and (c) overproduction.}
-    \label{figure:crossover methods}
+    \caption{Adult selection methods: (a) Full generational replacement, (b) generational mixing and (c) overproduction averaged over 10 runs.}
+    \label{figure:adult selection methods}
 \end{figure}
 
 
@@ -107,12 +108,13 @@ Crossover rate & 0.9 \\
         \hfill
         \label{figure:tournament size 25}
     \end{subfigure}
-    \caption{Parent selection methods: (a) Roulette wheel, (b) Tournament selection, tournament size 5 (c) tournament selection, tournament size 10, (d) tournament selection, tournament size 15, (e) tournament selection, tournaments size 20, and (f) tournament selection, tournament size 25.}
+    \caption{Parent selection methods: (a) Roulette wheel, (b) Tournament selection averaged over 10 runs, tournament size 5 (c) tournament selection, tournament size 10, (d) tournament selection, tournament size 15, (e) tournament selection, tournaments size 20, and (f) tournament selection, tournament size 25.}
     \label{figure:parent selection}
 \end{figure}
 
 
 \subsection{Crossover Methods}
+
 
 
 \begin{figure}[h!]
@@ -137,7 +139,7 @@ Crossover rate & 0.9 \\
         \hfill
         \label{figure:uniform crossover}
     \end{subfigure}
-    \caption{Crossover methods: (a) Single point crossover, (b) two point crossover and (c) uniform crossover.}
+    \caption{Crossover methods averaged over 10 runs: (a) Single point crossover, (b) two point crossover and (c) uniform crossover.}
     \label{figure:crossover methods}
 \end{figure}
 
@@ -151,7 +153,7 @@ Crossover rate & 0.9 \\
         \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 0,0"}
         \caption{}
         \hfill
-        \label{figure:single point crossover}
+        \label{figure:crossover rate 0.0}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}

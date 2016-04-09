@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  7 APR 2016 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 APR 2016 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -853,25 +853,10 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 LaTeX Warning: Label `figure:crossover methods' multiply defined.
 
 
-LaTeX Warning: Label `figure:single point crossover' multiply defined.
+LaTeX Warning: Label `figure:generational mixing' multiply defined.
 
 
-LaTeX Warning: Label `sub@figure:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `figure:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@figure:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `figure:uniform crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@figure:uniform crossover' multiply defined.
-
-
-LaTeX Warning: Label `figure:crossover methods' multiply defined.
+LaTeX Warning: Label `figure:overproduction' multiply defined.
 
 
 LaTeX Warning: Label `figure:single point crossover' multiply defined.
@@ -1651,7 +1636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
  []
 
 [45 <./images/representation program.png>]
-<images/"adult selection"/overproduction.png, id=883, 1171.37625pt x 579.16376p
+<images/"adult selection"/overproduction.png, id=882, 1171.37625pt x 579.16376p
 t>
 File: images/"adult selection"/overproduction.png Graphic file (type png)
  <use images/"adult selection"/overproduction.png>
@@ -1686,7 +1671,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
  []
 
 [47]
-<images/"parent selection"/"roulette wheel selection".png, id=898, 627.34375pt 
+<images/"parent selection"/"roulette wheel selection".png, id=899, 627.34375pt 
 x 252.945pt>
 File: images/"parent selection"/"roulette wheel selection".png Graphic file (ty
 pe png)
@@ -1696,14 +1681,14 @@ ng used on input line 95.
 (pdftex.def)             Requested size: 313.6711pt x 126.47218pt.
 
 [48 <./images/parent selection/roulette wheel selection.png>]
-<images/crossover/"Single point crossover".png, id=911, 489.83pt x 508.90125pt>
+<images/crossover/"Single point crossover".png, id=912, 489.83pt x 508.90125pt>
 File: images/crossover/"Single point crossover".png Graphic file (type png)
 <use images/crossover/"Single point crossover".png>
 Package pdftex.def Info: images/crossover/"Single point crossover".png used on 
 input line 113.
 (pdftex.def)             Requested size: 117.00119pt x 121.5564pt.
 
-<images/crossover/"Two point crossover".png, id=912, 488.82625pt x 509.905pt>
+<images/crossover/"Two point crossover".png, id=913, 488.82625pt x 509.905pt>
 File: images/crossover/"Two point crossover".png Graphic file (type png)
 
 <use images/crossover/"Two point crossover".png>
@@ -1711,7 +1696,7 @@ Package pdftex.def Info: images/crossover/"Two point crossover".png used on inp
 ut line 119.
 (pdftex.def)             Requested size: 117.00119pt x 122.04514pt.
 
-<images/crossover/"Uniform crossover".png, id=913, 487.8225pt x 508.90125pt>
+<images/crossover/"Uniform crossover".png, id=914, 487.8225pt x 508.90125pt>
 File: images/crossover/"Uniform crossover".png Graphic file (type png)
 
 <use images/crossover/"Uniform crossover".png>
@@ -1720,7 +1705,7 @@ Package pdftex.def Info: images/crossover/"Uniform crossover".png used on input
 (pdftex.def)             Requested size: 117.00119pt x 122.05338pt.
  [49 <./images/crossover/Single point crossover.png> <./images/crossover/Two po
 int crossover.png> <./images/crossover/Uniform crossover.png>]
-<images/mutation/"flip mutation".png, id=928, 487.8225pt x 257.96375pt>
+<images/mutation/"flip mutation".png, id=929, 487.8225pt x 257.96375pt>
 File: images/mutation/"flip mutation".png Graphic file (type png)
 
 <use images/mutation/"flip mutation".png>
@@ -1728,7 +1713,7 @@ Package pdftex.def Info: images/mutation/"flip mutation".png used on input line
  140.
 (pdftex.def)             Requested size: 117.00119pt x 61.86926pt.
 
-<images/mutation/"interchanging mutation".png, id=929, 487.8225pt x 257.96375pt
+<images/mutation/"interchanging mutation".png, id=930, 487.8225pt x 257.96375pt
 >
 File: images/mutation/"interchanging mutation".png Graphic file (type png)
  <use images/mutation/"interchanging mutation".png>
@@ -1736,7 +1721,7 @@ Package pdftex.def Info: images/mutation/"interchanging mutation".png used on i
 nput line 146.
 (pdftex.def)             Requested size: 117.00119pt x 61.86926pt.
 
-<images/mutation/"inversion mutation".png, id=930, 487.8225pt x 257.96375pt>
+<images/mutation/"inversion mutation".png, id=931, 487.8225pt x 257.96375pt>
 File: images/mutation/"inversion mutation".png Graphic file (type png)
 
 <use images/mutation/"inversion mutation".png>
@@ -1754,7 +1739,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-<images/"Weibull".png, id=953, 578.16pt x 433.62pt>
+<images/"Weibull".png, id=954, 578.16pt x 433.62pt>
 File: images/"Weibull".png Graphic file (type png)
  <use images/"Weibull".png>
 Package pdftex.def Info: images/"Weibull".png used on input line 181.
@@ -1787,7 +1772,7 @@ Overfull \hbox (17.83578pt too wide) in paragraph at lines 241--241
  |[]\OT1/cmr/bx/n/17.28 Population Dis-tributed Ge-netic Al-go-rithms| 
  []
 
-[53] <images/obstacles.png, id=988, 685.56125pt x 444.66125pt>
+[53] <images/obstacles.png, id=989, 685.56125pt x 444.66125pt>
 File: images/obstacles.png Graphic file (type png)
 
 <use images/obstacles.png>
@@ -1807,252 +1792,248 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
 [56
 
-] [57]
-<images/plots/"adult selection"/"full generational replacement".png, id=1015, 4
+] [57] [58]
+<images/plots/"adult selection"/"full generational replacement".png, id=1025, 4
 85.815pt x 456.70625pt>
 File: images/plots/"adult selection"/"full generational replacement".png Graphi
 c file (type png)
 
 <use images/plots/"adult selection"/"full generational replacement".png>
 Package pdftex.def Info: images/plots/"adult selection"/"full generational repl
-acement".png used on input line 40.
+acement".png used on input line 41.
 (pdftex.def)             Requested size: 120.89905pt x 113.65361pt.
 
-<images/plots/"adult selection"/"generational mixing".png, id=1016, 485.815pt x
+<images/plots/"adult selection"/"generational mixing".png, id=1026, 485.815pt x
  462.72874pt>
 File: images/plots/"adult selection"/"generational mixing".png Graphic file (ty
 pe png)
  <use images/plots/"adult selection"/"generational mixing".png>
 Package pdftex.def Info: images/plots/"adult selection"/"generational mixing".p
-ng used on input line 47.
+ng used on input line 48.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"adult selection"/"overproduction".png, id=1017, 485.815pt x 462.
+<images/plots/"adult selection"/"overproduction".png, id=1027, 485.815pt x 462.
 72874pt>
 File: images/plots/"adult selection"/"overproduction".png Graphic file (type pn
 g)
  <use images/plots/"adult selection"/"overproduction".png>
 Package pdftex.def Info: images/plots/"adult selection"/"overproduction".png us
-ed on input line 54.
+ed on input line 55.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<images/plots/"parent selection"/"roulette wheel".png, id=1018, 485.815pt x 462
+<images/plots/"parent selection"/"roulette wheel".png, id=1028, 485.815pt x 462
 .72874pt>
 File: images/plots/"parent selection"/"roulette wheel".png Graphic file (type p
 ng)
  <use images/plots/"parent selection"/"roulette wheel".png>
 Package pdftex.def Info: images/plots/"parent selection"/"roulette wheel".png u
-sed on input line 70.
+sed on input line 71.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"parent selection"/"tournament size 5".png, id=1019, 485.815pt x 
+<images/plots/"parent selection"/"tournament size 5".png, id=1029, 485.815pt x 
 462.72874pt>
 File: images/plots/"parent selection"/"tournament size 5".png Graphic file (typ
 e png)
  <use images/plots/"parent selection"/"tournament size 5".png>
 Package pdftex.def Info: images/plots/"parent selection"/"tournament size 5".pn
-g used on input line 77.
+g used on input line 78.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"parent selection"/"tournament size 10".png, id=1020, 485.815pt x
+<images/plots/"parent selection"/"tournament size 10".png, id=1030, 485.815pt x
  462.72874pt>
 File: images/plots/"parent selection"/"tournament size 10".png Graphic file (ty
 pe png)
  <use images/plots/"parent selection"/"tournament size 10".png>
 Package pdftex.def Info: images/plots/"parent selection"/"tournament size 10".p
-ng used on input line 84.
+ng used on input line 85.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"parent selection"/"tournament size 15".png, id=1021, 485.815pt x
+<images/plots/"parent selection"/"tournament size 15".png, id=1031, 485.815pt x
  462.72874pt>
 File: images/plots/"parent selection"/"tournament size 15".png Graphic file (ty
 pe png)
  <use images/plots/"parent selection"/"tournament size 15".png>
 Package pdftex.def Info: images/plots/"parent selection"/"tournament size 15".p
-ng used on input line 91.
+ng used on input line 92.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"parent selection"/"tournament size 20".png, id=1022, 485.815pt x
+<images/plots/"parent selection"/"tournament size 20".png, id=1032, 485.815pt x
  462.72874pt>
 File: images/plots/"parent selection"/"tournament size 20".png Graphic file (ty
 pe png)
  <use images/plots/"parent selection"/"tournament size 20".png>
 Package pdftex.def Info: images/plots/"parent selection"/"tournament size 20".p
-ng used on input line 98.
+ng used on input line 99.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"parent selection"/"tournament size 25".png, id=1023, 485.815pt x
+<images/plots/"parent selection"/"tournament size 25".png, id=1033, 485.815pt x
  462.72874pt>
 File: images/plots/"parent selection"/"tournament size 25".png Graphic file (ty
 pe png)
  <use images/plots/"parent selection"/"tournament size 25".png>
 Package pdftex.def Info: images/plots/"parent selection"/"tournament size 25".p
-ng used on input line 105.
+ng used on input line 106.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/plots/"crossover method"/"single point crossover".png, id=1024, 485.815
+<images/plots/"crossover method"/"single point crossover".png, id=1034, 485.815
 pt x 462.72874pt>
 File: images/plots/"crossover method"/"single point crossover".png Graphic file
  (type png)
 
 <use images/plots/"crossover method"/"single point crossover".png>
 Package pdftex.def Info: images/plots/"crossover method"/"single point crossove
-r".png used on input line 121.
+r".png used on input line 122.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover method"/"two point crossover".png, id=1025, 485.815pt 
+<images/plots/"crossover method"/"two point crossover".png, id=1035, 485.815pt 
 x 462.72874pt>
 File: images/plots/"crossover method"/"two point crossover".png Graphic file (t
 ype png)
  <use images/plots/"crossover method"/"two point crossover".png>
 Package pdftex.def Info: images/plots/"crossover method"/"two point crossover".
-png used on input line 128.
+png used on input line 129.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover method"/"uniform crossover".png, id=1026, 485.815pt x 
+<images/plots/"crossover method"/"uniform crossover".png, id=1036, 485.815pt x 
 462.72874pt>
 File: images/plots/"crossover method"/"uniform crossover".png Graphic file (typ
 e png)
  <use images/plots/"crossover method"/"uniform crossover".png>
 Package pdftex.def Info: images/plots/"crossover method"/"uniform crossover".pn
-g used on input line 135.
+g used on input line 136.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/plots/"crossover rate"/"crossover rate 0,0".png, id=1027, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,0".png, id=1037, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,0".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,0".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,0".png
- used on input line 151.
+ used on input line 152.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,2".png, id=1028, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,2".png, id=1038, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,2".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,2".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,2".png
- used on input line 158.
+ used on input line 159.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,4".png, id=1029, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,4".png, id=1039, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,4".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,4".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,4".png
- used on input line 165.
+ used on input line 166.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,6".png, id=1030, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,6".png, id=1040, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,6".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,6".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,6".png
- used on input line 172.
+ used on input line 173.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,8".png, id=1031, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,8".png, id=1041, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,8".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,8".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,8".png
- used on input line 179.
+ used on input line 180.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 1,0".png, id=1032, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 1,0".png, id=1042, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 1,0".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 1,0".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 1,0".png
- used on input line 186.
+ used on input line 187.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/plots/"mutation rate"/"mutation rate 0,0001".png, id=1033, 485.815pt x 
+<images/plots/"mutation rate"/"mutation rate 0,0001".png, id=1043, 485.815pt x 
 462.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,0001".png Graphic file (typ
 e png)
  <use images/plots/"mutation rate"/"mutation rate 0,0001".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0001".pn
-g used on input line 202.
+g used on input line 203.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,0005".png, id=1034, 485.815pt x 
+<images/plots/"mutation rate"/"mutation rate 0,0005".png, id=1044, 485.815pt x 
 462.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,0005".png Graphic file (typ
 e png)
  <use images/plots/"mutation rate"/"mutation rate 0,0005".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0005".pn
-g used on input line 209.
+g used on input line 210.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,001".png, id=1035, 485.815pt x 4
+<images/plots/"mutation rate"/"mutation rate 0,001".png, id=1045, 485.815pt x 4
 62.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,001".png Graphic file (type
  png)
  <use images/plots/"mutation rate"/"mutation rate 0,001".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,001".png
- used on input line 216.
+ used on input line 217.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,005".png, id=1036, 485.815pt x 4
+<images/plots/"mutation rate"/"mutation rate 0,005".png, id=1046, 485.815pt x 4
 62.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,005".png Graphic file (type
  png)
  <use images/plots/"mutation rate"/"mutation rate 0,005".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,005".png
- used on input line 223.
+ used on input line 224.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,01".png, id=1037, 485.815pt x 46
+<images/plots/"mutation rate"/"mutation rate 0,01".png, id=1047, 485.815pt x 46
 2.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,01".png Graphic file (type 
 png)
  <use images/plots/"mutation rate"/"mutation rate 0,01".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,01".png 
-used on input line 230.
+used on input line 231.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[58]) (./project.bbl [59 <./images/plots/adult selection/full generational repl
-acement.png> <./images/plots/adult selection/generational mixing.png> <./images
-/plots/adult selection/overproduction.png>] [60 <./images/plots/parent selectio
-n/roulette wheel.png> <./images/plots/parent selection/tournament size 5.png> <
-./images/plots/parent selection/tournament size 10.png> <./images/plots/parent 
-selection/tournament size 15.png> <./images/plots/parent selection/tournament s
-ize 20.png> <./images/plots/parent selection/tournament size 25.png>] [61 <./im
-ages/plots/crossover method/single point crossover.png> <./images/plots/crossov
-er method/two point crossover.png> <./images/plots/crossover method/uniform cro
-ssover.png> <./images/plots/crossover rate/crossover rate 0,0.png> <./images/pl
-ots/crossover rate/crossover rate 0,2.png> <./images/plots/crossover rate/cross
-over rate 0,4.png> <./images/plots/crossover rate/crossover rate 0,6.png> <./im
-ages/plots/crossover rate/crossover rate 0,8.png> <./images/plots/crossover rat
-e/crossover rate 1,0.png>] [62 <./images/plots/mutation rate/mutation rate 0,00
-01.png> <./images/plots/mutation rate/mutation rate 0,0005.png> <./images/plots
-/mutation rate/mutation rate 0,001.png> <./images/plots/mutation rate/mutation 
-rate 0,005.png> <./images/plots/mutation rate/mutation rate 0,01.png>] [63
+) (./project.bbl [59 <./images/plots/adult selection/full generational replacem
+ent.png> <./images/plots/adult selection/generational mixing.png> <./images/plo
+ts/adult selection/overproduction.png>] [60 <./images/plots/parent selection/ro
+ulette wheel.png> <./images/plots/parent selection/tournament size 5.png> <./im
+ages/plots/parent selection/tournament size 10.png> <./images/plots/parent sele
+ction/tournament size 15.png> <./images/plots/parent selection/tournament size 
+20.png> <./images/plots/parent selection/tournament size 25.png>] [61 <./images
+/plots/crossover method/single point crossover.png> <./images/plots/crossover m
+ethod/two point crossover.png> <./images/plots/crossover method/uniform crossov
+er.png> <./images/plots/crossover rate/crossover rate 0,0.png> <./images/plots/
+crossover rate/crossover rate 0,2.png> <./images/plots/crossover rate/crossover
+ rate 0,4.png> <./images/plots/crossover rate/crossover rate 0,6.png> <./images
+/plots/crossover rate/crossover rate 0,8.png> <./images/plots/crossover rate/cr
+ossover rate 1,0.png>] [62 <./images/plots/mutation rate/mutation rate 0,0001.p
+ng> <./images/plots/mutation rate/mutation rate 0,0005.png> <./images/plots/mut
+ation rate/mutation rate 0,001.png> <./images/plots/mutation rate/mutation rate
+ 0,005.png> <./images/plots/mutation rate/mutation rate 0,01.png>] [63
 
 ]
 [64]) [65]
@@ -2073,10 +2054,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 19080 strings out of 493117
- 359960 string characters out of 6135434
- 430877 words of memory out of 5000000
- 21954 multiletter control sequences out of 15000+600000
+ 19085 strings out of 493117
+ 360131 string characters out of 6135434
+ 428777 words of memory out of 5000000
+ 21959 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,75p,3143b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2095,10 +2076,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (66 pages, 1661666 bytes).
+Output written on project.pdf (66 pages, 1663094 bytes).
 PDF statistics:
- 1170 PDF objects out of 1200 (max. 8388607)
- 963 compressed objects within 10 object streams
+ 1175 PDF objects out of 1200 (max. 8388607)
+ 968 compressed objects within 10 object streams
  184 named destinations out of 1000 (max. 500000)
  574 words of extra memory for PDF output out of 10000 (max. 10000000)
 

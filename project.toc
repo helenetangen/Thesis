@@ -29,11 +29,11 @@
 \contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{55}{section.4.5}
 \contentsline {chapter}{\numberline {5}Results and Discussion}{56}{chapter.5}
 \contentsline {section}{\numberline {5.1}Parameter settings}{56}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{59}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{58}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Parent Selection}{59}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{59}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{59}{subsection.5.1.4}
 \contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{59}{subsection.5.1.5}
 \contentsline {section}{\numberline {5.2}Results}{59}{section.5.2}
-\contentsline {section}{\numberline {5.3}Discussion}{59}{section.5.3}
-\contentsline {chapter}{Bibliography}{59}{section.5.3}
+\contentsline {section}{\numberline {5.3}Discussion}{60}{section.5.3}
+\contentsline {chapter}{Bibliography}{60}{section.5.3}
