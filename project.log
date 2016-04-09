@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 APR 2016 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  9 APR 2016 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -878,12 +878,6 @@ LaTeX Warning: Label `sub@figure:uniform crossover' multiply defined.
 
 
 LaTeX Warning: Label `figure:crossover methods' multiply defined.
-
-
-LaTeX Warning: Label `figure:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@figure:single point crossover' multiply defined.
 
 
 LaTeX Warning: Label `figure:two point crossover' multiply defined.
@@ -1878,165 +1872,164 @@ ng used on input line 106.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-<images/plots/"crossover method"/"single point crossover".png, id=1034, 485.815
+[59 <./images/plots/adult selection/full generational replacement.png> <./image
+s/plots/adult selection/generational mixing.png> <./images/plots/adult selectio
+n/overproduction.png>]
+<images/plots/"crossover method"/"single point crossover".png, id=1042, 485.815
 pt x 462.72874pt>
 File: images/plots/"crossover method"/"single point crossover".png Graphic file
  (type png)
 
 <use images/plots/"crossover method"/"single point crossover".png>
 Package pdftex.def Info: images/plots/"crossover method"/"single point crossove
-r".png used on input line 122.
+r".png used on input line 123.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover method"/"two point crossover".png, id=1035, 485.815pt 
+<images/plots/"crossover method"/"two point crossover".png, id=1043, 485.815pt 
 x 462.72874pt>
 File: images/plots/"crossover method"/"two point crossover".png Graphic file (t
 ype png)
  <use images/plots/"crossover method"/"two point crossover".png>
 Package pdftex.def Info: images/plots/"crossover method"/"two point crossover".
-png used on input line 129.
+png used on input line 130.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover method"/"uniform crossover".png, id=1036, 485.815pt x 
+<images/plots/"crossover method"/"uniform crossover".png, id=1044, 485.815pt x 
 462.72874pt>
 File: images/plots/"crossover method"/"uniform crossover".png Graphic file (typ
 e png)
  <use images/plots/"crossover method"/"uniform crossover".png>
 Package pdftex.def Info: images/plots/"crossover method"/"uniform crossover".pn
-g used on input line 136.
+g used on input line 137.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/plots/"crossover rate"/"crossover rate 0,0".png, id=1037, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,0".png, id=1045, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,0".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,0".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,0".png
- used on input line 152.
+ used on input line 153.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,2".png, id=1038, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,2".png, id=1046, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,2".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,2".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,2".png
- used on input line 159.
+ used on input line 160.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,4".png, id=1039, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,4".png, id=1047, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,4".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,4".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,4".png
- used on input line 166.
+ used on input line 167.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,6".png, id=1040, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,6".png, id=1048, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,6".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,6".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,6".png
- used on input line 173.
+ used on input line 174.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,8".png, id=1041, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 0,8".png, id=1049, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 0,8".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 0,8".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,8".png
- used on input line 180.
+ used on input line 181.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"crossover rate"/"crossover rate 1,0".png, id=1042, 485.815pt x 4
+<images/plots/"crossover rate"/"crossover rate 1,0".png, id=1050, 485.815pt x 4
 62.72874pt>
 File: images/plots/"crossover rate"/"crossover rate 1,0".png Graphic file (type
  png)
  <use images/plots/"crossover rate"/"crossover rate 1,0".png>
 Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 1,0".png
- used on input line 187.
+ used on input line 188.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/plots/"mutation rate"/"mutation rate 0,0001".png, id=1043, 485.815pt x 
+<images/plots/"mutation rate"/"mutation rate 0,0001".png, id=1051, 485.815pt x 
 462.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,0001".png Graphic file (typ
 e png)
  <use images/plots/"mutation rate"/"mutation rate 0,0001".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0001".pn
-g used on input line 203.
+g used on input line 204.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,0005".png, id=1044, 485.815pt x 
+<images/plots/"mutation rate"/"mutation rate 0,0005".png, id=1052, 485.815pt x 
 462.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,0005".png Graphic file (typ
 e png)
  <use images/plots/"mutation rate"/"mutation rate 0,0005".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0005".pn
-g used on input line 210.
+g used on input line 211.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,001".png, id=1045, 485.815pt x 4
+<images/plots/"mutation rate"/"mutation rate 0,001".png, id=1053, 485.815pt x 4
 62.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,001".png Graphic file (type
  png)
  <use images/plots/"mutation rate"/"mutation rate 0,001".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,001".png
- used on input line 217.
+ used on input line 218.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,005".png, id=1046, 485.815pt x 4
+<images/plots/"mutation rate"/"mutation rate 0,005".png, id=1054, 485.815pt x 4
 62.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,005".png Graphic file (type
  png)
  <use images/plots/"mutation rate"/"mutation rate 0,005".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,005".png
- used on input line 224.
+ used on input line 225.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,01".png, id=1047, 485.815pt x 46
+<images/plots/"mutation rate"/"mutation rate 0,01".png, id=1055, 485.815pt x 46
 2.72874pt>
 File: images/plots/"mutation rate"/"mutation rate 0,01".png Graphic file (type 
 png)
  <use images/plots/"mutation rate"/"mutation rate 0,01".png>
 Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,01".png 
-used on input line 231.
+used on input line 232.
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./project.bbl [59 <./images/plots/adult selection/full generational replacem
-ent.png> <./images/plots/adult selection/generational mixing.png> <./images/plo
-ts/adult selection/overproduction.png>] [60 <./images/plots/parent selection/ro
-ulette wheel.png> <./images/plots/parent selection/tournament size 5.png> <./im
-ages/plots/parent selection/tournament size 10.png> <./images/plots/parent sele
-ction/tournament size 15.png> <./images/plots/parent selection/tournament size 
-20.png> <./images/plots/parent selection/tournament size 25.png>] [61 <./images
-/plots/crossover method/single point crossover.png> <./images/plots/crossover m
-ethod/two point crossover.png> <./images/plots/crossover method/uniform crossov
-er.png> <./images/plots/crossover rate/crossover rate 0,0.png> <./images/plots/
-crossover rate/crossover rate 0,2.png> <./images/plots/crossover rate/crossover
- rate 0,4.png> <./images/plots/crossover rate/crossover rate 0,6.png> <./images
-/plots/crossover rate/crossover rate 0,8.png> <./images/plots/crossover rate/cr
-ossover rate 1,0.png>] [62 <./images/plots/mutation rate/mutation rate 0,0001.p
-ng> <./images/plots/mutation rate/mutation rate 0,0005.png> <./images/plots/mut
-ation rate/mutation rate 0,001.png> <./images/plots/mutation rate/mutation rate
- 0,005.png> <./images/plots/mutation rate/mutation rate 0,01.png>] [63
+[60 <./images/plots/parent selection/roulette wheel.png> <./images/plots/parent
+ selection/tournament size 5.png> <./images/plots/parent selection/tournament s
+ize 10.png> <./images/plots/parent selection/tournament size 15.png> <./images/
+plots/parent selection/tournament size 20.png> <./images/plots/parent selection
+/tournament size 25.png>]) (./project.bbl [61 <./images/plots/crossover method/
+single point crossover.png> <./images/plots/crossover method/two point crossove
+r.png> <./images/plots/crossover method/uniform crossover.png>] [62 <./images/p
+lots/crossover rate/crossover rate 0,0.png> <./images/plots/crossover rate/cros
+sover rate 0,2.png> <./images/plots/crossover rate/crossover rate 0,4.png> <./i
+mages/plots/crossover rate/crossover rate 0,6.png> <./images/plots/crossover ra
+te/crossover rate 0,8.png> <./images/plots/crossover rate/crossover rate 1,0.pn
+g>] [63 <./images/plots/mutation rate/mutation rate 0,0001.png> <./images/plots
+/mutation rate/mutation rate 0,0005.png> <./images/plots/mutation rate/mutation
+ rate 0,001.png> <./images/plots/mutation rate/mutation rate 0,005.png> <./imag
+es/plots/mutation rate/mutation rate 0,01.png>] [64
 
-]
-[64]) [65]
+] [65]) [66]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./project.aux)
@@ -2044,7 +2037,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `project.out' has not changed.
 (rerunfilecheck)             Checksum: 93F95673C9E661FFC13FF8235F6EC4EB;2638.
-
 
 LaTeX Warning: There were undefined references.
 
@@ -2054,10 +2046,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 19085 strings out of 493117
- 360131 string characters out of 6135434
- 428777 words of memory out of 5000000
- 21959 multiletter control sequences out of 15000+600000
+ 19088 strings out of 493117
+ 360196 string characters out of 6135434
+ 428868 words of memory out of 5000000
+ 21961 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,75p,3143b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2076,10 +2068,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (66 pages, 1663094 bytes).
+Output written on project.pdf (67 pages, 1664353 bytes).
 PDF statistics:
- 1175 PDF objects out of 1200 (max. 8388607)
- 968 compressed objects within 10 object streams
- 184 named destinations out of 1000 (max. 500000)
+ 1184 PDF objects out of 1200 (max. 8388607)
+ 976 compressed objects within 10 object streams
+ 185 named destinations out of 1000 (max. 500000)
  574 words of extra memory for PDF output out of 10000 (max. 10000000)
 
