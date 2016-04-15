@@ -78,7 +78,7 @@ Parent selection is the process of deciding which adults become parents for the 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.2]{images/"parent selection"/"tournament selection"}
-\caption{Tournament selection.}
+\caption{Tournament selection. Three individuals with fitness 9, 4 and 6 respectively, are selected randomly from the adult population. The individuals with best fitness, fitness 4, is the tournament winner and is selected into the parent pool.}
 \label{figure:tournament selection}
 \end{center}
 \end{figure}
@@ -101,7 +101,9 @@ This subsection gives an overview over the genetic operations used to produce th
 
 
 \subsubsection{Crossover and Elitism}
-Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombining genes of two parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover. These are all presented in figure \ref{figure:crossover methods}. As shown in figure \ref{figure:single point crossover}, single point crossover is a method where a random position, called the crossover point, is generated. All genes from the first parent prior to the crossover point are copied to the first child, and all genes after the crossover point are copied to the second child, and all genes from the second parent prior to the crossover point is copied to the second child, and all genes after the crossover point is copied to the first child. Two point crossover is similar to single point crossover, except that it uses to crossover points instead of one. This is shown in figure \ref{figure:two point crossover}. In uniform crossover, there is a fifty percent probability that each gene will be drawn from each parent as shown in figure \ref{figure:uniform crossover}. This crossover method results in child individuals that might not inherit the gene patterns from their parents the same way as in the other two methods.
+Crossover is the recombination method utilized by the genetic algorithm to perform sexual reproduction. A crossover operation produced two children by recombining genes of two parent individuals. The genetic algorithm implemented for this thesis has three crossover methods to chose from: Single point crossover, two point crossover and uniform crossover. These are all presented in figure \ref{figure:crossover methods}. 
+
+As shown in figure \ref{figure:single point crossover}, single point crossover uses randomly generated position, called the crossover point, to perform recombination. All genes from the first parent prior to the crossover point are copied to the first child, and all genes after the crossover point are copied to the second child, and all genes from the second parent prior to the crossover point is copied to the second child, and all genes after the crossover point is copied to the first child. Two point crossover is similar to single point crossover, except that it uses to crossover points instead of one. This is shown in figure \ref{figure:two point crossover}. In uniform crossover, there is a fifty percent probability that each gene will be drawn from each parent as shown in figure \ref{figure:uniform crossover}. This crossover method mix up the parent genes more that the two others, therefore more gene patterns will be lost using this method.\\
 
 
 \begin{figure}[h!]
@@ -123,8 +125,12 @@ Crossover is the recombination method utilized by the genetic algorithm to perfo
         \caption{}
         \label{figure:uniform crossover}
     \end{subfigure}
-    \caption{Crossover methods: (a) Single point crossover, (b) two point crossover, and (c) uniform crossover.}\label{figure:crossover methods}
+    \caption{Crossover methods: (a) Single point crossover, (b) two point crossover, and (c) uniform crossover.}
+    \label{figure:crossover methods}
 \end{figure}
+
+
+\noindent N
 
 
 \subsubsection{Mutation}
@@ -150,7 +156,8 @@ Although crossover is a powerful genetic operator that able child individuals to
         \caption{}
         \label{figure:inversion mutation}
     \end{subfigure}
-    \caption{Mutation methods: (a) Single point crossover, (b) two point crossover, and (c) uniform crossover.}\label{figure:crossover methods}
+    \caption{Mutation methods: (a) Single point crossover, (b) two point crossover, and (c) uniform crossover.}
+    \label{figure:mutation methods}
 \end{figure}
 
 
