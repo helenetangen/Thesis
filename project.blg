@@ -4,45 +4,45 @@ The top-level auxiliary file: project.aux
 The style file: apalike.bst
 Database file #1: chapters/biblography.bib
 Warning--empty journal in Razali
-You've used 31 entries,
+You've used 33 entries,
             1935 wiz_defined-function locations,
-            658 strings with 8858 characters,
-and the built_in function-call counts, 11508 in all, are:
-= -- 1106
-> -- 515
-< -- 20
-+ -- 180
-- -- 172
-* -- 924
-:= -- 2063
-add.period$ -- 95
-call.type$ -- 31
-change.case$ -- 232
-chr.to.int$ -- 31
-cite$ -- 32
-duplicate$ -- 451
-empty$ -- 766
-format.name$ -- 218
-if$ -- 2218
+            670 strings with 9213 characters,
+and the built_in function-call counts, 12186 in all, are:
+= -- 1174
+> -- 535
+< -- 22
++ -- 188
+- -- 178
+* -- 978
+:= -- 2183
+add.period$ -- 101
+call.type$ -- 33
+change.case$ -- 245
+chr.to.int$ -- 33
+cite$ -- 34
+duplicate$ -- 478
+empty$ -- 816
+format.name$ -- 228
+if$ -- 2348
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 157
-num.names$ -- 93
-pop$ -- 239
+missing$ -- 37
+newline$ -- 167
+num.names$ -- 99
+pop$ -- 248
 preamble$ -- 1
-purify$ -- 240
+purify$ -- 253
 quote$ -- 0
-skip$ -- 340
+skip$ -- 362
 stack$ -- 0
-substring$ -- 644
-swap$ -- 52
+substring$ -- 695
+swap$ -- 54
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 174
+type$ -- 186
 warning$ -- 1
-while$ -- 86
+while$ -- 92
 width$ -- 0
-write$ -- 387
+write$ -- 412
 (There was 1 warning)
