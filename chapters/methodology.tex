@@ -44,25 +44,25 @@ As in most of the studies presented in chapter \ref{chapter:relatedwork}, the in
 \subsection{Adult Selection}\label{subsection:adult selection}
 Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms were implemented in this thesis: Full generational replacement,  generational mixing, and overproduction. Each method was tested in order to decide which adult selection method was more suitable for solving the wind farm layout optimization problem. \\
 
-\noindent Full generational replacement, is the simplest adult selection mechanism consisting of replacing all the individuals in the previous adult population with the newly generated child population. The second method, generational mixing, is illustrated in figure \ref{figure:generational mixing}. As can be seen in the figure, the four best individuals (individuals with lowest fitness) from the pool consisting of all the newly generated children and the previous adult population are selected as the new adult population. \\
+\noindent Full generational replacement, the simplest adult selection mechanism, replaces the previous adult population with the newly generated child population. The second method, generational mixing, is illustrated in figure \ref{figure:generational mixing}. As the name suggests, generational mixing mix the previous adult pool together with the new child pool and selects the best individuals from the mix to become the new adult population. As can be seen in the figure, the new adult pool consists of the best individuals from both the newly generated child pool and the previous adult pool. The two individuals with fitness 2 and 3 are selected from the child pool, and the two individuals with fitness 4 and 4 is selected from the previous adult pool. The new child population will therefore contain individuals with fitness 4, 2, 3 and 4, instead of fitness of 5, 6, 3 and 2, which would be the adult population if full generational replacement was used. 
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.2]{images/"adult selection"/"generational mixing"}
-\caption{Generational mixing. The best individuals, those with lowest fitness, from the previous adult pool and the new child population are selected to represent the new adult pool.}
+\caption{Generational mixing. The best individuals, from the pool consisting of individuals from the previous adult population and the new child population are selected as new the adult population.}
 \label{figure:generational mixing}
 \end{center}
 \end{figure}
 
 
-\noindent Overproduction, the third adult selection mechanism, is illustrated in figure \ref{figure:overproduction}. The newly generated child population consist of twice as many individuals than in the adult pool. Therefore, the child population have to compete against each other for the spots in the adult pool and only those with better fitness are able to survive. \\
+\noindent Overproduction, the third adult selection mechanism, is illustrated in figure \ref{figure:overproduction}. The newly generated child population consist of twice as many individuals as there are room for in the adult population. Therefore, the children have to compete against each other for the spots in the adult pool. \\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.2]{images/"adult selection"/overproduction}
-\caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population, therefore only the fittest individuals from the large child population grow up into adults.}
+\caption{Overproduction. The newly generated child population consist of twice as many individuals as there are room for in the adult population. Therefore, only the fittest individuals from the large child population grow up into adults.}
 \label{figure:overproduction}
 \end{center}
 \end{figure}
@@ -70,9 +70,9 @@ Adult selection is the process of selecting which individuals that are allowed t
 
 
 \subsection{Parent Selection}\label{subsection:parent selection}
-Parent selection is the selection of which adults become parents for the next child generation. When choosing parent selection method there are a few concerns that needs to be addressed. First, it is important that parents with good genes, i.e. higher fitness, gets their genes transferred to the next generation. However, it is also important to keep diversity in the population so that one does not end wit a sub-optimal solution; a local maxima. Two parent selection methods are implemented for the genetic algorithm: Tournament selection and roulette wheel selection. \\
+Parent selection is the process of deciding which adults become parents for the next child generation. When choosing parent selection method there are a few concerns that needs to be addressed. First, it is important that parents with good genes, i.e. lower fitness, gets their genes transferred to the next generation. However, it is also important to keep diversity in the population so that one does not end up with a sub-optimal solution; a local maximum. Two parent selection methods are implemented for the genetic algorithm for this thesis: Tournament selection and roulette wheel selection. \\
 
-\noindent In tournament selection, a given number of individuals are drawn randomly from the population. The number of individuals drawn is decided by the variable ''tournament size''. These individuals compete in a tournament for one spot in the parent pool. The individual with ''best'', i.e. lowest fitness is selected as a parent. These tournaments continue until the adult pool is full. Figure \ref{figure:tournament selection} shows how tournament selection works. As can be seen in the figure, three individuals are drawn randomly from the adult pool, meaning that the tournament size in this example is 3. The ''best'' individual, the individual with fitness 4 is the tournament winner and is allowed to enter the adult pool. \\
+\noindent In tournament selection, a given number of individuals are drawn randomly from the population. The number of individuals drawn is decided by the variable \textit{tournament size}. These individuals compete in a tournament for one spot in the parent pool. The individual with best, i.e. lowest fitness, is  selected as a parent. These tournaments continue until the adult pool is full. Figure \ref{figure:tournament selection} shows how tournament selection works. As can be seen in the figure, three individuals are drawn randomly from the adult pool, meaning that the tournament size in this example is 3. The best individual, the individual with fitness 4 is the tournament winner and is allowed to enter the adult pool. In order to maintain diversity in the population there is a small probability that parents are selected randomly from the adult pool instead of with tournament selection. This probability is called \textit{epsilon} and makes sure that a small percent of the parents that might not currently be best are not killed of right away. Different values of the \textit{tournament size} variable needs to be tested in order to find the settings that allow the algorithm to explore different solutions, but that also prioritize the best solutions. In chapter \ref{chapter:results}, results obtained for different values of \textit{tournament size} and \textit{epsilon} are compared. \\
 
 
 \begin{figure}[h!]
@@ -84,10 +84,7 @@ Parent selection is the selection of which adults become parents for the next ch
 \end{figure}
 
 
-\noindent Different values of ''tournament size'' needs to be tested in order to find how settings that allow the algorithm to explore different solutions, but that also prioritize the best solutions. In chapter \ref{chapter:results}, results obtained for different tournament sizes are compared to find which is best for the wind farm layout optimization problem. \\
-
-
-\noindent Roulette wheel selection assigns a probability of being chosen as parent to each individuals which is proportional to its fitness compared to all other solutions. Therefore, individuals with better fitness will be more likely to selected for the parent pool. Figure \ref{figure:roulette wheel selection} shows how roulette wheel selection works. The roulette wheel on the left shows the probability of each of the four individuals been selected. Since individual$_4$ has the best fitness, it has a larger probability of being selected than the others. \\
+\noindent Roulette wheel selection assigns a probability of being chosen as parent to each individual proportional to its fitness. Individuals with better fitness will therefore have a higher probability of beings selected into the parent pool. Figure \ref{figure:roulette wheel selection} shows how roulette wheel selection works. The roulette wheel on the left shows the probability for each of the four individuals being selected. Since individual$_4$ has the best fitness, it has a larger probability of being selected than the others. \\
 
 
 \begin{figure}[h!]
