@@ -32,9 +32,9 @@
 \contentsline {subsection}{\numberline {5.1.1}Adult Selection}{59}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Parent Selection}{60}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{60}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{62}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{62}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Results}{62}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Master Slave Model}{62}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{63}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{63}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Results}{63}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Master Slave Model}{63}{subsection.5.2.1}
 \contentsline {section}{\numberline {5.3}Discussion}{63}{section.5.3}
 \contentsline {chapter}{Bibliography}{63}{section.5.3}
