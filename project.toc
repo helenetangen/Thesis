@@ -1,40 +1,42 @@
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation and Background}{4}{section.1.1}
 \contentsline {section}{\numberline {1.2}Goal and Research Questions}{6}{section.1.2}
-\contentsline {section}{\numberline {1.3}Thesis Structure}{7}{section.1.3}
-\contentsline {chapter}{\numberline {2}Background}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}The Wind Farm Layout Optimization Problem}{8}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Definition of the Wind Farm Layout Optimization Problem}{8}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Challenges of wind farm construction}{9}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Genetic Algorithms}{11}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Simple Genetic Algorithms (SGAs)}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Population Distributed Genetic Algorithms}{16}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3}Related Work}{22}{chapter.3}
-\contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{22}{section.3.1}
-\contentsline {section}{\numberline {3.2}Wind Farm Layout Optimization Different Approaches}{35}{section.3.2}
-\contentsline {section}{\numberline {3.3}Discussion Related Work}{38}{section.3.3}
-\contentsline {chapter}{\numberline {4}Methodology}{42}{chapter.4}
-\contentsline {section}{\numberline {4.1}System Architecture}{42}{section.4.1}
-\contentsline {section}{\numberline {4.2}Genetic Algorithm}{43}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Representation}{44}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Adult Selection}{45}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Parent Selection}{46}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Genetic Operations}{49}{subsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.4.1}Crossover and Elitism}{49}{subsubsection.4.2.4.1}
-\contentsline {subsubsection}{\numberline {4.2.4.2}Mutation}{50}{subsubsection.4.2.4.2}
-\contentsline {subsection}{\numberline {4.2.5}Wind-, Wake- and Power Model}{51}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Fitness Function}{53}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Population Distributed Genetic Algorithms}{54}{section.4.3}
-\contentsline {section}{\numberline {4.4}Scenarios}{54}{section.4.4}
-\contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{55}{section.4.5}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{57}{chapter.5}
-\contentsline {section}{\numberline {5.1}Parameter settings}{57}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{59}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Parent Selection}{60}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{60}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{62}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{62}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Results}{62}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Master Slave Model}{62}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Discussion}{62}{section.5.3}
-\contentsline {chapter}{Bibliography}{62}{section.5.3}
+\contentsline {section}{\numberline {1.3}Research Method}{7}{section.1.3}
+\contentsline {section}{\numberline {1.4}Contributions}{7}{section.1.4}
+\contentsline {section}{\numberline {1.5}Thesis Structure}{8}{section.1.5}
+\contentsline {chapter}{\numberline {2}Background}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Wind Farm Layout Optimization}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Definition of the Wind Farm Layout Optimization Problem}{9}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Challenges of wind farm construction}{10}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Genetic Algorithms}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Simple Genetic Algorithms (SGAs)}{13}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Population Distributed Genetic Algorithms}{17}{subsection.2.2.2}
+\contentsline {chapter}{\numberline {3}Related Work}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Wind Farm Layout Optimization Different Approaches}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}Discussion Related Work}{39}{section.3.3}
+\contentsline {chapter}{\numberline {4}Methodology}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}System Architecture}{43}{section.4.1}
+\contentsline {section}{\numberline {4.2}Genetic Algorithm}{44}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Representation}{45}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Adult Selection}{46}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Parent Selection}{47}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Genetic Operations}{50}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}Crossover and Elitism}{50}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {4.2.4.2}Mutation}{51}{subsubsection.4.2.4.2}
+\contentsline {subsection}{\numberline {4.2.5}Wind-, Wake- and Power Model}{52}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Fitness Function}{54}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Population Distributed Genetic Algorithms}{55}{section.4.3}
+\contentsline {section}{\numberline {4.4}Scenarios}{55}{section.4.4}
+\contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{56}{section.4.5}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{58}{chapter.5}
+\contentsline {section}{\numberline {5.1}Parameter settings}{58}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{60}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Parent Selection}{61}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{61}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{63}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{64}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Results}{64}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Master Slave Model}{64}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Discussion}{64}{section.5.3}
+\contentsline {chapter}{Bibliography}{64}{section.5.3}

@@ -1,7 +1,7 @@
 \chapter{Introduction}\label{chapter:introduction}
 This thesis is a contribution to the third edition of the wind farm layout optimization contest launched by the Genetic and Evolutionary Computation Conference (GECCO) 2016. The contest involves optimizing the number of turbines and turbine positioning in a wind farm with goal of producing maximum power to minimum cost using genetic algorithms. A wind farm simulator is provided by GECCO 2016, the focus of this thesis will therefore be on improving the genetic algorithm that will be used to search for the optimal wind farm layout by investigating the state of the art within wind farm layout optimization and genetic algorithms and experiment with variations of the genetic algorithm.\\
 
-\noindent This chapter provides an introduction to the thesis. Section \ref{section:motivation&background} contains the background and motivation behind the thesis, section \ref{section:goal&researchquestions} introduces the goal and research questions that will be investigated, and section \ref{thesisstructure} gives an overview of the thesis structure. \\
+\noindent This chapter provides an introduction to this thesis. Section \ref{section:motivation&background} contains the background and motivation behind the thesis. Section \ref{section:goal&researchquestions} introduces the goal and research questions that will be investigated. In section \ref{section:researchmethod} a brief overview of the research method is given. Contributions is given in section \ref{section:contributions}, and an overview of the thesis structure is given in section \ref{thesisstructure}.
 
 
 \section{Motivation and Background}\label{section:motivation&background}
@@ -18,10 +18,10 @@ This section states the goal statement and research questions that will be inves
 \noindent \textbf{Goal statement}
 
 \begin{quote}
-\textit{The project goal is to investigate the advantages of using distributed genetic algorithms in optimizing wind farm layout, i.e. solving the wind farm layout optimization problem.} \citep{Samorani}
+\textit{The project goal is to investigate the advantages of using population distributed genetic algorithms in optimizing wind farm layout, i.e. solving the wind farm layout optimization problem.} \citep{Samorani}
 \end{quote}
 
-\noindent The performance of distributed genetic algorithms will be studied and compared to the performance of a simple genetic algorithm (not population distributed) as well as to each other, with the goal of answering the research questions stated below.\\
+\noindent The performance of population distributed genetic algorithms will be studied and compared to the performance of a simple genetic algorithm (non population distributed genetic algorithm) in order to answer the first research question. In addition, each of the population distributed genetic algorithms will be compared against the others with the goal of answering the second research question. \\
 
 \noindent \textbf{Research question 1}
 
@@ -35,7 +35,19 @@ This section states the goal statement and research questions that will be inves
 \textit{Which distributed genetic algorithm works best for the wind farm layout optimization problem? What properties are essential for its success?}
 \end{quote}
 
-\noindent Both research questions will be answered by testing the different distributed genetic algorithms in a wind farm simulator provided by GECCO 2015, on twenty different wind scenarios which are also provided by the contest. Research question 1 will be answered by implementing different types of population distributed genetic algorithms and compare their results with a simple genetic algorithm on each wind scenario. Research question 2 will be tested the same way, and the results of each of the population distributed algorithms will be compared.
+\noindent Both research questions will be answered by testing the different distributed genetic algorithms in a wind farm simulator provided by GECCO 2016. The genetic algorithms will be implemented from scratch in order to give the author control of the environment and the possibility of adding functionality fast and easy. Each genetic algorithm will be tested on different wind scenarios which are also provided by the contest. Research question 1 will be answered by implementing 3 different types of population distributed genetic algorithms and compare their results with a simple genetic algorithm on different wind scenarios. Research question 2 will be tested the same way, and the results of each of the population distributed algorithms will be compared.
+
+
+\section{Research Method}\label{section:researchmethod}
+In order to answer the research questions, a genetic algorithm was implemented for this thesis. Even though a simple genetic algorithm were provided by GECCO 2016 along with a wind farm evaluator and wind scenarios, the choice was made to implement the algorithm from scratch so that the population distributed genetic algorithms could be added easily, and so that more functionality could be added to the program. \\
+
+\noindent To evaluate the different genetic algorithms, scenarios provided by GECCO 2016 were used. The contest provided the contestants with realistic site scenarios which included wind speed from different angels, terrain description such as which areas are possible to place wind turbines in and which contains obstacles, along with other wind turbine parameters. The genetic algorithms were compared on different scenarios, but also on averaged performance over the different wind scenarios. Different genetic algorithm settings were tested in order to find the best settings to run the experiments on.\\
+
+\noindent Finally, the results from the different simulations were compared and analyzed in order to point out which features are important in solving the wind farm layout optimization problem, and what properties that are key for success. \textcolor{red}{Fix!}
+
+
+\section{Contributions}\label{section:contributions}
+The contribution to the field of wind farm layout optimization using genetic algorithms provided by this thesis is a comparison of different population distributed genetic algorithms and their effect on solving the problem. As far as the reader knows, no attempt has been made in comparing population distributed genetic algorithms on the wind farm layout optimization problem, therefore this thesis can contribute with clearance as of which, if any, is the best choice.
 
 
 \section{Thesis Structure}\label{thesisstructure}
