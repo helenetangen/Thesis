@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  29 APR 2016 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  29 APR 2016 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1119,7 +1119,7 @@ LaTeX Info: Redefining \nameref on input line 24.
 \openout4 = `project.out'.
 
  (./chapters/titlepage.tex
-<images/ntnu/logo.png, id=166, 449.5194pt x 98.0463pt>
+<images/ntnu/logo.png, id=170, 449.5194pt x 98.0463pt>
 File: images/ntnu/logo.png Graphic file (type png)
 
 <use images/ntnu/logo.png>
@@ -1129,13 +1129,13 @@ Package pdftex.def Info: images/ntnu/logo.png used on input line 11.
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/ntnu/logo.png>]) (./chapters/preface.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 5.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 5.
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
@@ -1143,19 +1143,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 l.31 \tableofcontents
                       [1
 
-] (./project.toc
-Overfull \hbox (4.84872pt too wide) in paragraph at lines 9--9
- [][] [][]\OT1/cmr/m/n/12 Definition of the Wind Farm Lay-out Op-ti-miza-tion P
-rob- 
- []
-
-[2
+] (./project.toc [2
 
 ])
 \tf@toc=\write5
 \openout5 = `project.toc'.
 
- (./chapters/introduction.tex [3]
+ (./chapters/introduction.tex
+[3]
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
@@ -1189,17 +1184,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
- []
-
-[7]
-
-LaTeX Warning: Reference `chapter:technical' on page 8 undefined on input line 
-54.
-
-) (./chapters/background.tex [8]
+[7]) (./chapters/background.tex [8]
 Chapter 2.
 [9
 
@@ -1218,7 +1203,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-<images/"Wake Effect".png, id=299, 502.87875pt x 387.4475pt>
+<images/"Wake Effect".png, id=306, 502.87875pt x 387.4475pt>
 File: images/"Wake Effect".png Graphic file (type png)
 
 <use images/"Wake Effect".png>
@@ -1243,7 +1228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<images/"genetic algorithm".png, id=341, 849.1725pt x 570.13pt>
+<images/"genetic algorithm".png, id=348, 849.1725pt x 570.13pt>
 File: images/"genetic algorithm".png Graphic file (type png)
 
 <use images/"genetic algorithm".png>
@@ -1263,7 +1248,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
  []
 
 [13]
-<images/"genotype-phenotype translation".png, id=351, 658.46pt x 418.56375pt>
+<images/"genotype-phenotype translation".png, id=358, 658.46pt x 418.56375pt>
 File: images/"genotype-phenotype translation".png Graphic file (type png)
 
 <use images/"genotype-phenotype translation".png>
@@ -1285,7 +1270,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
  []
 
 [15 <./images/genotype-phenotype translation.png>]
-<images/"parent selection"/"tournament selection".png, id=369, 1020.81375pt x 4
+<images/"parent selection"/"tournament selection".png, id=376, 1020.81375pt x 4
 58.71375pt>
 File: images/"parent selection"/"tournament selection".png Graphic file (type p
 ng)
@@ -1299,7 +1284,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
  []
 
 [16 <./images/parent selection/tournament selection.png>]
-<images/crossover/"Uniform Crossover".png, id=382, 487.8225pt x 508.90125pt>
+<images/crossover/"Uniform Crossover".png, id=389, 487.8225pt x 508.90125pt>
 File: images/crossover/"Uniform Crossover".png Graphic file (type png)
 
 <use images/crossover/"Uniform Crossover".png>
@@ -1311,7 +1296,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<images/mutation/"mutation".png, id=384, 487.8225pt x 257.96375pt>
+<images/mutation/"mutation".png, id=391, 487.8225pt x 257.96375pt>
 File: images/mutation/"mutation".png Graphic file (type png)
 
 <use images/mutation/"mutation".png>
@@ -1341,7 +1326,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
 [18]
 <images/"population distributed genetic algorithms"/"master-slave model".png, i
-d=400, 366.36874pt x 367.3725pt>
+d=407, 366.36874pt x 367.3725pt>
 File: images/"population distributed genetic algorithms"/"master-slave model".p
 ng Graphic file (type png)
 
@@ -1356,7 +1341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
  []
 
 
-<images/"population distributed genetic algorithms"/"island model".png, id=406,
+<images/"population distributed genetic algorithms"/"island model".png, id=413,
  484.81125pt x 407.5225pt>
 File: images/"population distributed genetic algorithms"/"island model".png Gra
 phic file (type png)
@@ -1382,7 +1367,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
 
 <images/"population distributed genetic algorithms"/"cellular model".png, id=43
-1, 455.7025pt x 395.4775pt>
+8, 455.7025pt x 395.4775pt>
 File: images/"population distributed genetic algorithms"/"cellular model".png G
 raphic file (type png)
 
@@ -1401,7 +1386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--181
  []
 
 [21 <./images/population distributed genetic algorithms/cellular model.png>]
-<images/"population distributed genetic algorithms"/"pool model".png, id=444, 8
+<images/"population distributed genetic algorithms"/"pool model".png, id=451, 8
 48.16875pt x 387.4475pt>
 File: images/"population distributed genetic algorithms"/"pool model".png Graph
 ic file (type png)
@@ -1452,7 +1437,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
  []
 
 
-<images/"related work"/"wind farm representation (mosetti)".png, id=483, 1330.9
+<images/"related work"/"wind farm representation (mosetti)".png, id=490, 1330.9
 725pt x 933.4875pt>
 File: images/"related work"/"wind farm representation (mosetti)".png Graphic fi
 le (type png)
@@ -1494,7 +1479,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
  []
 
 
-<images/"related work"/"clustering design (zhao)".png, id=538, 929.4725pt x 650
+<images/"related work"/"clustering design (zhao)".png, id=545, 929.4725pt x 650
 .43pt>
 File: images/"related work"/"clustering design (zhao)".png Graphic file (type p
 ng)
@@ -1513,7 +1498,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
  []
 
 
-<images/"related work"/"ring topology (huang)".png, id=556, 628.3475pt x 328.22
+<images/"related work"/"ring topology (huang)".png, id=563, 628.3475pt x 328.22
 626pt>
 File: images/"related work"/"ring topology (huang)".png Graphic file (type png)
 
@@ -1532,7 +1517,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
  []
 
 [30 <./images/related work/ring topology (huang).png>]
-<images/"related work"/"individual representation (mora)".png, id=575, 417.56pt
+<images/"related work"/"individual representation (mora)".png, id=582, 417.56pt
  x 216.81pt>
 File: images/"related work"/"individual representation (mora)".png Graphic file
  (type png)
@@ -1567,7 +1552,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
  []
 
 [32]
-<images/"related work"/"civil cost greedy algorithm (gonzales)".png, id=612, 10
+<images/"related work"/"civil cost greedy algorithm (gonzales)".png, id=619, 10
 59.96pt x 893.3375pt>
 File: images/"related work"/"civil cost greedy algorithm (gonzales)".png Graphi
 c file (type png)
@@ -1597,7 +1582,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--211
  []
 
 [35]
-<images/"related work"/"representation (chen)".png, id=654, 1050.92625pt x 977.
+<images/"related work"/"representation (chen)".png, id=661, 1050.92625pt x 977.
 6525pt>
 File: images/"related work"/"representation (chen)".png Graphic file (type png)
 
@@ -1677,7 +1662,7 @@ Overfull \hbox (0.85799pt too wide) in paragraph at lines 6--7
 leciton and Crossover
  []
 
-<images/"Class Diagram".png, id=884, 1116.17pt x 1011.78pt>
+<images/"Class Diagram".png, id=891, 1116.17pt x 1011.78pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1703,7 +1688,7 @@ Package pdftex.def Info: images/"genetic algorithm".png used on input line 24.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [45 <./images/Class Diagram.png>] [46]
-<images/"representation program".png, id=905, 767.86874pt x 243.91125pt>
+<images/"representation program".png, id=912, 767.86874pt x 243.91125pt>
 File: images/"representation program".png Graphic file (type png)
 
 <use images/"representation program".png>
@@ -1716,7 +1701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
  []
 
 [47 <./images/representation program.png>]
-<images/"adult selection"/"generational mixing".png, id=913, 889.3225pt x 780.9
+<images/"adult selection"/"generational mixing".png, id=920, 889.3225pt x 780.9
 175pt>
 File: images/"adult selection"/"generational mixing".png Graphic file (type png
 )
@@ -1730,7 +1715,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
  []
 
 
-<images/"adult selection"/overproduction.png, id=915, 1171.37625pt x 579.16376p
+<images/"adult selection"/overproduction.png, id=922, 1171.37625pt x 579.16376p
 t>
 File: images/"adult selection"/overproduction.png Graphic file (type png)
  <use images/"adult selection"/overproduction.png>
@@ -1767,7 +1752,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
  []
 
 [49 <./images/adult selection/overproduction.png>]
-<images/"parent selection"/"roulette wheel selection".png, id=932, 627.34375pt 
+<images/"parent selection"/"roulette wheel selection".png, id=939, 627.34375pt 
 x 252.945pt>
 File: images/"parent selection"/"roulette wheel selection".png Graphic file (ty
 pe png)
@@ -1782,14 +1767,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
  []
 
 
-<images/crossover/"Single point crossover".png, id=946, 489.83pt x 508.90125pt>
+<images/crossover/"Single point crossover".png, id=953, 489.83pt x 508.90125pt>
 File: images/crossover/"Single point crossover".png Graphic file (type png)
 <use images/crossover/"Single point crossover".png>
 Package pdftex.def Info: images/crossover/"Single point crossover".png used on 
 input line 110.
 (pdftex.def)             Requested size: 117.00119pt x 121.5564pt.
 
-<images/crossover/"Two point crossover".png, id=947, 488.82625pt x 509.905pt>
+<images/crossover/"Two point crossover".png, id=954, 488.82625pt x 509.905pt>
 File: images/crossover/"Two point crossover".png Graphic file (type png)
 
 <use images/crossover/"Two point crossover".png>
@@ -1797,7 +1782,7 @@ Package pdftex.def Info: images/crossover/"Two point crossover".png used on inp
 ut line 116.
 (pdftex.def)             Requested size: 117.00119pt x 122.04514pt.
 
-<images/crossover/"Uniform crossover".png, id=948, 487.8225pt x 508.90125pt>
+<images/crossover/"Uniform crossover".png, id=955, 487.8225pt x 508.90125pt>
 File: images/crossover/"Uniform crossover".png Graphic file (type png)
 
 <use images/crossover/"Uniform crossover".png>
@@ -1810,7 +1795,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [51] [52 <./images/crossover/Single point crossover.png> <./images/crossover/Tw
 o point crossover.png> <./images/crossover/Uniform crossover.png>]
-<images/mutation/"flip mutation".png, id=974, 487.8225pt x 257.96375pt>
+<images/mutation/"flip mutation".png, id=981, 487.8225pt x 257.96375pt>
 File: images/mutation/"flip mutation".png Graphic file (type png)
 
 <use images/mutation/"flip mutation".png>
@@ -1818,7 +1803,7 @@ Package pdftex.def Info: images/mutation/"flip mutation".png used on input line
  141.
 (pdftex.def)             Requested size: 117.00119pt x 61.86926pt.
 
-<images/mutation/"interchanging mutation".png, id=975, 487.8225pt x 257.96375pt
+<images/mutation/"interchanging mutation".png, id=982, 487.8225pt x 257.96375pt
 >
 File: images/mutation/"interchanging mutation".png Graphic file (type png)
  <use images/mutation/"interchanging mutation".png>
@@ -1826,7 +1811,7 @@ Package pdftex.def Info: images/mutation/"interchanging mutation".png used on i
 nput line 147.
 (pdftex.def)             Requested size: 117.00119pt x 61.86926pt.
 
-<images/mutation/"inversion mutation".png, id=976, 487.8225pt x 257.96375pt>
+<images/mutation/"inversion mutation".png, id=983, 487.8225pt x 257.96375pt>
 File: images/mutation/"inversion mutation".png Graphic file (type png)
 
 <use images/mutation/"inversion mutation".png>
@@ -1843,7 +1828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-<images/"Weibull".png, id=988, 578.16pt x 433.62pt>
+<images/"Weibull".png, id=995, 578.16pt x 433.62pt>
 File: images/"Weibull".png Graphic file (type png)
  <use images/"Weibull".png>
 Package pdftex.def Info: images/"Weibull".png used on input line 183.
@@ -1878,7 +1863,7 @@ Overfull \hbox (17.83578pt too wide) in paragraph at lines 243--243
  |[]\OT1/cmr/bx/n/17.28 Population Dis-tributed Ge-netic Al-go-rithms| 
  []
 
-[56] <images/obstacles.png, id=1032, 685.56125pt x 444.66125pt>
+[56] <images/obstacles.png, id=1039, 685.56125pt x 444.66125pt>
 File: images/obstacles.png Graphic file (type png)
 
 <use images/obstacles.png>
@@ -1908,7 +1893,7 @@ LaTeX Warning: Reference `figure:full generational replacement' on page 61 unde
 fined on input line 35.
 
 [61]
-<images/plots/"adult selection"/"full generational replacement".png, id=1065, 5
+<images/plots/"adult selection"/"full generational replacement".png, id=1072, 5
 78.16pt x 433.62pt>
 File: images/plots/"adult selection"/"full generational replacement".png Graphi
 c file (type png)
@@ -1918,7 +1903,7 @@ Package pdftex.def Info: images/plots/"adult selection"/"full generational repl
 acement".png used on input line 41.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"adult selection"/"generational mixing".png, id=1066, 578.16pt x 
+<images/plots/"adult selection"/"generational mixing".png, id=1073, 578.16pt x 
 433.62pt>
 File: images/plots/"adult selection"/"generational mixing".png Graphic file (ty
 pe png)
@@ -1927,7 +1912,7 @@ Package pdftex.def Info: images/plots/"adult selection"/"generational mixing".p
 ng used on input line 48.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"adult selection"/"overproduction".png, id=1067, 578.16pt x 433.6
+<images/plots/"adult selection"/"overproduction".png, id=1074, 578.16pt x 433.6
 2pt>
 File: images/plots/"adult selection"/"overproduction".png Graphic file (type pn
 g)
@@ -1936,7 +1921,7 @@ Package pdftex.def Info: images/plots/"adult selection"/"overproduction".png us
 ed on input line 55.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"parent selection"/"roulette wheel".png, id=1068, 578.16pt x 433.
+<images/plots/"parent selection"/"roulette wheel".png, id=1075, 578.16pt x 433.
 62pt>
 File: images/plots/"parent selection"/"roulette wheel".png Graphic file (type p
 ng)
@@ -1945,7 +1930,7 @@ Package pdftex.def Info: images/plots/"parent selection"/"roulette wheel".png u
 sed on input line 71.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"parent selection"/"tournament size 5".png, id=1069, 578.16pt x 4
+<images/plots/"parent selection"/"tournament size 5".png, id=1076, 578.16pt x 4
 33.62pt>
 File: images/plots/"parent selection"/"tournament size 5".png Graphic file (typ
 e png)
@@ -1954,7 +1939,7 @@ Package pdftex.def Info: images/plots/"parent selection"/"tournament size 5".pn
 g used on input line 78.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"parent selection"/"tournament size 10".png, id=1070, 578.16pt x 
+<images/plots/"parent selection"/"tournament size 10".png, id=1077, 578.16pt x 
 433.62pt>
 File: images/plots/"parent selection"/"tournament size 10".png Graphic file (ty
 pe png)
@@ -1963,7 +1948,7 @@ Package pdftex.def Info: images/plots/"parent selection"/"tournament size 10".p
 ng used on input line 85.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"parent selection"/"tournament size 15".png, id=1071, 578.16pt x 
+<images/plots/"parent selection"/"tournament size 15".png, id=1078, 578.16pt x 
 433.62pt>
 File: images/plots/"parent selection"/"tournament size 15".png Graphic file (ty
 pe png)
@@ -1972,7 +1957,7 @@ Package pdftex.def Info: images/plots/"parent selection"/"tournament size 15".p
 ng used on input line 92.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"parent selection"/"tournament size 20".png, id=1072, 578.16pt x 
+<images/plots/"parent selection"/"tournament size 20".png, id=1079, 578.16pt x 
 433.62pt>
 File: images/plots/"parent selection"/"tournament size 20".png Graphic file (ty
 pe png)
@@ -1981,7 +1966,7 @@ Package pdftex.def Info: images/plots/"parent selection"/"tournament size 20".p
 ng used on input line 99.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"parent selection"/"tournament size 25".png, id=1073, 578.16pt x 
+<images/plots/"parent selection"/"tournament size 25".png, id=1080, 578.16pt x 
 433.62pt>
 File: images/plots/"parent selection"/"tournament size 25".png Graphic file (ty
 pe png)
@@ -1994,7 +1979,7 @@ ng used on input line 106.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/plots/epsilon/"tournament size 20"/"epsilon 0,05".png, id=1074, 578.16p
+<images/plots/epsilon/"tournament size 20"/"epsilon 0,05".png, id=1081, 578.16p
 t x 433.62pt>
 File: images/plots/epsilon/"tournament size 20"/"epsilon 0,05".png Graphic file
  (type png)
@@ -2004,7 +1989,7 @@ Package pdftex.def Info: images/plots/epsilon/"tournament size 20"/"epsilon 0,0
 5".png used on input line 119.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/"include figure".png, id=1075, 336.25626pt x 236.885pt>
+<images/"include figure".png, id=1082, 336.25626pt x 236.885pt>
 File: images/"include figure".png Graphic file (type png)
 
 <use images/"include figure".png>
@@ -2021,7 +2006,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [62 <./images/plots/adult selection/full generational replacement.png> <./image
 s/plots/adult selection/generational mixing.png> <./images/plots/adult selectio
 n/overproduction.png>]
-<images/plots/"crossover method"/"single point crossover".png, id=1089, 578.16p
+<images/plots/"crossover method"/"single point crossover".png, id=1096, 578.16p
 t x 433.62pt>
 File: images/plots/"crossover method"/"single point crossover".png Graphic file
  (type png)
@@ -2031,7 +2016,7 @@ Package pdftex.def Info: images/plots/"crossover method"/"single point crossove
 r".png used on input line 150.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"crossover method"/"two point crossover".png, id=1090, 578.16pt x
+<images/plots/"crossover method"/"two point crossover".png, id=1097, 578.16pt x
  433.62pt>
 File: images/plots/"crossover method"/"two point crossover".png Graphic file (t
 ype png)
@@ -2040,7 +2025,7 @@ Package pdftex.def Info: images/plots/"crossover method"/"two point crossover".
 png used on input line 157.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"crossover method"/"uniform crossover".png, id=1091, 578.16pt x 4
+<images/plots/"crossover method"/"uniform crossover".png, id=1098, 578.16pt x 4
 33.62pt>
 File: images/plots/"crossover method"/"uniform crossover".png Graphic file (typ
 e png)
@@ -2053,7 +2038,7 @@ g used on input line 164.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<images/plots/"crossover rate"/"crossover rate 0,0".png, id=1092, 578.16pt x 43
+<images/plots/"crossover rate"/"crossover rate 0,0".png, id=1099, 578.16pt x 43
 3.62pt>
 File: images/plots/"crossover rate"/"crossover rate 0,0".png Graphic file (type
  png)
@@ -2062,7 +2047,7 @@ Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,0".png
  used on input line 180.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,2".png, id=1093, 578.16pt x 43
+<images/plots/"crossover rate"/"crossover rate 0,2".png, id=1100, 578.16pt x 43
 3.62pt>
 File: images/plots/"crossover rate"/"crossover rate 0,2".png Graphic file (type
  png)
@@ -2071,7 +2056,7 @@ Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,2".png
  used on input line 187.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,4".png, id=1094, 578.16pt x 43
+<images/plots/"crossover rate"/"crossover rate 0,4".png, id=1101, 578.16pt x 43
 3.62pt>
 File: images/plots/"crossover rate"/"crossover rate 0,4".png Graphic file (type
  png)
@@ -2080,7 +2065,7 @@ Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,4".png
  used on input line 194.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,6".png, id=1095, 578.16pt x 43
+<images/plots/"crossover rate"/"crossover rate 0,6".png, id=1102, 578.16pt x 43
 3.62pt>
 File: images/plots/"crossover rate"/"crossover rate 0,6".png Graphic file (type
  png)
@@ -2089,7 +2074,7 @@ Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,6".png
  used on input line 201.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"crossover rate"/"crossover rate 0,8".png, id=1096, 578.16pt x 43
+<images/plots/"crossover rate"/"crossover rate 0,8".png, id=1103, 578.16pt x 43
 3.62pt>
 File: images/plots/"crossover rate"/"crossover rate 0,8".png Graphic file (type
  png)
@@ -2098,7 +2083,7 @@ Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,8".png
  used on input line 208.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"crossover rate"/"crossover rate 1,0".png, id=1097, 578.16pt x 43
+<images/plots/"crossover rate"/"crossover rate 1,0".png, id=1104, 578.16pt x 43
 3.62pt>
 File: images/plots/"crossover rate"/"crossover rate 1,0".png Graphic file (type
  png)
@@ -2112,7 +2097,7 @@ size 10.png> <./images/plots/parent selection/tournament size 15.png> <./images
 /plots/parent selection/tournament size 20.png> <./images/plots/parent selectio
 n/tournament size 25.png> <./images/plots/epsilon/tournament size 20/epsilon 0,
 05.png> <./images/include figure.png>]
-<images/plots/"mutation rate"/"mutation rate 0,0001".png, id=1112, 578.16pt x 4
+<images/plots/"mutation rate"/"mutation rate 0,0001".png, id=1119, 578.16pt x 4
 33.62pt>
 File: images/plots/"mutation rate"/"mutation rate 0,0001".png Graphic file (typ
 e png)
@@ -2121,7 +2106,7 @@ Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0001".pn
 g used on input line 231.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,0005".png, id=1113, 578.16pt x 4
+<images/plots/"mutation rate"/"mutation rate 0,0005".png, id=1120, 578.16pt x 4
 33.62pt>
 File: images/plots/"mutation rate"/"mutation rate 0,0005".png Graphic file (typ
 e png)
@@ -2130,7 +2115,7 @@ Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0005".pn
 g used on input line 238.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,001".png, id=1114, 578.16pt x 43
+<images/plots/"mutation rate"/"mutation rate 0,001".png, id=1121, 578.16pt x 43
 3.62pt>
 File: images/plots/"mutation rate"/"mutation rate 0,001".png Graphic file (type
  png)
@@ -2139,7 +2124,7 @@ Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,001".png
  used on input line 245.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,005".png, id=1115, 578.16pt x 43
+<images/plots/"mutation rate"/"mutation rate 0,005".png, id=1122, 578.16pt x 43
 3.62pt>
 File: images/plots/"mutation rate"/"mutation rate 0,005".png Graphic file (type
  png)
@@ -2148,7 +2133,7 @@ Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,005".png
  used on input line 252.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/"mutation rate"/"mutation rate 0,01".png, id=1116, 578.16pt x 433
+<images/plots/"mutation rate"/"mutation rate 0,01".png, id=1123, 578.16pt x 433
 .62pt>
 File: images/plots/"mutation rate"/"mutation rate 0,01".png Graphic file (type 
 png)
@@ -2175,7 +2160,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"fitness p
-lot".png, id=1132, 485.815pt x 462.72874pt>
+lot".png, id=1139, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"fitn
 ess plot".png Graphic file (type png)
 
@@ -2186,7 +2171,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"efficienc
-y plot".png, id=1133, 485.815pt x 462.72874pt>
+y plot".png, id=1140, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"effi
 ciency plot".png Graphic file (type png)
 
@@ -2197,7 +2182,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"cost plot
-".png, id=1134, 485.815pt x 462.72874pt>
+".png, id=1141, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"cost
  plot".png Graphic file (type png)
 
@@ -2208,7 +2193,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"power plo
-t".png, id=1135, 485.815pt x 462.72874pt>
+t".png, id=1142, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"powe
 r plot".png Graphic file (type png)
 
@@ -2219,7 +2204,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"turbine p
-lot".png, id=1136, 485.815pt x 462.72874pt>
+lot".png, id=1143, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 00"/"turb
 ine plot".png Graphic file (type png)
 
@@ -2234,7 +2219,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"fitness p
-lot".png, id=1137, 485.815pt x 462.72874pt>
+lot".png, id=1144, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"fitn
 ess plot".png Graphic file (type png)
 
@@ -2245,7 +2230,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"efficienc
-y plot".png, id=1138, 485.815pt x 462.72874pt>
+y plot".png, id=1145, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"effi
 ciency plot".png Graphic file (type png)
 
@@ -2256,7 +2241,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"cost plot
-".png, id=1139, 485.815pt x 462.72874pt>
+".png, id=1146, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"cost
  plot".png Graphic file (type png)
 
@@ -2267,7 +2252,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"power plo
-t".png, id=1140, 485.815pt x 462.72874pt>
+t".png, id=1147, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"powe
 r plot".png Graphic file (type png)
 
@@ -2278,7 +2263,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"turbine p
-lot".png, id=1141, 485.815pt x 462.72874pt>
+lot".png, id=1148, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario 05"/"turb
 ine plot".png Graphic file (type png)
 
@@ -2293,7 +2278,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"fitne
-ss plot".png, id=1142, 485.815pt x 462.72874pt>
+ss plot".png, id=1149, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
 fitness plot".png Graphic file (type png)
 
@@ -2304,7 +2289,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"effic
-iency plot".png, id=1143, 485.815pt x 462.72874pt>
+iency plot".png, id=1150, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
 efficiency plot".png Graphic file (type png)
 
@@ -2315,7 +2300,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"cost 
-plot".png, id=1144, 485.815pt x 462.72874pt>
+plot".png, id=1151, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
 cost plot".png Graphic file (type png)
 
@@ -2326,7 +2311,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"power
- plot".png, id=1145, 485.815pt x 462.72874pt>
+ plot".png, id=1152, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
 power plot".png Graphic file (type png)
 
@@ -2337,7 +2322,7 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 (pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
 
 <images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"turbi
-ne plot".png, id=1146, 485.815pt x 462.72874pt>
+ne plot".png, id=1153, 485.815pt x 462.72874pt>
 File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
 turbine plot".png Graphic file (type png)
 
@@ -2376,36 +2361,40 @@ Package pdftex.def Info: images/"include figure".png used on input line 452.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./project.bbl [65 <./images/plots/mutation rate/mutation rate 0,0001.png> <.
-/images/plots/mutation rate/mutation rate 0,0005.png> <./images/plots/mutation 
-rate/mutation rate 0,001.png> <./images/plots/mutation rate/mutation rate 0,005
-.png> <./images/plots/mutation rate/mutation rate 0,01.png>] [66 <./images/plot
-s/genetic algorithm/master slave model/scenario 00/fitness plot.png> <./images/
-plots/genetic algorithm/master slave model/scenario 00/efficiency plot.png> <./
-images/plots/genetic algorithm/master slave model/scenario 00/cost plot.png> <.
-/images/plots/genetic algorithm/master slave model/scenario 00/power plot.png> 
-<./images/plots/genetic algorithm/master slave model/scenario 00/turbine plot.p
-ng>] [67 <./images/plots/genetic algorithm/master slave model/scenario 05/fitne
-ss plot.png> <./images/plots/genetic algorithm/master slave model/scenario 05/e
-fficiency plot.png> <./images/plots/genetic algorithm/master slave model/scenar
-io 05/cost plot.png> <./images/plots/genetic algorithm/master slave model/scena
-rio 05/power plot.png> <./images/plots/genetic algorithm/master slave model/sce
-nario 05/turbine plot.png>] [68 <./images/plots/genetic algorithm/master slave 
-model/scenario obs 00/fitness plot.png> <./images/plots/genetic algorithm/maste
-r slave model/scenario obs 00/efficiency plot.png> <./images/plots/genetic algo
-rithm/master slave model/scenario obs 00/cost plot.png> <./images/plots/genetic
- algorithm/master slave model/scenario obs 00/power plot.png> <./images/plots/g
-enetic algorithm/master slave model/scenario obs 00/turbine plot.png>] [69]
-[70
+) (./chapters/conclusion.tex [65 <./images/plots/mutation rate/mutation rate 0,
+0001.png> <./images/plots/mutation rate/mutation rate 0,0005.png> <./images/plo
+ts/mutation rate/mutation rate 0,001.png> <./images/plots/mutation rate/mutatio
+n rate 0,005.png> <./images/plots/mutation rate/mutation rate 0,01.png>]
+[66 <./images/plots/genetic algorithm/master slave model/scenario 00/fitness pl
+ot.png> <./images/plots/genetic algorithm/master slave model/scenario 00/effici
+ency plot.png> <./images/plots/genetic algorithm/master slave model/scenario 00
+/cost plot.png> <./images/plots/genetic algorithm/master slave model/scenario 0
+0/power plot.png> <./images/plots/genetic algorithm/master slave model/scenario
+ 00/turbine plot.png>] [67 <./images/plots/genetic algorithm/master slave model
+/scenario 05/fitness plot.png> <./images/plots/genetic algorithm/master slave m
+odel/scenario 05/efficiency plot.png> <./images/plots/genetic algorithm/master 
+slave model/scenario 05/cost plot.png> <./images/plots/genetic algorithm/master
+ slave model/scenario 05/power plot.png> <./images/plots/genetic algorithm/mast
+er slave model/scenario 05/turbine plot.png>] [68 <./images/plots/genetic algor
+ithm/master slave model/scenario obs 00/fitness plot.png> <./images/plots/genet
+ic algorithm/master slave model/scenario obs 00/efficiency plot.png> <./images/
+plots/genetic algorithm/master slave model/scenario obs 00/cost plot.png> <./im
+ages/plots/genetic algorithm/master slave model/scenario obs 00/power plot.png>
+ <./images/plots/genetic algorithm/master slave model/scenario obs 00/turbine p
+lot.png>] [69]
+Chapter 6.
+) (./project.bbl [70
 
-] [71] [72]) [73]
+] [71
+
+] [72] [73]) [74]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./project.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: 8BBB35F60E123BCB2CE1F57AAB65D7CA;2820.
+(rerunfilecheck)             Checksum: 7504E3FC5F4B3206E2A73F95C8690AEA;2850.
 
 
 LaTeX Warning: There were undefined references.
@@ -2416,10 +2405,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 19216 strings out of 493117
- 367540 string characters out of 6135434
- 434510 words of memory out of 5000000
- 22060 multiletter control sequences out of 15000+600000
+ 19222 strings out of 493117
+ 367626 string characters out of 6135434
+ 434544 words of memory out of 5000000
+ 22061 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,75p,3143b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2438,10 +2427,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (74 pages, 2421662 bytes).
+Output written on project.pdf (75 pages, 2421451 bytes).
 PDF statistics:
- 1295 PDF objects out of 1440 (max. 8388607)
- 1037 compressed objects within 11 object streams
- 203 named destinations out of 1000 (max. 500000)
- 683 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1307 PDF objects out of 1440 (max. 8388607)
+ 1048 compressed objects within 11 object streams
+ 205 named destinations out of 1000 (max. 500000)
+ 691 words of extra memory for PDF output out of 10000 (max. 10000000)
 

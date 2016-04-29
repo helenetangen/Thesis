@@ -6,7 +6,7 @@
 \BOOKMARK [1][-]{section.1.5}{Thesis Structure}{chapter.1}% 6
 \BOOKMARK [0][-]{chapter.2}{Background}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Wind Farm Layout Optimization}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{Definition of the Wind Farm Layout Optimization Problem}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.1}{The Wind Farm Layout Optimization Problem}{section.2.1}% 9
 \BOOKMARK [2][-]{subsection.2.1.2}{Challenges of wind farm construction}{section.2.1}% 10
 \BOOKMARK [1][-]{section.2.2}{Genetic Algorithms}{chapter.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.1}{Simple Genetic Algorithms \(SGAs\)}{section.2.2}% 12
@@ -37,4 +37,5 @@
 \BOOKMARK [1][-]{section.5.2}{Results}{chapter.5}% 37
 \BOOKMARK [2][-]{subsection.5.2.1}{Master Slave Model}{section.5.2}% 38
 \BOOKMARK [1][-]{section.5.3}{Discussion}{chapter.5}% 39
-\BOOKMARK [0][-]{section.5.3}{Bibliography}{}% 40
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 40
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 41
