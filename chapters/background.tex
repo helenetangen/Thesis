@@ -1,5 +1,5 @@
 \chapter{Background}\label{chapter:background}
-This chapter contains the background for this thesis. In section \ref{section:wflop} the wind farm layout optimization problem is defined, and challenges of wind farm construction are presented. The first part of section \ref{section:ga} gives an introduction to genetic algorithms, this sub section can be skipped if the reader is already familiar with genetic algorithms. The second part of section \ref{section:ga} explains the 3 distributed genetic algorithms that will be investigated in this thesis.
+This chapter contains the background for this thesis. In section \ref{section:wflo} the wind farm layout optimization problem is defined, and challenges of wind farm construction are presented. The first part of section \ref{section:ga} gives an introduction to genetic algorithms, this sub section can be skipped if the reader is already familiar with genetic algorithms. The second part of section \ref{section:ga} explains the 3 distributed genetic algorithms that will be investigated in this thesis.
 
 
 \section{Wind Farm Layout Optimization}\label{section:wflo}
@@ -119,11 +119,11 @@ In biology, mutation is defined as permanent alteration in the DNA sequence that
 
 
 \subsection{Population Distributed Genetic Algorithms}\label{subsection:dga}
-On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population does not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that do not look that good at first, and consequently, probably find better, more sophisticated solutions. The goal of this thesis is to investigate and compare the performance of population distributed genetic algorithms with that of simple genetic algorithms. It will be distinguished between population distributed genetic algorithms and genetic algorithms where processing is distributed among different processors, meaning that parallelism is utilized in the implementation. This section introduces seven distributed models. Each model will be implemented with parallelism in order to improve the running time of the algorithm, however the first model introduced, the master-slave model, is not population distributed. It is a simple genetic algorithm, implemented using parallelism in order to run fast, and it will be implemented so that the performance of a simple genetic algorithm (non-population distributed) can be compared to a population distributed algorithm. This section introduces seven different distributed algorithms presented by \cite{Gong}. These will all be implemented and tested in this thesis.\\
+On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population does not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that do not look that good at first, and consequently, probably find better, more sophisticated solutions. The goal of this thesis is to investigate and compare the performance of population distributed genetic algorithms with that of simple genetic algorithms. It will be distinguished between population distributed genetic algorithms and distributed genetic algorithms where processing is distributed among different processors, meaning that parallelism is utilized in the implementation. The first model introduced in this section, the master-slave model, is not population distributed. It is a simple genetic algorithm, implemented using parallelism in order to run fast, and it will be implemented so that the performance of a simple genetic algorithm (non-population distributed) can be compared to a population distributed algorithm. This section introduces 4 different distributed algorithms presented by \cite{Gong}. These will all be implemented and tested in this thesis.\\
 
 
 \paragraph*{Master-Slave Model}
-As mentioned, the master-slave model is not a population distributed genetic algorithm, but a simple genetic algorithm where the main operations of the algorithm are distributed between different processors. It will be implemented in this thesis for two reasons; (1) distributing tasks between different processors gives a faster-running algorithm, (2) results obtained will be the same as results obtained by a simple genetic algorithm, and can therefore be used to compare against population distributed algorithms. The master-slave model is displayed in figure \ref{Master-Slave Model}.\\
+As mentioned above, the master-slave model is not a population distributed genetic algorithm, but a simple genetic algorithm where the main operations of the algorithm are distributed between different processors. It will be implemented in this thesis for two reasons: (1) distributing tasks between different processors gives a faster-running algorithm, (2) results obtained will be the same as results obtained by a simple genetic algorithm, and can therefore be used to compare against population distributed algorithms. The master-slave model is displayed in figure \ref{Master-Slave Model}.\\
 
 
 \begin{figure}[h!]
@@ -145,7 +145,7 @@ In the Island model, the population is divided into sub populations that are dis
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"population distributed genetic algorithms"/"island model"}
-\caption{An island model using a ring topology with four demes (Islands) of size five. \citep{Gong}}
+\caption{An Island model using a ring topology with four demes (Islands) of size five. \citep{Gong}}
 \label{Island model}
 \end{center}
 \end{figure}
@@ -173,7 +173,7 @@ Figure \ref{Cellular model} displays the cellular model from \cite{Gong}. In the
 \noindent The takeover time is defined as the time it takes for one individual to propagate to the whole population. The neighborhood topology largely affects the takeover time. In figure \ref{Cellular model} the neighborhood topology is defined as only the individuals to the left, right, over and under the given individual. Since the topology includes a small number of individuals, the takeover time will be long, meaning that exploration is prioritized. If the topology consists of a larger number of cells the takeover time will, off course, be much shorter.\\
 
 
-\noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the island model, updating of the cells can be both synchronous and asynchronous.
+\noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the Island model, updating of the cells can be both synchronous and asynchronous.
 
 
 \paragraph*{Pool Model}
@@ -192,4 +192,4 @@ Another population distributed model is called the pool model. In this model the
 \noindent A processor $p_1$ is responsible for $k$ positions in the pool. This is indicated by the coloring scheme in figure \ref{Pool Model}, where the processor and the positions it is responsible for has the same color. The processor draws a population of individuals $i_1, i_2,...,i_k$ from random positions in the pool and performs genetic operations and fitness calculations on them. Next it writes each individual back to its corresponding position $1, 2,...,k$ in the the positions it is responsible for, given that their fitness is higher then the fitness of the individual currently occupying the position.\\
 
 
-\noindent In summary, this chapter has introduced the wind farm layout optimization problem and explained its complexity. A simple genetic algorithms has been introduced, with the selection-, crossover- and mutations types that will be used in this thesis. Last, the seven distributed models that will be implemented has been presented. The master-slave model is a simple genetic algorithm implemented using parallelism. The Island model, the cellular model, the three hybrid models and the pool model are population distributed parallel algorithms that  will be compared against the simple genetic algorithm, and each other, in order to answer the research questions. 
+\noindent In summary, this chapter has introduced the wind farm layout optimization problem and explained its complexity. A simple genetic algorithms has been introduced, with examples of selection-, crossover- and mutations methods. Last, the 4 distributed models that will be implemented has been presented. The master-slave model is a simple genetic algorithm implemented using parallelism. The Island model, the cellular model, and the pool model are population distributed parallel algorithms that  will be compared against the simple genetic algorithm, and each other, in order to answer the research questions. 
