@@ -36,23 +36,23 @@ An overview of the wind farm layout optimization problem is presented by \cite{S
 
 
 \section{Genetic Algorithms}\label{section:ga}
-This section first explains the simple genetic algorithm (SGA), invented by \cite{Holland}. If the reader is familiar with the genetic algorithm he or she can skip the first part. If not otherwise stated, the first part is based on references \citep{Holland} and \citep{Goldberg}. Next, the seven different distributed genetic algorithms that will be implemented in this thesis are explained, these are all taken from \cite{Gong}.
+This section provides the background needed to understand the genetic algorithms implemented for this thesis. The first sub section gives a step-by-step introduction to simple genetic algorithms invented by \cite{Holland}. If not otherwise stated this section is based on the books \cite{Holland} and \cite{Goldberg}. If the reader is familiar with genetic algorithms he or she can skip this sub section. The second sub section introduces the four genetic algorithms tested in this theses: The Master-Slave model, the Island model, the Cellular model and the Pool model \citep{Gong}. The first model is a simple genetic algorithm implemented in parallel, the other three are population distributed genetic algorithms.\\
 
 
 \subsection{Simple Genetic Algorithms (SGAs)}\label{subsection:sga}
-Genetic algorithms are probabilistic search algorithms inspired by evolution. Figure \ref{GA} gives an intuitive explanation of how the algorithm works. The genetic algorithm operates on a population of individuals each representing a solution to a problem. Usually, the initial population consist of randomly generated individuals which become the first child population. For each generation, the child population is evaluated based on some predefined fitness function (objective function), and the fittest individuals are selected as parents for the next generation. Note that the terms fitness function and objective function will be used interchangeably in this thesis. Next, the parent population produces a new child population based on different reproduction schemes, such as recombination of parent genes to form child genes. Some genes are also altered in the process. Finally, the next generation of child solutions are generated and the process starts again.\\
+Genetic algorithm are probabilistic search algorithms inspired by evolution. Figure \ref{GA} shows the five steps that constitute the genetic algorithm. The genetic algorithm operates on a population of individuals each representing a solution to a problem. The first step is therefore to generate the initial population, which usually consists of randomly generated individuals. The second step of the genetic algorithm is evaluation. The child population is evaluated based on some predefined fitness function (objective function) - a measure of the goodness of the solution. Note that the terms fitness function and objective function will be used interchangeably in this thesis. The third- and forth step, adult selection and parent selection respectively, is the process of deciding which individuals from the child population are allowed to grow up into adults, and which are chosen to be parents for the next generation of individuals. These steps are naturally guided by the fitness of the individuals. The fifth and last step is called recombination. In this step, the genes of the parent population are recombined and altered in order to generate a new, hopefully better, child population. After the new child population is generated the process starts again and continues until some predefined stop condition is reached. \\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{images/"genetic algorithm"}
-\caption{Overview of the phases of the genetic algorithm.}
+\caption{Overview of the five steps that constitute the genetic algorithm.}
 \label{GA}
 \end{center}
 \end{figure}
 
 
-\noindent Inspired by survival of the fittest, the population evolves into a population of better solutions to the given problem. Two properties are crucial for the utilization and success of the genetic algorithm: (1) One have to know how the measure the fitness of the individuals (goodness of the solutions), and (2) one have to find a way to represent individuals so that genetic operations can be performed on them. Examples of representation, fitness calculation, selection processes, and genetic operations will be given below. Note that there exists numerous different selection schemes and ways to perform mutation and crossover (genetic operations), but here, only the types that will be used in the given thesis are presented. \\
+\noindent Inspired by survival of the fittest, the population evolves into a population of better solutions to the given problem. Two properties are crucial for the utilization and success of the genetic algorithm: (1) One have to know how the measure the fitness of the individuals (goodness of the solutions), and (2) one have to find a way to represent individuals so that genetic operations can be performed on them. Examples of representation, fitness calculation, selection and genetic operations will be given below. Note that numerous different selection schemes and genetic operations exists and that the section below only gives one example of each in order to provide understanding of how a typical genetic algorithm works. How these steps are actually implemented in this thesis is explained in chapter \ref{chapter:methodology}. \\ 
 
 
 \paragraph*{Representation}
