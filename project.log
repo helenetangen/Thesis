@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  11 MAY 2016 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  15 MAY 2016 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2291,61 +2291,45 @@ Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<images/plots/"scenario obs 00"/best.png, id=1162, 578.16pt x 433.62pt>
+File: images/plots/"scenario obs 00"/best.png Graphic file (type png)
 
-<images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"fitne
-ss plot".png, id=1162, 485.815pt x 462.72874pt>
-File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
-fitness plot".png Graphic file (type png)
+<use images/plots/"scenario obs 00"/best.png>
+Package pdftex.def Info: images/plots/"scenario obs 00"/best.png used on input 
+line 406.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<use images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"f
-itness plot".png>
-Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
-"scenario obs 00"/"fitness plot".png used on input line 406.
-(pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
+<images/plots/"scenario obs 00"/efficiency.png, id=1163, 578.16pt x 433.62pt>
+File: images/plots/"scenario obs 00"/efficiency.png Graphic file (type png)
 
-<images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"effic
-iency plot".png, id=1163, 485.815pt x 462.72874pt>
-File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
-efficiency plot".png Graphic file (type png)
+<use images/plots/"scenario obs 00"/efficiency.png>
+Package pdftex.def Info: images/plots/"scenario obs 00"/efficiency.png used on 
+input line 413.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<use images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"e
-fficiency plot".png>
-Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
-"scenario obs 00"/"efficiency plot".png used on input line 413.
-(pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
+<images/plots/"scenario obs 00"/cost.png, id=1164, 578.16pt x 433.62pt>
+File: images/plots/"scenario obs 00"/cost.png Graphic file (type png)
 
-<images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"cost 
-plot".png, id=1164, 485.815pt x 462.72874pt>
-File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
-cost plot".png Graphic file (type png)
+<use images/plots/"scenario obs 00"/cost.png>
+Package pdftex.def Info: images/plots/"scenario obs 00"/cost.png used on input 
+line 420.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<use images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"c
-ost plot".png>
-Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
-"scenario obs 00"/"cost plot".png used on input line 420.
-(pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
+<images/plots/"scenario obs 00"/power.png, id=1165, 578.16pt x 433.62pt>
+File: images/plots/"scenario obs 00"/power.png Graphic file (type png)
 
-<images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"power
- plot".png, id=1165, 485.815pt x 462.72874pt>
-File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
-power plot".png Graphic file (type png)
+<use images/plots/"scenario obs 00"/power.png>
+Package pdftex.def Info: images/plots/"scenario obs 00"/power.png used on input
+ line 427.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<use images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"p
-ower plot".png>
-Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
-"scenario obs 00"/"power plot".png used on input line 427.
-(pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
+<images/plots/"scenario obs 00"/turbines.png, id=1166, 578.16pt x 433.62pt>
+File: images/plots/"scenario obs 00"/turbines.png Graphic file (type png)
 
-<images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"turbi
-ne plot".png, id=1166, 485.815pt x 462.72874pt>
-File: images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"
-turbine plot".png Graphic file (type png)
-
-<use images/plots/"genetic algorithm"/"master slave model"/"scenario obs 00"/"t
-urbine plot".png>
-Package pdftex.def Info: images/plots/"genetic algorithm"/"master slave model"/
-"scenario obs 00"/"turbine plot".png used on input line 434.
-(pdftex.def)             Requested size: 120.89905pt x 115.15234pt.
+<use images/plots/"scenario obs 00"/turbines.png>
+Package pdftex.def Info: images/plots/"scenario obs 00"/turbines.png used on in
+put line 434.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2392,13 +2376,10 @@ model/scenario 05/fitness plot.png> <./images/plots/genetic algorithm/master sl
 ave model/scenario 05/efficiency plot.png> <./images/plots/genetic algorithm/ma
 ster slave model/scenario 05/cost plot.png> <./images/plots/genetic algorithm/m
 aster slave model/scenario 05/power plot.png> <./images/plots/genetic algorithm
-/master slave model/scenario 05/turbine plot.png>] [69 <./images/plots/genetic 
-algorithm/master slave model/scenario obs 00/fitness plot.png> <./images/plots/
-genetic algorithm/master slave model/scenario obs 00/efficiency plot.png> <./im
-ages/plots/genetic algorithm/master slave model/scenario obs 00/cost plot.png> 
-<./images/plots/genetic algorithm/master slave model/scenario obs 00/power plot
-.png> <./images/plots/genetic algorithm/master slave model/scenario obs 00/turb
-ine plot.png>] [70 <./images/include figure.png>]
+/master slave model/scenario 05/turbine plot.png>] [69 <./images/plots/scenario
+ obs 00/best.png> <./images/plots/scenario obs 00/efficiency.png> <./images/plo
+ts/scenario obs 00/cost.png> <./images/plots/scenario obs 00/power.png> <./imag
+es/plots/scenario obs 00/turbines.png>] [70 <./images/include figure.png>]
 Chapter 6.
 ) (./project.bbl [71
 
@@ -2422,8 +2403,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 19237 strings out of 493117
- 368240 string characters out of 6135434
+ 19242 strings out of 493117
+ 367266 string characters out of 6135434
  436600 words of memory out of 5000000
  22071 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
@@ -2444,9 +2425,9 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (76 pages, 2499245 bytes).
+Output written on project.pdf (76 pages, 2586857 bytes).
 PDF statistics:
- 1327 PDF objects out of 1440 (max. 8388607)
+ 1332 PDF objects out of 1440 (max. 8388607)
  1063 compressed objects within 11 object streams
  208 named destinations out of 1000 (max. 500000)
  709 words of extra memory for PDF output out of 10000 (max. 10000000)
