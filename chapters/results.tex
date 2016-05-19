@@ -19,7 +19,7 @@ Generations & 100 \\
 Elitism & true \\  
 Flip mutation rate & 0.01 \\ 
 Inversion mutation rate & 0.0 \\ 
-Reversing mutation rate & 0.0 \\ 
+Interchange mutation rate & 0.0 \\ 
 Parent selection & Tournament selection \\ 
 Tournament size & 5 \\ 
 Epsilon & 0.0 \\  
@@ -28,7 +28,7 @@ Crossover rate & 0.9 \\
 \end{tabular} 
 \end{table}
 
-\noindent For each simulation one of the settings were tested while the others were kept fixed as shown in table \ref{table:fixed settings}. As can be seen in this table, other settings such as wind scenario, population size, number of generations, whether elitism should be used and mutation rate for interchange mutation and inversion mutation could also be tested, but since evaluation of each farm takes a lot of time, even on an 8 core computer running in parallel, simulations are not run to set these values. These settings are set using the authors previous experience and educated guessing. Testing different parameters on a single wind scenario might lead to values that are tailored for the given scenario and that are not as well suited for some of the others. However, there is no time to test each value for every single wind scenario, and this should not make that much of a difference. Population size is a value that influence the performance of the genetic algorithm largely. Greater population size often leads to better performance since more solutions increase the probability of finding the global optimal solution. The population size was set to 100 for two reasons. First of all, a population size of 100 is large enough so that many different solutions are explored. Second when the population size is kept at 100, the adult selection method ''Overproduction'' will produce twice as many children, so that 200 individuals has to be evaluated for each generation something that will double the evaluation time, the step that already is the bottleneck of the algorithm. The number of generations was kept at 100 for each run, evaluating each population for 100 generations takes time and it the main reason why the algorithm were not run for more generations, however, as can be seen on the graphs in the sections below the fitness looks like it is starting to flat out after a 100 generations indicating that a 100 generations are sufficient for the purpose of setting the parameter values. Elitism was set to true for every run without testing, meaning that the best individual of each generation will survive. This decision is based on the authors previous experience with genetic algorithm where experiments has shown that elitism leads to better results because the best individual is not lost due to coincidences. Different mutation methods were implemented for the genetic algorithm, but only the flip mutation rate was tested to find the best value. Usually, flip mutation is the only mutation method used with genetic algorithms and it is therefore also used as the main for of mutation in this thesis. Inversion mutation and interchange mutation are implemented, but they will only happen seldom to introduce more randomness to the algorithm. In the main simulations, they will be assigned extremely low probabilities so that their occurrence is so rare that they will introduce too much randomness, but hopefully make occasional ''jumps'' to different solutions spaces so that the algorithm do not get completely stuck in a local optimal solution. 
+\noindent For each simulation one of the parameters were tested while the others were kept fixed as shown in table \ref{table:fixed settings}. As can be seen in this table, other settings such as wind scenario, population size, number of generations, whether elitism should be used and mutation rate for interchange mutation and inversion mutation could also be tested, but since evaluation of each farm takes a lot of time, even on an 8 core computer running in parallel, simulations are not run to set these values. These settings are set using the authors previous experience and educated guessing. Testing different parameters on a single wind scenario might lead to values that are tailored for the given scenario and that are not as well suited for some of the others. However, there is no time to test each value for every single wind scenario, and this should not make that much of a difference. Population size is a value that influence the performance of the genetic algorithm largely. Greater population size often leads to better performance since more solutions increase the probability of finding the global optimal solution. The population size was set to 100 for two reasons. First of all, a population size of 100 is large enough so that many different solutions are explored. Second when the population size is kept at 100, the adult selection method ''Overproduction'' will produce twice as many children, so that 200 individuals has to be evaluated for each generation something that will double the evaluation time, the step that already is the bottleneck of the algorithm. The number of generations was kept at 100 for each run, evaluating each population for 100 generations takes time and it the main reason why the algorithm were not run for more generations, however, as can be seen on the graphs in the sections below the fitness looks like it is starting to flat out after a 100 generations indicating that a 100 generations are sufficient for the purpose of setting the parameter values. Elitism was set to true for every run without testing, meaning that the best individual of each generation will survive. This decision is based on the authors previous experience with genetic algorithm where experiments has shown that elitism leads to better results because the best individual is not lost due to coincidences. Different mutation methods were implemented for the genetic algorithm, but only the flip mutation rate was tested to find the best value. Usually, flip mutation is the only mutation method used with genetic algorithms and it is therefore also used as the main for of mutation in this thesis. Inversion mutation and interchange mutation are implemented, but they will only happen seldom to introduce more randomness to the algorithm. In the main simulations, they will be assigned extremely low probabilities so that their occurrence is so rare that they will introduce too much randomness, but hopefully make occasional ''jumps'' to different solutions spaces so that the algorithm do not get completely stuck in a local optimal solution. 
 
 
 \subsection{Adult Selection}
@@ -267,10 +267,13 @@ Figure \ref{figure:crossover methods} displays the results from running the gene
 
 
 \section{Results}\label{section:results}
+In table \ref{table:final parameter settings master slave model} the parameter values used when running the master slave model is shown. The crossover method, crossover rate, mutation rate, adult selection mechanism, parent selection mechanism and parent selection parameters are those that proved to work best for the wind farm layout optimization problem as shown in the previous section. The population size was set to 100 and the number of generations to 200. A population size of 100 is quite small, but since overproduction is the selected adult selection method a population size of 100 leads to evaluation of 200 individuals each generation. Since evaluation is the bottle neck, by far, for wind farm layout optimization a larger population size would not be possible to evaluate for 200 generations. A possibility could be to pick a larger population size and a smaller number of generations, but since the objective of this thesis is to explore population distributed genetic algorithms a large number of generations is crucial since population distributed genetic algorithms need more time to find good solutions since they explore different search spaces. \\
 
 
 \begin{table}
 \centering
+\caption{Parameter values used for the master slave model.}
+\label{table:final parameter settings master slave model}
 \begin{tabular}{l|l}
 \textbf{Parameter} & \textbf{Value} \\ 
 \hline 
@@ -290,10 +293,51 @@ Epsilon & 0.1 \\
 \end{table}
 
 
-\textcolor{red}{In results: Write why population size kept 100: Overproduction lead to 200 and not point to get best solution, but to compare solutions.}
+\noindent Table \ref{table:final parameter settings island model} shows the parameters from the Island model that differs from the ones in table \ref{table:final parameter settings master slave model}. The deme size, number of individuals on each Island, is set to 26 resulting in a total population size of 104, not 100 as in table \ref{table:final parameter settings master slave model}. The reason behind this is that the implementation requires a population size of even numbers. The deme count, number of Islands, is set to four and the topology is circular as shown in figure \textcolor{red}{(Make topology figure)}. In order to let the populations on the different Islands explore different search spaces 20 generations are run before migration is performed. Migration is performed 10 times so that the total number of generations becomes 200 as for the master slave model. \\
 
 
-\subsection{Master Slave Model}
+\begin{table}
+\centering
+\caption{Parameter values used for the Island model.}
+\label{table:final parameter settings island model}
+\begin{tabular}{l|l}
+\textbf{Parameter} & \textbf{Value} \\ 
+\hline 
+Deme size & 26 \\
+Total population size & 104 \\  
+Deme count & 4 \\
+Migration rate & 2 \\
+Number of migrations & 10 \\ 
+Migration interval & 20 \\
+Topology & Circular  \textcolor{red}{reference figure} \\
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\centering
+\caption{Parameter values used for the cellular model.}
+\label{table:final parameter settings cellular model}
+\begin{tabular}{l|l}
+\textbf{Parameter} & \textbf{Value} \\ 
+\hline 
+Population size & 225 \\
+Topology & \textcolor{red}{reference figure} \\  
+\end{tabular}
+\end{table}
+
+
+\begin{table}
+\centering
+\caption{Parameter values used for the pool model.}
+\label{table:final parameter settings pool model}
+\begin{tabular}{l|l}
+\textbf{Parameter} & \textbf{Value} \\ 
+\hline 
+Population size & 200 \\  
+Number of workers & 4 \\ 
+\end{tabular}
+\end{table}
 
 
 \begin{table}[h!]

@@ -38,7 +38,6 @@
 \contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{64}{subsection.5.1.4}
 \contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{65}{subsection.5.1.5}
 \contentsline {section}{\numberline {5.2}Results}{65}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Master Slave Model}{65}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Discussion}{65}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{71}{chapter.6}
-\contentsline {chapter}{Bibliography}{71}{chapter.6}
+\contentsline {section}{\numberline {5.3}Discussion}{66}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{72}{chapter.6}
+\contentsline {chapter}{Bibliography}{72}{chapter.6}
