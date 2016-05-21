@@ -267,7 +267,7 @@ Figure \ref{figure:crossover methods} displays the results from running the gene
 
 
 \section{Results}\label{section:results}
-In table \ref{table:final parameter settings master slave model} the parameter values used when running the master slave model is shown. The crossover method, crossover rate, mutation rate, adult selection mechanism, parent selection mechanism and parent selection parameters are those that proved to work best for the wind farm layout optimization problem as shown in the previous section. The population size was set to 100 and the number of generations to 200. A population size of 100 is quite small, but since overproduction is the selected adult selection method a population size of 100 leads to evaluation of 200 individuals each generation. Since evaluation is the bottle neck, by far, for wind farm layout optimization a larger population size would not be possible to evaluate for 200 generations. A possibility could be to pick a larger population size and a smaller number of generations, but since the objective of this thesis is to explore population distributed genetic algorithms a large number of generations is crucial since population distributed genetic algorithms need more time to find good solutions since they explore different search spaces. \\
+\noindent In table \ref{table:final parameter settings master slave model} the parameter values used when running the master slave model is shown. The crossover method, crossover rate, mutation rate, adult selection mechanism, parent selection mechanism and parent selection parameters are those that proved to work best for the wind farm layout optimization problem as shown in the previous section. The population size was set to 100 and the number of generations to 200. A population size of 100 is quite small, but since overproduction is the selected adult selection method a population size of 100 leads to evaluation of 200 individuals each generation. Since evaluation is the bottle neck, by far, for wind farm layout optimization a larger population size would not be possible to evaluate for 200 generations. A possibility could be to pick a larger population size and a smaller number of generations, but since the objective of this thesis is to explore population distributed genetic algorithms a large number of generations is crucial since population distributed genetic algorithms need more time to find good solutions since they explore different search spaces. \\
 
 
 \begin{table}
@@ -314,6 +314,9 @@ Topology & Circular  \textcolor{red}{reference figure} \\
 \end{table}
 
 
+\noindent As can be seen in table \ref{table:final parameter settings pool model} the cellular model has a population size of 225. At a first glance this might seem like an odd decision since the models above has a population size of about 100 individuals, but the reason is simple. Since overproduction is the adult selection mechanism used for the models above 200 individuals are evaluated for each generation, however, overproduction is not used with the cellular model because each individual has its own position in the grid so that growing and shrinking the population at different stages of the genetic algorithm does not make sense. By using a population size of 200 the cellular model get approximately the same processor time as the algorithms above, and therefore the comparison becomes more fair than with a population size of 100. As can be seen in figure \ref{figure:cellular model topology}, the topology used is a simple square containing the nine individuals closest to each individual. The decision to make the neighborhood this small is that it will give different solutions the opportunity to dominate different areas of the grid, giving the algorithm the time to explore different solution spaces.\\
+
+
 \begin{table}
 \centering
 \caption{Parameter values used for the cellular model.}
@@ -327,6 +330,17 @@ Topology & \textcolor{red}{reference figure} \\
 \end{table}
 
 
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{"images/cellular model topology"}
+\caption{Cellular model topology. Only individuals within the marked square are allowed to become parents for the middle cell.}
+\label{figure:cellular model topology}
+\end{figure}
+
+
+\noindent Table \ref{table:final parameter settings pool model} shows the parameter values used by the pool model that differs from those in table \ref{table:final parameter settings master slave model}. As for the cellular model, the population size is set to 200 so that 200 evaluations are performed for each of the 200 generations. Since child generation for the pool model consist of producing one individual for each position which the given thread is responsible for it makes no sense to use overproduction, therefore a population size of 200 gives the algorithm as much processor time as the three others.\\
+
+
 \begin{table}
 \centering
 \caption{Parameter values used for the pool model.}
@@ -337,28 +351,6 @@ Topology & \textcolor{red}{reference figure} \\
 Population size & 200 \\  
 Number of workers & 4 \\ 
 \end{tabular}
-\end{table}
-
-
-\begin{table}[h!]
-\centering
-\caption{Results for the master slave model averaged over 10 runs. The first coloumn describes the scenario, the second, third, and forth gives best, averaged and worst fitness, the fifth, sixth, seventh and eight gives cost, power, efficiency and number of turbines for the best wind farm in the last population.}
-\label{table:results master slave model}
-\tiny
-\begin{tabular}{c|c|c|c|c|c|c|c}
-Scenario & Best fitness & Avg. fitness & Worst fitness & Cost & Power & Efficiency & Turbines \\ 
-\hline 
-00.xml      & 0.0010398824104367332 & 0.0010433013036231363 & 0.0010521535224480483 & 2.5214864684269022E7 & 2.9443327731499153E10 & 0.8431345449026757 & 545 \\ 
-
-05.xml       & 0.0010400030013951972 & 0.0010436595078417523 & 0.0010524272799087857 & 2.5214864684269022E7 & 2.943909054887005E10 & 0.8430178744022051 & 545 \\ 
-
-00obs.xml & 0.0010396895859709405 & 0.001043324775785618 & 0.0010520592949268786 & 2.5214864684269022E7 & 2.9449836783491558E10 & 0.8433274879559504 & 545 \\ 
-
-05obs.xml & • & • & • & • & • & • & • \\ 
-\hline
-Average    & • & • & • & • & • & • & • \\ 
- 
-\end{tabular} 
 \end{table}
 
 
