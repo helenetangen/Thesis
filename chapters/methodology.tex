@@ -245,7 +245,17 @@ Since the population distributed genetic algorithms implemented are described in
 
 
 Pool model implementation details: 
-In the pool model, the individuals are distributed in a resource pool so that each thread is responsible for its own area in the resource pool. Since each individual has its own position in the resource pool it does not make sense to use an adult selection mechanisms that results in an adult pool with a population size larger than the size of the resource pool. Therefore, the adult selection step is skipped for this model. As mentioned in the background, parent selection is performed by drawing individuals from random positions in the entire resource pool, not just the area for which the given thread is responsible. However, in this implementation, the individuals are not draw at random, but selected by tournament selection, where the individuals competing in the tournaments are drawn from random positions in the entire resource pool. 
+In the pool model, the individuals are distributed in a resource pool so that each thread is responsible for its own area in the resource pool. Since each individual has its own position in the resource pool it does not make sense to use an adult selection mechanisms that results in an adult pool with a population size larger than the size of the resource pool. Therefore, the adult selection step is skipped for this model. As mentioned in the background, parent selection is performed by drawing individuals from random positions in the entire resource pool, not just the area for which the given thread is responsible. However, in this implementation, the individuals are not draw at random, but selected by tournament selection, where the individuals competing in the tournaments are drawn from random positions in the entire resource pool. Each thread selects one parent for each position it is responsible for, genetic operations are performed to produce the child generations. After the child pool for a thread is generated, each child individual is compared against the individual in their destination position, and the old individual is replaced if the new individual has a better fitness.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.5]{images/"pool model update function"}
+\caption{Pool model updating function. For each generation, each thread updates its region if the new individuals are better than the individuals currently occupying the position.}
+\label{figure:pool model update function}
+\end{center}
+\end{figure}
+
 
 \section{Scenarios}\label{section:scenarios}
 GECCO 2016 has provided the contestants with 20 different wind scenarios for which the genetic algorithm can be tested on. Each wind scenario contain shape and scale parameters, k and c respectively, for each wind directions where wind direction is partitioned into slots that cover an 15 degree angle each, so that there are 24 different wind directions. Unavailable areas are described in the scenario by the parameters \textit{x$_{min}$, x$_{max}$, y$_{min}$} and \textit{y$_{max}$} as shown in figure \ref{figure:obstacles}. In the figure, two obstacles are described giving their (x, y)-boundaries. The red lines gives the boundaries of obstacle 1 and the blue lines gives the boundaries of obstacle 2. The yellow area in the middle of the lines shows the illegal areas. Each wind scenario also contain values for the constants ''width'', ''height'', ''number of turbines'' and ''wake free energy''. The scenarios are read from file at the beginning of each run of the genetic algorithm. 
