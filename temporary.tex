@@ -1,5 +1,28 @@
-\chapter{Results and Discussion}\label{chapter:results}
-This chapter includes presentation and analysis of the results obtained in this thesis. Section \ref{section:parameter settings} presents results from testing different parameter settings for the genetic algorithm, and briefly discusses each results. Section \ref{section:results} presents the main results obtained when running the different population distributed genetic algorithms. Section \ref{section:discussion} contains a discussion and comparison of the results obtained in section \ref{section:results}.
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\graphicspath{{images/}}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage[square, authoryear, comma, sort&compress,numbers]{natbib}
+\usepackage{todonotes}
+ \usepackage{hyperref}
+ \usepackage{url}
+\usepackage{rotating}
+
+
+\begin{document}
+
+
+
+\section{Results and Discussion}\label{chapter:results}
+
+
+\textcolor{red}{Make chapter}\\
+
+
+\noindent This chapter includes presentation and analysis of the results obtained in this thesis. Section \ref{section:parameter settings} presents results from testing different parameter settings for the genetic algorithm, and briefly discusses each results. Section \ref{section:results} presents the main results obtained when running the different population distributed genetic algorithms. Section \ref{section:discussion} contains a discussion and comparison of the results obtained in section \ref{section:results}.
 
 
 \section{Parameter settings}\label{section:parameter settings}
@@ -65,13 +88,6 @@ As can be seen in the figures, full generational replacement ends up with lower 
 
 
 \subsection{Parent Selection}
-Figure \ref{plot:parent selection} shows the results for running the genetic algorithm with parent selection method roulette wheel \ref{plot:roulette wheel}, and tournament selection \ref{plot:tournament size 5} - \ref{plot:tournament size 25}. Tournament selection is run with five different values for the variable \textit{tournament size}. Clearly, tournament selection beats roulette wheel by far. The problem with roulette wheel is that it assigns each individual a probability of being selected proportional to its fitness, since there is not a large difference in fitness for the different individuals the selection becomes almost random. \\
-
-
-\noindent As can be seen in the figure, the fitness gets better as the variable \textit{tournament size} increases. However, a larger tournament size than 25 is not tested. The reason for this is that 25 is already a very large tournament size. With 25 \% of the individuals competing in every tournament the population will not have much time to explore different solutions because the best individuals will soon take over the entire population. As can be seen in the figure, a tournament size of 25 is only slightly better than a tournament size of 20, and therefore 20 is chosen as the final tournament size to slow down the take-over time. \\
-
-
-\noindent As mentioned before, \textit{epsilon} is the probability that the selected individual is selected from a random position in the adult pool instead of by tournament selection. Figure \ref{plot:epsilon} shows the result for testing the values 5 \%, 10 \%, and 15 \%. As can be seen in the figure, varying epsilon does not have much impact on the fitness.\\
 
 
 \begin{figure}[h!]
@@ -128,24 +144,24 @@ Figure \ref{plot:parent selection} shows the results for running the genetic alg
         \includegraphics[width=\textwidth]{images/plots/epsilon/"tournament size 20"/"epsilon 0,05"}
         \caption{}
         \hfill
-        \label{plot:epsilon 0.05}
+        \label{plot:single point crossover}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/epsilon/"tournament size 20"/"epsilon 0,10"}
         \caption{}
         \hfill
-        \label{plot:epsilon 0.10}
+        \label{plot:two point crossover}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/epsilon/"tournament size 20"/"epsilon 0,15"}
         \caption{}
         \hfill
-        \label{plot:epsilon 0.15}
+        \label{plot:uniform crossover}
     \end{subfigure}
     \caption{Different epsilon values averaged 10 runs when tournament size was kept at 20: (a) Epsilon 0.05, (b) epsilon 0.10 and (c) epsilon 0.15.}
-    \label{plot:epsilon}
+    \label{plot:crossover methods}
 \end{figure}
 
 
@@ -232,7 +248,6 @@ Figure \ref{figure:crossover methods} displays the results from running the gene
 
 
 \subsection{Mutation Rate}
-In figure \ref{plot:mutation rate} the effect of varying the mutation rate can be seen. As the figure shows, if the mutation rate is very low (0.0001), the population is clearly not able to find a good solution. Mutation means adding or removing a turbine. As the figure shows, a mutation rate that is too low (0.0001) might not be able to add or remove enough turbines and therefore the population ends up at a local minima. On the other side, when the mutation rate gets too high (0.01) the population might be able to find the global minima, but, since mutation is performed too frequently, it is not able to stay there. As the figure shows, mutation rate largely impacts the fitness, and a mutation rate of 0.001 clearly gives the best results.
 
 
 \begin{figure}[h!]
@@ -241,38 +256,38 @@ In figure \ref{plot:mutation rate} the effect of varying the mutation rate can b
         \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,0001"}
         \caption{}
         \hfill
-        \label{plot:mutation rate 0.0001}
+        \label{plot:single point crossover}
     \end{subfigure}
     ~
       \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,0005"}
         \caption{}
         \hfill
-        \label{plot:mutation rate 0.0005}
+        \label{plot:single point crossover}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,001"}
         \caption{}
         \hfill
-        \label{plot:mutation rate 0.001}
+        \label{plot:single point crossover}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,005"}
         \caption{}
         \hfill
-        \label{plot:mutation rate 0.005}
+        \label{plot:two point crossover}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/"mutation rate"/"mutation rate 0,01"}
         \caption{}
         \hfill
-        \label{plot:mutation rate 0.01}
+        \label{plot:uniform crossover}
     \end{subfigure}
     \caption{Mutation rates: (a) Mutation rate 0.0001, (b) mutation rate 0.0005 and (c) mutation rate 0.001, (d) mutation rate 0.005 and (e) mutation rate 0.01s.}
-    \label{plot:mutation rate}
+    \label{plot:crossover methods}
 \end{figure}
 
 
@@ -540,3 +555,6 @@ Number of workers & 4 \\
 
 
 \section{Discussion}\label{section:discussion}
+
+
+\end{document}

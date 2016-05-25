@@ -37,10 +37,10 @@
 \contentsline {section}{\numberline {5.1}Parameter settings}{63}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Adult Selection}{65}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Parent Selection}{66}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{66}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{68}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{68}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{69}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Results}{69}{section.5.2}
-\contentsline {section}{\numberline {5.3}Discussion}{73}{section.5.3}
+\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{68}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Results}{70}{section.5.2}
+\contentsline {section}{\numberline {5.3}Discussion}{75}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclusion}{78}{chapter.6}
 \contentsline {chapter}{Bibliography}{78}{chapter.6}
