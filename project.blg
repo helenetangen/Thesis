@@ -2,47 +2,84 @@ This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: apalike.bst
-Database file #1: chapters/biblography.bib
-Warning--empty journal in Razali
-You've used 33 entries,
+I couldn't open database file chapters/biblographyre.bib
+---line 479 of file project.aux
+ : \bibdata{chapters/biblographyre
+ :                                }
+I'm skipping whatever remains of this command
+I found no database files---while reading file project.aux
+Warning--I didn't find a database entry for "url1"
+Warning--I didn't find a database entry for "Samorani"
+Warning--I didn't find a database entry for "url2"
+Warning--I didn't find a database entry for "Sisbot"
+Warning--I didn't find a database entry for "Jensen"
+Warning--I didn't find a database entry for "Liang"
+Warning--I didn't find a database entry for "Holland"
+Warning--I didn't find a database entry for "Goldberg"
+Warning--I didn't find a database entry for "Gong"
+Warning--I didn't find a database entry for "Razali"
+Warning--I didn't find a database entry for "Huang"
+Warning--I didn't find a database entry for "Mosetti"
+Warning--I didn't find a database entry for "Albring"
+Warning--I didn't find a database entry for "Grady"
+Warning--I didn't find a database entry for "Emami"
+Warning--I didn't find a database entry for "Zhao"
+Warning--I didn't find a database entry for "Mora"
+Warning--I didn't find a database entry for "Wan"
+Warning--I didn't find a database entry for "Kusiak"
+Warning--I didn't find a database entry for "Gonzalez"
+Warning--I didn't find a database entry for "Murata"
+Warning--I didn't find a database entry for "Saavedra-Morena"
+Warning--I didn't find a database entry for "Chen"
+Warning--I didn't find a database entry for "Gao"
+Warning--I didn't find a database entry for "Ozturk"
+Warning--I didn't find a database entry for "Bilbao"
+Warning--I didn't find a database entry for "Eroglu"
+Warning--I didn't find a database entry for "Wan2012"
+Warning--I didn't find a database entry for "Katic"
+Warning--I didn't find a database entry for "Frandsen"
+Warning--I didn't find a database entry for "Magalhaes-Mendes"
+Warning--I didn't find a database entry for "Soni"
+Warning--I didn't find a database entry for "Justus"
+You've used 0 entries,
             1935 wiz_defined-function locations,
-            670 strings with 9213 characters,
-and the built_in function-call counts, 12186 in all, are:
-= -- 1174
-> -- 535
-< -- 22
-+ -- 188
-- -- 178
-* -- 978
-:= -- 2183
-add.period$ -- 101
-call.type$ -- 33
-change.case$ -- 245
-chr.to.int$ -- 33
-cite$ -- 34
-duplicate$ -- 478
-empty$ -- 816
-format.name$ -- 228
-if$ -- 2348
+            535 strings with 4088 characters,
+and the built_in function-call counts, 17 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 37
-newline$ -- 167
-num.names$ -- 99
-pop$ -- 248
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 253
+purify$ -- 0
 quote$ -- 0
-skip$ -- 362
+skip$ -- 1
 stack$ -- 0
-substring$ -- 695
-swap$ -- 54
-text.length$ -- 4
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
-warning$ -- 1
-while$ -- 92
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 412
-(There was 1 warning)
+write$ -- 2
+(There were 2 error messages)

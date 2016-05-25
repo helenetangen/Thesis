@@ -240,12 +240,75 @@ $m$ & Farm energy output &  \\
 \noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator represents the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \\
 
 
-\section{Population Distributed Genetic Algorithms}\label{section:population distributed gas}
-Since the population distributed genetic algorithms implemented are described in chapter \ref{chapter:background} they will not be described in detail here. However, each design decision will be described. As mentioned in chapter \ref{chapter:background}, for the Island model, one have to make the decision if migration is synchronous or asynchronous, meaning that all migration is performed at the same generation or at different generations respectively. For the Island model implemented in this thesis the synchronized version is implemented. As the Island model, the Cellular model will also perform updating at the same time, i.e. at the same generation. The pool model on the other hand is asynchronous by nature. Each processor performs its own assignment without even knowing about the presence of the other processors. The second design decision made is whether each model is homogeneous or heterogeneous, where homogeneous means that each deme, cell or processor uses the same parameter settings and methods. In this thesis, each model will be homogeneous. This decision is based solidly on the fact that there will be too many combinations of different settings if each deme, cell or processor used different settings that it would be impossible to do proper testing for all of them. 
+\section{Scenarios}\label{section:scenarios}
 
 
-Pool model implementation details: 
-In the pool model, the individuals are distributed in a resource pool so that each thread is responsible for its own area in the resource pool. Since each individual has its own position in the resource pool it does not make sense to use an adult selection mechanisms that results in an adult pool with a population size larger than the size of the resource pool. Therefore, the adult selection step is skipped for this model. As mentioned in the background, parent selection is performed by drawing individuals from random positions in the entire resource pool, not just the area for which the given thread is responsible. However, in this implementation, the individuals are not draw at random, but selected by tournament selection, where the individuals competing in the tournaments are drawn from random positions in the entire resource pool. Each thread selects one parent for each position it is responsible for, genetic operations are performed to produce the child generations. After the child pool for a thread is generated, each child individual is compared against the individual in their destination position, and the old individual is replaced if the new individual has a better fitness.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{images/obstacles}
+\caption{Obstacles are described in the scenarios with its (x, y)-boundaries.}
+\label{figure:obstacles}
+\end{center}
+\end{figure}
+
+
+GECCO 2016 has provided the contestants with 20 different wind scenarios for which the genetic algorithm can be tested on. Each wind scenario contain shape and scale parameters, k and c respectively, for each wind directions where wind direction is partitioned into slots that cover an 15 degree angle each, so that there are 24 different wind directions. Unavailable areas are described in the scenario by the parameters \textit{x$_{min}$, x$_{max}$, y$_{min}$} and \textit{y$_{max}$} as shown in figure \ref{figure:obstacles}. In the figure, two obstacles are described giving their (x, y)-boundaries. The red lines gives the boundaries of obstacle 1 and the blue lines gives the boundaries of obstacle 2. The yellow area in the middle of the lines shows the illegal areas. Each wind scenario also contain values for the constants ''width'', ''height'', ''number of turbines'' and ''wake free energy''. The scenarios are read from file at the beginning of each run of the genetic algorithm. 
+
+
+\section{Population Distributed Genetic Algorithms: Implementation Details}\label{section:population distributed gas implementation details}
+
+
+Now that the reader is familiar with how individuals are represented, which selection mechanisms and genetic operators that are implemented, how fitness is calculated, and how the scenarios look, it is time to go into details of how the population distributed genetic algorithms are implemented. Although the population distributed genetic algorithms were introduced in chapter \ref{chapter:background}, the details of how each step in figure \ref{figure:genetic algorithm steps} are implemented for each model was not given. Therefore, this section contains a detailed description of how the population distributed genetic algorithms are implemented. \\
+
+
+\noindent One decision that can be mentioned here, because it applies to all the models below, is whether the three population distributed genetic algorithms are heterogeneous or homogeneous. In an homogeneous environment, the same rules apply to the entire model. This means that the same adult- and parent selection mechanisms, the same genetic operators and the same fitness function is used for the entire model, it is not different for different Islands (Island model), threads (Pool model) or areas (Cellular model). Even thought it would be very interesting to implement heterogeneous models, it is not done in this thesis. The reason behind this decision is that it is best to let the same rules apply to every part of every model when different models are compared.\\
+
+
+\subsection{The Island Model}
+
+
+\noindent The Island model works as follows: A population of individuals are partitioned into sub populations which are distributed onto different Islands. An Island can be connected to one or more Islands and individuals on one Island can migrate to other Islands following one of the migration routes. Table \ref{table:parameter description island model} gives an description of the Island model parameters. For a number of generations, decided by the variable \textit{migration interval}, the population on one Island follow the steps of the simple genetic algorithm from figure \ref{figure:genetic algorithm steps}. However, when the population has evolved for \textit{migration interval} generations some individuals from one Island can migrate to another Island. These two steps continue until the total number of generations reaches some predefined value.\\
+
+
+\noindent As mentioned in chapter \ref{chapter:background} the Island model can be implemented with either synchronized or asynchronized migration. Synchronized migration means that migration is performed at the same generation for all Island, and asynchronized migration means that migration can be performed whenever an Island is ready. In this thesis, the Island model is implemented with synchronous migration in order to not over-complicate the migration function.\\
+
+
+\begin{table}[h!]
+    \centering
+    \caption{Island model parameter description.}
+    \label{table:parameter description island model}
+        \begin{tabular}{l|l}
+         \textbf{Parameter} & \textbf{Description}  \\
+         \hline
+         Deme size  & Number of individuals on each Island (deme) \\
+         Deme count & Number of Islands (demes) \\
+         Migration rate & Number of individuals that migrate \\
+         Migration interval & Number of generations between migration. \\
+         Number of migrations & Total number of times migration is performed. \\
+         Topology & Circular
+    \end{tabular}
+\end{table}
+
+
+\noindent As mentioned, migration means that individuals migrates to another Island. In this thesis, migration from one Island to another means that the best individuals in Island \textit{i} is copied onto Island \textit{j} to replace the individuals with lowest fitness on Island \textit{j}. In other words, migration does not mean that the best individuals in Island \textit{i} leaves that Island, but that copies of them replace the individuals with worst fitness on Island \textit{j}. The number of individuals that migrate is decided by the parameter \textit{migration rate}.\\
+
+
+\noindent As described in table \ref{table:parameter description island model} the topology implemented in this thesis is circular. This can be seen in figure \ref{figure:topology island model} where the legal migration routes are indicated by arrows. Since individuals are only allowed to migration in one direction with this topology it will take time (many generations) for the individual on the upper-right Island to travel to the upper-left Island since they have to go through both Islands on the bottom. This means that different parts of the solution space can be explored on different Island before individuals from one Island take over the entire population.
+
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[scale=0.5]{"island model topology"}
+        \caption{Island model topology.}
+        \label{figure:topology island model}
+    \end{center}
+\end{figure}
+
+
+\subsection{Pool Model}
+
+
+\noindent In the Pool model, the individuals are distributed in a resource pool. The resource pool is partitioned into equal size partitions so that one thread is responsible for one partition. Each thread selects \textit{x} individuals from the entire population, where \textit{x} is equal to the total population size divided by the total number of threads. Next, each thread generates a child pool by performing genetic operations on the selected individuals. After the new child pool is generated, each child individual is compared against the individual in the resource pool currently occupying its designated position. If the fitness of the new individuals is better than the fitness of the old individual the new child individual overwrites the old individuals. This is illustrated in figure \ref{figure:pool model update function}. As can be seen in the figure thread \textit{i} overwrites the individuals in positions 1, 3 and 4 in the partition it is responsible for.\\
 
 
 \begin{figure}[h!]
@@ -257,16 +320,29 @@ In the pool model, the individuals are distributed in a resource pool so that ea
 \end{figure}
 
 
-\section{Scenarios}\label{section:scenarios}
-GECCO 2016 has provided the contestants with 20 different wind scenarios for which the genetic algorithm can be tested on. Each wind scenario contain shape and scale parameters, k and c respectively, for each wind directions where wind direction is partitioned into slots that cover an 15 degree angle each, so that there are 24 different wind directions. Unavailable areas are described in the scenario by the parameters \textit{x$_{min}$, x$_{max}$, y$_{min}$} and \textit{y$_{max}$} as shown in figure \ref{figure:obstacles}. In the figure, two obstacles are described giving their (x, y)-boundaries. The red lines gives the boundaries of obstacle 1 and the blue lines gives the boundaries of obstacle 2. The yellow area in the middle of the lines shows the illegal areas. Each wind scenario also contain values for the constants ''width'', ''height'', ''number of turbines'' and ''wake free energy''. The scenarios are read from file at the beginning of each run of the genetic algorithm. 
+\noindent The pool model is asynchronous by nature. The threads operate unaware of each other. Since each thread only writes to its own positions in the resource pool, it is not a problem that the threads work independently without any form of synchronization. By implementing the Pool model this way some parts of the resource pool might have better fitness that others because they have evolved for more generations than other parts. This property ensures that different parts of the search space is explored in different regions of the resource pool. \\
 
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.4]{images/obstacles}
-\caption{Obstacles are described in the scenarios with its (x, y)-boundaries.}
-\label{figure:obstacles}
-\end{center}
+\noindent As mentioned above, parent individuals are selected from the entire resource pool. However, parents are not picked completely at random. For each parent selected a group of potential parents are selected at random from the resource pool, and these individuals compete for the spot in the parent pool by tournament selection. This guides the evolution in the right direction. Picking individuals at random might also work for this model since the new individuals are only written back if they are better than the previous individuals, however, this would make evolution extremely slow, and it would not make sense from an evolutionary point of view because the fittest individuals are not prioritized.
+
+
+\subsection{Cellular Model}
+
+
+\noindent The Cellular model distributes the population in a square grid. Each individual has its own cell which corresponds to an (x, y)-position. For each generation, each cell is updated. Each cell in the grid is updated by selecting parent individuals that are close to the given cell, perform genetic operations on those parents and write the newly generated individual back to the cell.\\
+
+
+\noindent As mentioned in the background, the cells in the Cellular model could either be updated in a synchronous fashion or an asynchronous fashion. In this thesis the updating is synchronous, meaning that the cells are updated simultaneously.\\
+
+
+\noindent The topology used in this thesis is a square topology, as shown in figure \ref{figure:cellular model topology}. Only individuals within the square can be selected as parents for the middle cell. Parent selection are performed by tournament selection within the square. By distributing individuals in a grid different parts of the grid will explore different regions of the search space.\\
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{"images/cellular model topology"}
+\caption{Cellular model topology. Only individuals within the marked square are allowed to become parents for the middle cell.}
+\label{figure:cellular model topology}
 \end{figure}
 
 

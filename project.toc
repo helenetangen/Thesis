@@ -27,17 +27,20 @@
 \contentsline {subsubsection}{\numberline {4.2.4.2}Mutation}{52}{subsubsection.4.2.4.2}
 \contentsline {subsection}{\numberline {4.2.5}Wind-, Wake- and Power Model}{53}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}Fitness Function}{55}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Population Distributed Genetic Algorithms}{56}{section.4.3}
-\contentsline {section}{\numberline {4.4}Scenarios}{57}{section.4.4}
-\contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{58}{section.4.5}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{60}{chapter.5}
-\contentsline {section}{\numberline {5.1}Parameter settings}{60}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{62}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Parent Selection}{63}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{63}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{65}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{66}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Results}{66}{section.5.2}
-\contentsline {section}{\numberline {5.3}Discussion}{70}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{75}{chapter.6}
-\contentsline {chapter}{Bibliography}{75}{chapter.6}
+\contentsline {section}{\numberline {4.3}Scenarios}{56}{section.4.3}
+\contentsline {section}{\numberline {4.4}Population Distributed Genetic Algorithms: Implementation Details}{57}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}The Island Model}{57}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Pool Model}{59}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Cellular Model}{60}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Motivation behind Implementing the Genetic Algorithm from Scratch}{62}{section.4.5}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{63}{chapter.5}
+\contentsline {section}{\numberline {5.1}Parameter settings}{63}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Adult Selection}{65}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Parent Selection}{66}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{66}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{68}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{69}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Results}{69}{section.5.2}
+\contentsline {section}{\numberline {5.3}Discussion}{73}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{78}{chapter.6}
+\contentsline {chapter}{Bibliography}{78}{chapter.6}

@@ -25,17 +25,20 @@
 \BOOKMARK [2][-]{subsection.4.2.4}{Genetic Operations}{section.4.2}% 25
 \BOOKMARK [2][-]{subsection.4.2.5}{Wind-, Wake- and Power Model}{section.4.2}% 26
 \BOOKMARK [2][-]{subsection.4.2.6}{Fitness Function}{section.4.2}% 27
-\BOOKMARK [1][-]{section.4.3}{Population Distributed Genetic Algorithms}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.4}{Scenarios}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.5}{Motivation behind Implementing the Genetic Algorithm from Scratch}{chapter.4}% 30
-\BOOKMARK [0][-]{chapter.5}{Results and Discussion}{}% 31
-\BOOKMARK [1][-]{section.5.1}{Parameter settings}{chapter.5}% 32
-\BOOKMARK [2][-]{subsection.5.1.1}{Adult Selection}{section.5.1}% 33
-\BOOKMARK [2][-]{subsection.5.1.2}{Parent Selection}{section.5.1}% 34
-\BOOKMARK [2][-]{subsection.5.1.3}{Crossover Methods}{section.5.1}% 35
-\BOOKMARK [2][-]{subsection.5.1.4}{Crossover Rate}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.5}{Mutation Rate}{section.5.1}% 37
-\BOOKMARK [1][-]{section.5.2}{Results}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.3}{Discussion}{chapter.5}% 39
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 40
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 41
+\BOOKMARK [1][-]{section.4.3}{Scenarios}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.4}{Population Distributed Genetic Algorithms: Implementation Details}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.4.1}{The Island Model}{section.4.4}% 30
+\BOOKMARK [2][-]{subsection.4.4.2}{Pool Model}{section.4.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.3}{Cellular Model}{section.4.4}% 32
+\BOOKMARK [1][-]{section.4.5}{Motivation behind Implementing the Genetic Algorithm from Scratch}{chapter.4}% 33
+\BOOKMARK [0][-]{chapter.5}{Results and Discussion}{}% 34
+\BOOKMARK [1][-]{section.5.1}{Parameter settings}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.1.1}{Adult Selection}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.2}{Parent Selection}{section.5.1}% 37
+\BOOKMARK [2][-]{subsection.5.1.3}{Crossover Methods}{section.5.1}% 38
+\BOOKMARK [2][-]{subsection.5.1.4}{Crossover Rate}{section.5.1}% 39
+\BOOKMARK [2][-]{subsection.5.1.5}{Mutation Rate}{section.5.1}% 40
+\BOOKMARK [1][-]{section.5.2}{Results}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.3}{Discussion}{chapter.5}% 42
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 43
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 44
