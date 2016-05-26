@@ -41,6 +41,10 @@
 \contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{68}{subsection.5.1.4}
 \contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{68}{subsection.5.1.5}
 \contentsline {section}{\numberline {5.2}Results}{70}{section.5.2}
-\contentsline {section}{\numberline {5.3}Discussion}{75}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{78}{chapter.6}
-\contentsline {chapter}{Bibliography}{78}{chapter.6}
+\contentsline {subsection}{\numberline {5.2.1}Parameter Settings}{70}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Results}{73}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Results scenario 00}{74}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Results Scenario 05}{76}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Discussion}{76}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{80}{chapter.6}
+\contentsline {chapter}{Bibliography}{80}{chapter.6}

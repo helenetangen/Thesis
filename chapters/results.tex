@@ -277,10 +277,15 @@ In figure \ref{plot:mutation rate} the effect of varying the mutation rate can b
 
 
 \section{Results}\label{section:results}
-\noindent In table \ref{table:final parameter settings master slave model} the parameter values used when running the master slave model is shown. The crossover method, crossover rate, mutation rate, adult selection mechanism, parent selection mechanism and parent selection parameters are those that proved to work best for the wind farm layout optimization problem as shown in the previous section. The population size was set to 100 and the number of generations to 200. A population size of 100 is quite small, but since overproduction is the selected adult selection method a population size of 100 leads to evaluation of 200 individuals each generation. Since evaluation is the bottle neck, by far, for wind farm layout optimization a larger population size would not be possible to evaluate for 200 generations. A possibility could be to pick a larger population size and a smaller number of generations, but since the objective of this thesis is to explore population distributed genetic algorithms a large number of generations is crucial since population distributed genetic algorithms need more time to find good solutions since they explore different search spaces. \\
 
 
-\begin{table}
+\subsection{Parameter Settings}
+
+
+\noindent In table \ref{table:final parameter settings master slave model}, the parameter values used when running the master slave model is shown. The crossover method, crossover rate, mutation rate, adult selection mechanism, parent selection mechanism and parent selection parameters are those that proved to work best for the wind farm layout optimization problem as shown in the previous section. The population size was set to 100 and the number of generations to 200. A population size of 100 is quite small, but since overproduction is the selected adult selection method a population size of 100 leads to evaluation of 200 individuals each generation. Since evaluation is the bottle neck, by far, for wind farm layout optimization a larger population size would not be possible to evaluate for 200 generations within the time limits of this thesis. A possibility could be to pick a larger population size and a smaller number of generations, but since the objective of this thesis is to explore population distributed genetic algorithms a large number of generations is crucial since population distributed genetic algorithms need more time to find good solutions because they need time to explore different parts of the search space. \\
+
+
+\begin{table}[h!]
 \centering
 \caption{Parameter values used for the master slave model.}
 \label{table:final parameter settings master slave model}
@@ -303,10 +308,10 @@ Epsilon & 0.1 \\
 \end{table}
 
 
-\noindent Table \ref{table:final parameter settings island model} shows the parameters from the Island model that differs from the ones in table \ref{table:final parameter settings master slave model}. The deme size, number of individuals on each Island, is set to 26 resulting in a total population size of 104, not 100 as in table \ref{table:final parameter settings master slave model}. The reason behind this is that the implementation requires a population size of even numbers. The deme count, number of Islands, is set to four and the topology is circular as shown in figure \textcolor{red}{(Make topology figure)}. In order to let the populations on the different Islands explore different search spaces 20 generations are run before migration is performed. Migration is performed 10 times so that the total number of generations becomes 200 as for the master slave model. \\
+\noindent Table \ref{table:final parameter settings island model} shows the parameters from the Island model that differs from the ones in table \ref{table:final parameter settings master slave model}. The deme size, number of individuals on each Island, is set to 26 resulting in a total population size of 104, not 100 as in table \ref{table:final parameter settings master slave model}. The reason behind this is that the implementation requires a population size of even numbers on each Island. The deme count is set to four and the topology is circular as shown in figure \ref{figure:topology island model} from chapter \ref{chapter:methodology}. In order to let the populations on the different Islands explore different parts of the search space 20 generations are run before migration is performed. Migration is performed 10 times so that the total number of generations becomes 200 as for the master slave model. \\
 
 
-\begin{table}
+\begin{table}[h!]
 \centering
 \caption{Parameter values used for the Island model.}
 \label{table:final parameter settings island model}
@@ -319,20 +324,12 @@ Deme count & 4 \\
 Migration rate & 2 \\
 Number of migrations & 10 \\ 
 Migration interval & 20 \\
-Topology & Circular  \textcolor{red}{reference figure} \\
+Topology & Circular (figure \ref{figure:topology island model}) \\
 \end{tabular}
 \end{table}
 
 
-\begin{figure}
-\centering
-\includegraphics[scale=0.5]{"images/island model topology"}
-\caption{Island model topology. Individuals are only allowed to migrate in the directions indicated by the arrows.}
-\label{figure:islandsland Modell titeritroexThThe hets difsH." model topology}
-\end{figure}
-
-
-\noindent As can be seen in table \ref{table:final parameter settings pool model} the cellular model has a population size of 225. At a first glance this might seem like an odd decision since the models above has a population size of about 100 individuals, but the reason is simple. Since overproduction is the adult selection mechanism used for the models above 200 individuals are evaluated for each generation, however, overproduction is not used with the cellular model because each individual has its own position in the grid so that growing and shrinking the population at different stages of the genetic algorithm does not make sense. By using a population size of about 200 the cellular model get approximately the same processor time as the algorithms above, and therefore the comparison becomes more fair than with a population size of 100. The reason why the population size is 225 and not 200 is because a quadratic grid is used to distribute the production and 225 is equal to 15$^{2}$. As can be seen in figure \ref{figure:cellular model topology}, the topology used is a simple square containing nine individuals, the individual in the middle square can only be replaced by individuals generated by recombining individuals within the square grid. The decision to make the neighborhood this small is that it will give different solutions the opportunity to dominate different areas of the grid, giving the algorithm the time to explore different solution spaces.\\
+\noindent As can be seen in table \ref{table:final parameter settings pool model} the cellular model has a population size of 225. At a first glance this might seem like an odd decision since the models above has a population size of about 100 individuals, but the reason is simple. Since overproduction is the adult selection mechanism used for the models above 200 individuals are evaluated for each generation, however, overproduction is not used with the cellular model because each individual has its own position in the grid so that growing and shrinking the population at different stages of the genetic algorithm does not make sense. By using a population size of about 200 the cellular model get approximately the same processor time as the algorithms above, and therefore the comparison becomes more fair than with a population size of 100. The reason why the population size is 225 and not 200 is because a quadratic grid is used to distribute the production and 225 is equal to 15$^{2}$. As explained in the methodology chapter, the topology used is a simple square containing nine individuals. The individual in the middle square can only be replaced by individuals generated by recombining individuals within the square grid. The decision to make the neighborhood this small is that it will give different solutions the opportunity to dominate different areas of the grid, giving the algorithm the time to explore.\\
 
 
 \begin{table}
@@ -343,23 +340,16 @@ Topology & Circular  \textcolor{red}{reference figure} \\
 \textbf{Parameter} & \textbf{Value} \\ 
 \hline 
 Population size & 225 \\
-Topology & \textcolor{red}{reference figure} \\  
+Topology & Square (figure \ref{figure:cellular model topology}) \\  
 \end{tabular}
 \end{table}
 
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.5]{"images/cellular model topology"}
-\caption{Cellular model topology. Only individuals within the marked square are allowed to become parents for the middle cell.}
-\label{figure:cellular model topology}
-\end{figure}
 
 
 \noindent Table \ref{table:final parameter settings pool model} shows the parameter values used by the pool model that differs from those in table \ref{table:final parameter settings master slave model}. As for the cellular model, the population size is set to 200 so that 200 evaluations are performed for each of the 200 generations. Since child generation for the pool model consist of producing one individual for each position which the given thread is responsible for it makes no sense to use overproduction, therefore a population size of 200 gives the algorithm as much processor time as the three others.\\
 
 
-\begin{table}
+\begin{table}[h!]
 \centering
 \caption{Parameter values used for the pool model.}
 \label{table:final parameter settings pool model}
@@ -372,7 +362,76 @@ Number of workers & 4 \\
 \end{table}
 
 
-\noindent \textcolor{red}{Write about evaluation parameters. Fix graphs and display results.}
+\noindent In summary, each algorithm run for 200 generations, and approximately 200 individuals are evaluated for each generation. This makes sure that every model get a fair amount of processor time.\\
+
+
+\subsection{Results}
+
+
+The models are tested on 4 different wind scenarios shown in table \ref{table:scenario properties}. As can be seen, the first two scenarios contain obstacles and the last two do not. \\
+
+
+\begin{table}[h!]
+\centering
+\caption{Properties of the different scenarios used to test the different models.}
+\label{table:scenario properties}
+\begin{tabular}{l|l}
+\textbf{Scenario} & \textbf{Properties} \\
+\hline
+00.xml            & No obstacles. \\
+05.xml            & No obstacles. \\
+obs00.xml         & Obstacles. \\
+obs05.xml         & Obstacles. \\
+\end{tabular}
+\end{table}
+
+
+\noindent For each scenario, the performance of the models are measured using the measures shown in table \ref{table:overview}. Each of these measures will be presented in a plot for each model for each scenario. The fitness presented in table \ref{table:overview} is the \textit{fitness} of the best individual in the population for each generation. The \textit{efficiency} is the total amount of energy produced by the best individual, out of the upper bound on energy production; energy produced without the existence of wake effect. \textit{Cost} (USD) is the total cost of the best individual including turbine costs, substation cost, and yearly operating cost. Power is the yearly power output in (kWh). Number of turbines is the total number of turbines for the best individual. \textcolor{red}{Should I show this with the fitness function, how it is partitioned to find the different results. Ask Jean.}\\
+
+
+\begin{table}[h!]
+\centering
+\caption{For each scenario, results are measured in these measurements.}
+\label{table:overview}
+\centering
+\begin{tabular}{l|l}
+\textbf{Results measured}   & \textbf{Description} \\
+\hline
+Fitness                     & Fitness of the best individual \\
+Efficiency                  & Amount of power produced out of maximum \\
+Cost                        & Total cost (USD)\\
+Power                       & Yearly power output (kWh) \\
+Number of turbines          & Total number of turbines
+\end{tabular}
+\end{table}
+
+
+\noindent In the sub sections below will the results for each scenario be presented. In addition, a final plot will show the performance of the different models averaged over all 4 scenarios.\textcolor{red}{More?}\\
+
+
+\subsection{Results scenario 00}
+The results for running all the models on scenario obs00.xml is shown in figure \ref{plot:results scenario 00.xml}. The fitness plot is shown in figure \ref{plot:fitness plot scenario 00}. The Master/Slave model is able to get the best fitness, the Pool model comes in second, quite close to the Master/Slave model, the Island model comes in third, and the Cellular model comes in forth, clearly not able to keep up with the other models.\\ 
+
+
+\noindent Figure \ref{plot:efficiency plot scenario 00} shows the performance of the different models in terms of efficiency. Efficiency is a very interesting measure, since it shows the models' ability to live up to their potential. As will be discussed below, the Master/Slave model and Pool model end up with a different number of turbines. What is interesting is that within that number of turbines, both models are equally good at optimizing the turbine positions so that they produce the same amount of energy out of the total possible energy amount.\\
+
+
+\noindent As shown in figures \ref{plot:cost plot scenario 00} and \ref{plot:turbines plot scenario 00}, the plots for cost and number of turbines have identical shape. This makes sense off course since the cost increase and decrease with the number of turbines. The plots show that the Master/Slave model end up with a larger number of turbines than the other models, which all end up with the same number of turbines. The Master/Slave model, the Pool model and the Cellular model all decide on the number of turbines before having evolved for 20 generations, while the Island model is able to explore different solutions until around generation 50, when it stabilized on the same solution as the Pool- and Cellular model. The Island model cost plot has a different shape than the other plots. While the other models slowly go from one solution to another, the Island model jumps from one part of the solution space to another. These observations make sense, because, these jumps occur at generation 20 and 40, the generations where the first and second migration takes place. Between generation 20 and 40, the Island model explores a solution with the same number of turbines as the Master/Slave model, a solution that seem to be the global minima, however, the Island model is not able to stay in this minima, because it observes that jumping to a solution with fewer turbines seems more promising. If the migration interval had been longer than 20 generations, the Island model might have been able to optimize turbine positions in the global minima so that it would discover the true potential of the solution before leaving it for a sub-optimal solution.\\
+
+
+\noindent The performance of the different models can be viewed in terms of power in figure \ref{plot:power plot scenario 00}. Power is also closely related to the number of turbines. Clearly a solution with more turbines leads to higher energy output. However, as the Island model power plot shows, solutions with high power production might not be prioritized because the cost becomes too high so that the total fitness becomes worse. After the models have stabilized on a particular number of turbines, the power is slowly increasing. This is because the turbines are slowly moved into positions with less wake loss. \\
+
+
+\noindent In summary, the optimization can be viewed as consisting of two phases. The first phase is the search for the optimal number of turbines, while the second phase consist of moving turbines around in order to reduce wake loss. The Island model stays in phase one longer than the other models. Still, the Master/Slave model is the only model able to find what seems to be the global optimal solution in terms of the number of turbines. \\
+
+
+\noindent \textcolor{red}{Figure scenario 00.xml} \\
+
+
+\subsection{Results Scenario 05}
+
+
+% Plots --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 \begin{figure}[h!]
@@ -388,28 +447,28 @@ Number of workers & 4 \\
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"efficiency"}
         \caption{Efficiency}
         \hfill
-        \label{plot:single point crossover}
+        \label{plot:efficiency plot scenario 00}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"cost"}
         \caption{Cost}
         \hfill
-        \label{plot:single point crossover}
+        \label{plot:cost plot scenario 00}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"power"}
         \caption{Power}
         \hfill
-        \label{plot:two point crossover}
+        \label{plot:power plot scenario 00}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"turbines"}
         \caption{Turbies}
         \hfill
-        \label{plot:uniform crossover}
+        \label{plot:turbines plot scenario 00}
     \end{subfigure}
     \caption{Scenario 00.xml averaged over 10 runs: (a) Fitness plot, (b) efficiency plot, (c) cost plot, (d) power plot, and (e) number of turbines.}
     \label{plot:master slave scenario 00}
