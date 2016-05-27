@@ -365,7 +365,7 @@ Number of workers & 4 \\
 \noindent In summary, each algorithm run for 200 generations, and approximately 200 individuals are evaluated for each generation. This makes sure that every model get a fair amount of processor time.\\
 
 
-\subsection{Results}
+\subsection{Measurement Score}
 
 
 The models are tested on 4 different wind scenarios shown in table \ref{table:scenario properties}. As can be seen, the first two scenarios contain obstacles and the last two do not. \\
@@ -425,15 +425,6 @@ The results for running all the models on scenario obs00.xml is shown in figure 
 \noindent In summary, the optimization can be viewed as consisting of two phases. The first phase is the search for the optimal number of turbines, while the second phase consist of moving turbines around in order to reduce wake loss. The Island model stays in phase one longer than the other models. Still, the Master/Slave model is the only model able to find what seems to be the global optimal solution in terms of the number of turbines. \\
 
 
-\noindent \textcolor{red}{Figure scenario 00.xml} \\
-
-
-\subsection{Results Scenario 05}
-
-
-% Plots --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 \begin{figure}[h!]
     \centering
       \begin{subfigure}[b]{0.31\textwidth}
@@ -473,6 +464,12 @@ The results for running all the models on scenario obs00.xml is shown in figure 
     \caption{Scenario 00.xml averaged over 10 runs: (a) Fitness plot, (b) efficiency plot, (c) cost plot, (d) power plot, and (e) number of turbines.}
     \label{plot:master slave scenario 00}
 \end{figure}
+
+
+\subsection{Results Scenario 05}
+
+
+%-Results-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 \begin{figure}[h!]
