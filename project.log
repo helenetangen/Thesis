@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  27 MAY 2016 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  30 MAY 2016 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,78 +884,6 @@ LaTeX Warning: Label `plot:crossover methods' multiply defined.
 
 
 LaTeX Warning: Label `table:overview' multiply defined.
-
-
-LaTeX Warning: Label `plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:uniform crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:uniform crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:uniform crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:uniform crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:single point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:two point crossover' multiply defined.
-
-
-LaTeX Warning: Label `plot:uniform crossover' multiply defined.
-
-
-LaTeX Warning: Label `sub@plot:uniform crossover' multiply defined.
 
 )
 \openout1 = `project.aux'.
@@ -2921,7 +2849,7 @@ File: images/plots/Plots/"scenario 00"/"best".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"best".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"best".png used on in
-put line 431.
+put line 430.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 <images/plots/Plots/"scenario 00"/"efficiency".png, id=907, 578.16pt x 433.62pt
@@ -2930,7 +2858,7 @@ File: images/plots/Plots/"scenario 00"/"efficiency".png Graphic file (type png)
 
  <use images/plots/Plots/"scenario 00"/"efficiency".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"efficiency".png used
- on input line 438.
+ on input line 437.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 <images/plots/Plots/"scenario 00"/"cost".png, id=908, 578.16pt x 433.62pt>
@@ -2938,7 +2866,7 @@ File: images/plots/Plots/"scenario 00"/"cost".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"cost".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"cost".png used on in
-put line 445.
+put line 444.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 <images/plots/Plots/"scenario 00"/"power".png, id=909, 578.16pt x 433.62pt>
@@ -2946,7 +2874,7 @@ File: images/plots/Plots/"scenario 00"/"power".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"power".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"power".png used on i
-nput line 452.
+nput line 451.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 <images/plots/Plots/"scenario 00"/"turbines".png, id=910, 578.16pt x 433.62pt>
@@ -2954,161 +2882,244 @@ File: images/plots/Plots/"scenario 00"/"turbines".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"turbines".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"turbines".png used o
-n input line 459.
+n input line 458.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/plots/Plots/"scenario 05"/"best".png, id=911, 578.16pt x 433.62pt>
+
+LaTeX Warning: Reference `plot:fitness scenario 05' on page 75 undefined on inp
+ut line 469.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+[75]
+
+LaTeX Warning: Reference `plot:efficiency scenario 05' on page 76 undefined on 
+input line 472.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
+
+ []
+
+
+LaTeX Warning: Reference `plot:cost scenario 05' on page 76 undefined on input 
+line 475.
+
+
+LaTeX Warning: Reference `plot:turbines scenario 05' on page 76 undefined on in
+put line 475.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
+
+ []
+
+[76 <./images/plots/Plots/scenario 00/best.png> <./images/plots/Plots/scenario 
+00/efficiency.png> <./images/plots/Plots/scenario 00/cost.png> <./images/plots/
+Plots/scenario 00/power.png> <./images/plots/Plots/scenario 00/turbines.png>]
+
+LaTeX Warning: Reference `plot:power scenario 05' on page 77 undefined on input
+ line 478.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+<images/plots/Plots/"scenario 05"/"best".png, id=926, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"best".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"best".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"best".png used on in
-put line 478.
+put line 484.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 05"/"efficiency".png, id=912, 578.16pt x 433.62pt
+<images/plots/Plots/"scenario 05"/"efficiency".png, id=927, 578.16pt x 433.62pt
 >
 File: images/plots/Plots/"scenario 05"/"efficiency".png Graphic file (type png)
 
  <use images/plots/Plots/"scenario 05"/"efficiency".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"efficiency".png used
- on input line 485.
+ on input line 491.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 05"/"cost".png, id=913, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"cost".png, id=928, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"cost".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"cost".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"cost".png used on in
-put line 492.
+put line 498.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 05"/"power".png, id=914, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"power".png, id=929, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"power".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"power".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"power".png used on i
-nput line 499.
+nput line 505.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 05"/"turbines".png, id=915, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"turbines".png, id=930, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"turbines".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"turbines".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"turbines".png used o
-n input line 506.
+n input line 512.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
- [75]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/plots/Plots/"scenario obs 00"/best.png, id=920, 578.16pt x 433.62pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+[77]
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
+
+ []
+
+<images/plots/Plots/"scenario obs 00"/best.png, id=942, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 00"/best.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 00"/best.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/best.png used on 
-input line 519.
+input line 538.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 00"/efficiency.png, id=921, 578.16pt x 433.62
+<images/plots/Plots/"scenario obs 00"/efficiency.png, id=943, 578.16pt x 433.62
 pt>
 File: images/plots/Plots/"scenario obs 00"/efficiency.png Graphic file (type pn
 g)
  <use images/plots/Plots/"scenario obs 00"/efficiency.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/efficiency.png us
-ed on input line 526.
+ed on input line 545.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 00"/cost.png, id=922, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 00"/cost.png, id=944, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 00"/cost.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 00"/cost.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/cost.png used on 
-input line 533.
+input line 552.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 00"/power.png, id=923, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 00"/power.png, id=945, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 00"/power.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 00"/power.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/power.png used on
- input line 540.
+ input line 559.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 00"/turbines.png, id=924, 578.16pt x 433.62pt
+<images/plots/Plots/"scenario obs 00"/turbines.png, id=946, 578.16pt x 433.62pt
 >
 File: images/plots/Plots/"scenario obs 00"/turbines.png Graphic file (type png)
 
  <use images/plots/Plots/"scenario obs 00"/turbines.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/turbines.png used
- on input line 547.
+ on input line 566.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/plots/Plots/"scenario obs 05"/best.png, id=925, 578.16pt x 433.62pt>
+
+LaTeX Warning: Reference `plot:fitness scenario 05' on page 78 undefined on inp
+ut line 579.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+[78 <./images/plots/Plots/scenario 05/best.png> <./images/plots/Plots/scenario 
+05/efficiency.png> <./images/plots/Plots/scenario 05/cost.png> <./images/plots/
+Plots/scenario 05/power.png> <./images/plots/Plots/scenario 05/turbines.png>]
+
+LaTeX Warning: Reference `plot:cost scenario obs 05' on page 79 undefined on in
+put line 582.
+
+
+LaTeX Warning: Reference `plot:turbines scenario obs 05' on page 79 undefined o
+n input line 582.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+<images/plots/Plots/"scenario obs 05"/best.png, id=958, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 05"/best.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 05"/best.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/best.png used on 
-input line 560.
+input line 588.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 05"/efficiency.png, id=926, 578.16pt x 433.62
+<images/plots/Plots/"scenario obs 05"/efficiency.png, id=959, 578.16pt x 433.62
 pt>
 File: images/plots/Plots/"scenario obs 05"/efficiency.png Graphic file (type pn
 g)
  <use images/plots/Plots/"scenario obs 05"/efficiency.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/efficiency.png us
-ed on input line 567.
+ed on input line 595.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 05"/cost.png, id=927, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 05"/cost.png, id=960, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 05"/cost.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 05"/cost.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/cost.png used on 
-input line 574.
+input line 602.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 05"/power.png, id=928, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 05"/power.png, id=961, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 05"/power.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 05"/power.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/power.png used on
- input line 581.
+ input line 609.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario obs 05"/turbines.png, id=929, 578.16pt x 433.62pt
+<images/plots/Plots/"scenario obs 05"/turbines.png, id=962, 578.16pt x 433.62pt
 >
 File: images/plots/Plots/"scenario obs 05"/turbines.png Graphic file (type png)
 
  <use images/plots/Plots/"scenario obs 05"/turbines.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/turbines.png used
- on input line 588.
+ on input line 616.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/conclusion.tex [76 <./images/plots/Plots/scenario 00/best.png> <.
-/images/plots/Plots/scenario 00/efficiency.png> <./images/plots/Plots/scenario 
-00/cost.png> <./images/plots/Plots/scenario 00/power.png> <./images/plots/Plots
-/scenario 00/turbines.png>] [77 <./images/plots/Plots/scenario 05/best.png> <./
-images/plots/Plots/scenario 05/efficiency.png> <./images/plots/Plots/scenario 0
-5/cost.png> <./images/plots/Plots/scenario 05/power.png> <./images/plots/Plots/
-scenario 05/turbines.png>] [78 <./images/plots/Plots/scenario obs 00/best.png> 
-<./images/plots/Plots/scenario obs 00/efficiency.png> <./images/plots/Plots/sce
-nario obs 00/cost.png> <./images/plots/Plots/scenario obs 00/power.png> <./imag
-es/plots/Plots/scenario obs 00/turbines.png>] [79 <./images/plots/Plots/scenari
-o obs 05/best.png> <./images/plots/Plots/scenario obs 05/efficiency.png> <./ima
-ges/plots/Plots/scenario obs 05/cost.png> <./images/plots/Plots/scenario obs 05
-/power.png> <./images/plots/Plots/scenario obs 05/turbines.png>]
+) (./chapters/conclusion.tex [79 <./images/plots/Plots/scenario obs 00/best.png
+> <./images/plots/Plots/scenario obs 00/efficiency.png> <./images/plots/Plots/s
+cenario obs 00/cost.png> <./images/plots/Plots/scenario obs 00/power.png> <./im
+ages/plots/Plots/scenario obs 00/turbines.png>] [80 <./images/plots/Plots/scena
+rio obs 05/best.png> <./images/plots/Plots/scenario obs 05/efficiency.png> <./i
+mages/plots/Plots/scenario obs 05/cost.png> <./images/plots/Plots/scenario obs 
+05/power.png> <./images/plots/Plots/scenario obs 05/turbines.png>]
 Chapter 6.
-) (./project.bbl [80
+) (./project.bbl [81
 
 ]
 
@@ -3118,7 +3129,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-[81
+[82
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
@@ -3126,9 +3137,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
  (./project.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
-Package rerunfilecheck Info: File `project.out' has not changed.
-(rerunfilecheck)             Checksum: BEEE0905F3DE0EE4FCF3426FFE4ECF4C;3368.
 
+
+Package rerunfilecheck Warning: File `project.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `project.out':
+(rerunfilecheck)             Before: BEEE0905F3DE0EE4FCF3426FFE4ECF4C;3368
+(rerunfilecheck)             After:  5024445637632917E73FC5139AAEB95A;3528.
 
 LaTeX Warning: There were undefined references.
 
@@ -3138,10 +3155,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 19258 strings out of 493117
- 368110 string characters out of 6135434
- 432050 words of memory out of 5000000
- 22102 multiletter control sequences out of 15000+600000
+ 19264 strings out of 493117
+ 368204 string characters out of 6135434
+ 433003 words of memory out of 5000000
+ 22105 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,75p,3145b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3161,10 +3178,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (82 pages, 3144807 bytes).
+Output written on project.pdf (83 pages, 3259552 bytes).
 PDF statistics:
- 1077 PDF objects out of 1200 (max. 8388607)
- 809 compressed objects within 9 object streams
- 195 named destinations out of 1000 (max. 500000)
+ 1090 PDF objects out of 1200 (max. 8388607)
+ 821 compressed objects within 9 object streams
+ 198 named destinations out of 1000 (max. 500000)
  792 words of extra memory for PDF output out of 10000 (max. 10000000)
 

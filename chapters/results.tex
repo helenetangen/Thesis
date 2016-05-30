@@ -409,7 +409,7 @@ Number of turbines          & Total number of turbines
 \noindent In the sub sections below will the results for each scenario be presented. In addition, a final plot will show the performance of the different models averaged over all 4 scenarios.\textcolor{red}{More?}\\
 
 
-\subsection{Results scenario 00}
+\subsection{Results Scenario 00}
 The results for running all the models on scenario 00.xml is shown in figure \ref{plot:results scenario 00.xml}. The fitness plot is shown in figure \ref{plot:fitness plot scenario 00}. The Master/Slave model is able to get the best fitness, the Pool model comes in second, quite close to the Master/Slave model, the Island model comes in third, and the Cellular model comes in forth, clearly not able to keep up with the other models.\\ 
 
 
@@ -423,7 +423,6 @@ The results for running all the models on scenario 00.xml is shown in figure \re
 
 
 \noindent In summary, the optimization can be viewed as consisting of two phases. The first phase is the search for the optimal number of turbines, while the second phase consist of moving turbines around in order to reduce wake loss. The Island model stays in phase one longer than the other models. Still, the Master/Slave model is the only model able to find what seems to be the global optimal solution in terms of the number of turbines. \\
-
 
 \begin{figure}[h!]
     \centering
@@ -467,9 +466,16 @@ The results for running all the models on scenario 00.xml is shown in figure \re
 
 
 \subsection{Results Scenario 05}
+The results for running the different models on scenario 05.xml is shown in figure \ref{plot:scenario 05}. The fitness plot is shown in sub-figure \ref{plot:fitness scenario 05}. As for scenario 00.xml, the Master/Slave model obtains the best fitness closely followed by the Pool model. The Island model comes in third again and, as before, the Cellular model is not able to keep up with the other models. After 200 generations the Cellular model has a fitness which each of the other models had beaten already at generation 10.\\
 
 
-%-Results-----------------------------------------------------------------------------------------------------------------------------------------------------
+\noindent The efficiency plot is shown in sub figure \ref{plot:efficiency scenario 05}. As before, the Master/Slave model and Pool model is able to find a solution with approximately the same efficiency. The Island model is a few steps behind, while the efficiency of the Cellular model is increasing extremely slowly. \\
+
+
+\noindent Sub-figures \ref{plot:cost scenario 05} and \ref{plot:turbines scenario 05} shows cost plot and number of turbines plot for the scenario. As can be seen, the Master/Slave model and Pool model does not explore different number of turbines, they both stabilize on a given number after less than 10 generations. The Cellular model explores for about 10 generations before it decide on the number of turbines. From the sub-figure it looks like the Island model explores for a little less than 50 generations, but if one takes a closer look, it actually does a small jump to a solution with fewer turbines at about generation 80. However, it is not able to stay in this solutions for longer than about 5 generations. As for scenario 00.xml, the Master/Slave model ends up with a higher number of turbines than the other 3 models. It seems like the Master/Slave model has found the global minima, or at least a better local minima than the other models, something that might explain why the Pool model is not able to get a fitness as good as the Master/Slave model.\\
+
+
+\noindent Power is closely related to the number of turbines, and as can be seen in sub-figure \ref{plot:power scenario 05}, the Master/Slave model finds the solution that is able to produce most energy. The Pool Model and Island model both end up with the same number of turbines, and as can be seen that they power that they are able to produce is similar. The Pool model produces a little more power because it is able to find better positions for the turbines as can be seen since it beats the Pool model in fitness and efficiency. \\
 
 
 \begin{figure}[h!]
@@ -513,6 +519,19 @@ The results for running all the models on scenario 00.xml is shown in figure \re
 \end{figure}
 
 
+\subsection{Results Scenario obs00.xml}
+Figure \ref{plot:scenario obs 00} shows the results obtained when running the model on scenario obs00.xml. As for scenairo 00.xml and 05.xml, the Master/Slave model obtains the best fitness, the Pool model the second best, the Island model third best and the Cellular model the fourth best, as can be seen in sub figure \ref{plot:fitness plot scenario obs 00}.\\
+
+
+\noindent As for efficiency, the results are similar as those observed for scenario 00.xml and scenario 05.xml as can be seen in sub figure \ref{plot:efficiency plot scenario obs 00}. Both the Pool model and Island model are able to optimize their solutions so that they produce more than 84.5 \% of the wake free energy. The Island model however, is only able to produce just above 83.5 procent of the wake free energy.\\
+
+
+\noindent As shown in sub figures \ref{plot:cost plot scenario obs 00} and \ref{plot:turbines plot scenario obs 00} the Island- and Cellular model end up with the same number of turbines, while the Master/Slave- and Pool model end up with different number of turbines then all the others. The Island- and Cellular model ends up at the solution with the highest number of turbines and the Pool models finds a solution with fewest turbines. This explains why the Island model scored so badly on efficiency, it finds out that adding turbines leads to higher power production and therefore better fitness and therefore it ends up in a sub-optimal solution. \\
+
+
+\noindent The Island model finds the solutions which produces most power, a reasonable result since no other model ends up with more turbines. However, the Island model is closely followed by the Master/Slave model even though it finds a solution with fewer turbines. This shows that the Master/Slave model is way better at optimizing the turbine positions. On problematic observation is that the Cellular model ends up with a solution that produces less power than all the other models even thought it ends up with a solution with the same number of turbines as the Island model. This results show that the Cellular model is not able to find a solution that position the turbines well within 200 generations. \\
+
+
 \begin{figure}[h!]
     \centering
       \begin{subfigure}[b]{0.31\textwidth}
@@ -552,6 +571,15 @@ The results for running all the models on scenario 00.xml is shown in figure \re
     \caption{Scenario obs00.xml averaged over 10 runs: (a) Fitness plot, (b) efficiency plot, (c) cost plot, (d) power plot, and (e) number of turbines.}
     \label{plot:scenario obs 00}
 \end{figure}
+
+
+\subsection{Results Scenario obs05.xml}
+
+
+\noindent Figure \ref{plot:scenario obs 05} shows the results from scenario obs05.xml averaged over 10 runs. Fitness is shown in sub-figure \ref{plot:fitness scenario 05}. As can be seen, the results are similar to the results for the other 3 scenarios.\\
+
+
+\noindent Since the result is similar to those observed before, they will not be discussed in details here, however one interesting observation has been made: In sub-figures \ref{plot:cost scenario obs 05} and \ref{plot:turbines scenario obs 05} it can be observed that every model end up in solutions with a different number of turbines. These results shows the complexity of the problem by showing how easy it is to end up in a local minima. Because, even thought the global minima is not known it is known that at least 3 of the models are stuck in a local minima.  \\
 
 
 \begin{figure}[h!]

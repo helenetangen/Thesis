@@ -43,8 +43,10 @@
 \contentsline {section}{\numberline {5.2}Results}{70}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Parameter Settings}{70}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Measurement Score}{73}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Results scenario 00}{74}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Results Scenario 00}{74}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Results Scenario 05}{76}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Discussion}{76}{section.5.3}
-\contentsline {chapter}{\numberline {6}Conclusion}{80}{chapter.6}
-\contentsline {chapter}{Bibliography}{80}{chapter.6}
+\contentsline {subsection}{\numberline {5.2.5}Results Scenario obs00.xml}{77}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Results Scenario obs05.xml}{79}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}Discussion}{80}{section.5.3}
+\contentsline {chapter}{\numberline {6}Conclusion}{81}{chapter.6}
+\contentsline {chapter}{Bibliography}{81}{chapter.6}
