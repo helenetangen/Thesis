@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  30 MAY 2016 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  31 MAY 2016 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3106,14 +3106,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 645--646
 
  []
 
-[81] [82]
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
 
  []
 
-[83]) (./chapters/conclusion.tex [84]
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
+
+ []
+
+[84]) (./chapters/conclusion.tex [85]
 Chapter 6.
-) (./project.bbl [85
+) (./project.bbl [86
 
 ]
 
@@ -3123,7 +3143,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-[86
+[87
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
@@ -3143,8 +3163,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 19269 strings out of 493117
- 368117 string characters out of 6135434
+ 19270 strings out of 493117
+ 368124 string characters out of 6135434
  432965 words of memory out of 5000000
  22100 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
@@ -3166,10 +3186,10 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (87 pages, 3267343 bytes).
+Output written on project.pdf (88 pages, 3269954 bytes).
 PDF statistics:
- 1130 PDF objects out of 1200 (max. 8388607)
- 857 compressed objects within 9 object streams
- 208 named destinations out of 1000 (max. 500000)
+ 1135 PDF objects out of 1200 (max. 8388607)
+ 861 compressed objects within 9 object streams
+ 209 named destinations out of 1000 (max. 500000)
  808 words of extra memory for PDF output out of 10000 (max. 10000000)
 

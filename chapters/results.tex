@@ -623,7 +623,7 @@ Figure \ref{plot:scenario obs 00} shows the results obtained when running the mo
 \end{figure}
 
 
-\section{Discussion}
+\section{Discussion}\label{section:discussion}
 \noindent In the sub-sections above, the results obtained for all 4 scenarios are presented. The major trends are listed below and will be discussed in this section.\\
 
 
@@ -645,51 +645,21 @@ Figure \ref{plot:scenario obs 00} shows the results obtained when running the mo
 \noindent Many reasons can be given to why the  Island model is outperformed by the Master/Slave model and the Pool model. In this thesis, the performance of the models are measured when each model runs for the same number of generations, and the same number of individuals are evaluated for each generation. In \textcolor{red}{reference}, it is only stated that better fitness can be obtained with the Island model, not that the two models are compared with the same resources. It is clear that if the Island model was run for 200 generations between each migration, with a population size of 100 individuals on each Island (same values as Master/Slave model) it would perform at least as good as the Master/Slave model, more likely better. The Island topology will also affect the results. If more Islands had been used, the population on each Island would be extremely small so that all individuals on each Island would soon be very similar. With a smaller topology however, the best individuals would need less generations to take over the entire population. The migration rate was kept at 2, meaning that less than 8\% of the individuals would be replaced at each migration. If a larger number was used the new individuals would spread and take over the Island faster, however, as the results show, with a tournament size of 20, the best individuals will take over an Island fast enough, so increasing the migration rate would only increase convergence, something that already is happening too fast. The parameter that the author believes that affect the performance of the Island model the most is the migration interval. The migration interval was kept at 20 so that 10 migrations would be performed. Meaning that individuals are able to travel around the circle 2.5 times. As can be seen from all the scenarios, after the first circle, the best individuals have taken over the entire population, and no other solutions are explored. The benefits of the Island model is therefore lost, and the model becomes a slower version of the Master/Slave model. The large tournament size used might be the reason why the best individuals are able to take over the population so fast. This problem could be solved by using a smaller tournament size on each Island or by using a longer migration interval so that the individuals are only able to travel around the circle once. The results show that the Island model is able to find the same solutions (number of turbines) as the Master/Slave model, but that it does not have enough time to optimize the turbine positions in the solutions. Because of this, the Island model does not realize that the current solution is will lead to better results later, and therefore it jumps out of the solution in order to explore a solution that seems more promising. A larger migration rate might have solved this problem.\\
 
 
-\noindent The Cellular model is outperformed by all the other models. It is not able to get results that are close to those obtained by the others. On reason for this is that the Cellular model is by far the model that need most generations to find a good solution. For example, for the individual in the upper left corner, it would take a minimum of 14 generations to spread its genes to the individual occupying the lower right corner. What is even more scary is that on average it would take the same individual \textcolor{red}{how many?} generations to spread its genes to the lower right individual. Because of this slow converges, it is not surprising that the Cellular model is outperformed by the other models when they all run for 200 generations with 200 evaluation each generation. \textcolor{red}{might explore different solutions, who knows?}
-
-\begin{itemize}
-    \item Cellular larger square.
-\item Elitist.
-\end{itemize}
+\noindent The Cellular model is outperformed by all the other models. It is not able to get results that are close to those obtained by the others. On reason for this is that the Cellular model is by far the model that need most generations to find a good solution. For example, for the individual in the upper left corner, it would take a minimum of 14 generations to spread its genes to the individual occupying the lower right corner. What is even more scary is that on average it would take the same individual \textcolor{red}{how many?} generations to spread its genes to the lower right individual. Because of this slow converges, it is not surprising that the Cellular model is outperformed by the other models when they all run for 200 generations with 200 evaluation each generation. A solution to this problem would be to use a larger square for which parents for the middle individuals can be selected from. This would however make the model more similar to the Master/Slave model, and make it lose its unique features. As mentioned in chapter \textcolor{red}{reference if mentioned} for each generation every individual is replaced by a newly generated individuals. Something that explains why the fitness increases in the first 5-10 generations before it starts going down. This could be solved by implementing the Cellular model with the same replacement strategy as the Pool model; only replace individuals with new individuals with higher fitness. However, this was tested by the author on scenario 00.xml, and it actually lead to worse fitness than the current strategy. \textcolor{red}{Should these results be included? Appendix?}\\
 
 
 \noindent As was mentioned in chapter \textcolor{red}{reference chapter, if it exists}, distributing the population is supposed to lead to more exploration because different parts of the population are supposed to explore different solutions. As shown in the results, the different population distributed genetic algorithms spent very little time in exploring different number of turbines. The Pool model and Cellular model spent less than 10 generations before solutions with a given number of turbines took over the population and optimization was reduced to moving turbines around in the farm. The Island model was the only model that were able to explore different numbers of turbines for a significant amount of time. As mentioned, the Island model used a little less than 50 generations before a given solution had taken over the entire population and the exploitation phase began. \\
 
 
-\begin{itemize}
-    \item Explain why not able to explore. 
-    \item How could each model be implemented differently. 
-    \item Cellular is slow so should not be happening. 
-    \item Pool model; Outside programmers control how threads are run. 
-    \item Island; as mentioned. Longer migration interval. 
-\end{itemize}
+\noindent The Pool model was not able to explore different solutions for a significant amount of time. As mentioned, the Pool model is asynchrounous by nature. The different workers were implemented as threads in Java. The Pool model simply starts all the threads and let them operate for 200 generations each without synchronization and without knowing about each other. The goal of this implementation is that different threads can be at different generations so that different parts of the Pool contains different solutions. The problem with implementing the workers as threads in Java is that the scheduling of the different threads are not under the control of the programmer. If the treads are interleaved (approximately) so that they are almost always at the same generation the model is basically reduced to the Master/Slave model. It is not known if this was the case, but it seems like a good explanation of why the threads are not able to explore different numbers of turbines and why its performance is so close to the performance of the Master/Slave model.\\
 
 
-% Major trends
-\begin{itemize}
-    \item Only Island modal is able to explore, but only for 50 generations. 
-    \item Pool efficiecny.
-    \item Answer why only optimized settings for master slave.
-    \item Answer why not tested different versions. 
-    \item Discuss that other models need more time. Island model use more time before it decides on turbines, and therefore gets less time to optimize the solution. Might have reach the level of Pool model?
-\end{itemize}
+\noindent Since distributing the population implies that the models need more time to find the optimal solution, one might ask if it is fair to compare the different models with the same number of evaluations and same number of generations. The nature of the population distributed genetic algorithms is that they need more time to evolve. However, if these models are supposed to be used outside academia they can not be given unlimited resources. As mentioned above, it is clear that changing the deme size and migration interval to 100 and 200 respectively, it can not do worse than the Master/Slave model, but this would require more computational resource than available for this thesis.\\
 
 
-% Other observations
-\begin{itemize}
-    \item Discuss exploration and ex..
-    \item Why are the models bad. Why do they not work better.
-    \item Fairness... 
-    \item Overfitting parameters.
-    \item No enough time to optimize all parameters. 
-    \item Island population size - Longer migration rate.
-    \item Fitness functin bias. Equal weight.
-    \item Discuss time limitations. 
-    \item Fairness.
-    \item How long it takes to run different models.
-    \item Every Island model parameter should be optimized. 
-    \item reference that says that Master/Slave model is better might have another version of fairness. Not same number of evaluations and same population size. 
-    \item After one circle the best individuals have taken over the entire population so the benefits of the Island model is gone, and it becomes a slow version of the Master/Slave model.
-    \item Discuss why the Pool model was not able to find the same solution as the master/slave model.
-\end{itemize}
+\noindent Even though it is outside the scope of this thesis, it is interesting to discuss the fitness function. It is very hard to find the optimal fitness function. The fitness function is based on cost estimated, power estimates and wind predictions.Therefore, it might not be the case that those who came up with the fitness function is 100\% certain that it is correct. Because of this, they might be interesting in taking a look at the different solutions obtained by the different models even though the best fitness is obtained by the Master/Slave model. For example, in figure \ref{plot:scenario obs 00}, the Pool model is able to come up with a solution with fitness that is very similar than the fitness obtained by the Master/Slave model where the cost is largely reduced. Therefore, it might be interesting for the wind farm owners to take a look at different solution suggestions and compare them.\\
+
+
+\noindent In section \textcolor{red}{reference correct chapter}. It is shown that the Master/Slave model performs best when the tournament size is extremely high; above 20\%. With a tournament size this high the best individuals will spread to the entire population fast. This implies that the final solution might not be the global minima, but that a local minima is found early in the evolution and that it is chosen before other solutions are explored. The author would expect a lower tournament size to obtain better fitness, because it would ensure that this would not happen. However, the results from \textcolor{red}{reference} showed that high tournament size worked best. This problem shows just how complex wind farm layout optimization is. So many different solutions exists, so it would be extremely unlikely that any algorithm would find the global minima. Therefore, optimizing a local minima seems like a better strategy. This reasoning might explain why the Master/Slave model outperforms the other models. Since the other models spend a little more time on settling in a local minima, a given number of turbines, the get fewer generations to optimize the turbine setting and therefore they are not able to keep up with the Master/Slave model.
+
 
