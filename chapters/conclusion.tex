@@ -1,1 +1,89 @@
 \chapter{Conclusion}\label{chapter:conclusion}
+\textcolor{red}{Introduction.}\\
+
+
+\noindent In chapter \ref{chapter:background} the wind farm layout optimization problem was introduced and challenges to wind farm construction were presented. A thorough review of genetic algorithm were given, and the 3 population distributed genetic algorithms investigated were introduced.\\
+
+
+\noindent Chapter \ref{chapter:related work} contains an in-depth description of research within the field of wind farm layout optimization using genetic algorithm technology. An overview of the different approaches taken is presented in table \ref{table:overview} (\textcolor{red}{check correct table}). Chapter \ref{chapter:related work} also contains a brief overview over different artificial intelligence methods used on the wind farm layout optimization problem. During this research phase, it was clear that this thesis contribute to the field of wind farm optimization with genetic algorithm by performing experiments on- and provide comparisons of different types of genetic algorithms with focus on testing wheter distributed genetic algorithm are able to come up with more sophisticated solutions.\\
+
+
+\noindent Chapter \ref{chapter:methodology} contains detailed descriptions of the system implemented for this thesis. The chapter contains a system overview and a detailed description of the genetic algorithm. The implementation details of each step in figure \ref{figure:genetic algorithm steps} is given a long with description of the wind-, wake- and power model, fitness function and scenarios used for testing. The chapter also contains an in-depth description of the population distributed genetic algorithms, including every design decision and arguments for that decision. Last, the chapter contains a brief section explaining why the system was implemented from scratch. \\
+
+
+\noindent The results are presented in chapter \ref{chapter:results}. The first part of the chapter contains the results of testing different parameter values, selection mechanisms and recombination mechanism. The second part of the chapter contains the results obtained when running the different genetic algorithm models on 4 different wind scenarios, two containing obstacles and two without obstacles. A discussion of the results are provided at the end of the chapter. The results show that the Master/Slave model is able to find better results on each of the 4 scenarios. The Pool model performs second best, the Island model third best and the Cellular model forth best.\\
+
+
+\section{Goal Evaluation}
+
+
+\noindent The goal of this thesis was to investigate the advantages of using population distributed genetic algorithms in optimizing wind farm layout. By implementing a simple genetic algorithm with the Master/Slave model, and 3 population distributed genetic algorithms: The Pool model, the Island model and the Cellular model it was demonstrated that it is not necessarily an advantage to distribute the population when solving the wind farm layout optimization problem. The experiments in chapter \ref{chapter:results} provided the author with the information needed to answer the research questions. Both research questions are restated in this section and a thorough discussion of the answers will be provided in this section.\\
+
+
+\noindent \textbf{Research question 1: } \textit{Can distributed genetic algorithms improve the quality of the solution to the wind farm layout optimization problem as compared to the simple genetic algorithm?}\\
+
+
+\noindent When each model is provided the same amount of processor resources, each model is run for 200 generations where 200 evaluations are performed for each generation, non of the population distributed genetic algorithms were able to obtain results as good as those obtained by the Master/Slave model.\\
+
+
+\noindent Regardless of these results, it has only been proven that population distributed genetic algorithm can not beat the simple genetic algorithm with the same amount of resources and the settings used in this thesis. However, as mentioned in section \ref{section:discussion}, it might not make sense to run population distributed genetic algorithm require more generations to come up with good solutions. Another reason why it is difficult to answer yes or no on the research question is that the performance of genetic algorithms are extremely influenced by the parameter values and design decisions. As was mentioned in \ref{section:parameter settings} it is impossible to test every value of every parameter for every settings of all the other parameters. This means that even though an extensive amount of time were spent optimizing the most important parameters and design decisions, other parameter values could change the performance of the different models so that the results could be different. \\
+
+
+\noindent An observation that supports the results obtained is that it seems that greater gain in fitness can be obtained by choosing a solution early and optimize the turbine positions instead of spending a lot of time searching for the optimal number of turbines. Ideally off course, a great amount of time should be spent in both of these phases, but it seems that with a limited number of resources a better results can be obtained by deciding on a number of turbines early. Further work should run simulations to test different values of the parameter settings that are special for the population distributed models such as migration interval and topology for the Island model and topology for the Cellular model. Ideally, every parameter tested in section \ref{section:parameter settings} should be test for every model in order to find settings best suited for each model. Time limitations prevented these simulations to be run in this thesis.\\ 
+
+
+\noindent \textcolor{red}{More about what should be done in further work.}\\
+
+
+\noindent \textbf{Research question 2: } \textit{Which distributed genetic algorithm works best for the wind farm layout optimization problem? What properties are essential for its success?}\\
+
+
+\noindent As mentioned above, the Master/Slave model stood out as the model that is best equipped to solve the wind farm layout optimization problem. Out of the population distributed genetic algorithms the Pool model, the model most similar to the Master/Slave model, outperformed the others. However, if the goal of this thesis had been to find the best wind farm layout, not compare different models, the Island model would have been able to find just as good results as the Master/Slave, most likely better. As mentioned earlier, since the Island model is just many Master/Slave models distributed on different Islands, the Island model could obtain the same results as the Master/Slave model on each Island if each Island was allowed to run for the same number of generations and the same deme size as the Master/Slave model before each migration. The Cellular model did not have enough time to come up with satisfying results on the wind farm layout optimization problem. If given more time the Cellular model might have been able to find a better solution, however, as the results show it converges so slowly, that the number of generations needed is not within an acceptable time frame.\\
+
+
+\noindent According the the results, an essential property for a genetic algorithm to be successful is that it spends many generations optimizing turbine positions after it has settled on a given number of turbines. This is demonstrated by the fact that the models that spend the smallest number of generations on deciding on a number of turbines and thereby have many generations left to optimize turbine positions performs best. This property is most apparent for the Master/Slave model, but out of the population distributed genetic algorithm the Pool model stands out as the model with this type of behavior. As mentioned in section \ref{section:discussion} the Island model would probably be able to find better results if it had been given more time to optimize turbine positions between each migrations. \\ 
+
+
+\noindent Within the defined amount of resources provided to each model and with the given settings the research questions have been answered. However, the research questions should be investigated further in order to find out if different design decisions and parameter values could lead to different results. In section \ref{section:further work}, further work is discussed. \\
+
+
+\section{Contributions}
+The research presented in chapter \ref{chapter:related work} have shown that genetic algorithms suitable for wind farm layout optimization. Improvements such as improvement to the genetic algorithm, the fitness function,and the power model have been investigated. \textcolor{red}{reference} showed that by using the Island model on the scenarios provided by \textcolor{red}{reference Mosetti?} would lead to better results. However, no attempt, as far as the author knows, have been done in investigating how the Pool model and Cellular model work on the wind farm layout optimization problem. These models have not been tested on the wind farm layout optimization problem, and they have not been compared against each other on the problem. Therefore, this thesis contributes to the field by being the first research into this field. The results obtained can be used as a basis for further research within the field. The section below contains suggestions on how the research presented in this thesis could be investigated further. Many interesting directions can, and should, be taken in order to find out which method is trule the primary method for wind farm layout optimization.\\
+
+
+\noindent The main lesson from this project:\\
+
+
+\begin{quote}
+\textit{Using population distributed genetic algorithms will not necessarily lead to better fitness than simple genetic algorithms. Population distributed genetic algorithm demand more computational resources and will therefore have trouble beating a simple genetic algorithm with the same amount of resources. Population distributed genetic algorithms are more advanced than a simple genetic algorithm and it will therefore be more difficult to find the correct settings. However, when handed more resources it is clear that population distributed genetic algorithms are powerful algorihtms that should be investigated further on the wind farm layout optimizaiton problem.}
+\end{quote}
+
+
+\section{Further work}
+As far as the author knows, this is the first time different population distributed genetic algorithms have been compared against each other and against a simple genetic algorithm in their ability to solve the wind farm layout optimization problem. This thesis can be view as a ground work which should be further investigated.\\
+
+
+\noindent Both research questions should be further investigated. As has been mentioned more than once, further work should be done in optimizing the parameters that are specific for the each of the population distributed models. For the Island model experiments should be performed to optimize deme size, deme count, migration rate, migration interval and the topology. Especially, the author believes that optimizing the migration interval would have a major impact on the performance. As the results showed, the Island model was able to explore different number of turbines, but, it did not have the time to realize the potential of its current solution before it made a jump to other solutions that looked promising, but were actually worse than the solution it left. For the Cellular model, more different topologies should be investigated and compared. A larger square, or another form of topology would affect the results. The replacement strategy of replacing every individual at every generation even thought the new individual has worse fitness than the previous individual should probably be revised. It might also be the case that a different parent selection function, such as roulette wheel, would work better for this model, even though it did not work for the Master/Slave model. For the Pool model, different number of workers should be tested. It would also be very interesting to take  control over the scheduling of the different threads, and investigate the effect of letting one or more of the threads to get far ahead of the others in evolution and compare this to simulations where the threads are at about the same generation. \\
+
+
+\noindent In addition to optimize the parameters that are specific for each model it would also be interesting to redo the parameter settings from section \ref{section:parameter settings} for each of the population distributed genetic algorithms. This would make sure that the Master/Slave model does not have an advantage because the settings used for every model is only tested on that model. Even though the author does not believe this part to be as important than the improvements  recommended in the section above, it could have an impact on the final results. \\
+
+
+\noindent All 3 population distributed genetic algorithms were implemented as homogeneous models. It would be very interesting to observe how implementing these models heterogeneous would affect the results. This would require and extensive amount of work and it might be wise to start with only one of the models. It would be very interesting to observe how the Island model could be improved by using different parameter settings, selection mechanisms and recombination methods on each Island and compare the results against a homogeneous implementation. It would also be very interesting to let the threads of the Pool model run with different settings, and to let different settings apply to different parts of the grid in the Cellular model.\\
+
+
+\noindent The Island model and Cellular model were both synchronous. Implementing these as asynchronous models could also be interesting to investigate, although the author does not believe that this would impact the results as much as implementing heterogeneous models.\\
+
+
+\noindent Since this thesis is a contribution to GECCO 2016, where the goal is to optimize the objective function provided by the contest a multi-objective function was not implemented. However, it would be very interesting to solve the wind farm layout optimization problem with a multi-objective genetic algorithm, and combine this with population distributed genetic algorithms. Finding the best objective function is a difficult job, which includes a lot of estimation. It is extremely difficult to come up with a fitness function that guide the population to the optimal solution. Because of this, it is often more accurate to use a multi-objective function because then you do not have to deal with the bias of the fitness function. A population distributed genetic algorithm would be perfect for optimizing a mulit-objective function because each Island, thread or area could be assigned a different objective function.\\
+
+
+\noindent \textcolor{red}{reference} also present population distributed genetic algorithms which are combinations of each other. The Island model implemented for this thesis was actually one of the models mentioned, because the Master/Slave model was run on each Island. However, the population distributed genetic algorithms were not combined. \textcolor{red}{refercen} suggest combining the Island model with the Cellular model (one cellular model on every Island) or \textcolor{red}{what more}. These models go even further in their attempt to slow down take over time, and investigate different solutions.\\
+
+
+\noindent \textcolor{red}{reference} used a greedy algorithm to decide the initial position of the wind turbines, and then used the genetic algorithm to improve the results. \textcolor{red}{reference} showed that the final results were better than those obtained by the genetic algorithm when it started out with random solutions. This strategy could also be implemented together with the models implemented in this thesis to ivestigate if this would improve the final results obtain by the population distributed genetic algorithms. \\
+
+
+\noindent In section \ref{section:other approaches} it was shown that greedy heuristics, simulated annealing, ant colony algorithms and other swarm algorithms could also be used to solve the wind farm layout optimization problem. A study comparing different artificial intelligence methods in solving the wind farm layout optimization problem would be very interesting. It would also be possible to combine the different algorithms either by letting a genetic algorithm run first at trying to let one of the other methods improve the final results, or the other way around. \\
+
+\noindent As discussed, this thesis has answered some questions and left the author with many new questions that it would be very interesting to investigated and answer. This thesis has laid the foundation for further work within population distributed genetic algorithms and wind farm layout optimization.\\
