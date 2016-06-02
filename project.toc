@@ -39,17 +39,18 @@
 \contentsline {subsection}{\numberline {5.1.2}Parent Selection}{66}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Crossover Methods}{68}{subsection.5.1.3}
 \contentsline {subsection}{\numberline {5.1.4}Crossover Rate}{68}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{68}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Results}{70}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Parameter Settings}{70}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.1.5}Mutation Rate}{70}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Results}{71}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Parameter Settings}{71}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Measurement Score}{73}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Results Scenario 00}{74}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Results Scenario 05}{76}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Results Scenario obs00.xml}{77}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Results Scenario obs05.xml}{79}{subsection.5.2.6}
-\contentsline {section}{\numberline {5.3}Discussion}{80}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.5}Results Scenario obs00.xml}{78}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Results Scenario obs05.xml}{80}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}Discussion}{81}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclusion}{86}{chapter.6}
-\contentsline {section}{\numberline {6.1}Goal Evaluation}{87}{section.6.1}
-\contentsline {section}{\numberline {6.2}Contributions}{89}{section.6.2}
-\contentsline {section}{\numberline {6.3}Further work}{90}{section.6.3}
-\contentsline {chapter}{Bibliography}{93}{section.6.3}
+\contentsline {section}{\numberline {6.1}Overview}{86}{section.6.1}
+\contentsline {section}{\numberline {6.2}Goal Evaluation}{87}{section.6.2}
+\contentsline {section}{\numberline {6.3}Contributions}{91}{section.6.3}
+\contentsline {section}{\numberline {6.4}Further work}{92}{section.6.4}
+\contentsline {chapter}{Bibliography}{94}{section.6.4}

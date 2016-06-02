@@ -1,3 +1,196 @@
 \begin{thebibliography}{}
 
+\bibitem[Albring, 1967]{Albring}
+Albring, W. (1967).
+\newblock Betz, introduction to the theory of flow machines.
+\newblock {\em Journal of Applied Mathematics and Mechanics}, 47(2):140--141.
+
+\bibitem[Bilbao and Alba, 2009]{Bilbao}
+Bilbao, M. and Alba, E. (2009).
+\newblock Simulated annealing for optimization of wind farm annual profit.
+\newblock In {\em Logistics and Industrial Informatics, 2009. LINDI 2009. 2nd
+  International}, pages 1--5. IEEE.
+
+\bibitem[Chen et~al., 2013]{Chen}
+Chen, Y., Li, H., Jin, K., and Song, Q. (2013).
+\newblock Wind farm layout optimization using genetic algorithm with different
+  hub height wind turbines.
+\newblock {\em Energy Conversion and Management}.
+
+\bibitem[EIA, 2015]{url1}
+EIA (2015).
+\newblock Accessed December 2015.
+\newblock \href{http://www.eia.gov/tools/faqs/faq.cfm?id=527&t=4}{www.eia.gov}.
+
+\bibitem[Emami and Noghreh, 2010]{Emami}
+Emami, A. and Noghreh, P. (2010).
+\newblock New approach on optimization in placement of wind turbines within
+  wind farm by genetic algorithms.
+\newblock {\em Renewable Energy}.
+
+\bibitem[Ero{\u{g}}lu and Se{\c{c}}kiner, 2012]{Eroglu}
+Ero{\u{g}}lu, Y. and Se{\c{c}}kiner, S.~U. (2012).
+\newblock Design of wind farm layout using ant colony algorithm.
+\newblock {\em Renewable Energy}, 44:53--62.
+
+\bibitem[Frandsen et~al., 2007]{Frandsen}
+Frandsen, S.~T. et~al. (2007).
+\newblock {\em Turbulence and turbulence-generated structural loading in wind
+  turbine clusters}.
+\newblock Ris{\o} National Laboratory.
+
+\bibitem[Gao et~al., 2015]{Gao}
+Gao, X., Yang, H., Lin, L., and Koo, P. (2015).
+\newblock Wind turbine layout optimization using multi-population genetic
+  algorithm and a case study in hong kong offshore.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics},
+  139:89--99.
+
+\bibitem[Goldberg, 2005]{Goldberg}
+Goldberg, D.~E. (2005).
+\newblock {\em Genetic Algorithms in Search, Optimzation and Machine Learning}.
+\newblock Addison-Wesley Publishing Company.
+
+\bibitem[Gong et~al., 2015]{Gong}
+Gong, Y.-J., Chen, W.-N., Zhan, Z.-H., Zhang, J., Li, Y., Zhang, Q., and Li,
+  J.-J. (2015).
+\newblock Distributed evolutionary algorithms and their models: A survey of the
+  state-of-the-art.
+\newblock {\em Applied Soft Computing}.
+
+\bibitem[González et~al., 2010]{Gonzalez}
+González, J.~S., Rodriguez, A. G.~G., Mora, J.~C., Santos, J.~R., and Payan,
+  M.~B. (2010).
+\newblock Optimization of wind farm turbines layout using an evolutive
+  algorithm.
+\newblock {\em Renewable Energy}.
+
+\bibitem[Grady et~al., 2005]{Grady}
+Grady, S.~A., Hussaini, M.~Y., and Abdullah, M.~M. (2005).
+\newblock Placement of wind turbines using genetic algorithms.
+\newblock {\em Renewable Energy}.
+
+\bibitem[Holland, 1992]{Holland}
+Holland, J.~H. (1992).
+\newblock {\em Adaptation in Natural And Artificial Systems}.
+\newblock The MIT Press.
+
+\bibitem[Huang, 2007]{Huang}
+Huang, H.-S. (2007).
+\newblock Distributed genetic algorithm for optimization of wind farm annual
+  profits.
+\newblock {\em Intelligent Systems Applications to Power Systems}.
+
+\bibitem[IRIT, 2015]{url2}
+IRIT (2015).
+\newblock Accessed December 2015.
+\newblock \href{http://www.irit.fr/wind-competition/}{www.irit.fr}.
+
+\bibitem[Jensen, 1983]{Jensen}
+Jensen, N.~O. (1983).
+\newblock {\em A note on wind generator interaction}.
+\newblock Technical Report Riso-M-2411.
+
+\bibitem[Justus et~al., 1978]{Justus}
+Justus, C., Hargraves, W., Mikhail, A., and Graber, D. (1978).
+\newblock Methods for estimating wind speed frequency distributions.
+\newblock {\em Journal of applied meteorology}, 17(3):350--353.
+
+\bibitem[Katic et~al., 1986]{Katic}
+Katic, I., H{\o}jstrup, J., and Jensen, N. (1986).
+\newblock {\em A simple model for cluster efficiency}.
+\newblock European Wind Energy Association Conference and Exhibition.
+
+\bibitem[Kusiak and Song, 2010]{Kusiak}
+Kusiak, A. and Song, Z. (2010).
+\newblock Design of wind farm layout for maximum wind energy capture.
+\newblock {\em Renewable Energy}, 35(3):685--694.
+
+\bibitem[Liang and Fang, 2014]{Liang}
+Liang, S. and Fang, Y. (2014).
+\newblock Analysis of the jensen's model, the frandsen's model and their
+  gaussian variations.
+\newblock In {\em Electrical Machines and Systems (ICEMS), 2014 17th
+  International Conference on}, pages 3213--3219. IEEE.
+
+\bibitem[Magalhaes-Mendes, 2013]{Magalhaes-Mendes}
+Magalhaes-Mendes, J. (2013).
+\newblock A comparative study of crossover operators for genetic algorithms to
+  solve the job shop scheduling problem.
+\newblock {\em WSEAS Trans. Comput}, 12(4):164--173.
+
+\bibitem[Mora et~al., 2007]{Mora}
+Mora, J.~C., Barón, J. M.~C., Santos, J. M.~R., and Payán, M.~B. (2007).
+\newblock An evolutive algorithm for wind farm optimal design.
+\newblock {\em Neurocomputing}.
+
+\bibitem[Mosetti et~al., 1994]{Mosetti}
+Mosetti, G., Poloni, C., and Diviacco, B. (1994).
+\newblock Optimization of wind turbine positioning in large windfarms by means
+  of genetic algorithm.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics}.
+
+\bibitem[Murata et~al., 2001]{Murata}
+Murata, T., Ishibuchi, H., and Gen, M. (2001).
+\newblock Specification of genetic search directions in cellular
+  multi-objective genetic algorithms.
+\newblock In {\em Evolutionary multi-criterion optimization}, pages 82--95.
+  Springer.
+
+\bibitem[Ozturk and Norman, 2004]{Ozturk}
+Ozturk, U.~A. and Norman, B.~A. (2004).
+\newblock Heuristic methods for wind energy conversion system positioning.
+\newblock {\em Electric Power Systems Research}, 70(3):179--185.
+
+\bibitem[Razali and Geraghty, 2011]{Razali}
+Razali, N.~M. and Geraghty, J. (2011).
+\newblock Genetic algorithm performance with different selection strategies in
+  solving tsp.
+
+\bibitem[Saavedra-Morena et~al., 2011]{Saavedra-Morena}
+Saavedra-Morena, B., Salcedo-Sanz, S., Paniagua-Tineo, A., Prieto, L., and
+  Portilla-Figueras, A. (2011).
+\newblock Seeding evolutionary algorithms with heuristics for optimal wind
+  turbines positioning in wind farms.
+\newblock {\em Renewable Energy}.
+
+\bibitem[Samorani, 2013]{Samorani}
+Samorani, M. (2013).
+\newblock {\em The Handbook of Wind Power Systems}, chapter The Wind Farm
+  Layout Optimization Problem.
+\newblock Springer Berlin Heidelberg.
+
+\bibitem[{\c{S}}i{\c{s}}bot et~al., 2010]{Sisbot}
+{\c{S}}i{\c{s}}bot, S., Turgut, {\"O}., Tun{\c{c}}, M., and {\c{C}}amdal{\i},
+  {\"U}. (2010).
+\newblock Optimal positioning of wind turbines on g{\"o}k{\c{c}}eada using
+  multi-objective genetic algorithm.
+\newblock {\em Wind Energy}, 13(4):297--306.
+
+\bibitem[Soni and Kumar, 2014]{Soni}
+Soni, N. and Kumar, T. (2014).
+\newblock Study of various mutation operators in genetic algorithms.
+\newblock {\em International Journal of Computer Science and Information
+  Technologies}.
+
+\bibitem[Wan et~al., 2012]{Wan2012}
+Wan, C., Wang, J., Yang, G., Gu, H., and Zhang, X. (2012).
+\newblock Wind farm micro-siting by gaussian particle swarm optimization with
+  local search strategy.
+\newblock {\em Renewable Energy}, 48:276--286.
+
+\bibitem[Wan et~al., 2009]{Wan}
+Wan, C., Wang, J., Yang, G., Li, X., and Zhang, X. (2009).
+\newblock Optimal micro-siting of wind turbines by genetic algorithms based on
+  improved wind and turbine models.
+\newblock {\em Joint 48th IEEE Conference on Decision and Control and 28th
+  Chinese Control Conference}.
+
+\bibitem[Zhao et~al., 2006]{Zhao}
+Zhao, M., Cheng, Z., and Hjerrild, J. (2006).
+\newblock Analysis of the behaviour of genetic algorithms applied in
+  optimization of electrical system designs for offshore wind farms.
+\newblock {\em IEEE Industrial Electronics, IECON 2006 - 32nd Annual Conference
+  on}.
+
 \end{thebibliography}
