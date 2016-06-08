@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 JUN 2016 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 JUN 2016 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2130,10 +2130,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 409--410
  []
 
 
-LaTeX Warning: Reference `plot:results scenario 00.xml' on page 75 undefined on
- input line 413.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
@@ -2144,110 +2140,484 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
 [76]
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
-<images/plots/Plots/"scenario 00"/"best".png, id=1328, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"best".png, id=1329, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"best".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"best".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"best".png used on in
-put line 430.
+put line 432.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 00"/"efficiency".png, id=1329, 578.16pt x 433.62p
+<images/plots/Plots/"scenario 00"/"efficiency".png, id=1330, 578.16pt x 433.62p
 t>
 File: images/plots/Plots/"scenario 00"/"efficiency".png Graphic file (type png)
 
  <use images/plots/Plots/"scenario 00"/"efficiency".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"efficiency".png used
- on input line 437.
+ on input line 439.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 00"/"cost".png, id=1330, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"cost".png, id=1331, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"cost".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"cost".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"cost".png used on in
-put line 444.
+put line 446.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 00"/"power".png, id=1331, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"power".png, id=1332, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"power".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"power".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"power".png used on i
-nput line 451.
+nput line 453.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 00"/"turbines".png, id=1332, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"turbines".png, id=1333, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"turbines".png Graphic file (type png)
 <use images/plots/Plots/"scenario 00"/"turbines".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"turbines".png used o
-n input line 458.
+n input line 460.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
 [77 <./images/plots/Plots/scenario 00/best.png> <./images/plots/Plots/scenario 
 00/efficiency.png> <./images/plots/Plots/scenario 00/cost.png> <./images/plots/
 Plots/scenario 00/power.png> <./images/plots/Plots/scenario 00/turbines.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--476
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
-<images/plots/Plots/"scenario 05"/"best".png, id=1349, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"best".png, id=1350, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"best".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"best".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"best".png used on in
-put line 484.
+put line 486.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 05"/"efficiency".png, id=1350, 578.16pt x 433.62p
+<images/plots/Plots/"scenario 05"/"efficiency".png, id=1351, 578.16pt x 433.62p
 t>
 File: images/plots/Plots/"scenario 05"/"efficiency".png Graphic file (type png)
 
  <use images/plots/Plots/"scenario 05"/"efficiency".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"efficiency".png used
- on input line 491.
+ on input line 493.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 05"/"cost".png, id=1351, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"cost".png, id=1352, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"cost".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"cost".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"cost".png used on in
-put line 498.
+put line 500.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-<images/plots/Plots/"scenario 05"/"power".png, id=1352, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"power".png, id=1353, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"power".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"power".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"power".png used on i
-nput line 505.
-(pdftex.def)         
+nput line 507.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 05"/"turbines".png, id=1354, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 05"/"turbines".png Graphic file (type png)
+<use images/plots/Plots/"scenario 05"/"turbines".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 05"/"turbines".png used o
+n input line 514.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+
+ []
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
+
+ []
+
+[79 <./images/plots/Plots/scenario 05/best.png> <./images/plots/Plots/scenario 
+05/efficiency.png> <./images/plots/Plots/scenario 05/cost.png> <./images/plots/
+Plots/scenario 05/power.png> <./images/plots/Plots/scenario 05/turbines.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+
+ []
+
+<images/plots/Plots/"scenario obs 00"/best.png, id=1375, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 00"/best.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 00"/best.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/best.png used on 
+input line 540.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/efficiency.png, id=1376, 578.16pt x 433.6
+2pt>
+File: images/plots/Plots/"scenario obs 00"/efficiency.png Graphic file (type pn
+g)
+ <use images/plots/Plots/"scenario obs 00"/efficiency.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/efficiency.png us
+ed on input line 547.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/cost.png, id=1377, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 00"/cost.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 00"/cost.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/cost.png used on 
+input line 554.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/power.png, id=1378, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 00"/power.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 00"/power.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/power.png used on
+ input line 561.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/turbines.png, id=1379, 578.16pt x 433.62p
+t>
+File: images/plots/Plots/"scenario obs 00"/turbines.png Graphic file (type png)
+
+ <use images/plots/Plots/"scenario obs 00"/turbines.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/turbines.png used
+ on input line 568.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
+
+ []
+
+[80 <./images/plots/Plots/scenario obs 00/best.png> <./images/plots/Plots/scena
+rio obs 00/efficiency.png> <./images/plots/Plots/scenario obs 00/cost.png> <./i
+mages/plots/Plots/scenario obs 00/power.png> <./images/plots/Plots/scenario obs
+ 00/turbines.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+
+ []
+
+<images/plots/Plots/"scenario obs 05"/best.png, id=1394, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 05"/best.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 05"/best.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/best.png used on 
+input line 590.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/efficiency.png, id=1395, 578.16pt x 433.6
+2pt>
+File: images/plots/Plots/"scenario obs 05"/efficiency.png Graphic file (type pn
+g)
+ <use images/plots/Plots/"scenario obs 05"/efficiency.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/efficiency.png us
+ed on input line 597.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/cost.png, id=1396, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 05"/cost.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 05"/cost.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/cost.png used on 
+input line 604.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/power.png, id=1397, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 05"/power.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 05"/power.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/power.png used on
+ input line 611.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/turbines.png, id=1398, 578.16pt x 433.62p
+t>
+File: images/plots/Plots/"scenario obs 05"/turbines.png Graphic file (type png)
+
+ <use images/plots/Plots/"scenario obs 05"/turbines.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/turbines.png used
+ on input line 618.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
+
+ []
+
+[81 <./images/plots/Plots/scenario obs 05/best.png> <./images/plots/Plots/scena
+rio obs 05/efficiency.png> <./images/plots/Plots/scenario obs 05/cost.png> <./i
+mages/plots/Plots/scenario obs 05/power.png> <./images/plots/Plots/scenario obs
+ 05/turbines.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
+
+ []
+
+[82] [83]
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
+
+ []
+
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
+
+ []
+
+[85]) (./chapters/conclusion.tex [86]
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[87
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+[88]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+[91]
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+[93]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+) (./project.bbl [95] [96
+
+] [97] [98]) [99]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+ (./project.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package rerunfilecheck Info: File `project.out' has not changed.
+(rerunfilecheck)             Checksum: 1579D2DF4D8AC11795FA6EB4A3A87CDD;3770.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
+ ) 
+Here is how much of TeX's memory you used:
+ 19405 strings out of 493117
+ 370125 string characters out of 6135434
+ 435390 words of memory out of 5000000
+ 22186 multiletter control sequences out of 15000+600000
+ 12412 words of font info for 44 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,14n,75p,3232b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on project.pdf (100 pages, 3314290 bytes).
+PDF statistics:
+ 1645 PDF objects out of 1728 (max. 8388607)
+ 1325 compressed objects within 14 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 840 words of extra memory for PDF output out of 10000 (max. 10000000)
+
