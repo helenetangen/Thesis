@@ -144,13 +144,13 @@ Figure \ref{plot:parent selection} shows the results for running the genetic alg
         \hfill
         \label{plot:epsilon 0.15}
     \end{subfigure}
-    \caption{Different epsilon values averaged 10 runs when tournament size was kept at 20: (a) Epsilon 0.05, (b) epsilon 0.10 and (c) epsilon 0.15.}
+    \caption{Different epsilon values: (a) Epsilon 0.05, (b) epsilon 0.10, and (c) epsilon 0.15. The tournament size was kept fixed at 20 since that was proven to give the best results. Each plot is an average over 10 runs.}
     \label{plot:epsilon}
 \end{figure}
 
 
 \subsection{Crossover Methods}
-Figure \ref{figure:crossover methods} displays the results from running the genetic algorithm with single point crossover, two point crossover and uniform crossover showed in sub figures \ref{figure:single point crossover}, \ref{figure:two point crossover} and \ref{figure:uniform crossover} respectively. As can be seen in the figure, there is no crossover method that stands out, but end up with similar fitness. Single point crossover ends up with an averaged best fitness of \textcolor{red}{averaged best fitness}, two point crossover ends up with an averaged fitness of \textcolor{red}{averaged best fitness} and uniform crossover ends up with an averaged fitness of \textcolor{red}{averaged best fitness}. Intuitively, one would expect uniform crossover to perform worse than the others because it mixes up the relative positions between the wind turbines more than single- and two point crossover, however it actually obtains slightly better fitness. Even though it obtains slightly better fitness this could be a coincidence since the different is so small, and the simulations are only averaged over ten runs. \textcolor{red}{Explanation behind the results, talk to Keith. Stupid paragraph change everything!}
+Figure \ref{plot:crossover methods} show the results when running the genetic algorithm with single point crossover, two point crossover, and uniform crossover as can be seen in sub figures \ref{plot:single point crossover}, \ref{plot:two point crossover}, and \ref{plot:uniform crossover} respectively. The experiment show that no crossover method is significantly better than the others in solving the wind farm layout optimization problem. This result is unexpected. Intuitively, one would expect uniform crossover to perform worse because it mixes up the relative positions of the wind turbines more than single point crossover and two point crossover. However, the results contradicts this hypothesis. \\
 
 
 \begin{figure}[h!]
@@ -181,7 +181,7 @@ Figure \ref{figure:crossover methods} displays the results from running the gene
 
 
 \subsection{Crossover Rate}
-Figure \ref{plot:crossover rate} shows the average fitness over 10 runs when the genetic algorithm is run with different crossover rates. As can be seen in the figure, the crossover rate does not have a large impact on the fitness. A crossover rate below 0.4 gives ends up with slightly worst fitness than a crossover rate above 0.6. However, it is not possible to point out which crossover rate is best out of those presented in sub figures \ref{plot:crossover rate 0.6}, \ref{plot:crossover rate 0.8}, and \ref{plot: crossover rate 1.0}. The differences in the results obtained when running the algorithm with these crossover rate is not significant, and it can not be stated that one is better than the others based on these results. It can only be stated that a crossover rate above 0.6 should be used. \\
+Figure \ref{plot:crossover rates} displays the results of running the genetic algorithm with different crossover rates. As can be seen in the figure, the crossover rate do not have a large impact on the fitness for this problem. A crossover rate below 0.4 gives ends up with slightly worst fitness than a crossover rate above 0.6. However, it is not obvious which crossover rate is best out of those presented in sub figures \ref{plot:crossover rate 0.6}, \ref{plot:crossover rate 0.8}, and \ref{plot:crossover rate 1.0}. The differences in the results obtained when running the algorithm with these crossover rates are not significant, and it can not be stated that one is better than the others based on these results. It can only be stated that a crossover rate above 0.6 should be used. \\
 
 
 \begin{figure}[h!]
@@ -218,7 +218,7 @@ Figure \ref{plot:crossover rate} shows the average fitness over 10 runs when the
         \includegraphics[width=\textwidth]{images/plots/"crossover rate"/"crossover rate 0,8"}
         \caption{}
         \hfill
-        \label{plot:crossover rate 0.8r}
+        \label{plot:crossover rate 0.8}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.31\textwidth}
@@ -233,7 +233,7 @@ Figure \ref{plot:crossover rate} shows the average fitness over 10 runs when the
 
 
 \subsection{Mutation Rate}
-In figure \ref{plot:mutation rate} the effect of varying the mutation rate can be seen. As the figure shows, if the mutation rate is very low (0.0001), the population is clearly not able to find a good solution. Mutation means adding or removing a turbine. As the figure shows, a mutation rate that is too low (0.0001) might not be able to add or remove enough turbines and therefore the population ends up at a local minima. On the other side, when the mutation rate gets too high (0.01) the population might be able to find the global minima, but, since mutation is performed too frequently, it is not able to stay there. As the figure shows, mutation rate largely impacts the fitness, and a mutation rate of 0.001 clearly gives the best results.
+In figure \ref{plot:mutation rate}, the effect of varying the mutation rate can be seen. As the figure shows, if the mutation rate is very low as shown in sub-figure \ref{plot:mutation rate 0.0001}, the population is clearly not able to find a good solution. Mutation means adding or removing a turbine. As the sub-figure show, with a mutation rate that is too low the genetic algorithm will not be able to add or remove enough turbines and therefore the population ends up in a local minima. On the other hand, when the mutation rate gets too high, as shown in sub-figure \ref{plot:mutation rate 0.01}, the population is able to explore many different solutions something that increases its chance of finding the global minima. However, since mutation is performed too frequently, it is not able to stay there even if it finds the global optimal solution. These results show that mutation rate largely impacts the fitness, and that a mutation rate of 0.001 clearly gives the best results.
 
 
 \begin{figure}[h!]
@@ -272,7 +272,7 @@ In figure \ref{plot:mutation rate} the effect of varying the mutation rate can b
         \hfill
         \label{plot:mutation rate 0.01}
     \end{subfigure}
-    \caption{Mutation rates: (a) Mutation rate 0.0001, (b) mutation rate 0.0005 and (c) mutation rate 0.001, (d) mutation rate 0.005 and (e) mutation rate 0.01s.}
+    \caption{Mutation rate averaged over 10 runs: (a) Mutation rate 0.0001, (b) mutation rate 0.0005 and (c) mutation rate 0.001, (d) mutation rate 0.005 and (e) mutation rate 0.01s.}
     \label{plot:mutation rate}
 \end{figure}
 
