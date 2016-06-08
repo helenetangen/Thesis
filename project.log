@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 JUN 2016 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 JUN 2016 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1922,4 +1922,714 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [67 <./images/plots/adult selection/full generational replacement.png> <./image
 s/plots/adult selection/generational mixing.png> <./images/plots/adult selectio
-n/overproduction.p
+n/overproduction.png>] [68 <./images/plots/parent selection/roulette wheel.png>
+ <./images/plots/parent selection/tournament size 5.png> <./images/plots/parent
+ selection/tournament size 10.png> <./images/plots/parent selection/tournament 
+size 15.png> <./images/plots/parent selection/tournament size 20.png> <./images
+/plots/parent selection/tournament size 25.png> <./images/plots/epsilon/tournam
+ent size 20/epsilon 0,05.png> <./images/plots/epsilon/tournament size 20/epsilo
+n 0,10.png> <./images/plots/epsilon/tournament size 20/epsilon 0,15.png>]
+<images/plots/"crossover method"/"single point crossover".png, id=1229, 578.16p
+t x 433.62pt>
+File: images/plots/"crossover method"/"single point crossover".png Graphic file
+ (type png)
+
+<use images/plots/"crossover method"/"single point crossover".png>
+Package pdftex.def Info: images/plots/"crossover method"/"single point crossove
+r".png used on input line 159.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"crossover method"/"two point crossover".png, id=1230, 578.16pt x
+ 433.62pt>
+File: images/plots/"crossover method"/"two point crossover".png Graphic file (t
+ype png)
+ <use images/plots/"crossover method"/"two point crossover".png>
+Package pdftex.def Info: images/plots/"crossover method"/"two point crossover".
+png used on input line 166.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"crossover method"/"uniform crossover".png, id=1231, 578.16pt x 4
+33.62pt>
+File: images/plots/"crossover method"/"uniform crossover".png Graphic file (typ
+e png)
+ <use images/plots/"crossover method"/"uniform crossover".png>
+Package pdftex.def Info: images/plots/"crossover method"/"uniform crossover".pn
+g used on input line 173.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+
+LaTeX Warning: Reference `plot:crossover rate' on page 69 undefined on input li
+ne 184.
+
+
+LaTeX Warning: Reference `plot:crossover rate 0.8' on page 69 undefined on inpu
+t line 184.
+
+
+LaTeX Warning: Reference `plot: crossover rate 1.0' on page 69 undefined on inp
+ut line 184.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+[69 <./images/plots/crossover method/single point crossover.png> <./images/plot
+s/crossover method/two point crossover.png> <./images/plots/crossover method/un
+iform crossover.png>]
+<images/plots/"crossover rate"/"crossover rate 0,0".png, id=1243, 578.16pt x 43
+3.62pt>
+File: images/plots/"crossover rate"/"crossover rate 0,0".png Graphic file (type
+ png)
+ <use images/plots/"crossover rate"/"crossover rate 0,0".png>
+Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,0".png
+ used on input line 190.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"crossover rate"/"crossover rate 0,2".png, id=1244, 578.16pt x 43
+3.62pt>
+File: images/plots/"crossover rate"/"crossover rate 0,2".png Graphic file (type
+ png)
+ <use images/plots/"crossover rate"/"crossover rate 0,2".png>
+Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,2".png
+ used on input line 197.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"crossover rate"/"crossover rate 0,4".png, id=1245, 578.16pt x 43
+3.62pt>
+File: images/plots/"crossover rate"/"crossover rate 0,4".png Graphic file (type
+ png)
+ <use images/plots/"crossover rate"/"crossover rate 0,4".png>
+Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,4".png
+ used on input line 204.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"crossover rate"/"crossover rate 0,6".png, id=1246, 578.16pt x 43
+3.62pt>
+File: images/plots/"crossover rate"/"crossover rate 0,6".png Graphic file (type
+ png)
+ <use images/plots/"crossover rate"/"crossover rate 0,6".png>
+Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,6".png
+ used on input line 211.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"crossover rate"/"crossover rate 0,8".png, id=1247, 578.16pt x 43
+3.62pt>
+File: images/plots/"crossover rate"/"crossover rate 0,8".png Graphic file (type
+ png)
+ <use images/plots/"crossover rate"/"crossover rate 0,8".png>
+Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 0,8".png
+ used on input line 218.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"crossover rate"/"crossover rate 1,0".png, id=1248, 578.16pt x 43
+3.62pt>
+File: images/plots/"crossover rate"/"crossover rate 1,0".png Graphic file (type
+ png)
+ <use images/plots/"crossover rate"/"crossover rate 1,0".png>
+Package pdftex.def Info: images/plots/"crossover rate"/"crossover rate 1,0".png
+ used on input line 225.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"mutation rate"/"mutation rate 0,0001".png, id=1250, 578.16pt x 4
+33.62pt>
+File: images/plots/"mutation rate"/"mutation rate 0,0001".png Graphic file (typ
+e png)
+ <use images/plots/"mutation rate"/"mutation rate 0,0001".png>
+Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0001".pn
+g used on input line 242.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"mutation rate"/"mutation rate 0,0005".png, id=1251, 578.16pt x 4
+33.62pt>
+File: images/plots/"mutation rate"/"mutation rate 0,0005".png Graphic file (typ
+e png)
+ <use images/plots/"mutation rate"/"mutation rate 0,0005".png>
+Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,0005".pn
+g used on input line 249.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"mutation rate"/"mutation rate 0,001".png, id=1252, 578.16pt x 43
+3.62pt>
+File: images/plots/"mutation rate"/"mutation rate 0,001".png Graphic file (type
+ png)
+ <use images/plots/"mutation rate"/"mutation rate 0,001".png>
+Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,001".png
+ used on input line 256.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"mutation rate"/"mutation rate 0,005".png, id=1253, 578.16pt x 43
+3.62pt>
+File: images/plots/"mutation rate"/"mutation rate 0,005".png Graphic file (type
+ png)
+ <use images/plots/"mutation rate"/"mutation rate 0,005".png>
+Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,005".png
+ used on input line 263.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/"mutation rate"/"mutation rate 0,01".png, id=1254, 578.16pt x 433
+.62pt>
+File: images/plots/"mutation rate"/"mutation rate 0,01".png Graphic file (type 
+png)
+ <use images/plots/"mutation rate"/"mutation rate 0,01".png>
+Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,01".png 
+used on input line 270.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+ [70 <./images/plots/crossover rate/crossover rate 0,0.png> <./images/plots/cro
+ssover rate/crossover rate 0,2.png> <./images/plots/crossover rate/crossover ra
+te 0,4.png> <./images/plots/crossover rate/crossover rate 0,6.png> <./images/pl
+ots/crossover rate/crossover rate 0,8.png> <./images/plots/crossover rate/cross
+over rate 1,0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+[71 <./images/plots/mutation rate/mutation rate 0,0001.png> <./images/plots/mut
+ation rate/mutation rate 0,0005.png> <./images/plots/mutation rate/mutation rat
+e 0,001.png> <./images/plots/mutation rate/mutation rate 0,005.png> <./images/p
+lots/mutation rate/mutation rate 0,01.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+
+ []
+
+[72]
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+
+LaTeX Warning: Reference `plot:results scenario 00.xml' on page 75 undefined on
+ input line 414.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+<images/plots/Plots/"scenario 00"/"best".png, id=1317, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 00"/"best".png Graphic file (type png)
+
+<use images/plots/Plots/"scenario 00"/"best".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 00"/"best".png used on in
+put line 431.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 00"/"efficiency".png, id=1318, 578.16pt x 433.62p
+t>
+File: images/plots/Plots/"scenario 00"/"efficiency".png Graphic file (type png)
+
+ <use images/plots/Plots/"scenario 00"/"efficiency".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 00"/"efficiency".png used
+ on input line 438.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 00"/"cost".png, id=1319, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 00"/"cost".png Graphic file (type png)
+
+<use images/plots/Plots/"scenario 00"/"cost".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 00"/"cost".png used on in
+put line 445.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 00"/"power".png, id=1320, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 00"/"power".png Graphic file (type png)
+
+<use images/plots/Plots/"scenario 00"/"power".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 00"/"power".png used on i
+nput line 452.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 00"/"turbines".png, id=1321, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 00"/"turbines".png Graphic file (type png)
+<use images/plots/Plots/"scenario 00"/"turbines".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 00"/"turbines".png used o
+n input line 459.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
+
+ []
+
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+[77 <./images/plots/Plots/scenario 00/best.png> <./images/plots/Plots/scenario 
+00/efficiency.png> <./images/plots/Plots/scenario 00/cost.png> <./images/plots/
+Plots/scenario 00/power.png> <./images/plots/Plots/scenario 00/turbines.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
+<images/plots/Plots/"scenario 05"/"best".png, id=1342, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 05"/"best".png Graphic file (type png)
+
+<use images/plots/Plots/"scenario 05"/"best".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 05"/"best".png used on in
+put line 485.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 05"/"efficiency".png, id=1343, 578.16pt x 433.62p
+t>
+File: images/plots/Plots/"scenario 05"/"efficiency".png Graphic file (type png)
+
+ <use images/plots/Plots/"scenario 05"/"efficiency".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 05"/"efficiency".png used
+ on input line 492.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 05"/"cost".png, id=1344, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 05"/"cost".png Graphic file (type png)
+
+<use images/plots/Plots/"scenario 05"/"cost".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 05"/"cost".png used on in
+put line 499.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 05"/"power".png, id=1345, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 05"/"power".png Graphic file (type png)
+
+<use images/plots/Plots/"scenario 05"/"power".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 05"/"power".png used on i
+nput line 506.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario 05"/"turbines".png, id=1346, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario 05"/"turbines".png Graphic file (type png)
+<use images/plots/Plots/"scenario 05"/"turbines".png>
+Package pdftex.def Info: images/plots/Plots/"scenario 05"/"turbines".png used o
+n input line 513.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
+
+ []
+
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+<images/plots/Plots/"scenario obs 00"/best.png, id=1358, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 00"/best.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 00"/best.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/best.png used on 
+input line 539.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/efficiency.png, id=1359, 578.16pt x 433.6
+2pt>
+File: images/plots/Plots/"scenario obs 00"/efficiency.png Graphic file (type pn
+g)
+ <use images/plots/Plots/"scenario obs 00"/efficiency.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/efficiency.png us
+ed on input line 546.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/cost.png, id=1360, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 00"/cost.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 00"/cost.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/cost.png used on 
+input line 553.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/power.png, id=1361, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 00"/power.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 00"/power.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/power.png used on
+ input line 560.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 00"/turbines.png, id=1362, 578.16pt x 433.62p
+t>
+File: images/plots/Plots/"scenario obs 00"/turbines.png Graphic file (type png)
+
+ <use images/plots/Plots/"scenario obs 00"/turbines.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/turbines.png used
+ on input line 567.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+[79 <./images/plots/Plots/scenario 05/best.png> <./images/plots/Plots/scenario 
+05/efficiency.png> <./images/plots/Plots/scenario 05/cost.png> <./images/plots/
+Plots/scenario 05/power.png> <./images/plots/Plots/scenario 05/turbines.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+
+ []
+
+<images/plots/Plots/"scenario obs 05"/best.png, id=1376, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 05"/best.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 05"/best.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/best.png used on 
+input line 589.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/efficiency.png, id=1377, 578.16pt x 433.6
+2pt>
+File: images/plots/Plots/"scenario obs 05"/efficiency.png Graphic file (type pn
+g)
+ <use images/plots/Plots/"scenario obs 05"/efficiency.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/efficiency.png us
+ed on input line 596.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/cost.png, id=1378, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 05"/cost.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 05"/cost.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/cost.png used on 
+input line 603.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/power.png, id=1379, 578.16pt x 433.62pt>
+File: images/plots/Plots/"scenario obs 05"/power.png Graphic file (type png)
+
+<use images/plots/Plots/"scenario obs 05"/power.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/power.png used on
+ input line 610.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+<images/plots/Plots/"scenario obs 05"/turbines.png, id=1380, 578.16pt x 433.62p
+t>
+File: images/plots/Plots/"scenario obs 05"/turbines.png Graphic file (type png)
+
+ <use images/plots/Plots/"scenario obs 05"/turbines.png>
+Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/turbines.png used
+ on input line 617.
+(pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--629
+
+ []
+
+[80 <./images/plots/Plots/scenario obs 00/best.png> <./images/plots/Plots/scena
+rio obs 00/efficiency.png> <./images/plots/Plots/scenario obs 00/cost.png> <./i
+mages/plots/Plots/scenario obs 00/power.png> <./images/plots/Plots/scenario obs
+ 00/turbines.png>] [81 <./images/plots/Plots/scenario obs 05/best.png> <./image
+s/plots/Plots/scenario obs 05/efficiency.png> <./images/plots/Plots/scenario ob
+s 05/cost.png> <./images/plots/Plots/scenario obs 05/power.png> <./images/plots
+/Plots/scenario obs 05/turbines.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
+
+ []
+
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
+
+ []
+
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 652--653
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
+
+ []
+
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
+
+ []
+
+[85]) (./chapters/conclusion.tex [86]
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[87
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+[88]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+[91]
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+[93]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+) (./project.bbl [95] [96
+
+] [97] [98]) [99]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
+ (./project.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
+Package rerunfilecheck Info: File `project.out' has not changed.
+(rerunfilecheck)             Checksum: 9BEDF581E3D7AB428C7963F97CDA0500;3766.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
+ ) 
+Here is how much of TeX's memory you used:
+ 19409 strings out of 493117
+ 370229 string characters out of 6135434
+ 435294 words of memory out of 5000000
+ 22190 multiletter control sequences out of 15000+600000
+ 12412 words of font info for 44 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,14n,75p,3232b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on project.pdf (100 pages, 3313239 bytes).
+PDF statistics:
+ 1637 PDF objects out of 1728 (max. 8388607)
+ 1317 compressed objects within 14 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 840 words of extra memory for PDF output out of 10000 (max. 10000000)
+

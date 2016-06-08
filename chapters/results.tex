@@ -65,13 +65,13 @@ Figure \ref{plot:adult selection methods} shows the results of running the genet
 
 
 \subsection{Parent Selection}
-Figure \ref{plot:parent selection} shows the results for running the genetic algorithm with parent selection method roulette wheel \ref{plot:roulette wheel}, and tournament selection \ref{plot:tournament size 5} - \ref{plot:tournament size 25}. Tournament selection is run with five different values for the variable \textit{tournament size}. Clearly, tournament selection beats roulette wheel by far. The problem with roulette wheel is that it assigns each individual a probability of being selected proportional to its fitness, since there is not a large difference in fitness for the different individuals the selection becomes almost random. \\
+Figure \ref{plot:parent selection} shows the results for running the genetic algorithm with parent selection methods roulette wheel is sub-figure \ref{plot:roulette wheel}, and tournament selection in sub-figures \ref{plot:tournament size 5} - \ref{plot:tournament size 25}. Tournament selection is run with five different values for the variable \textit{tournament size}. Clearly, roulette wheel do not work well for this problem. Roulette wheel assigns each individual a probability of being selected proportional to its fitness, since there is not a large different in fitness of the different individuals the selection becomes almost random. With tournament selection on the other hand, this problem is taken care of because it finds the best individuals out of those competing, event though there is not much different in their fitness.\\
 
 
-\noindent As can be seen in the figure, the fitness gets better as the variable \textit{tournament size} increases. However, a larger tournament size than 25 is not tested. The reason for this is that 25 is already a very large tournament size. With 25 \% of the individuals competing in every tournament the population will not have much time to explore different solutions because the best individuals will soon take over the entire population. As can be seen in the figure, a tournament size of 25 is only slightly better than a tournament size of 20, and therefore 20 is chosen as the final tournament size to slow down the take-over time. \\
+\noindent As can be seen in the figure, the fitness gets better as the variable \textit{tournament size} increases. However, a larger tournament size than 25 is not tested. The reason for this is that 25 is already a very large tournament size. With 25 \% of the individuals competing in every tournament the population will not have much time to explore different solutions because the best individuals will take over the entire population extremely fast. As can be seen in the figure, a tournament size of 25 is not significantly better than a tournament size of 20, and therefore 20 is chosen as the final tournament size to slow down the take-over time. \\
 
 
-\noindent As mentioned before, \textit{epsilon} is the probability that the selected individual is selected from a random position in the adult pool instead of by tournament selection. Figure \ref{plot:epsilon} shows the result for testing the values 5 \%, 10 \%, and 15 \%. As can be seen in the figure, varying epsilon does not have much impact on the fitness.\\
+\noindent As mentioned before, \textit{epsilon} is the probability that the selected individual is selected from a random position in the adult pool instead of by tournament selection. Figure \ref{plot:epsilon} shows the result for testing the values 5 \%, 10 \%, and 15 \%. As can be seen in the figure, varying epsilon does not have a significant impact on the fitness on the wind farm layout optimization problem.\\
 
 
 \begin{figure}[h!]
@@ -117,7 +117,7 @@ Figure \ref{plot:parent selection} shows the results for running the genetic alg
         \hfill
         \label{plot:tournament size 25}
     \end{subfigure}
-    \caption{Parent selection methods: (a) Roulette wheel, (b) Tournament selection averaged over 10 runs, tournament size 5 (c) tournament selection, tournament size 10, (d) tournament selection, tournament size 15, (e) tournament selection, tournaments size 20, and (f) tournament selection, tournament size 25.}
+    \caption{Parent selection methods: (a) Roulette wheel, (b) tournament selection, tournament size 5 (c) tournament selection, tournament size 10, (d) tournament selection, tournament size 15, (e) tournament selection, tournaments size 20, and (f) tournament selection, tournament size 25. Each result is an average over 10 runs.}
     \label{plot:parent selection}
 \end{figure}
 
