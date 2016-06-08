@@ -280,10 +280,10 @@ In figure \ref{plot:mutation rate}, the effect of varying the mutation rate can 
 \section{Results}\label{section:results}
 
 
-\subsection{Parameter Settings}
+\subsection{Final Parameter Values}
 
 
-\noindent In table \ref{table:final parameter settings master slave model}, the parameter values used when running the master slave model is shown. The crossover method, crossover rate, mutation rate, adult selection mechanism, parent selection mechanism and parent selection parameters are those that proved to work best for the wind farm layout optimization problem as shown in the previous section. The population size was set to 100 and the number of generations to 200. A population size of 100 is quite small, but since overproduction is the selected adult selection method a population size of 100 leads to evaluation of 200 individuals each generation. Since evaluation is the bottle neck, by far, for wind farm layout optimization a larger population size would not be possible to evaluate for 200 generations within the time limits of this thesis. A possibility could be to pick a larger population size and a smaller number of generations, but since the objective of this thesis is to explore population distributed genetic algorithms a large number of generations is crucial since population distributed genetic algorithms need more time to find good solutions because they need time to explore different parts of the search space. \\
+\noindent Table \ref{table:final parameter settings master slave model} provides an overview of the parameter values used when running the Master/Slave model. The crossover method, crossover rate, mutation rate, adult selection mechanism, parent selection mechanism and parent selection parameters are those that proved to work best for the Master/Slave model when solving the wind farm layout optimization problem as shown in section \ref{section:parameter settings}. The population size was set to 100 and the number of generations to 200. A population size of 100 is quite small, but since overproduction is the selected adult selection method a population size of 100 leads to evaluation of 200 individuals for each generation. Since evaluation is the bottle neck for wind farm layout optimization, a larger population size would not be possible to evaluate for 200 generations within the time limits of this thesis. A possibility could be to pick a larger population size and a smaller number of generations, but, since the objective of this thesis is to explore population distributed genetic algorithms a large number of generations is crucial. Population distributed genetic algorithms need more time to find good solutions because they spend more time than simple genetic algorithms on exploring different parts of the search space. \\
 
 
 \begin{table}[h!]
@@ -309,7 +309,7 @@ Epsilon & 0.1 \\
 \end{table}
 
 
-\noindent Table \ref{table:final parameter settings island model} shows the parameters from the Island model that differs from the ones in table \ref{table:final parameter settings master slave model}. The deme size, number of individuals on each Island, is set to 26 resulting in a total population size of 104, not 100 as in table \ref{table:final parameter settings master slave model}. The reason behind this is that the implementation requires a population size of even numbers on each Island. The deme count is set to four and the topology is circular as shown in figure \ref{figure:topology island model} from chapter \ref{chapter:methodology}. In order to let the populations on the different Islands explore different parts of the search space 20 generations are run before migration is performed. Migration is performed 10 times so that the total number of generations becomes 200 as for the master slave model. \\
+\noindent Table \ref{table:final parameter settings island model} shows the parameters that are specific for the Island model. On each Island, the parameter values from table \ref{table:final parameter settings master slave model} are used and they are therefore not restated. The parameter \textit{deme size}, the number of individuals on each Island, is set to 26 resulting in a total population size of 104, not 100 as in table \ref{table:final parameter settings master slave model}. The reason behind this is that the implementation requires a population size of even numbers on each Island, this is not a problem since a few additional individuals will not be enough to impact the final results. The parameter \textit{migration rate} was set to 2, meaning that only 7 \% of the individuals on an Island are replaced by arriving individuals. This number was set to be low so that the new individuals would not be able to take over the new population too fast. The parameter \textit{deme count} is set to 4 and the topology is circular as presented in figure \ref{figure:topology island model} in chapter \ref{chapter:methodology}. In order to let the populations on the different Islands explore different parts of the search space 20 generations are run between each migration. Migration is performed 10 times so that the total number of generations becomes 200 as for the Master/Slave model. \\
 
 
 \begin{table}[h!]
@@ -330,12 +330,12 @@ Topology & Circular (figure \ref{figure:topology island model}) \\
 \end{table}
 
 
-\noindent As can be seen in table \ref{table:final parameter settings pool model} the cellular model has a population size of 225. At a first glance this might seem like an odd decision since the models above has a population size of about 100 individuals, but the reason is simple. Since overproduction is the adult selection mechanism used for the models above 200 individuals are evaluated for each generation, however, overproduction is not used with the cellular model because each individual has its own position in the grid so that growing and shrinking the population at different stages of the genetic algorithm does not make sense. By using a population size of about 200 the cellular model get approximately the same processor time as the algorithms above, and therefore the comparison becomes more fair than with a population size of 100. The reason why the population size is 225 and not 200 is because a quadratic grid is used to distribute the production and 225 is equal to 15$^{2}$. As explained in the methodology chapter, the topology used is a simple square containing nine individuals. The individual in the middle square can only be replaced by individuals generated by recombining individuals within the square grid. The decision to make the neighborhood this small is that it will give different solutions the opportunity to dominate different areas of the grid, giving the algorithm the time to explore.\\
+\noindent As can be seen in table \ref{table:final parameter settings pool model}, the Cellular model is run with population size of 225. At a first glance this might seem like an odd decision since the models above has a population size of about 100 individuals, but the reason is simple. For the Master/Slave model, and Island model overproduction is used as the adult selection technique because it was proven the best technique in section \ref{section:parameter settings}. For the Cellular model however, it does not make sense to use overproduction because of the way the grid is updated. Each new individual is generated to occupy a particular spot in the grid, because it has its own area for which its parents can be chosen from. Since each new individual is mapped to one position in the grid, overproduction does not make sense to use and it therefore not used for the Cellular model. Because of this, the population size is set to approximately 200 individuals, so that the Cellular model performs the same number of evaluations as the other models each generation, and the comparison becomes more fair than with a population size of 100. The reason why the population size is 225 and not 200 is because a quadratic grid is used to distribute the production and 225 is equal to 15$^{2}$. As explained in the methodology chapter, the topology used is a simple square containing nine individuals. The individual in the middle square can only be replaced by individuals generated by recombining individuals within the square grid. The decision to make the neighborhood this small is that it will give different solutions the opportunity to dominate different areas of the grid, giving the algorithm the time to explore.\\
 
 
 \begin{table}
 \centering
-\caption{Parameter values used for the cellular model.}
+\caption{Parameter values used for the Cellular model.}
 \label{table:final parameter settings cellular model}
 \begin{tabular}{l|l}
 \textbf{Parameter} & \textbf{Value} \\ 
@@ -346,13 +346,12 @@ Topology & Square (figure \ref{figure:cellular model topology}) \\
 \end{table}
 
 
-
-\noindent Table \ref{table:final parameter settings pool model} shows the parameter values used by the pool model that differs from those in table \ref{table:final parameter settings master slave model}. As for the cellular model, the population size is set to 200 so that 200 evaluations are performed for each of the 200 generations. Since child generation for the pool model consist of producing one individual for each position which the given thread is responsible for it makes no sense to use overproduction, therefore a population size of 200 gives the algorithm as much processor time as the three others.\\
+\noindent Table \ref{table:final parameter settings pool model} shows the parameter values used by the pool model that differs from those in table \ref{table:final parameter settings master slave model}. As for the Cellular model, the population size is set to 200 so that 200 evaluations are performed for each of the 200 generations. As for the Cellular model, the individuals of the Pool model occupy specific positions. Child generation consist of producing one new individual for each position the the corresponding worker is responsible for. If overproduction was used, it would be no clear mapping between new child individual and old individual because twice as many individuals as position would be generated, this does not make sense for the Pool model. Because of this a population size of 200 individuals where used so that 200 evaluations are performed for each generation as for the other models.\\
 
 
 \begin{table}[h!]
 \centering
-\caption{Parameter values used for the pool model.}
+\caption{Parameter values used for the Pool model.}
 \label{table:final parameter settings pool model}
 \begin{tabular}{l|l}
 \textbf{Parameter} & \textbf{Value} \\ 
@@ -363,7 +362,7 @@ Number of workers & 4 \\
 \end{table}
 
 
-\noindent In summary, each algorithm run for 200 generations, and approximately 200 individuals are evaluated for each generation. This makes sure that every model get a fair amount of processor time.\\
+\noindent In summary, each algorithm run for 200 generations, and approximately 200 individuals are evaluated for each generation. This makes sure that every model gets a fair amount of processor time.\\
 
 
 \subsection{Measurement Score}
