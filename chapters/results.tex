@@ -365,10 +365,10 @@ Number of workers & 4 \\
 \noindent In summary, each algorithm run for 200 generations, and approximately 200 individuals are evaluated for each generation. This makes sure that every model gets a fair amount of processor time.\\
 
 
-\subsection{Measurement Score}
+\subsection{Performance Metrics}
 
 
-The models are tested on 4 different wind scenarios shown in table \ref{table:scenario properties}. As can be seen, the first two scenarios contain obstacles and the last two do not. \\
+The models are tested on 4 different wind scenarios provided by GECCO 2016 as shown in table \ref{table:scenario properties}. As can be seen, the first two scenarios contain obstacles and the last two do not. \\
 
 
 \begin{table}[h!]
@@ -386,7 +386,7 @@ obs05.xml         & Obstacles. \\
 \end{table}
 
 
-\noindent For each scenario, the performance of the models are measured using the measures shown in table \ref{table:overview}. Each of these measures will be presented in a plot for each model for each scenario. The fitness presented in table \ref{table:overview} is the \textit{fitness} of the best individual in the population for each generation. The \textit{efficiency} is the total amount of energy produced by the best individual, out of the upper bound on energy production; energy produced without the existence of wake effect. \textit{Cost} (USD) is the total cost of the best individual including turbine costs, substation cost, and yearly operating cost. Power is the yearly power output in (kWh). Number of turbines is the total number of turbines for the best individual. \textcolor{red}{Should I show this with the fitness function, how it is partitioned to find the different results. Ask Jean.}\\
+\noindent For each scenario, the performance of the models are measured using the metrics shown in table \ref{table:overview}. Each of these metrices will be presented in a plot for each model for each scenario. The fitness presented in table \ref{table:overview} is the \textit{fitness} of the best individual in the population for each generation. The \textit{efficiency} is the total amount of energy produced by the best individual, out of the upper bound on energy production; energy produced without the existence of wake effect. \textit{Cost} (USD) is the total cost of the best individual including turbine costs, substation cost, and yearly operating cost. Power is the yearly power output in (kWh). Number of turbines is the total number of turbines for the best individual. \textcolor{red}{Should I show this with the fitness function, how it is partitioned to find the different results. Ask Jean.}\\
 
 
 \begin{table}[h!]
