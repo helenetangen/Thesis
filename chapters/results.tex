@@ -365,18 +365,15 @@ Number of workers & 4 \\
 \noindent In summary, each algorithm run for 200 generations, and approximately 200 individuals are evaluated for each generation. This makes sure that every model gets a fair amount of processor time.\\
 
 
-\subsection{Performance Metrics}
-
-
-The models are tested on 4 different wind scenarios provided by GECCO 2016 as shown in table \ref{table:scenario properties}. As can be seen, the first two scenarios contain obstacles and the last two do not. \\
-
+\subsection{Performance Metrics}\label{subsection:performance metrics}
+\noindent Each of the 4 genetic algorithm models are tested on 4 wind scenarios. The wind scenarios are provided by GECCO 2016 and can be seen in table \ref{table:scenario properties}. As can be seen, the first two scenarios are without obstacles, while the two last scenarios are with obstacles.\\
 
 \begin{table}[h!]
 \centering
-\caption{Properties of the different scenarios used to test the different models.}
+\caption{Test scenarios provided by GECCO 2016.}
 \label{table:scenario properties}
 \begin{tabular}{l|l}
-\textbf{Scenario} & \textbf{Properties} \\
+\textbf{Scenario Name} & \textbf{Obstacles} \\
 \hline
 00.xml            & No obstacles. \\
 05.xml            & No obstacles. \\
@@ -385,14 +382,27 @@ obs05.xml         & Obstacles. \\
 \end{tabular}
 \end{table}
 
+\noindent The performance of the 4 models on each of the four scenarios are measured using the performance metrics shown in table \ref{table:performance metrics}. The first performance metric is the results of the fitness function presented in chapter \ref{chapter:methodology}. The efficiency is a measure of how much energy the given layout is able to produce out of the power the layout would have been able to produce had there been no wake effect, as shown in equation \ref{equation:efficiency}
 
-\noindent For each scenario, the performance of the models are measured using the metrics shown in table \ref{table:overview}. Each of these metrices will be presented in a plot for each model for each scenario. The fitness presented in table \ref{table:overview} is the \textit{fitness} of the best individual in the population for each generation. The \textit{efficiency} is the total amount of energy produced by the best individual, out of the upper bound on energy production; energy produced without the existence of wake effect. \textit{Cost} (USD) is the total cost of the best individual including turbine costs, substation cost, and yearly operating cost. Power is the yearly power output in (kWh). Number of turbines is the total number of turbines for the best individual. \textcolor{red}{Should I show this with the fitness function, how it is partitioned to find the different results. Ask Jean.}\\
+\begin{equation}
+\textrm{efficiency} = \frac{\textrm{yearly power output}}{\textrm{wake free yearly power output}}.
+\label{equation:efficiency}
+\end{equation}
 
+\noindent The performance metrics cost and power represent the cost and power part of the fitness function. Figure \ref{figure:performance metrics cost and power}, shows which parts of the fitness function presented in chapter \ref{chapter:methodology} that represents cost and which represents power. The last metric, number of turbines, is intuitively the total number of turbines in the layout.\\ 
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.5]{images/"performance metrics"}
+\caption{A screen shot of the fitness function presented in chapter \ref{chapter:methodology} where the cost and power metrics are shown.}
+\label{figure:performance metrics cost and power}
+\end{center}
+\end{figure}
 
 \begin{table}[h!]
 \centering
 \caption{For each scenario, results are measured in these measurements.}
-\label{table:overview}
+\label{table:performance metrics}
 \centering
 \begin{tabular}{l|l}
 \textbf{Results measured}   & \textbf{Description} \\
@@ -405,8 +415,7 @@ Number of turbines          & Total number of turbines
 \end{tabular}
 \end{table}
 
-
-\noindent In the sub sections below will the results for each scenario be presented. In addition, a final plot will show the performance of the different models averaged over all 4 scenarios.\textcolor{red}{More?}\\
+\noindent In chapter \ref{chapter:background}, one of the resulting layout from \citep{Grady} was shown as an example layout. In this thesis, the resulting layout will be to large to include. Additionally, with the realistic wind scenarios used, the wind turbines will be scattered around in the grid in a way that would not make sense to look at. The performance metrics above on the other hand, gives a much more clear understanding of the performance of the models and are the metrics that will be used to present the results.\\
 
 
 \subsection{Results Scenario 00}
@@ -428,35 +437,35 @@ Between generation 20 and 40, the Island model explores a solution with the same
 
 \begin{figure}[h!]
     \centering
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"best"}
         \caption{Fitness}
         \hfill
         \label{plot:fitness plot scenario 00}
     \end{subfigure}
     ~
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"efficiency"}
         \caption{Efficiency}
         \hfill
         \label{plot:efficiency plot scenario 00}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"cost"}
         \caption{Cost}
         \hfill
         \label{plot:cost plot scenario 00}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"power"}
         \caption{Power}
         \hfill
         \label{plot:power plot scenario 00}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 00"/"turbines"}
         \caption{Turbies}
         \hfill
@@ -482,35 +491,35 @@ The results for running the different models on scenario 05.xml is shown in figu
 
 \begin{figure}[h!]
     \centering
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 05"/"best"}
         \caption{Fitness}
         \hfill
         \label{plot:fitness plot scenario 05}
     \end{subfigure}
     ~
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 05"/"efficiency"}
         \caption{Efficiency}
         \hfill
         \label{plot:efficiency plot scenario 05}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 05"/"cost"}
         \caption{Cost}
         \hfill
         \label{plot:cost plot scenario 05}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 05"/"power"}
         \caption{Power}
         \hfill
         \label{plot:power plot scenario 05}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario 05"/"turbines"}
         \caption{Turbies}
         \hfill
@@ -536,35 +545,35 @@ Figure \ref{plot:scenario obs 00} shows the results obtained when running the mo
 
 \begin{figure}[h!]
     \centering
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 00"/best}
         \caption{Fitness}
         \hfill
         \label{plot:fitness plot scenario obs 00}
     \end{subfigure}
     ~
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 00"/efficiency}
         \caption{Efficiency}
         \hfill
         \label{plot:efficiency plot scenario obs 00}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 00"/cost}
         \caption{Cost}
         \hfill
         \label{plot:cost plot scenario obs 00}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 00"/power}
         \caption{Power}
         \hfill
         \label{plot:power plot scenario obs 00}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 00"/turbines}
         \caption{Turbies}
         \hfill
@@ -586,35 +595,35 @@ Figure \ref{plot:scenario obs 00} shows the results obtained when running the mo
 
 \begin{figure}[h!]
     \centering
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 05"/best}
         \caption{Fitness}
         \hfill
         \label{plot:fitness plot scenario obs 05}
     \end{subfigure}
     ~
-      \begin{subfigure}[b]{0.31\textwidth}
+      \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 05"/efficiency}
         \caption{Efficiency}
         \hfill
         \label{plot:efficiency plot scenario obs 05}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 05"/cost}
         \caption{Cost}
         \hfill
         \label{plot:cost plot scenario obs 05}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 05"/power}
         \caption{Power}
         \hfill
         \label{plot:power plot scenario obs 05}
     \end{subfigure}
     ~
-    \begin{subfigure}[b]{0.31\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/plots/Plots/"scenario obs 05"/turbines}
         \caption{Turbies}
         \hfill
