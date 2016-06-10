@@ -28,6 +28,18 @@ As mentioned in chapter \ref{chapter:background}, the genetic algorithm is a fou
 \end{figure}
 
 
+\noindent The simple genetic algorithm is implemented using the Master/Slave model. The Master/Slave model is the most common way of implementing a simple genetic algorithm. Evaluation of the different layouts in a population is by far the most time consuming step of the genetic algorithm. The Master/Slave model copes with this problem by distributing the evaluation to different slave processes, one for each core of the computer. By evaluation the popualation in parallell, the heaviest computational load is split between all the cores of the computer and the speed-up is proportional to the number of cores. The Master/Slave model is displayed in figure \ref{Master-Slave Model}.\\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{images/"population distributed genetic algorithms"/"master-slave model"}
+\caption{Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \citep{Gong}.}
+\label{Master-Slave Model}
+\end{center}
+\end{figure}
+
+
 \subsection{Representation}
 As in most of the studies presented in chapter \ref{chapter:relatedwork}, the individuals implemented for the genetic algorithm for this thesis are represented by binary strings. However, each position in the binary string can be directly mapped to a position in the terrain kept in an array called ''grid''. The purpose behind this design decision is that not all positions in the terrain, when dividing the terrain into a squared grid, are legal turbine positions because of the existence of obstacles. By implementing individuals this way, the genetic operations can be performed on individuals without having to check for illegal positions since this is already taken care of as soon as the scenario is read from file. Also, this design decision makes sure that no space is wasted keeping illegal positions in the binary representation. Figure \ref{figure:representation} shows how a given terrain is represented using a binary string and the grid-array. The grid to the left in the figure represents the terrain. Red cells represent illegal positions while grey cells represents legal positions. An individual and the grid array are presented to the right. Since there are only 9 legal positions in the terrain the individual has length 9. The grid-array contains the (x,y)-positions of each legal positions in the terrain. The given individual has the value 1 in positions 2, 4 and 8 respectively (zero indexed), meaning that wind turbines are positioned in the (x,y)-positions in positions 2, 4 and 8 in the grid-array, meaning position (1,2), (2,0) and (3,2) in the terrain. Wind parameters and obstacle positions are read into the program from the scenarios provided by GECCO 2016, these will be described later in this chapter.
 
