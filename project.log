@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  11 JUN 2016 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  11 JUN 2016 20:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2605,11 +2605,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 630--631
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
 
  []
 
 [87]
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 636--637
 
  []
@@ -2625,22 +2630,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 640--641
  []
 
 [88]
-Underfull \hbox (badness 10000) in paragraph at lines 644--645
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
 
  []
 
 [89]
-Underfull \hbox (badness 10000) in paragraph at lines 646--647
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 
  []
 
 [90]
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
 
  []
 
@@ -2810,10 +2820,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 19432 strings out of 493117
- 370918 string characters out of 6135434
- 435782 words of memory out of 5000000
- 22201 multiletter control sequences out of 15000+600000
+ 19433 strings out of 493117
+ 370953 string characters out of 6135434
+ 435839 words of memory out of 5000000
+ 22202 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,75p,2897b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2832,7 +2842,7 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (107 pages, 3319947 bytes).
+Output written on project.pdf (107 pages, 3320656 bytes).
 PDF statistics:
  1723 PDF objects out of 1728 (max. 8388607)
  1387 compressed objects within 14 object streams
