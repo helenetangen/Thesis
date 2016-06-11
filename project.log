@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  11 JUN 2016 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  11 JUN 2016 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2238,7 +2238,7 @@ Package pdftex.def Info: images/plots/"mutation rate"/"mutation rate 0,01".png
 used on input line 273.
 (pdftex.def)             Requested size: 120.89905pt x 90.6725pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
@@ -2246,121 +2246,124 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--290
 ation rate/mutation rate 0,0005.png> <./images/plots/mutation rate/mutation rat
 e 0,001.png> <./images/plots/mutation rate/mutation rate 0,005.png> <./images/p
 lots/mutation rate/mutation rate 0,01.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
 [74]
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 [75]
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 [76]
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
-<images/"performance metrics".png, id=1348, 730.73pt x 210.7875pt>
+<images/"performance metrics".png, id=1349, 730.73pt x 210.7875pt>
 File: images/"performance metrics".png Graphic file (type png)
 
 <use images/"performance metrics".png>
 Package pdftex.def Info: images/"performance metrics".png used on input line 39
-9.
+0.
 (pdftex.def)             Requested size: 365.3641pt x 105.3935pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
 [77]
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
 [78 <./images/performance metrics.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
  []
 
-<images/plots/Plots/"scenario 00"/"best".png, id=1373, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"best".png, id=1375, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"best".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"best".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"best".png used on in
-put line 444.
+put line 435.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 00"/"efficiency".png, id=1374, 578.16pt x 433.62p
+<images/plots/Plots/"scenario 00"/"efficiency".png, id=1376, 578.16pt x 433.62p
 t>
 File: images/plots/Plots/"scenario 00"/"efficiency".png Graphic file (type png)
 
  <use images/plots/Plots/"scenario 00"/"efficiency".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"efficiency".png used
- on input line 451.
+ on input line 442.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 00"/"cost".png, id=1375, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"cost".png, id=1377, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"cost".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"cost".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"cost".png used on in
-put line 458.
+put line 449.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 00"/"power".png, id=1376, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"power".png, id=1378, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"power".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 00"/"power".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"power".png used on i
-nput line 465.
+nput line 456.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 00"/"turbines".png, id=1377, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 00"/"turbines".png, id=1379, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 00"/"turbines".png Graphic file (type png)
 <use images/plots/Plots/"scenario 00"/"turbines".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 00"/"turbines".png used o
-n input line 472.
+n input line 463.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
 
@@ -2375,65 +2378,65 @@ Overfull \vbox (5.42593pt too high) has occurred while \output is active []
 [80 <./images/plots/Plots/scenario 00/best.png> <./images/plots/Plots/scenario 
 00/efficiency.png> <./images/plots/Plots/scenario 00/cost.png> <./images/plots/
 Plots/scenario 00/power.png> <./images/plots/Plots/scenario 00/turbines.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
-<images/plots/Plots/"scenario 05"/"best".png, id=1398, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"best".png, id=1400, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"best".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"best".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"best".png used on in
-put line 498.
+put line 489.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 05"/"efficiency".png, id=1399, 578.16pt x 433.62p
+<images/plots/Plots/"scenario 05"/"efficiency".png, id=1401, 578.16pt x 433.62p
 t>
 File: images/plots/Plots/"scenario 05"/"efficiency".png Graphic file (type png)
 
  <use images/plots/Plots/"scenario 05"/"efficiency".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"efficiency".png used
- on input line 505.
+ on input line 496.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 05"/"cost".png, id=1400, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"cost".png, id=1402, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"cost".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"cost".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"cost".png used on in
-put line 512.
+put line 503.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 05"/"power".png, id=1401, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"power".png, id=1403, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"power".png Graphic file (type png)
 
 <use images/plots/Plots/"scenario 05"/"power".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"power".png used on i
-nput line 519.
+nput line 510.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario 05"/"turbines".png, id=1402, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario 05"/"turbines".png, id=1404, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario 05"/"turbines".png Graphic file (type png)
 <use images/plots/Plots/"scenario 05"/"turbines".png>
 Package pdftex.def Info: images/plots/Plots/"scenario 05"/"turbines".png used o
-n input line 526.
+n input line 517.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--538
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
 
@@ -2448,67 +2451,67 @@ Overfull \vbox (5.42593pt too high) has occurred while \output is active []
 [82 <./images/plots/Plots/scenario 05/best.png> <./images/plots/Plots/scenario 
 05/efficiency.png> <./images/plots/Plots/scenario 05/cost.png> <./images/plots/
 Plots/scenario 05/power.png> <./images/plots/Plots/scenario 05/turbines.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--544
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
-<images/plots/Plots/"scenario obs 00"/best.png, id=1423, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 00"/best.png, id=1425, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 00"/best.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 00"/best.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/best.png used on 
-input line 552.
+input line 543.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 00"/efficiency.png, id=1424, 578.16pt x 433.6
+<images/plots/Plots/"scenario obs 00"/efficiency.png, id=1426, 578.16pt x 433.6
 2pt>
 File: images/plots/Plots/"scenario obs 00"/efficiency.png Graphic file (type pn
 g)
  <use images/plots/Plots/"scenario obs 00"/efficiency.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/efficiency.png us
-ed on input line 559.
+ed on input line 550.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 00"/cost.png, id=1425, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 00"/cost.png, id=1427, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 00"/cost.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 00"/cost.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/cost.png used on 
-input line 566.
+input line 557.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 00"/power.png, id=1426, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 00"/power.png, id=1428, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 00"/power.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 00"/power.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/power.png used on
- input line 573.
+ input line 564.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 00"/turbines.png, id=1427, 578.16pt x 433.62p
+<images/plots/Plots/"scenario obs 00"/turbines.png, id=1429, 578.16pt x 433.62p
 t>
 File: images/plots/Plots/"scenario obs 00"/turbines.png Graphic file (type png)
 
  <use images/plots/Plots/"scenario obs 00"/turbines.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 00"/turbines.png used
- on input line 580.
+ on input line 571.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
@@ -2524,62 +2527,62 @@ Overfull \vbox (5.42593pt too high) has occurred while \output is active []
 rio obs 00/efficiency.png> <./images/plots/Plots/scenario obs 00/cost.png> <./i
 mages/plots/Plots/scenario obs 00/power.png> <./images/plots/Plots/scenario obs
  00/turbines.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
 
  []
 
-<images/plots/Plots/"scenario obs 05"/best.png, id=1447, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 05"/best.png, id=1449, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 05"/best.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 05"/best.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/best.png used on 
-input line 602.
+input line 593.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 05"/efficiency.png, id=1448, 578.16pt x 433.6
+<images/plots/Plots/"scenario obs 05"/efficiency.png, id=1450, 578.16pt x 433.6
 2pt>
 File: images/plots/Plots/"scenario obs 05"/efficiency.png Graphic file (type pn
 g)
  <use images/plots/Plots/"scenario obs 05"/efficiency.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/efficiency.png us
-ed on input line 609.
+ed on input line 600.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 05"/cost.png, id=1449, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 05"/cost.png, id=1451, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 05"/cost.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 05"/cost.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/cost.png used on 
-input line 616.
+input line 607.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 05"/power.png, id=1450, 578.16pt x 433.62pt>
+<images/plots/Plots/"scenario obs 05"/power.png, id=1452, 578.16pt x 433.62pt>
 File: images/plots/Plots/"scenario obs 05"/power.png Graphic file (type png)
 
 <use images/plots/Plots/"scenario obs 05"/power.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/power.png used on
- input line 623.
+ input line 614.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<images/plots/Plots/"scenario obs 05"/turbines.png, id=1451, 578.16pt x 433.62p
+<images/plots/Plots/"scenario obs 05"/turbines.png, id=1453, 578.16pt x 433.62p
 t>
 File: images/plots/Plots/"scenario obs 05"/turbines.png Graphic file (type png)
 
  <use images/plots/Plots/"scenario obs 05"/turbines.png>
 Package pdftex.def Info: images/plots/Plots/"scenario obs 05"/turbines.png used
- on input line 630.
+ on input line 621.
 (pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 641--642
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
@@ -2595,42 +2598,42 @@ Overfull \vbox (5.42593pt too high) has occurred while \output is active []
 rio obs 05/efficiency.png> <./images/plots/Plots/scenario obs 05/cost.png> <./i
 mages/plots/Plots/scenario obs 05/power.png> <./images/plots/Plots/scenario obs
  05/turbines.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 645--646
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 
  []
 
 [87]
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
 
  []
 
 [88]
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
 
  []
 
 [89]
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--671
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
 
  []
 
@@ -2822,10 +2825,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (107 pages, 3318820 bytes).
+Output written on project.pdf (107 pages, 3319190 bytes).
 PDF statistics:
- 1719 PDF objects out of 1728 (max. 8388607)
- 1383 compressed objects within 14 object streams
+ 1721 PDF objects out of 1728 (max. 8388607)
+ 1385 compressed objects within 14 object streams
  260 named destinations out of 1000 (max. 500000)
  850 words of extra memory for PDF output out of 10000 (max. 10000000)
 
