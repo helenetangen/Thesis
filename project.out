@@ -18,7 +18,7 @@
 \BOOKMARK [1][-]{section.3.3}{Discussion Related Work}{chapter.3}% 18
 \BOOKMARK [0][-]{chapter.4}{Methodology}{}% 19
 \BOOKMARK [1][-]{section.4.1}{System Architecture}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{Genetic Algorithm: Implementation Details}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Genetic Algorithm Implementation Details}{chapter.4}% 21
 \BOOKMARK [2][-]{subsection.4.2.1}{Representation}{section.4.2}% 22
 \BOOKMARK [2][-]{subsection.4.2.2}{Adult Selection}{section.4.2}% 23
 \BOOKMARK [2][-]{subsection.4.2.3}{Parent Selection}{section.4.2}% 24
@@ -26,10 +26,10 @@
 \BOOKMARK [2][-]{subsection.4.2.5}{Wind-, Wake- and Power Model}{section.4.2}% 26
 \BOOKMARK [2][-]{subsection.4.2.6}{Fitness Function}{section.4.2}% 27
 \BOOKMARK [1][-]{section.4.3}{Scenarios}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.4}{Population Distributed Genetic Algorithms: Implementation Details}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.4.1}{The Island Model}{section.4.4}% 30
-\BOOKMARK [2][-]{subsection.4.4.2}{Pool Model}{section.4.4}% 31
-\BOOKMARK [2][-]{subsection.4.4.3}{Cellular Model}{section.4.4}% 32
+\BOOKMARK [1][-]{section.4.4}{Population Distributed Genetic Algorithms Implementation Details}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.4.1}{The Island Model Design Decisions}{section.4.4}% 30
+\BOOKMARK [2][-]{subsection.4.4.2}{Pool Model Design Decisions}{section.4.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.3}{Cellular Model Design Decisions}{section.4.4}% 32
 \BOOKMARK [1][-]{section.4.5}{Motivation behind Implementing the Genetic Algorithm from Scratch}{chapter.4}% 33
 \BOOKMARK [0][-]{chapter.5}{Results and Discussion}{}% 34
 \BOOKMARK [1][-]{section.5.1}{Parameter settings}{chapter.5}% 35

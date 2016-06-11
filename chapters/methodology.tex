@@ -15,7 +15,7 @@ The program is implemented in Java and the interactions between the different cl
 \end{figure}
 
 
-\section{Genetic Algorithm: Implementation Details}\label{section:genetic algorithm}
+\section{Genetic Algorithm Implementation Details}\label{section:genetic algorithm}
 As mentioned in chapter \ref{chapter:background}, the genetic algorithm is a four step process: Adult selection, parent selection, recombination such as crossover and mutation, and fitness evaluation as shown in figure \ref{figure:genetic algorithm steps}. Implementation details of each step is described in the subsequent sub sections. In addition, the wind-, wake-, and power model used in evaluating the genetic algorithm are described in the following subsections since these are crucial to understanding the fitness function. 
 
 
@@ -56,7 +56,7 @@ As in most of the studies presented in chapter \ref{chapter:relatedwork}, the in
 \subsection{Adult Selection}\label{subsection:adult selection}
 Adult selection is the process of selecting which individuals that are allowed to step into the adult pool and thereby become potential parents for the next generation of individuals. Three adult selection mechanisms were implemented in this thesis: Full generational replacement,  generational mixing, and overproduction. Each method was tested in order to decide which adult selection method was more suitable for solving the wind farm layout optimization problem. \\
 
-\noindent Full generational replacement, the simplest adult selection mechanism, replaces the previous adult population with the newly generated child population. The second method, generational mixing, is illustrated in figure \ref{figure:generational mixing}. As the name suggests, generational mixing mix the previous adult pool together with the new child pool and selects the best individuals from the mix to become the new adult population. As can be seen in the figure, the new adult pool consists of the best individuals from both the newly generated child pool and the previous adult pool. The two individuals with fitness 2 and 3 are selected from the child pool, and the two individuals with fitness 4 and 4 is selected from the previous adult pool. The new child population will therefore contain individuals with fitness 4, 2, 3 and 4, instead of fitness of 5, 6, 3 and 2, which would be the adult population if full generational replacement was used. 
+\noindent Full generational replacement, the simplest adult selection mechanism, replaces the previous adult population with the newly generated child population. The second method, generational mixing, is illustrated in figure \ref{figure:generational mixing}. As the name suggests, generational mixing mix the previous adult pool together with the new child pool and selects the best individuals from the mix to become the new adult population. As can be seen in the figure, the new adult pool consists of the best individuals from both the newly generated child pool and the previous adult pool. The two individuals with fitness 2 and 3 are selected from the child pool, and the two individuals with fitness 4 and 4 is selected from the previous adult pool. The new child population will therefore contain individuals with fitness 4, 2, 3 and 4, instead of fitness of 5, 6, 3 and 2, which would be the adult population if full generational replacement was used. \\
 
 
 \begin{figure}[h!]
@@ -267,7 +267,7 @@ $m$ & Farm energy output &  \\
 GECCO 2016 has provided the contestants with 20 different wind scenarios for which the genetic algorithm can be tested on. Each wind scenario contain shape and scale parameters, k and c respectively, for each wind directions where wind direction is partitioned into slots that cover an 15 degree angle each, so that there are 24 different wind directions. Unavailable areas are described in the scenario by the parameters \textit{x$_{min}$, x$_{max}$, y$_{min}$} and \textit{y$_{max}$} as shown in figure \ref{figure:obstacles}. In the figure, two obstacles are described giving their (x, y)-boundaries. The boundaries of the obstacles are marked with black lines. The yellow area in the middle of the lines are the illegal areas. Each wind scenario also contain values for the constants ''width'', ''height'', ''number of turbines'' and ''wake free energy''. The scenarios are read from file at the beginning of each run of the genetic algorithm. 
 
 
-\section{Population Distributed Genetic Algorithms: Implementation Details}\label{section:population distributed gas implementation details}
+\section{Population Distributed Genetic Algorithms Implementation Details}\label{section:population distributed gas implementation details}
 
 
 Now that the reader is familiar with how individuals are represented, which selection mechanisms and genetic operators that are implemented, how fitness is calculated, and how the scenarios look, it is time to go into details of how the population distributed genetic algorithms are implemented. Although the population distributed genetic algorithms were introduced in chapter \ref{chapter:background}, the details of how each step in figure \ref{figure:genetic algorithm steps} are implemented for each model was not given. Therefore, this section contains a detailed description of how the population distributed genetic algorithms are implemented. \\
@@ -276,7 +276,7 @@ Now that the reader is familiar with how individuals are represented, which sele
 \noindent One decision that can be mentioned here, because it applies to all the models below, is whether the three population distributed genetic algorithms are heterogeneous or homogeneous. In an homogeneous environment, the same rules apply to the entire model. This means that the same adult- and parent selection mechanisms, the same genetic operators and the same fitness function is used for the entire model, it is not different for different Islands (Island model), threads (Pool model) or areas (Cellular model). Even thought it would be very interesting to implement heterogeneous models, it is not done in this thesis. The reason behind this decision is that it is best to let the same rules apply to every part of every model when different models are compared.\\
 
 
-\subsection{The Island Model}
+\subsection{The Island Model Design Decisions}
 
 
 \noindent The Island model works as follows: A population of individuals are partitioned into sub populations which are distributed onto different Islands. An Island can be connected to one or more Islands and individuals on one Island can migrate to other Islands following one of the migration routes. Table \ref{table:parameter description island model} gives an description of the Island model parameters. For a number of generations, decided by the variable \textit{migration interval}, the population on one Island follow the steps of the simple genetic algorithm from figure \ref{figure:genetic algorithm steps}. However, when the population has evolved for \textit{migration interval} generations some individuals from one Island can migrate to another Island. These two steps continue until the total number of generations reaches some predefined value.\\
@@ -317,7 +317,7 @@ Now that the reader is familiar with how individuals are represented, which sele
 \end{figure}
 
 
-\subsection{Pool Model}
+\subsection{Pool Model Design Decisions}
 
 
 \noindent In the Pool model, the individuals are distributed in a resource pool. The resource pool is partitioned into equal size partitions so that one thread is responsible for one partition. Each thread selects \textit{x} individuals from the entire population, where \textit{x} is equal to the total population size divided by the total number of threads. Next, each thread generates a child pool by performing genetic operations on the selected individuals. After the new child pool is generated, each child individual is compared against the individual in the resource pool currently occupying its designated position. If the fitness of the new individuals is better than the fitness of the old individual the new child individual overwrites the old individuals. This is illustrated in figure \ref{figure:pool model update function}. As can be seen in the figure thread \textit{i} overwrites the individuals in positions 1, 3 and 4 in the partition it is responsible for.\\
@@ -338,7 +338,7 @@ Now that the reader is familiar with how individuals are represented, which sele
 \noindent As mentioned above, parent individuals are selected from the entire resource pool. However, parents are not picked completely at random. For each parent selected a group of potential parents are selected at random from the resource pool, and these individuals compete for the spot in the parent pool by tournament selection. This guides the evolution in the right direction. Picking individuals at random might also work for this model since the new individuals are only written back if they are better than the previous individuals, however, this would make evolution extremely slow, and it would not make sense from an evolutionary point of view because the fittest individuals are not prioritized.
 
 
-\subsection{Cellular Model}
+\subsection{Cellular Model Design Decisions}
 
 
 \noindent The Cellular model distributes the population in a square grid. Each individual has its own cell which corresponds to an (x, y)-position. For each generation, each cell is updated. Each cell in the grid is updated by selecting parent individuals that are close to the given cell, perform genetic operations on those parents and write the newly generated individual back to the cell.\\
