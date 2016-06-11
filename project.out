@@ -18,7 +18,7 @@
 \BOOKMARK [1][-]{section.3.3}{Discussion Related Work}{chapter.3}% 18
 \BOOKMARK [0][-]{chapter.4}{Methodology}{}% 19
 \BOOKMARK [1][-]{section.4.1}{System Architecture}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{Genetic Algorithm}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Genetic Algorithm: Implementation Details}{chapter.4}% 21
 \BOOKMARK [2][-]{subsection.4.2.1}{Representation}{section.4.2}% 22
 \BOOKMARK [2][-]{subsection.4.2.2}{Adult Selection}{section.4.2}% 23
 \BOOKMARK [2][-]{subsection.4.2.3}{Parent Selection}{section.4.2}% 24
