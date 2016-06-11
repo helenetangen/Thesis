@@ -51,6 +51,6 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{92}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview}{92}{section.6.1}
 \contentsline {section}{\numberline {6.2}Goal Evaluation}{93}{section.6.2}
-\contentsline {section}{\numberline {6.3}Contributions}{97}{section.6.3}
+\contentsline {section}{\numberline {6.3}Contributions}{96}{section.6.3}
 \contentsline {section}{\numberline {6.4}Further work}{98}{section.6.4}
 \contentsline {chapter}{Bibliography}{100}{section.6.4}
