@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.1.2}Challenges of wind farm construction}{9}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Genetic Algorithms}{11}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Simple Genetic Algorithms (SGAs)}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Population Distributed Genetic Algorithms}{16}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Population Distributed Genetic Algorithms (PDGAs)}{16}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Structured Literature Review}{19}{section.2.3}
 \contentsline {chapter}{\numberline {3}Related Work}{21}{chapter.3}
 \contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{21}{section.3.1}
@@ -53,4 +53,4 @@
 \contentsline {section}{\numberline {6.2}Goal Evaluation}{90}{section.6.2}
 \contentsline {section}{\numberline {6.3}Contributions}{93}{section.6.3}
 \contentsline {section}{\numberline {6.4}Further work}{94}{section.6.4}
-\contentsline {chapter}{Bibliography}{97}{section.6.4}
+\contentsline {chapter}{Bibliography}{99}{section*.56}

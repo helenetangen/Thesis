@@ -95,7 +95,7 @@ As mentioned above, selection is a two-step process: Adult selection and parent 
 \end{figure}
 
 
-\noindent By varying the value of \textit{n} you can control how much exploration your algorithm should do. If \textit{n} is equal to the population size only the best individuals are selected, and if \textit{n} is equal to 1 the search is completely random. This means that low values of \textit{n} leads to more exploration of the search space, something that can potentially guide the population to find better solutions. Higher values of \textit{n} on the other hand will often lead to fast convergence to sub-optimal solutions. These properties make it desirable to vary the value of \textit{n} during the genetic search so that exploration is prioritized at the beginning of the search, while exploitation (making use of seemingly good solutions) is prioritized at the end. Tournament selection is one out of two parent selection methods implemented in this thesis, these will also be explained in detail in chapter \ref{chapter:methodology}\\
+\noindent By varying the value of \textit{n} you can control how much exploration your algorithm should do. If \textit{n} is equal to the population size only the best individuals are selected, and if \textit{n} is equal to 1 the search is completely random. This means that low values of \textit{n} leads to more exploration of the search space, something that can potentially guide the population to find better solutions. Higher values of \textit{n} on the other hand will often lead to fast convergence to sub-optimal solutions. These properties make it desirable to vary the value of \textit{n} during the genetic search so that exploration is prioritized at the beginning of the search, while exploitation (making use of seemingly good solutions) is prioritized at the end. Tournament selection is one out of two parent selection methods implemented in this thesis, these will also be explained in detail in chapter \ref{chapter:methodology}.\\
 
 
 \paragraph*{Crossover}
@@ -130,7 +130,7 @@ In biology, mutation is defined as a permanent alteration in the DNA sequence th
 \noindent Even though mutation is important, the probability of mutation needs to be kept low. If the mutation rate is very high, the genotype of a new individual will almost be a random bit string. Remember that a new individual is made by recombination of two individuals with good fitness in the previous population. If mutation changes the new individual heavily, it will not inherit the good features of its parents and the whole point of evolutionary search will be gone.\\
 
 
-\subsection{Population Distributed Genetic Algorithms}\label{subsection:dga}
+\subsection{Population Distributed Genetic Algorithms (PDGAs)}\label{subsection:dga}
 One of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population does not converge to a sub-optimal solution. By distributing the population, the algorithm is able to explore different solution paths. This is usually an advantage, because the solutions that obtains the best fitness in the end is not always the solutions that seem best right away. This section introduces the 3 different population distributed algorithms that are investigated in this thesis. For an in-depth introduction to the models see \citep{Gong}.\\
 
 
@@ -179,7 +179,7 @@ Another population distributed model is called the Pool model. In this model the
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"population distributed genetic algorithms"/"pool model"}
-\caption{The pool model. Each worker has its own positions in the pool which it returns individuals to. The red processor is responsible for the red positions in the pool, and so on. Workers draw individuals from random positions in the pool, as indicated by the arrows, but can only write them back to its own positions, given that their fitness is higher than the fitness of the individual currently occupying the position \citep{Gong}.}
+\caption{The pool model. Each worker has its own positions in the pool which it returns individuals to. The red worker is responsible for the red positions in the pool, and so on. Workers draw individuals from random positions in the pool, as indicated by the arrows, but can only write them back to its own positions, given that their fitness is higher than the fitness of the individual currently occupying the position \citep{Gong}.}
 \label{Pool Model}
 \end{center}
 \end{figure}

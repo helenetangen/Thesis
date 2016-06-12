@@ -10,7 +10,7 @@
 \BOOKMARK [2][-]{subsection.2.1.2}{Challenges of wind farm construction}{section.2.1}% 10
 \BOOKMARK [1][-]{section.2.2}{Genetic Algorithms}{chapter.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.1}{Simple Genetic Algorithms \(SGAs\)}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.2}{Population Distributed Genetic Algorithms}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Population Distributed Genetic Algorithms \(PDGAs\)}{section.2.2}% 13
 \BOOKMARK [1][-]{section.2.3}{Structured Literature Review}{chapter.2}% 14
 \BOOKMARK [0][-]{chapter.3}{Related Work}{}% 15
 \BOOKMARK [1][-]{section.3.1}{Wind Farm Layout Optimization using Genetic Algorithms}{chapter.3}% 16
@@ -51,4 +51,4 @@
 \BOOKMARK [1][-]{section.6.2}{Goal Evaluation}{chapter.6}% 51
 \BOOKMARK [1][-]{section.6.3}{Contributions}{chapter.6}% 52
 \BOOKMARK [1][-]{section.6.4}{Further work}{chapter.6}% 53
-\BOOKMARK [0][-]{section.6.4}{Bibliography}{}% 54
+\BOOKMARK [0][-]{section*.56}{Bibliography}{}% 54
