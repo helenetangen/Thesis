@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[pdftex,12pt,twoside]{book}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{color}
@@ -19,19 +19,52 @@
 \usepackage{mathtools}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
-
+\usepackage{fancyhdr}
+%begin{document}
+%\include{front} % This is the titlepage
+%\setcounter{page}{0}
+%%\pagenumbering{roman}
+%%\include{preface}
+%%\include{acknowledgment}
+%\include{summary}
+%\pagestyle{empty}
+%
+%\tableofcontents
+%\pagestyle{fancy}
+\rhead{\scshape Chapter. \thechapter }
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%\thispagestyle{empty}
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
+%
+%%\pagenumbering{arabic}
+%\setcounter{page}{0}
+%\include{chapter01Introductionthesis}
 
 \begin{document}
 
-
+\pagestyle{empty}
 \input{chapters/titlepage}
-\clearpage
+\cleardoublepage
+\pagestyle{empty}
 \newpage
 \input{chapters/problemdescription}
+\cleardoublepage
+\newpage
+\pagestyle{plain}
+\pagenumbering{roman}
 \input{chapters/abstract}
+\pagestyle{plain}
+\pagenumbering{roman}
 \input{chapters/sammendrag}
+\pagestyle{plain}
+\pagenumbering{roman}
 \input{chapters/preface}
+\pagestyle{empty}
 \tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{fancy}
 \input{chapters/introduction}
 \input{chapters/background}
 \input{chapters/relatedwork}
