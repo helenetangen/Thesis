@@ -1,6 +1,7 @@
 \documentclass[pdftex,12pt,twoside]{book}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{geometry}
 \usepackage{color}
 \graphicspath{{images/}}
 \usepackage{subcaption}
@@ -31,15 +32,14 @@
 %
 %\tableofcontents
 %\pagestyle{fancy}
-\rhead{\scshape Chapter. \thechapter }
+\rhead{ Chapter. \thechapter }
+ \renewcommand{\chaptermark}[1]{\markboth{\space}{}} 
+
+\fancyhead[LE,RO]{\fontsize{7}{11}\selectfont \scshape \rightmark}
+\fancyhead[LO,RE]{\fontsize{7}{11}\selectfont \scshape \leftmark}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
-%\thispagestyle{empty}
-%\addtocontents{toc}{\protect\thispagestyle{empty}}
-%
-%%\pagenumbering{arabic}
-%\setcounter{page}{0}
-%\include{chapter01Introductionthesis}
+
 
 \begin{document}
 
