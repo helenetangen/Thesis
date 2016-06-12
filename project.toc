@@ -28,11 +28,11 @@
 \contentsline {subsection}{\numberline {4.2.5}Wind-, Wake- and Power Model}{50}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}Fitness Function}{51}{subsection.4.2.6}
 \contentsline {section}{\numberline {4.3}Scenarios}{53}{section.4.3}
-\contentsline {section}{\numberline {4.4}PDGAs Implementation Details}{53}{section.4.4}
+\contentsline {section}{\numberline {4.4}PDGA's Implementation Details}{53}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}The Island Model Design Decisions}{54}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Pool Model Design Decisions}{55}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Cellular Model Design Decisions}{57}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Motivation behind Implementing the GA}{58}{section.4.5}
+\contentsline {section}{\numberline {4.5}Motivation behind Implementing the GA from scratch}{58}{section.4.5}
 \contentsline {chapter}{\numberline {5}Results and Discussion}{61}{chapter.5}
 \contentsline {section}{\numberline {5.1}Parameter settings}{61}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Adult Selection}{63}{subsection.5.1.1}
@@ -43,8 +43,8 @@
 \contentsline {section}{\numberline {5.2}Results}{68}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Final Parameter Values}{68}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Performance Metrics}{72}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Results Scenario 00}{73}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Results Scenario 05}{75}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.3}Results Scenario 00.xml}{73}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Results Scenario 05.xml}{75}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Results Scenario obs00.xml}{76}{subsection.5.2.5}
 \contentsline {subsection}{\numberline {5.2.6}Results Scenario obs05.xml}{77}{subsection.5.2.6}
 \contentsline {section}{\numberline {5.3}Discussion}{83}{section.5.3}

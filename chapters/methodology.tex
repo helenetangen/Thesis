@@ -267,7 +267,7 @@ $m$ & Farm energy output &  \\
 
 GECCO 2016 has provided the contestants with 20 different wind scenarios for which the genetic algorithm can be tested on. Each wind scenario contain shape and scale parameters, \textit{k} and \textit{c} respectively, for each wind directions where wind direction is partitioned into slots that cover an 15 degree angle each, so that there are 24 different wind directions. Unavailable areas are described in the scenario by the parameters \textit{x$_{min}$, x$_{max}$, y$_{min}$} and \textit{y$_{max}$} as shown in figure \ref{figure:obstacles}. In the figure, two obstacles are described giving their (x, y)-boundaries. The boundaries of the obstacles are marked with black lines. The yellow area in the middle of the lines are the illegal areas. Each wind scenario also contain values for the constants ''width'', ''height'', ''number of turbines'' and ''wake free energy''. The scenarios are read from file at the beginning of each run of the genetic algorithm. 
 
-\section[PDGAs Implementation Details]{Population Distributed Genetic Algorithms Implementation Details}
+\section[PDGA's Implementation Details]{Population Distributed Genetic Algorithms Implementation Details}
 \label{section:population distributed gas implementation details}
 
 
@@ -359,7 +359,7 @@ Now that the reader is familiar with how individuals are represented, which sele
 \end{figure}
 
 
-\section[Motivation behind Implementing the GA]{Motivation behind Implementing the Genetic Algorithm from Scratch}
+\section[Motivation behind Implementing the GA from scratch]{Motivation behind Implementing the Genetic Algorithm from Scratch}\label{section:motivation}
 Even though GECCO	 2016 has provided each contestant with an API which could be used directly, or improved upon and used in the competition, the decision to implement the genetic algorithm from scratch was made. Even though this decision lead to more work for the author, several arguments supported the decision. First of all, even though the provided genetic algorithm was implemented in Java, it was not very object oriented nor was it modular, something that made it very difficult to add new features to the code without having to do major changes. In addition, the provided genetic algorithm was extremely simple with no room for making any decisions about which method to use for any of the steps in figure \ref{figure:genetic algorithm steps}. Other problems such as hard-coded variables and too long methods made it very difficult to make changes and add new features. \\
 
 \noindent The new genetic algorithm is implemented so that new selection methods can be added by simply implementing the AdultSelection- or ParentSelection interface, and new crossover methods can be added by extending the Crossover class. This makes the program much more flexible, if one wish to try something new. No variables are hard-coded in the new program, but taken as parameters to the GeneticAlgorithm constructor, leaving no room for making errors. The major improvement, and most important motivation behind the decisions of implementing the genetic algorithm from scratch is that it gives the author total control over every aspect of the code, and it was very important with modular code when the population distributed genetic algorithms were implemented.\\
